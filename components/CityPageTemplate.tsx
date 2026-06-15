@@ -76,17 +76,17 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Locations", href: "/locations" }, { label: city }]} />
           <div className="max-w-2xl mt-4">
             <div className="flex items-center gap-2 mb-3">
-              <MapPin size={16} className="text-[#FD9C02]" />
-              <span className="text-[#FD9C02] text-xs font-bold uppercase tracking-widest">{city}, United Kingdom</span>
+              <MapPin size={16} className="text-[#F5A623]" />
+              <span className="text-[#F5A623] text-xs font-bold uppercase tracking-widest">{city}, United Kingdom</span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
               Online Quran Classes in {city}
             </h1>
             <p className="text-blue-100 text-lg mb-6 leading-relaxed">{intro}</p>
             <div className="flex flex-wrap gap-3 mb-8 text-sm text-blue-100">
-              <span className="flex items-center gap-1.5"><Star size={13} className="text-[#FD9C02] fill-[#FD9C02]" /> Free first class</span>
-              <span className="flex items-center gap-1.5"><Users size={13} className="text-[#FD9C02]" /> One-to-one lessons</span>
-              <span className="flex items-center gap-1.5"><Clock size={13} className="text-[#FD9C02]" /> Flexible timings</span>
+              <span className="flex items-center gap-1.5"><Star size={13} className="text-[#F5A623] fill-[#F5A623]" /> Free first class</span>
+              <span className="flex items-center gap-1.5"><Users size={13} className="text-[#F5A623]" /> One-to-one lessons</span>
+              <span className="flex items-center gap-1.5"><Clock size={13} className="text-[#F5A623]" /> Flexible timings</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/free-trial" className="btn-gold">Book Free Trial Class</Link>
@@ -101,7 +101,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FD9C02] mb-3">Areas We Serve</span>
+              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Areas We Serve</span>
               <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-4">
                 Quran Classes Across {city}
               </h2>
@@ -111,13 +111,13 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
               <div className="flex flex-wrap gap-2">
                 {areas.map((a) => (
                   <span key={a} className="flex items-center gap-1.5 px-3 py-1.5 bg-[#faf9f7] rounded-full text-sm text-gray-700 border border-gray-200">
-                    <MapPin size={11} className="text-[#FD9C02]" /> {a}
+                    <MapPin size={11} className="text-[#F5A623]" /> {a}
                   </span>
                 ))}
               </div>
             </div>
             <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FD9C02] mb-3">Why Online Works</span>
+              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Why Online Works</span>
               <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-4">
                 Why {city} Families Choose Online Quran Classes
               </h2>
@@ -125,7 +125,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
               <ul className="space-y-2.5">
                 {localPoints.map((p) => (
                   <li key={p} className="flex items-start gap-3 text-sm text-gray-700">
-                    <CheckCircle size={15} className="text-[#FD9C02] flex-shrink-0 mt-0.5" /> {p}
+                    <CheckCircle size={15} className="text-[#F5A623] flex-shrink-0 mt-0.5" /> {p}
                   </li>
                 ))}
               </ul>
@@ -138,18 +138,18 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FD9C02] mb-2">What We Teach</span>
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">What We Teach</span>
             <h2 className="text-2xl font-bold text-[#122259]">Courses Available to {city} Students</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {coursesList.map((c) => (
-              <Link key={c.href} href={c.href} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-md hover:border-[#FD9C02]/30 transition-all group">
+              <Link key={c.href} href={c.href} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-md hover:border-[#F5A623]/30 transition-all group">
                 <div className="flex items-start justify-between">
                   <div>
-                    <p className="font-bold text-[#122259] group-hover:text-[#FD9C02] transition-colors">{c.title}</p>
+                    <p className="font-bold text-[#122259] group-hover:text-[#F5A623] transition-colors">{c.title}</p>
                     <p className="text-xs text-gray-500 mt-0.5">{c.desc}</p>
                   </div>
-                  <ChevronRight size={14} className="text-[#FD9C02] flex-shrink-0 mt-0.5" />
+                  <ChevronRight size={14} className="text-[#F5A623] flex-shrink-0 mt-0.5" />
                 </div>
               </Link>
             ))}
@@ -161,7 +161,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
       <section className="section-pad">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FD9C02] mb-2">Real Reviews</span>
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Real Reviews</span>
             <h2 className="text-2xl font-bold text-[#122259]">What Families Across the UK Say</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -182,7 +182,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
               <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
                 <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none">
                   {f.q}
-                  <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#FD9C02]" />
+                  <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
                 </summary>
                 <p className="px-5 pb-5 text-gray-600 text-sm leading-relaxed">{f.a}</p>
               </details>
@@ -198,7 +198,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
           <div className="flex flex-wrap gap-3">
             {allCities.filter(([l]) => l.toLowerCase() !== city.toLowerCase()).map(([l, h]) => (
               <Link key={h} href={h} className="flex items-center gap-2 px-4 py-2.5 bg-[#faf9f7] rounded-xl text-sm font-semibold text-[#122259] border border-gray-200 hover:bg-[#122259] hover:text-white hover:border-[#122259] transition-colors">
-                <MapPin size={12} className="text-[#FD9C02]" />
+                <MapPin size={12} className="text-[#F5A623]" />
                 Quran Classes in {l}
               </Link>
             ))}

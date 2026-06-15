@@ -15,7 +15,7 @@ export default function MobileBottomBar() {
       </a>
       <Link
         href="/free-trial"
-        className="flex-[2] flex flex-col items-center justify-center py-3 bg-[#FD9C02] text-white"
+        className="flex-[2] flex flex-col items-center justify-center py-3 bg-[#F5A623] text-white"
       >
         <CalendarCheck size={20} />
         <span className="text-xs mt-0.5 font-semibold">Book Free Trial</span>

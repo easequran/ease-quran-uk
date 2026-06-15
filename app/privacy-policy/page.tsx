@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
           </ul>
 
           <h2>6. Contact</h2>
-          <p>If you have any questions about this privacy policy or how we handle your data, please contact us at <a href="mailto:info@easequran.co.uk" className="text-[#FD9C02]">info@easequran.co.uk</a>.</p>
+          <p>If you have any questions about this privacy policy or how we handle your data, please contact us at <a href="mailto:info@easequran.co.uk" className="text-[#F5A623]">info@easequran.co.uk</a>.</p>
         </div>
       </section>
     </>

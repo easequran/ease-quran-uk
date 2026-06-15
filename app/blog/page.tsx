@@ -56,10 +56,10 @@ export default function Blog() {
                   <span className="flex items-center gap-1"><Clock size={11} /> {post.readTime}</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-bold text-[#122259] mb-3">
-                  <Link href={`/blog/${post.slug}`} className="hover:text-[#FD9C02] transition-colors">{post.title}</Link>
+                  <Link href={`/blog/${post.slug}`} className="hover:text-[#F5A623] transition-colors">{post.title}</Link>
                 </h2>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed">{post.excerpt}</p>
-                <Link href={`/blog/${post.slug}`} className="text-[#FD9C02] text-sm font-semibold flex items-center gap-1">
+                <Link href={`/blog/${post.slug}`} className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">
                   Read article <ChevronRight size={14} />
                 </Link>
               </article>

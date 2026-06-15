@@ -69,7 +69,7 @@ export default function Pricing() {
 
       {/* Free Trial Banner */}
       <section className="py-8 bg-[#122259] text-white text-center">
-        <p className="text-lg font-semibold">Start with a <span className="text-[#FD9C02]">completely free trial class</span> — no card, no commitment.</p>
+        <p className="text-lg font-semibold">Start with a <span className="text-[#F5A623]">completely free trial class</span> — no card, no commitment.</p>
         <Link href="/free-trial" className="btn-gold mt-4 inline-flex">Book Free Trial</Link>
       </section>
 
@@ -80,11 +80,11 @@ export default function Pricing() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`card p-7 relative flex flex-col ${plan.popular ? "ring-2 ring-[#FD9C02] shadow-xl" : ""}`}
+                className={`card p-7 relative flex flex-col ${plan.popular ? "ring-2 ring-[#F5A623] shadow-xl" : ""}`}
               >
                 {plan.popular && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                    <span className="bg-[#FD9C02] text-white text-xs font-bold px-4 py-1.5 rounded-full">Most Popular</span>
+                    <span className="bg-[#F5A623] text-white text-xs font-bold px-4 py-1.5 rounded-full">Most Popular</span>
                   </div>
                 )}
                 <h2 className="text-xl font-bold text-[#122259] mb-1">{plan.name}</h2>
@@ -92,12 +92,12 @@ export default function Pricing() {
                   <span className="text-4xl font-extrabold text-[#122259]">{plan.price}</span>
                   <span className="text-gray-500 text-sm mb-1.5">{plan.period}</span>
                 </div>
-                <p className="text-[#FD9C02] font-semibold text-sm mb-1">{plan.classes}</p>
+                <p className="text-[#F5A623] font-semibold text-sm mb-1">{plan.classes}</p>
                 <p className="text-gray-500 text-xs mb-5">{plan.total} · {plan.duration} · One-to-one</p>
                 <ul className="space-y-3 mb-8 flex-1">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5 text-sm text-gray-700">
-                      <CheckCircle size={15} className="text-[#FD9C02] flex-shrink-0 mt-0.5" /> {f}
+                      <CheckCircle size={15} className="text-[#F5A623] flex-shrink-0 mt-0.5" /> {f}
                     </li>
                   ))}
                 </ul>
@@ -109,7 +109,7 @@ export default function Pricing() {
           </div>
 
           <div className="mt-10 bg-[#faf9f7] rounded-2xl p-6 md:p-8 text-center">
-            <MessageCircle size={28} className="text-[#FD9C02] mx-auto mb-3" />
+            <MessageCircle size={28} className="text-[#F5A623] mx-auto mb-3" />
             <h3 className="text-xl font-bold text-[#122259] mb-2">Family or sibling discount?</h3>
             <p className="text-gray-600 text-sm mb-4">If you have more than one child you&apos;d like to enrol, or need a custom plan, WhatsApp us and we&apos;ll put together a personalised arrangement.</p>
             <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-gold inline-flex">

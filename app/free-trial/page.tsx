@@ -44,7 +44,7 @@ export default function FreeTrial() {
                 <ul className="space-y-3">
                   {reassurances.map((r) => (
                     <li key={r} className="flex items-start gap-3 text-sm text-gray-700">
-                      <CheckCircle size={16} className="text-[#FD9C02] flex-shrink-0 mt-0.5" /> {r}
+                      <CheckCircle size={16} className="text-[#F5A623] flex-shrink-0 mt-0.5" /> {r}
                     </li>
                   ))}
                 </ul>
@@ -63,7 +63,7 @@ export default function FreeTrial() {
                 <ul className="space-y-2 text-sm">
                   {["Noorani Qaida", "Quran Reading", "Hifz (Memorisation)", "Tajweed", "Islamic Studies", "Tafseer"].map((c) => (
                     <li key={c} className="text-gray-600 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FD9C02] flex-shrink-0" /> {c}
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" /> {c}
                     </li>
                   ))}
                 </ul>

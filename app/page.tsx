@@ -39,12 +39,12 @@ const steps = [
 ];
 
 const whyUs = [
-  { icon: <CheckCircle size={22} className="text-[#FD9C02]" />, title: "Qualified, Certified Teachers", desc: "All our teachers hold recognised Islamic certifications and are experienced in teaching English-speaking, Western students." },
-  { icon: <User size={22} className="text-[#FD9C02]" />, title: "Completely One-to-One", desc: "Every class is private — your child gets the teacher's full attention, at a pace that suits them. No group classes." },
-  { icon: <Users size={22} className="text-[#FD9C02]" />, title: "Female Teachers Available", desc: "We offer dedicated female Quran teachers for sisters and daughters who prefer a female instructor." },
-  { icon: <Clock size={22} className="text-[#FD9C02]" />, title: "Flexible UK Timings", desc: "Classes available across UK time slots including evenings and weekends — built around school and work schedules." },
-  { icon: <BookOpen size={22} className="text-[#FD9C02]" />, title: "Taught in English", desc: "Our teachers communicate clearly in English so lessons are easy to follow for UK-born students." },
-  { icon: <Shield size={22} className="text-[#FD9C02]" />, title: "Safe & Transparent", desc: "Parents can sit in on any class. Sessions can be recorded on request. Full transparency — always." },
+  { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Qualified, Certified Teachers", desc: "All our teachers hold recognised Islamic certifications and are experienced in teaching English-speaking, Western students." },
+  { icon: <User size={22} className="text-[#F5A623]" />, title: "Completely One-to-One", desc: "Every class is private — your child gets the teacher's full attention, at a pace that suits them. No group classes." },
+  { icon: <Users size={22} className="text-[#F5A623]" />, title: "Female Teachers Available", desc: "We offer dedicated female Quran teachers for sisters and daughters who prefer a female instructor." },
+  { icon: <Clock size={22} className="text-[#F5A623]" />, title: "Flexible UK Timings", desc: "Classes available across UK time slots including evenings and weekends — built around school and work schedules." },
+  { icon: <BookOpen size={22} className="text-[#F5A623]" />, title: "Taught in English", desc: "Our teachers communicate clearly in English so lessons are easy to follow for UK-born students." },
+  { icon: <Shield size={22} className="text-[#F5A623]" />, title: "Safe & Transparent", desc: "Parents can sit in on any class. Sessions can be recorded on request. Full transparency — always." },
 ];
 
 const faqs = [
@@ -120,7 +120,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-3">
               {["Qualified Teachers", "One-to-One", "Female Teachers Available", "Free First Class", "Certified"].map((t) => (
                 <span key={t} className="flex items-center gap-1.5 text-sm bg-white/10 rounded-full px-3 py-1">
-                  <CheckCircle size={13} className="text-[#FD9C02]" /> {t}
+                  <CheckCircle size={13} className="text-[#F5A623]" /> {t}
                 </span>
               ))}
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
             {painSolutions.map((item, i) => (
               <div key={i} className="card p-6">
                 <p className="text-gray-400 text-sm mb-4 line-through">{item.pain}</p>
-                <div className="w-6 h-0.5 bg-[#FD9C02] mb-4" />
+                <div className="w-6 h-0.5 bg-[#F5A623] mb-4" />
                 <p className="text-gray-800 text-sm font-medium">{item.solution}</p>
               </div>
             ))}
@@ -187,7 +187,7 @@ export default function Home() {
                 <div className="p-5">
                   <h3 className="font-bold text-[#122259] text-lg mb-2">{c.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{c.desc}</p>
-                  <span className="text-[#FD9C02] text-sm font-semibold flex items-center gap-1">Learn more <ChevronRight size={14} /></span>
+                  <span className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">Learn more <ChevronRight size={14} /></span>
                 </div>
               </Link>
             ))}
@@ -235,7 +235,7 @@ export default function Home() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 A Wifaq ul Madaris Al-Arabia certified teacher with over six years of experience teaching English-speaking and Western students, Shah Zaib understands what UK families need: clear communication, consistent scheduling, and a teacher who genuinely cares about each student&apos;s progress.
               </p>
-              <blockquote className="border-l-4 border-[#FD9C02] pl-4 italic text-gray-600 my-5">
+              <blockquote className="border-l-4 border-[#F5A623] pl-4 italic text-gray-600 my-5">
                 &ldquo;Every child deserves a teacher who shows up, who communicates in their language, and who makes the Quran feel accessible — not intimidating. That&apos;s what Ease Quran is built on.&rdquo;
               </blockquote>
               <Link href="/about" className="btn-navy inline-flex">Read Our Story <ChevronRight size={16} /></Link>
@@ -257,12 +257,12 @@ export default function Home() {
               { name: "Almas Fatima", role: "Female Quran Teacher", bio: "A Qaria e Quran with a Bachelor's degree in Islamic Studies, Almas Fatima is available for sisters and female students. She provides a comfortable, professional, and encouraging learning environment.", img: "/teacher-2.webp", badge: "Female Teacher" },
             ].map((t) => (
               <div key={t.name} className="card p-6 flex flex-col items-center text-center">
-                <div className="relative w-28 h-28 rounded-full overflow-hidden mb-4 border-4 border-[#FD9C02]/30">
+                <div className="relative w-28 h-28 rounded-full overflow-hidden mb-4 border-4 border-[#F5A623]/30">
                   <Image src={t.img} alt={`${t.name} — ${t.role} at Ease Quran UK`} fill className="object-cover object-top" sizes="112px" />
                 </div>
                 <span className="tag mb-2">{t.badge}</span>
                 <h3 className="text-xl font-bold text-[#122259]">{t.name}</h3>
-                <p className="text-[#FD9C02] text-sm font-semibold mb-3">{t.role}</p>
+                <p className="text-[#F5A623] text-sm font-semibold mb-3">{t.role}</p>
                 <p className="text-gray-600 text-sm">{t.bio}</p>
               </div>
             ))}
@@ -342,7 +342,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-6">
             {trustBadges.map((b) => (
               <div key={b.label} className="flex items-center gap-2 text-sm font-medium text-[#122259]">
-                <span className="text-[#FD9C02]">{b.icon}</span> {b.label}
+                <span className="text-[#F5A623]">{b.icon}</span> {b.label}
               </div>
             ))}
           </div>

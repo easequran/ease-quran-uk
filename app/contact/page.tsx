@@ -37,28 +37,28 @@ export default function Contact() {
                   <li>
                     <a href="mailto:info@easequran.co.uk" className="flex items-start gap-3 text-sm text-gray-700 hover:text-[#122259] group">
                       <div className="w-9 h-9 rounded-lg bg-[#faf9f7] border border-gray-100 flex items-center justify-center flex-shrink-0">
-                        <Mail size={16} className="text-[#FD9C02]" />
+                        <Mail size={16} className="text-[#F5A623]" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-0.5">Email</p>
-                        <p className="font-semibold text-[#122259] group-hover:text-[#FD9C02] transition-colors">info@easequran.co.uk</p>
+                        <p className="font-semibold text-[#122259] group-hover:text-[#F5A623] transition-colors">info@easequran.co.uk</p>
                       </div>
                     </a>
                   </li>
                   <li>
                     <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-gray-700 hover:text-[#122259] group">
                       <div className="w-9 h-9 rounded-lg bg-[#faf9f7] border border-gray-100 flex items-center justify-center flex-shrink-0">
-                        <Phone size={16} className="text-[#FD9C02]" />
+                        <Phone size={16} className="text-[#F5A623]" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-0.5">WhatsApp (UK)</p>
-                        <p className="font-semibold text-[#122259] group-hover:text-[#FD9C02] transition-colors">+44 7311 254423</p>
+                        <p className="font-semibold text-[#122259] group-hover:text-[#F5A623] transition-colors">+44 7311 254423</p>
                       </div>
                     </a>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-9 h-9 rounded-lg bg-[#faf9f7] border border-gray-100 flex items-center justify-center flex-shrink-0">
-                      <Clock size={16} className="text-[#FD9C02]" />
+                      <Clock size={16} className="text-[#F5A623]" />
                     </div>
                     <div>
                       <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-0.5">Response Time</p>

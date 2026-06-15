@@ -16,7 +16,7 @@ export default function Safety() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Child Safety" }]} />
           <div className="mt-4 max-w-2xl">
-            <Shield size={40} className="text-[#FD9C02] mb-4" />
+            <Shield size={40} className="text-[#F5A623] mb-4" />
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Child Safety &amp; Safeguarding</h1>
             <p className="text-blue-100 text-lg">We believe every parent deserves to know exactly how their child is kept safe in our online classes. This page explains our approach — honestly and in plain English.</p>
           </div>
@@ -34,7 +34,7 @@ export default function Safety() {
 
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <Eye size={24} className="text-[#FD9C02]" />
+                <Eye size={24} className="text-[#F5A623]" />
                 <h2 className="text-2xl font-bold text-[#122259]">1. Parents Can Observe Any Class, Any Time</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -44,7 +44,7 @@ export default function Safety() {
 
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <Lock size={24} className="text-[#FD9C02]" />
+                <Lock size={24} className="text-[#F5A623]" />
                 <h2 className="text-2xl font-bold text-[#122259]">2. Classes Can Be Recorded on Request</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
@@ -54,7 +54,7 @@ export default function Safety() {
 
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <ClipboardCheck size={24} className="text-[#FD9C02]" />
+                <ClipboardCheck size={24} className="text-[#F5A623]" />
                 <h2 className="text-2xl font-bold text-[#122259]">3. How We Vet Our Teachers</h2>
               </div>
               <p className="text-gray-700 leading-relaxed mb-3">
@@ -69,7 +69,7 @@ export default function Safety() {
                   "Regular oversight and communication between teachers and the academy",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-[#FD9C02] flex-shrink-0 mt-1.5" /> {item}
+                    <span className="w-2 h-2 rounded-full bg-[#F5A623] flex-shrink-0 mt-1.5" /> {item}
                   </li>
                 ))}
               </ul>
@@ -80,7 +80,7 @@ export default function Safety() {
 
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <Shield size={24} className="text-[#FD9C02]" />
+                <Shield size={24} className="text-[#F5A623]" />
                 <h2 className="text-2xl font-bold text-[#122259]">4. Our Code of Conduct for Teachers</h2>
               </div>
               <p className="text-gray-700 leading-relaxed mb-3">All Ease Quran teachers are required to:</p>
@@ -94,7 +94,7 @@ export default function Safety() {
                   "Dress appropriately and maintain Islamic standards of conduct throughout",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-[#FD9C02] flex-shrink-0 mt-1.5" /> {item}
+                    <span className="w-2 h-2 rounded-full bg-[#F5A623] flex-shrink-0 mt-1.5" /> {item}
                   </li>
                 ))}
               </ul>
@@ -102,7 +102,7 @@ export default function Safety() {
 
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <AlertCircle size={24} className="text-[#FD9C02]" />
+                <AlertCircle size={24} className="text-[#F5A623]" />
                 <h2 className="text-2xl font-bold text-[#122259]">5. How to Raise a Concern</h2>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -130,7 +130,7 @@ export default function Safety() {
 
           <div className="mt-8 text-center">
             <Link href="/free-trial" className="btn-gold inline-flex">Book a Free Trial Class</Link>
-            <p className="mt-3 text-sm text-gray-500">Have questions? <a href="https://wa.me/447311254423" className="text-[#FD9C02] font-semibold">WhatsApp us</a></p>
+            <p className="mt-3 text-sm text-gray-500">Have questions? <a href="https://wa.me/447311254423" className="text-[#F5A623] font-semibold">WhatsApp us</a></p>
           </div>
         </div>
       </section>

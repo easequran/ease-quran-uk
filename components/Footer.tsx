@@ -17,10 +17,10 @@ export default function Footer() {
               A trusted online Quran academy serving Muslim families across the UK with qualified, certified teachers and one-to-one personalised lessons.
             </p>
             <div className="flex gap-3 mt-5">
-              <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FD9C02] transition-colors"><FacebookIcon size={14} /></a>
-              <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FD9C02] transition-colors"><InstagramIcon size={14} /></a>
-              <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FD9C02] transition-colors"><LinkedinIcon size={14} /></a>
-              <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FD9C02] transition-colors"><YoutubeIcon size={14} /></a>
+              <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><FacebookIcon size={14} /></a>
+              <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><InstagramIcon size={14} /></a>
+              <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><LinkedinIcon size={14} /></a>
+              <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><YoutubeIcon size={14} /></a>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
                 ["Islamic Studies", "/courses/islamic-studies"],
                 ["Tafseer", "/courses/tafseer"],
               ].map(([label, href]) => (
-                <li key={href}><Link href={href} className="hover:text-[#FD9C02] transition-colors">{label}</Link></li>
+                <li key={href}><Link href={href} className="hover:text-[#F5A623] transition-colors">{label}</Link></li>
               ))}
             </ul>
           </div>
@@ -55,7 +55,7 @@ export default function Footer() {
                 ["Child Safety", "/safety"],
                 ["Contact", "/contact"],
               ].map(([label, href]) => (
-                <li key={href}><Link href={href} className="hover:text-[#FD9C02] transition-colors">{label}</Link></li>
+                <li key={href}><Link href={href} className="hover:text-[#F5A623] transition-colors">{label}</Link></li>
               ))}
             </ul>
           </div>
@@ -65,12 +65,12 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Get in Touch</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:info@easequran.co.uk" className="flex items-center gap-2 hover:text-[#FD9C02] transition-colors">
+                <a href="mailto:info@easequran.co.uk" className="flex items-center gap-2 hover:text-[#F5A623] transition-colors">
                   <Mail size={14} className="flex-shrink-0" /> info@easequran.co.uk
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#FD9C02] transition-colors">
+                <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#F5A623] transition-colors">
                   <Phone size={14} className="flex-shrink-0" /> +44 7311 254423
                 </a>
               </li>
@@ -79,7 +79,7 @@ export default function Footer() {
               <h4 className="text-white font-semibold mb-3 text-sm">Locations</h4>
               <ul className="space-y-1.5 text-sm">
                 {[["London", "/locations/london"], ["Birmingham", "/locations/birmingham"], ["Manchester", "/locations/manchester"], ["Bradford", "/locations/bradford"], ["Leicester", "/locations/leicester"]].map(([l, h]) => (
-                  <li key={h}><Link href={h} className="hover:text-[#FD9C02] transition-colors">{l}</Link></li>
+                  <li key={h}><Link href={h} className="hover:text-[#F5A623] transition-colors">{l}</Link></li>
                 ))}
               </ul>
             </div>

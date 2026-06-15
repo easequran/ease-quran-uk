@@ -246,7 +246,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <p className="text-sm font-semibold text-[#122259] mb-4">Related Articles</p>
             <div className="space-y-3">
               {posts.filter((p) => p.slug !== slug).map((p) => (
-                <Link key={p.slug} href={`/blog/${p.slug}`} className="flex items-start gap-2 text-sm text-gray-600 hover:text-[#FD9C02] transition-colors">
+                <Link key={p.slug} href={`/blog/${p.slug}`} className="flex items-start gap-2 text-sm text-gray-600 hover:text-[#F5A623] transition-colors">
                   <ChevronRight size={14} className="flex-shrink-0 mt-0.5" /> {p.title}
                 </Link>
               ))}

@@ -39,7 +39,7 @@ export default function Terms() {
           <p>Students and parents are expected to engage respectfully with teachers. Ease Quran UK reserves the right to end enrolment if conduct is inappropriate or disruptive.</p>
 
           <h2>6. Safeguarding</h2>
-          <p>Our child safeguarding approach is described in full on our <a href="/safety" className="text-[#FD9C02]">Child Safety page</a>. By enrolling a child in our classes, you agree to the safeguarding practices described there.</p>
+          <p>Our child safeguarding approach is described in full on our <a href="/safety" className="text-[#F5A623]">Child Safety page</a>. By enrolling a child in our classes, you agree to the safeguarding practices described there.</p>
 
           <h2>7. Intellectual Property</h2>
           <p>All content on this website — including text, images, and design — is the property of Ease Quran UK. You may not reproduce, republish, or redistribute any content without written permission.</p>
@@ -51,7 +51,7 @@ export default function Terms() {
           <p>These terms are governed by the laws of England and Wales.</p>
 
           <h2>10. Contact</h2>
-          <p>For any questions about these terms, contact us at <a href="mailto:info@easequran.co.uk" className="text-[#FD9C02]">info@easequran.co.uk</a>.</p>
+          <p>For any questions about these terms, contact us at <a href="mailto:info@easequran.co.uk" className="text-[#F5A623]">info@easequran.co.uk</a>.</p>
         </div>
       </section>
     </>

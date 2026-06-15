@@ -55,10 +55,10 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <CheckCircle size={28} className="text-[#FD9C02]" />, title: "Honesty", desc: "We never overstate our credentials or make promises we can&apos;t keep. What you see is what you get." },
-              { icon: <BookOpen size={28} className="text-[#FD9C02]" />, title: "Quality", desc: "Certified teachers, one-to-one classes, and structured curricula — not freelancers piecing lessons together." },
-              { icon: <Shield size={28} className="text-[#FD9C02]" />, title: "Safety", desc: "Parents can attend any class. Full transparency, always. Read our Child Safety page for details." },
-              { icon: <Users size={28} className="text-[#FD9C02]" />, title: "Inclusion", desc: "Male and female teachers. Classes for children, teenagers, adults, and reverts. We teach everyone." },
+              { icon: <CheckCircle size={28} className="text-[#F5A623]" />, title: "Honesty", desc: "We never overstate our credentials or make promises we can&apos;t keep. What you see is what you get." },
+              { icon: <BookOpen size={28} className="text-[#F5A623]" />, title: "Quality", desc: "Certified teachers, one-to-one classes, and structured curricula — not freelancers piecing lessons together." },
+              { icon: <Shield size={28} className="text-[#F5A623]" />, title: "Safety", desc: "Parents can attend any class. Full transparency, always. Read our Child Safety page for details." },
+              { icon: <Users size={28} className="text-[#F5A623]" />, title: "Inclusion", desc: "Male and female teachers. Classes for children, teenagers, adults, and reverts. We teach everyone." },
             ].map((v) => (
               <div key={v.title} className="card p-6 text-center">
                 <div className="flex justify-center mb-4">{v.icon}</div>
@@ -80,7 +80,7 @@ export default function About() {
             <div>
               <span className="tag mb-4 inline-block">Founder</span>
               <h2 className="text-3xl font-bold text-[#122259] mb-1">Shah Zaib</h2>
-              <p className="text-[#FD9C02] font-semibold mb-4">Founder &amp; Head Teacher</p>
+              <p className="text-[#F5A623] font-semibold mb-4">Founder &amp; Head Teacher</p>
               <div className="space-y-3 text-gray-700 leading-relaxed">
                 <p>Shah Zaib holds a certification from Wifaq ul Madaris Al-Arabia — one of the most respected Islamic education boards in the world — and has over six years of experience teaching Quran to English-speaking and Western Muslim families.</p>
                 <p>He specialises in English-medium Quran teaching, meaning he bridges the gap between traditional Islamic learning and the needs of UK-born students who think and communicate primarily in English.</p>
@@ -110,12 +110,12 @@ export default function About() {
             ].map((t) => (
               <div key={t.name} className="card p-6">
                 <div className="flex gap-5 mb-4">
-                  <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-4 border-[#FD9C02]/20">
+                  <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-4 border-[#F5A623]/20">
                     <Image src={t.img} alt={`${t.name} — ${t.role}`} fill className="object-cover object-top" sizes="80px" />
                   </div>
                   <div>
                     <h3 className="font-bold text-[#122259] text-lg">{t.name}</h3>
-                    <p className="text-[#FD9C02] text-sm font-semibold">{t.role}</p>
+                    <p className="text-[#F5A623] text-sm font-semibold">{t.role}</p>
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm mb-4">{t.bio}</p>

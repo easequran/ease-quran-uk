@@ -46,14 +46,14 @@ export async function POST(req: NextRequest) {
         <!-- Header -->
         <tr>
           <td style="background:#122259;border-radius:12px 12px 0 0;padding:28px 32px">
-            <p style="margin:0;font-size:11px;font-weight:700;color:#FD9C02;letter-spacing:0.1em;text-transform:uppercase">Ease Quran UK</p>
+            <p style="margin:0;font-size:11px;font-weight:700;color:#F5A623;letter-spacing:0.1em;text-transform:uppercase">Ease Quran UK</p>
             <h1 style="margin:6px 0 0;font-size:22px;font-weight:700;color:#ffffff">New Free Trial Booking</h1>
           </td>
         </tr>
 
         <!-- Alert banner -->
         <tr>
-          <td style="background:#FD9C02;padding:10px 32px">
+          <td style="background:#F5A623;padding:10px 32px">
             <p style="margin:0;font-size:13px;font-weight:600;color:#ffffff">Action required: Please contact this student within 2 hours.</p>
           </td>
         </tr>

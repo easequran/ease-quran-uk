@@ -52,7 +52,7 @@ export default function CoursePageTemplate({
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Courses", href: "/courses" }, { label: title }]} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-6">
             <div>
-              <span className="inline-block bg-[#FD9C02]/20 text-[#FD9C02] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+              <span className="inline-block bg-[#F5A623]/20 text-[#F5A623] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
                 {subtitle}
               </span>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">{h1}</h1>
@@ -60,10 +60,10 @@ export default function CoursePageTemplate({
 
               {/* Trust signals */}
               <div className="flex flex-wrap gap-4 mb-8 text-sm text-blue-100">
-                <span className="flex items-center gap-1.5"><Star size={14} className="text-[#FD9C02] fill-[#FD9C02]" /> Free first class</span>
-                <span className="flex items-center gap-1.5"><Users size={14} className="text-[#FD9C02]" /> One-to-one lessons</span>
-                <span className="flex items-center gap-1.5"><Clock size={14} className="text-[#FD9C02]" /> Flexible UK timings</span>
-                <span className="flex items-center gap-1.5"><Shield size={14} className="text-[#FD9C02]" /> Certified teacher</span>
+                <span className="flex items-center gap-1.5"><Star size={14} className="text-[#F5A623] fill-[#F5A623]" /> Free first class</span>
+                <span className="flex items-center gap-1.5"><Users size={14} className="text-[#F5A623]" /> One-to-one lessons</span>
+                <span className="flex items-center gap-1.5"><Clock size={14} className="text-[#F5A623]" /> Flexible UK timings</span>
+                <span className="flex items-center gap-1.5"><Shield size={14} className="text-[#F5A623]" /> Certified teacher</span>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
@@ -83,24 +83,24 @@ export default function CoursePageTemplate({
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FD9C02] mb-3">Curriculum</span>
+              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Curriculum</span>
               <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-6">What You Will Learn</h2>
               <ul className="space-y-3">
                 {learn.map((l) => (
                   <li key={l} className="flex items-start gap-3 text-gray-700">
-                    <CheckCircle size={18} className="text-[#FD9C02] flex-shrink-0 mt-0.5" />
+                    <CheckCircle size={18} className="text-[#F5A623] flex-shrink-0 mt-0.5" />
                     <span>{l}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FD9C02] mb-3">Who It Is For</span>
+              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Who It Is For</span>
               <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-6">Is This Course Right for You?</h2>
               <ul className="space-y-3">
                 {whoFor.map((w) => (
                   <li key={w} className="flex items-start gap-3 text-gray-700 bg-[#faf9f7] rounded-xl px-4 py-3">
-                    <ChevronRight size={16} className="text-[#FD9C02] flex-shrink-0 mt-0.5" />
+                    <ChevronRight size={16} className="text-[#F5A623] flex-shrink-0 mt-0.5" />
                     <span className="text-sm">{w}</span>
                   </li>
                 ))}
@@ -113,7 +113,7 @@ export default function CoursePageTemplate({
       {/* How classes work */}
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FD9C02] mb-3">How It Works</span>
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">How It Works</span>
           <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-4">How the Classes Work</h2>
           <p className="text-gray-700 leading-relaxed text-base">{howWorks}</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8">
@@ -135,7 +135,7 @@ export default function CoursePageTemplate({
       <section className="section-pad">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="bg-[#122259] rounded-2xl p-8 text-white text-center">
-            <p className="text-[#FD9C02] text-xs font-bold uppercase tracking-widest mb-2">Transparent Pricing</p>
+            <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Transparent Pricing</p>
             <h2 className="text-2xl font-bold mb-2">Plans from £30 per month</h2>
             <p className="text-blue-100 text-sm mb-6 max-w-md mx-auto">Two classes per week. No hidden fees, no long contracts. Cancel any time. Your first class is always free.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -155,7 +155,7 @@ export default function CoursePageTemplate({
               <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
                 <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none">
                   {f.q}
-                  <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#FD9C02]" />
+                  <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
                 </summary>
                 <p className="px-5 pb-5 text-gray-600 text-sm leading-relaxed">{f.a}</p>
               </details>

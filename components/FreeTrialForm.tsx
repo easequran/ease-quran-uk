@@ -67,7 +67,7 @@ export default function FreeTrialForm() {
       <div className="text-center py-10">
         <CheckCircle size={56} className="text-green-500 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-[#122259] mb-2">Booking Received!</h3>
-        <p className="text-gray-600">Thank you. We will be in touch within 2 hours to confirm your free trial class. For an even faster response, WhatsApp us directly on <a href="https://wa.me/447311254423" className="text-[#FD9C02] font-semibold">+44 7311 254423</a>.</p>
+        <p className="text-gray-600">Thank you. We will be in touch within 2 hours to confirm your free trial class. For an even faster response, WhatsApp us directly on <a href="https://wa.me/447311254423" className="text-[#F5A623] font-semibold">+44 7311 254423</a>.</p>
       </div>
     );
   }
@@ -83,7 +83,7 @@ export default function FreeTrialForm() {
         {/* Full Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Full Name <span className="text-[#FD9C02]">*</span>
+            Full Name <span className="text-[#F5A623]">*</span>
           </label>
           <div className="relative">
             <User size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -102,7 +102,7 @@ export default function FreeTrialForm() {
         {/* Email */}
         <div>
           <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Email Address <span className="text-[#FD9C02]">*</span>
+            Email Address <span className="text-[#F5A623]">*</span>
           </label>
           <div className="relative">
             <Mail size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -121,7 +121,7 @@ export default function FreeTrialForm() {
         {/* Phone */}
         <div>
           <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Phone / WhatsApp <span className="text-[#FD9C02]">*</span>
+            Phone / WhatsApp <span className="text-[#F5A623]">*</span>
           </label>
           <div className="relative">
             <Phone size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />

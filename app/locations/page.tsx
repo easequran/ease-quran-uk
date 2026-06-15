@@ -74,17 +74,17 @@ export default function Locations() {
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-10 h-10 rounded-xl bg-[#122259]/8 flex items-center justify-center">
-                    <MapPin size={18} className="text-[#FD9C02]" />
+                    <MapPin size={18} className="text-[#F5A623]" />
                   </div>
-                  <ChevronRight size={18} className="text-gray-300 group-hover:text-[#FD9C02] transition-colors mt-1" />
+                  <ChevronRight size={18} className="text-gray-300 group-hover:text-[#F5A623] transition-colors mt-1" />
                 </div>
-                <h2 className="text-xl font-bold text-[#122259] mb-1 group-hover:text-[#FD9C02] transition-colors">
+                <h2 className="text-xl font-bold text-[#122259] mb-1 group-hover:text-[#F5A623] transition-colors">
                   {city.name}
                 </h2>
-                <p className="text-xs text-[#FD9C02] font-medium mb-3">{city.areas}</p>
+                <p className="text-xs text-[#F5A623] font-medium mb-3">{city.areas}</p>
                 <p className="text-gray-600 text-sm flex-1 leading-relaxed">{city.desc}</p>
                 <div className="mt-5 pt-4 border-t border-gray-100">
-                  <span className="text-sm font-semibold text-[#122259] group-hover:text-[#FD9C02] transition-colors">
+                  <span className="text-sm font-semibold text-[#122259] group-hover:text-[#F5A623] transition-colors">
                     View classes in {city.name}
                   </span>
                 </div>
@@ -95,7 +95,7 @@ export default function Locations() {
             <div className="card p-7 bg-[#122259] text-white flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center mb-4">
-                  <MapPin size={18} className="text-[#FD9C02]" />
+                  <MapPin size={18} className="text-[#F5A623]" />
                 </div>
                 <h2 className="text-xl font-bold mb-2">Anywhere in the UK</h2>
                 <p className="text-blue-100 text-sm leading-relaxed">

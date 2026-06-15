@@ -43,7 +43,7 @@ export default function Courses() {
                 <div className="p-6 flex flex-col flex-1">
                   <h2 className="font-bold text-[#122259] text-xl mb-2">{c.title}</h2>
                   <p className="text-gray-600 text-sm mb-5 flex-1">{c.desc}</p>
-                  <span className="text-[#FD9C02] text-sm font-semibold flex items-center gap-1">
+                  <span className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">
                     View course <ChevronRight size={14} />
                   </span>
                 </div>

@@ -67,7 +67,7 @@ export default function FemaleQuranTeachers() {
                   "Classes are available at flexible UK timings including evenings and weekends",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 text-gray-700 text-sm">
-                    <CheckCircle size={16} className="text-[#FD9C02] flex-shrink-0 mt-0.5" /> {point}
+                    <CheckCircle size={16} className="text-[#F5A623] flex-shrink-0 mt-0.5" /> {point}
                   </li>
                 ))}
               </ul>
@@ -84,7 +84,7 @@ export default function FemaleQuranTeachers() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <span className="tag mb-4 inline-block">Your Teacher</span>
           <h2 className="text-3xl font-bold text-[#122259] mb-2">Almas Fatima</h2>
-          <p className="text-[#FD9C02] font-semibold mb-4">Qaria e Quran · Bachelor of Islamic Studies · Certified Teacher</p>
+          <p className="text-[#F5A623] font-semibold mb-4">Qaria e Quran · Bachelor of Islamic Studies · Certified Teacher</p>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Almas Fatima is available exclusively for sisters and female students. She holds a Bachelor&apos;s degree in Islamic Studies and is a certified Qaria e Quran — meaning she has received formal training in Quranic recitation to a high standard.
           </p>
@@ -113,7 +113,7 @@ export default function FemaleQuranTeachers() {
               <Link key={c.href} href={c.href} className="card p-5 hover:shadow-lg transition-shadow group">
                 <h3 className="font-bold text-[#122259] mb-2">{c.title}</h3>
                 <p className="text-gray-600 text-sm mb-3">{c.desc}</p>
-                <span className="text-[#FD9C02] text-sm font-semibold flex items-center gap-1">View course <ChevronRight size={12} /></span>
+                <span className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">View course <ChevronRight size={12} /></span>
               </Link>
             ))}
           </div>

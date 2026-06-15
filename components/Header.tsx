@@ -45,24 +45,24 @@ export default function Header() {
               href="https://wa.me/447311254423"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 font-medium hover:text-[#FD9C02] transition-colors"
+              className="flex items-center gap-1.5 font-medium hover:text-[#F5A623] transition-colors"
             >
               <span className="text-sm leading-none">🇬🇧</span>
               <span>+44 7311 254423</span>
             </a>
             <a
               href="mailto:info@easequran.co.uk"
-              className="hidden sm:flex items-center gap-1.5 hover:text-[#FD9C02] transition-colors"
+              className="hidden sm:flex items-center gap-1.5 hover:text-[#F5A623] transition-colors"
             >
               <Mail size={11} />
               <span>info@easequran.co.uk</span>
             </a>
           </div>
           <div className="flex items-center gap-3.5">
-            <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="opacity-80 hover:opacity-100 hover:text-[#FD9C02] transition-all"><FacebookIcon size={13} /></a>
-            <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="opacity-80 hover:opacity-100 hover:text-[#FD9C02] transition-all"><InstagramIcon size={13} /></a>
-            <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="opacity-80 hover:opacity-100 hover:text-[#FD9C02] transition-all"><LinkedinIcon size={13} /></a>
-            <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="opacity-80 hover:opacity-100 hover:text-[#FD9C02] transition-all"><YoutubeIcon size={13} /></a>
+            <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="opacity-80 hover:opacity-100 hover:text-[#F5A623] transition-all"><FacebookIcon size={13} /></a>
+            <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="opacity-80 hover:opacity-100 hover:text-[#F5A623] transition-all"><InstagramIcon size={13} /></a>
+            <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="opacity-80 hover:opacity-100 hover:text-[#F5A623] transition-all"><LinkedinIcon size={13} /></a>
+            <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="opacity-80 hover:opacity-100 hover:text-[#F5A623] transition-all"><YoutubeIcon size={13} /></a>
           </div>
         </div>
       </div>
@@ -91,12 +91,12 @@ export default function Header() {
                 <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-2xl shadow-xl border border-gray-100 p-5 z-50">
                   <div className="flex items-center justify-between mb-4">
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Our Courses</p>
-                    <Link href="/courses" className="text-xs text-[#FD9C02] font-semibold hover:underline">View all courses</Link>
+                    <Link href="/courses" className="text-xs text-[#F5A623] font-semibold hover:underline">View all courses</Link>
                   </div>
                   <div className="grid grid-cols-2 gap-1">
                     {courses.map((c) => (
                       <Link key={c.href} href={c.href} className="flex flex-col px-3 py-3 rounded-xl hover:bg-[#faf9f7] group transition-colors">
-                        <span className="font-semibold text-[#122259] group-hover:text-[#FD9C02] transition-colors text-sm">{c.label}</span>
+                        <span className="font-semibold text-[#122259] group-hover:text-[#F5A623] transition-colors text-sm">{c.label}</span>
                         <span className="text-xs text-gray-400 mt-0.5">{c.desc}</span>
                       </Link>
                     ))}
@@ -104,7 +104,7 @@ export default function Header() {
                   <div className="mt-4 pt-4 border-t border-gray-100">
                     <Link href="/free-trial" className="flex items-center justify-between px-4 py-3 bg-[#122259] rounded-xl text-white text-sm font-semibold hover:bg-[#0d1a45] transition-colors">
                       <span>Start with a free trial class</span>
-                      <span className="bg-[#FD9C02] text-white text-xs font-bold px-2.5 py-1 rounded-full">Free</span>
+                      <span className="bg-[#F5A623] text-white text-xs font-bold px-2.5 py-1 rounded-full">Free</span>
                     </Link>
                   </div>
                 </div>
@@ -121,12 +121,12 @@ export default function Header() {
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-widest px-3 mb-2">UK Cities</p>
                   {locations.map((l) => (
                     <Link key={l.href} href={l.href} className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-[#faf9f7] hover:text-[#122259] text-sm transition-colors">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FD9C02] flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" />
                       {l.label}
                     </Link>
                   ))}
                   <div className="mt-2 pt-2 border-t border-gray-100 px-3">
-                    <Link href="/locations" className="text-xs text-[#FD9C02] font-semibold hover:underline">All locations</Link>
+                    <Link href="/locations" className="text-xs text-[#F5A623] font-semibold hover:underline">All locations</Link>
                   </div>
                 </div>
               )}
