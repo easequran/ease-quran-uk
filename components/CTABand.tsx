@@ -12,24 +12,18 @@ export default function CTABand({
 }: CTABandProps) {
   return (
     <section className="relative overflow-hidden bg-[#122259] py-20">
-      {/* Background image — mobile version */}
-      <Image
-        src="/cta-background-mobile.webp"
-        alt=""
-        fill
-        className="object-cover object-center opacity-15 sm:hidden"
-        sizes="100vw"
-        aria-hidden="true"
-      />
-      {/* Background image — desktop version */}
-      <Image
-        src="/cta-background.webp"
-        alt=""
-        fill
-        className="object-cover object-center opacity-15 hidden sm:block"
-        sizes="100vw"
-        aria-hidden="true"
-      />
+      {/* Responsive background image */}
+      <picture className="absolute inset-0 w-full h-full">
+        <source media="(max-width: 639px)" srcSet="/cta-background-mobile.webp" />
+        <Image
+          src="/cta-background.webp"
+          alt=""
+          fill
+          className="object-cover object-center opacity-15"
+          sizes="100vw"
+          aria-hidden="true"
+        />
+      </picture>
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-3">Ease Quran UK</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">{heading}</h2>
