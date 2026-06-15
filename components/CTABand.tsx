@@ -15,7 +15,7 @@ export default function CTABand({
       <div
         aria-hidden="true"
         className="absolute inset-0 sm:hidden"
-        style={{ backgroundImage: "url('/cta-background-mobile.webp')", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.2 }}
+        style={{ backgroundImage: "url('/cta-background-mobile.webp')", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.13 }}
       />
       {/* Desktop background (≥ 640px) */}
       <div
