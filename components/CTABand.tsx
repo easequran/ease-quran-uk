@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 interface CTABandProps {
   heading?: string;
@@ -12,18 +11,22 @@ export default function CTABand({
 }: CTABandProps) {
   return (
     <section className="relative overflow-hidden bg-[#122259] py-20">
-      {/* Responsive background image */}
-      <picture className="absolute inset-0 w-full h-full">
-        <source media="(max-width: 639px)" srcSet="/cta-background-mobile.webp" />
-        <Image
-          src="/cta-background.webp"
-          alt=""
-          fill
-          className="object-cover object-center opacity-15"
-          sizes="100vw"
-          aria-hidden="true"
-        />
-      </picture>
+      {/* Mobile background */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/cta-background-mobile.webp"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover opacity-20 sm:hidden"
+      />
+      {/* Desktop background */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/cta-background.webp"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover opacity-15 hidden sm:block"
+      />
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-3">Ease Quran UK</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">{heading}</h2>
