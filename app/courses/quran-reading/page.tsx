@@ -2,23 +2,24 @@ import type { Metadata } from "next";
 import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Quran Reading Classes UK — Fluent Recitation",
-  description: "Learn to read the Quran fluently online with a qualified UK teacher. One-to-one Quran reading classes for children and adults. Free first class, flexible timings.",
+  title: "Online Quran Reading Classes UK | Learn to Read Quran",
+  description: "Learn to read the Quran online with a qualified UK teacher. One-to-one Quran reading classes for children and adults. Flexible timings, free first class, no commitment.",
   alternates: { canonical: "https://easequran.co.uk/courses/quran-reading" },
 };
 
 export default function QuranReading() {
   return (
     <CoursePageTemplate
-      title="Quran Reading Classes Online"
+      h1="Online Quran Reading Classes in the UK"
+      title="Quran Reading"
       subtitle="From Letters to Fluent Recitation"
       slug="quran-reading"
       image="/course-quran-reading.webp"
       imageAlt="Student reading the Quran online with a certified teacher in the UK"
       schemaDescription="Online Quran reading classes for all levels in the UK. One-to-one lessons helping children and adults read the Quran fluently with correct pronunciation."
-      description="The ability to read the Quran is one of the most precious gifts a parent can give their child — and one of the most meaningful journeys an adult can take. Our one-to-one Quran reading classes take students from their current level to confident, flowing recitation."
+      description="The ability to read the Quran is one of the most precious gifts a parent can give their child — and one of the most meaningful journeys an adult can take. Our one-to-one online Quran reading classes take students from their current level to confident, flowing recitation."
       learn={[
-        "Fluent reading of the Arabic script with correct pronunciation",
+        "Fluent reading of Arabic script with correct pronunciation",
         "Word recognition and reading speed development",
         "Application of basic Tajweed rules during reading",
         "Stopping and starting rules (waqf and ibtida)",
@@ -33,13 +34,13 @@ export default function QuranReading() {
         "Reverts who can read Arabic letters and want to progress to the Quran",
         "Anyone who wants to recite the Quran with understanding and confidence",
       ]}
-      howWorks="Each one-to-one lesson takes place online at your agreed weekly slots. The teacher listens carefully to your recitation, corrects mistakes immediately, and introduces Tajweed rules naturally as they appear in the text. Progress is tracked across each lesson and parents receive updates on their child's advancement. The goal is not just to reach the end of the Quran, but to recite it correctly and with confidence."
+      howWorks="Each one-to-one lesson takes place online at your agreed weekly slots. The teacher listens carefully to your recitation, corrects mistakes immediately, and introduces Tajweed rules naturally as they appear in the text. Progress is tracked across each lesson and parents receive regular updates on their child's advancement. The goal is not just to reach the end of the Quran, but to recite it correctly and with confidence."
       faqs={[
         { q: "My child knows the alphabet — can they start Quran reading?", a: "If your child can read the Arabic alphabet and basic vowels confidently, they may be ready to begin Quran reading. The free trial will help the teacher assess the right starting point." },
-        { q: "How long does it take to read the full Quran?", a: "This varies widely — a focused child attending 3 classes per week might complete the Quran in 1–2 years. An adult may take longer but will progress consistently." },
+        { q: "How long does it take to read the full Quran?", a: "This varies widely. A focused child attending 3 classes per week might complete the Quran in 1 to 2 years. An adult may take longer but will progress consistently." },
         { q: "What is the difference between Quran Reading and Tajweed?", a: "Quran Reading focuses on fluency and completing the Quran. Tajweed is a dedicated course on the rules of correct recitation, going deeper into pronunciation. Many students do both together." },
-        { q: "Can adults learn to read the Quran from scratch?", a: "Absolutely. We have teachers experienced with adult learners who are patient, encouraging, and understand the unique needs of adult students." },
-        { q: "Can I get a female teacher for my daughter?", a: "Yes. Our female teacher Almas Fatima is available for sisters and daughters. Simply request a female teacher when booking." },
+        { q: "Can adults learn to read the Quran from scratch?", a: "Absolutely. We have teachers experienced with adult learners who are patient, encouraging, and understand the unique needs of adults coming to Quran reading later in life." },
+        { q: "Can I get a female teacher for my daughter?", a: "Yes. Our female teacher Almas Fatima is available for sisters and daughters. Simply request a female teacher when booking your free trial." },
       ]}
       related={[
         { title: "Noorani Qaida", href: "/courses/noorani-qaida" },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Tafseer Classes UK — Understand the Quran",
+  title: "Online Tafseer Classes UK | Understand the Quran",
   description: "Online Tafseer classes for UK students. Learn the meanings, context, and lessons of the Quran with a qualified teacher. One-to-one, flexible timings. Free trial.",
   alternates: { canonical: "https://easequran.co.uk/courses/tafseer" },
 };
@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 export default function Tafseer() {
   return (
     <CoursePageTemplate
-      title="Online Tafseer Classes — Understand the Quran"
-      subtitle="Go Beyond Reading — Understand"
+      h1="Online Tafseer Classes in the UK"
+      title="Tafseer"
+      subtitle="Go Beyond Reading — Truly Understand"
       slug="tafseer"
       image="/course-tafseer.webp"
       imageAlt="Online Tafseer class helping UK students understand the meanings of the Quran"
@@ -39,7 +40,7 @@ export default function Tafseer() {
         { q: "Do I need to be able to read Arabic to study Tafseer?", a: "It is helpful but not required. Tafseer classes can be conducted primarily in English translation. Students who can read Arabic will gain additional benefit from the linguistic explanations." },
         { q: "Which part of the Quran do we start with?", a: "This depends on your goals. Many students begin with Juz Amma (the 30th chapter, containing shorter surahs) or with surahs relevant to daily prayer. We tailor the curriculum to what is most useful for you." },
         { q: "What tafseer sources do you use?", a: "Our teachers draw on well-known and respected classical tafseer works, presented in an accessible English-medium format suitable for UK students." },
-        { q: "Can teenagers benefit from Tafseer?", a: "Yes — Tafseer is particularly impactful for teenagers and young adults who want to understand their faith intellectually. It helps answer the 'why' behind what they have been taught." },
+        { q: "Can teenagers benefit from Tafseer?", a: "Yes — Tafseer is particularly impactful for teenagers and young adults who want to understand their faith intellectually. It helps answer the questions behind what they have been taught." },
         { q: "Can this be combined with Islamic Studies?", a: "Yes. Tafseer and Islamic Studies complement each other very well. Many students take both — Tafseer for Quranic understanding and Islamic Studies for broader religious knowledge." },
       ]}
       related={[

@@ -2,21 +2,22 @@ import type { Metadata } from "next";
 import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Hifz Classes UK — Memorise Quran Online",
-  description: "Online Hifz classes in the UK with a certified Hafiz teacher. Memorise the Quran at your own pace with one-to-one lessons. Flexible UK timings. Free trial class.",
+  title: "Online Hifz Course UK | Quran Memorisation Classes",
+  description: "Online Hifz course in the UK with a certified Hafiz teacher. Memorise the Quran at your own pace with one-to-one lessons. Flexible UK timings. Free trial class.",
   alternates: { canonical: "https://easequran.co.uk/courses/hifz" },
 };
 
 export default function Hifz() {
   return (
     <CoursePageTemplate
-      title="Online Hifz Classes — Memorise the Quran"
+      h1="Online Hifz Course in the UK"
+      title="Hifz"
       subtitle="One-to-One Quran Memorisation"
       slug="hifz"
       image="/course-hifz.webp"
       imageAlt="Student memorising the Quran online with a certified Hafiz teacher in the UK"
-      schemaDescription="Online Hifz (Quran memorisation) classes for children and adults in the UK. One-to-one lessons with a certified Hafiz teacher at flexible UK timings."
-      description="Becoming a Hafiz — someone who has memorised the entire Quran — is one of the highest honours in Islam. Our online Hifz programme makes this incredible goal achievable for children and adults in the UK, with a dedicated teacher, structured methodology, and a pace tailored to each student."
+      schemaDescription="Online Hifz (Quran memorisation) course for children and adults in the UK. One-to-one lessons with a certified Hafiz teacher at flexible UK timings."
+      description="Becoming a Hafiz is one of the highest honours in Islam. Our online Hifz programme makes this goal achievable for children and adults across the UK, with a dedicated teacher, a structured methodology, and a pace tailored to each student's life and commitments."
       learn={[
         "Memorisation of new verses (sabaq) each lesson",
         "Daily revision of recently memorised portions (sabaqi)",
@@ -36,9 +37,9 @@ export default function Hifz() {
       howWorks="Hifz requires consistency above all else. Classes are available up to 5 days per week so students can maintain a daily memorisation routine. Each one-to-one session focuses on new memorisation (sabaq), recent revision (sabaqi), and periodic review of older portions (manzil). Your teacher Muhammad Umair is a Tajweed and Hifz specialist who understands how to keep students motivated, correct errors early, and ensure what is memorised stays memorised. Parents are kept informed of progress at regular intervals."
       faqs={[
         { q: "What age should a child start Hifz?", a: "Many children start between the ages of 7 and 10, once they can read the Quran fluently. However, teenagers and adults also memorise successfully — it requires dedication more than a specific age." },
-        { q: "How many classes per week do you recommend for Hifz?", a: "We recommend a minimum of 3 classes per week for consistent progress. Our Intensive plan (5 days/week) is popular with dedicated Hifz students." },
-        { q: "Does my child need to complete Quran reading before starting Hifz?", a: "Yes — the student must be able to read the Quran fluently before beginning memorisation. If needed, they can complete Quran Reading with us first." },
-        { q: "How do you ensure what is memorised stays memorised?", a: "Our teachers use a structured revision system — new portions are reviewed frequently and older portions are regularly revisited (manzil) to keep them fresh." },
+        { q: "How many classes per week do you recommend for Hifz?", a: "We recommend a minimum of 3 classes per week for consistent progress. Our intensive plan at 5 days per week is popular with dedicated Hifz students." },
+        { q: "Does my child need to complete Quran reading before starting Hifz?", a: "Yes — the student must be able to read the Quran fluently before beginning memorisation. If needed, they can complete our Quran Reading course first." },
+        { q: "How do you ensure what is memorised stays memorised?", a: "Our teachers use a structured revision system — new portions are reviewed frequently and older portions are regularly revisited (manzil) to keep them fresh and secure." },
         { q: "Can adults memorise the Quran?", a: "Absolutely. Adults take longer than children, but with regular one-to-one classes and consistent effort, adult Hifz is entirely achievable. Many adults successfully memorise Juz Amma and beyond." },
       ]}
       related={[

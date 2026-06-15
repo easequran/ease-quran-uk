@@ -112,7 +112,7 @@ export default function Home() {
               One-to-one lessons with qualified male and female teachers. Learn Tajweed, Hifz, Noorani Qaida, and more — at flexible UK timings, from home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Link href="/free-trial" className="btn-gold text-base">Book Free Trial — It&apos;s Free</Link>
+              <Link href="/free-trial" className="btn-gold text-base">Book Your Free Trial Class</Link>
               <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-outline-white text-base">
                 <MessageCircle size={18} /> WhatsApp Us
               </a>
