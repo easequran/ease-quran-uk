@@ -34,8 +34,11 @@ export default function FreeTrialForm() {
 
     const newErrors: Record<string, string> = {};
     if (!fields.name.trim()) newErrors.name = "Please enter your name.";
-    if (!fields.email.trim() || !/\S+@\S+\.\S+/.test(fields.email)) newErrors.email = "Please enter a valid email.";
+    if (fields.email.trim() && !/\S+@\S+\.\S+/.test(fields.email)) newErrors.email = "Please enter a valid email address.";
     if (!fields.phone.trim()) newErrors.phone = "Please enter your phone/WhatsApp number.";
+    if (!fields.childAge.trim()) newErrors.childAge = "Please enter the student's age.";
+    if (!fields.course) newErrors.course = "Please select a course.";
+    if (!fields.message.trim()) newErrors.message = "Please add a short message.";
 
     if (Object.keys(newErrors).length) {
       setErrors(newErrors);
@@ -102,7 +105,7 @@ export default function FreeTrialForm() {
         {/* Email */}
         <div>
           <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Email Address <span className="text-[#F5A623]">*</span>
+            Email Address <span className="text-gray-400 font-normal text-xs">(optional)</span>
           </label>
           <div className="relative">
             <Mail size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -140,7 +143,7 @@ export default function FreeTrialForm() {
         {/* Child's Age */}
         <div>
           <label htmlFor="childAge" className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Child&apos;s Age <span className="text-gray-400 font-normal text-xs">(optional)</span>
+            Student&apos;s Age <span className="text-[#F5A623]">*</span>
           </label>
           <div className="relative">
             <Calendar size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -149,37 +152,39 @@ export default function FreeTrialForm() {
               name="childAge"
               type="text"
               placeholder="e.g. 8 years old"
-              className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 bg-white hover:border-gray-300"
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.childAge ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
             />
           </div>
+          {errors.childAge && <p className="text-red-500 text-xs mt-1.5 flex items-center gap-1"><span>!</span>{errors.childAge}</p>}
         </div>
       </div>
 
       {/* Course select */}
       <div>
         <label htmlFor="course" className="block text-sm font-semibold text-gray-700 mb-1.5">
-          Preferred Course <span className="text-gray-400 font-normal text-xs">(optional)</span>
+          Preferred Course <span className="text-[#F5A623]">*</span>
         </label>
         <div className="relative">
           <BookOpen size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none z-10" />
           <select
             id="course"
             name="course"
-            className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors bg-white hover:border-gray-300 appearance-none cursor-pointer text-gray-700"
+            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors appearance-none cursor-pointer text-gray-700 ${errors.course ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
           >
-            <option value="">Select a course (we can help you choose)</option>
+            <option value="">Select a course</option>
             {courses.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
           <div className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </div>
         </div>
+        {errors.course && <p className="text-red-500 text-xs mt-1.5 flex items-center gap-1"><span>!</span>{errors.course}</p>}
       </div>
 
       {/* Message */}
       <div>
         <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-1.5">
-          Anything else we should know? <span className="text-gray-400 font-normal text-xs">(optional)</span>
+          Tell us a bit more <span className="text-[#F5A623]">*</span>
         </label>
         <div className="relative">
           <MessageSquare size={15} className="absolute left-3.5 top-3.5 text-gray-400 pointer-events-none" />
@@ -188,9 +193,10 @@ export default function FreeTrialForm() {
             name="message"
             rows={4}
             placeholder="e.g. Looking for a female teacher for my daughter, she is a complete beginner"
-            className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 bg-white hover:border-gray-300 resize-none"
+            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 resize-none ${errors.message ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
           />
         </div>
+        {errors.message && <p className="text-red-500 text-xs mt-1.5 flex items-center gap-1"><span>!</span>{errors.message}</p>}
       </div>
 
       {status === "error" && (
