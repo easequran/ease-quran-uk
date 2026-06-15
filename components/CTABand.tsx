@@ -10,21 +10,19 @@ export default function CTABand({
   sub = "Book a completely free, no-commitment trial class with a qualified teacher.",
 }: CTABandProps) {
   return (
-    <section style={{ position: "relative", overflow: "hidden", backgroundColor: "#122259" }} className="py-20">
-      {/* Responsive background — picture + img, inline styles to guarantee rendering on mobile */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <picture
+    <section className="relative overflow-hidden py-20" style={{ backgroundColor: "#122259" }}>
+      {/* Mobile background (< 640px) */}
+      <div
         aria-hidden="true"
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", display: "block" }}
-      >
-        <source media="(max-width: 639px)" srcSet="/cta-background-mobile.webp" />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/cta-background.webp"
-          alt=""
-          style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.2 }}
-        />
-      </picture>
+        className="absolute inset-0 sm:hidden"
+        style={{ backgroundImage: "url('/cta-background-mobile.webp')", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.2 }}
+      />
+      {/* Desktop background (≥ 640px) */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 hidden sm:block"
+        style={{ backgroundImage: "url('/cta-background.webp')", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.2 }}
+      />
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-3">Ease Quran UK</p>
