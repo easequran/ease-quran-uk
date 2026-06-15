@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Clock } from "lucide-react";
 import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from "@/components/SocialIcons";
 import FreeTrialForm from "@/components/FreeTrialForm";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Contact Ease Quran UK",
-  description: "Get in touch with Ease Quran UK. Send us a message, WhatsApp us, or email info@easequran.co.uk. We reply within 24 hours.",
+  description: "Get in touch with Ease Quran UK. Send us a message, WhatsApp us, or email info@easequran.co.uk. We reply within 2 hours.",
   alternates: { canonical: "https://easequran.co.uk/contact" },
 };
 
@@ -17,7 +17,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <h1 className="text-4xl font-bold text-[#122259] mt-4">Get in Touch</h1>
-          <p className="text-gray-600 mt-2">We&apos;d love to hear from you — send us a message, WhatsApp, or email. We reply within 24 hours.</p>
+          <p className="text-gray-600 mt-2">Send us a message, WhatsApp, or email. We reply within 2 hours.</p>
         </div>
       </div>
 
@@ -32,38 +32,52 @@ export default function Contact() {
             </div>
             <div className="lg:col-span-2 space-y-5">
               <div className="card p-6">
-                <h3 className="font-bold text-[#122259] mb-4">Contact Details</h3>
-                <ul className="space-y-4">
+                <h3 className="font-bold text-[#122259] mb-5">Contact Details</h3>
+                <ul className="space-y-5">
                   <li>
-                    <a href="mailto:info@easequran.co.uk" className="flex items-start gap-3 text-sm text-gray-700 hover:text-[#122259]">
-                      <Mail size={18} className="text-[#FD9C02] flex-shrink-0 mt-0.5" />
-                      <span><strong>Email</strong><br />info@easequran.co.uk</span>
+                    <a href="mailto:info@easequran.co.uk" className="flex items-start gap-3 text-sm text-gray-700 hover:text-[#122259] group">
+                      <div className="w-9 h-9 rounded-lg bg-[#faf9f7] border border-gray-100 flex items-center justify-center flex-shrink-0">
+                        <Mail size={16} className="text-[#FD9C02]" />
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-0.5">Email</p>
+                        <p className="font-semibold text-[#122259] group-hover:text-[#FD9C02] transition-colors">info@easequran.co.uk</p>
+                      </div>
                     </a>
                   </li>
                   <li>
-                    <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-gray-700 hover:text-[#122259]">
-                      <Phone size={18} className="text-[#FD9C02] flex-shrink-0 mt-0.5" />
-                      <span><strong>UK WhatsApp</strong><br />+44 7311 254423</span>
+                    <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-gray-700 hover:text-[#122259] group">
+                      <div className="w-9 h-9 rounded-lg bg-[#faf9f7] border border-gray-100 flex items-center justify-center flex-shrink-0">
+                        <Phone size={16} className="text-[#FD9C02]" />
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-0.5">WhatsApp (UK)</p>
+                        <p className="font-semibold text-[#122259] group-hover:text-[#FD9C02] transition-colors">+44 7311 254423</p>
+                      </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="https://wa.me/923195657389" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-gray-700 hover:text-[#122259]">
-                      <Phone size={18} className="text-[#FD9C02] flex-shrink-0 mt-0.5" />
-                      <span><strong>Alternative WhatsApp</strong><br />+92 319 5657389</span>
-                    </a>
+                  <li className="flex items-start gap-3">
+                    <div className="w-9 h-9 rounded-lg bg-[#faf9f7] border border-gray-100 flex items-center justify-center flex-shrink-0">
+                      <Clock size={16} className="text-[#FD9C02]" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-0.5">Response Time</p>
+                      <p className="font-semibold text-[#122259]">Within 2 hours</p>
+                    </div>
                   </li>
                 </ul>
               </div>
+
               <div className="card p-6">
                 <h3 className="font-bold text-[#122259] mb-4">Follow Us</h3>
                 <div className="flex gap-3">
                   {[
-                    { href: "https://www.facebook.com/easequran", icon: <FacebookIcon size={18} />, label: "Facebook" },
-                    { href: "https://www.instagram.com/contacteasequran/", icon: <InstagramIcon size={18} />, label: "Instagram" },
-                    { href: "https://www.linkedin.com/company/ease-quran", icon: <LinkedinIcon size={18} />, label: "LinkedIn" },
-                    { href: "https://youtube.com/@contacteasequran", icon: <YoutubeIcon size={18} />, label: "YouTube" },
+                    { href: "https://www.facebook.com/easequran", icon: <FacebookIcon size={17} />, label: "Facebook" },
+                    { href: "https://www.instagram.com/contacteasequran/", icon: <InstagramIcon size={17} />, label: "Instagram" },
+                    { href: "https://www.linkedin.com/company/ease-quran", icon: <LinkedinIcon size={17} />, label: "LinkedIn" },
+                    { href: "https://youtube.com/@contacteasequran", icon: <YoutubeIcon size={17} />, label: "YouTube" },
                   ].map((s) => (
-                    <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="w-9 h-9 rounded-full bg-[#faf9f7] border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-[#122259] hover:text-white transition-colors">
+                    <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="w-10 h-10 rounded-xl bg-[#faf9f7] border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-[#122259] hover:text-white transition-colors">
                       {s.icon}
                     </a>
                   ))}

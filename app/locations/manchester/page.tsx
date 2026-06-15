@@ -27,7 +27,7 @@ export default function Manchester() {
         { q: "Can you teach children in Greater Manchester including Salford and Oldham?", a: "Absolutely. We serve the entire Greater Manchester area including Salford, Oldham, Rochdale, and beyond. Online classes have no geographical limitations." },
         { q: "What age groups do you teach in Manchester?", a: "We teach children from age 4 upwards, through to teenagers and adults. Our teachers adapt their approach to the student's age and level." },
         { q: "Is there a female Quran teacher available for Manchester sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters of all ages across Manchester. Mention this preference when booking your free trial." },
-        { q: "How do I book a free trial in Manchester?", a: "Book via our website form or WhatsApp +44 7311 254423. We'll be in touch within 24 hours to confirm your free one-to-one class." },
+        { q: "How do I book a free trial in Manchester?", a: "Book via our website form or WhatsApp +44 7311 254423. We will be in touch within 2 hours to confirm your free one-to-one class." },
       ]}
     />
   );

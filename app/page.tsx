@@ -33,7 +33,7 @@ const painSolutions = [
 ];
 
 const steps = [
-  { step: "1", title: "Book Your Free Trial", desc: "Fill in the short form — no card required, no commitment. We'll contact you within 24 hours to confirm." },
+  { step: "1", title: "Book Your Free Trial", desc: "Fill in the short form. No card required, no commitment. We will contact you within 2 hours to confirm." },
   { step: "2", title: "Meet Your Teacher", desc: "We match you with the right certified teacher (male or female) and agree on a regular UK time slot." },
   { step: "3", title: "Start Learning", desc: "Your one-to-one lessons begin. Learn at your own pace, in English, from the comfort of your home." },
 ];

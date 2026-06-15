@@ -33,7 +33,7 @@ export default function Terms() {
           <p>Payment terms, amounts, and methods are agreed directly between the family and Ease Quran UK following enrolment. Pricing is clearly stated on our pricing page. We do not charge hidden fees.</p>
 
           <h2>4. Cancellations and Rescheduling</h2>
-          <p>Students may cancel or reschedule classes by giving reasonable notice to the teacher or academy. We ask for at least 24 hours&apos; notice where possible. There are no long-term contracts — you may cancel your enrolment at any time.</p>
+          <p>Students may cancel or reschedule classes by giving reasonable notice to the teacher or academy. We ask for as much notice as possible. There are no long-term contracts — you may cancel your enrolment at any time.</p>
 
           <h2>5. Code of Conduct</h2>
           <p>Students and parents are expected to engage respectfully with teachers. Ease Quran UK reserves the right to end enrolment if conduct is inappropriate or disruptive.</p>

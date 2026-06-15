@@ -27,7 +27,7 @@ export default function Birmingham() {
         { q: "Is a female Quran teacher available in Birmingham?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters from Birmingham families. Request a female teacher when booking." },
         { q: "How are your classes different from a local Birmingham madrassa?", a: "Our classes are one-to-one, online, taught in English, and with a fully certified teacher. There are no groups, no commute, and parents can observe any class. This is a premium, personalised alternative." },
         { q: "What Quran courses are available for Birmingham students?", a: "We offer Noorani Qaida, Quran Reading, Hifz, Tajweed, Islamic Studies, and Tafseer — all one-to-one, online, at flexible times." },
-        { q: "How do I book a free trial class in Birmingham?", a: "Simply fill in the form on our free trial page or WhatsApp us on +44 7311 254423. We'll confirm your free class within 24 hours." },
+        { q: "How do I book a free trial class in Birmingham?", a: "Simply fill in the form on our free trial page or WhatsApp us on +44 7311 254423. We will confirm your free class within 2 hours." },
       ]}
     />
   );

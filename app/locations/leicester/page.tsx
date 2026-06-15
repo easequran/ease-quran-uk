@@ -27,7 +27,7 @@ export default function Leicester() {
         { q: "Are there timings available to suit Leicester school schedules?", a: "Yes. We offer classes after school (from 3pm), evenings, and weekends — all of which fit around Leicester's school timetables." },
         { q: "Can a Leicester family request a female Quran teacher?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and female students in Leicester. Simply request this when booking." },
         { q: "My child already goes to a local mosque — can Ease Quran complement this?", a: "Absolutely. Many families use Ease Quran for the one-to-one personalised attention it provides, alongside local mosque attendance. It's a very effective combination." },
-        { q: "How do I book in Leicester?", a: "Use the free trial form on our website or WhatsApp us on +44 7311 254423. We'll confirm your free class within 24 hours." },
+        { q: "How do I book in Leicester?", a: "Use the free trial form on our website or WhatsApp us on +44 7311 254423. We will confirm your free class within 2 hours." },
       ]}
     />
   );

@@ -27,7 +27,7 @@ export default function Bradford() {
         { q: "Is this better than a Bradford madrassa?", a: "It's a different model — and a complementary one for many families. Our classes are one-to-one, in English, with a certified teacher, and parents can watch any time. Many Bradford families use Ease Quran alongside local mosque education." },
         { q: "Is a female teacher available for Bradford sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters across Bradford. Simply mention your preference when booking." },
         { q: "What courses are available in Bradford?", a: "All our courses are available: Noorani Qaida, Quran Reading, Hifz, Tajweed, Islamic Studies, and Tafseer." },
-        { q: "How do I start with a free trial in Bradford?", a: "Book via our free trial form or WhatsApp us on +44 7311 254423. We'll confirm within 24 hours." },
+        { q: "How do I start with a free trial in Bradford?", a: "Book via our free trial form or WhatsApp us on +44 7311 254423. We will confirm within 2 hours." },
       ]}
     />
   );
