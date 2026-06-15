@@ -364,7 +364,7 @@ export default function Home() {
       </section>
 
       <CTABand />
-      <div className="h-16 md:h-24" aria-hidden="true" />
+      <div className="h-8 md:h-12" aria-hidden="true" />
       <div className="lg:hidden h-14" aria-hidden="true" />
     </>
   );

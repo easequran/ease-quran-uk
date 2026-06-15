@@ -12,12 +12,21 @@ export default function CTABand({
 }: CTABandProps) {
   return (
     <section className="relative overflow-hidden bg-[#122259] py-20">
-      {/* Background image with overlay */}
+      {/* Background image — mobile version */}
+      <Image
+        src="/cta-background-mobile.webp"
+        alt=""
+        fill
+        className="object-cover object-center opacity-15 sm:hidden"
+        sizes="100vw"
+        aria-hidden="true"
+      />
+      {/* Background image — desktop version */}
       <Image
         src="/cta-background.webp"
         alt=""
         fill
-        className="object-cover object-center opacity-15"
+        className="object-cover object-center opacity-15 hidden sm:block"
         sizes="100vw"
         aria-hidden="true"
       />
