@@ -156,11 +156,20 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">How It Works</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="w-14 h-14 rounded-full bg-[#122259] text-white text-2xl font-bold flex items-center justify-center mx-auto mb-5">{s.step}</div>
-                <h3 className="text-xl font-bold text-[#122259] mb-2">{s.title}</h3>
-                <p className="text-gray-600 text-sm">{s.desc}</p>
+            {steps.map((s, i) => (
+              <div key={s.step} className="relative text-center rounded-3xl border-2 border-[#122259]/15 px-8 pt-10 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-lg transition-all duration-300 group">
+                {/* Connecting line between cards (desktop only) */}
+                {i < steps.length - 1 && (
+                  <div className="hidden md:block absolute top-[52px] left-full w-8 z-10">
+                    <div className="h-0.5 w-full bg-gradient-to-r from-[#122259]/20 to-[#F5A623]/40" />
+                  </div>
+                )}
+                {/* Step number */}
+                <div className="w-14 h-14 rounded-full bg-[#122259] group-hover:bg-[#F5A623] text-white text-2xl font-extrabold flex items-center justify-center mx-auto mb-6 transition-colors duration-300 shadow-md">
+                  {s.step}
+                </div>
+                <h3 className="text-xl font-bold text-[#122259] mb-3">{s.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -253,17 +262,22 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {[
-              { name: "Muhammad Umair", role: "Tajweed & Hifz Specialist", bio: "A certified Quran teacher with two years of experience specialising in Tajweed and Hifz. Muhammad Umair uses proven memorisation techniques that help students — young and old — retain and revise with confidence.", img: "/teacher-1.webp", badge: "Tajweed & Hifz" },
+              { name: "Muhammad Umair", role: "Tajweed & Hifz Specialist", bio: "A certified Quran teacher with two years of experience specialising in Tajweed and Hifz. Muhammad Umair uses proven memorisation techniques that help students of all ages retain and revise with confidence.", img: "/teacher-1.webp", badge: "Tajweed & Hifz" },
               { name: "Almas Fatima", role: "Female Quran Teacher", bio: "A Qaria e Quran with a Bachelor's degree in Islamic Studies, Almas Fatima is available for sisters and female students. She provides a comfortable, professional, and encouraging learning environment.", img: "/teacher-2.webp", badge: "Female Teacher" },
             ].map((t) => (
-              <div key={t.name} className="card p-6 flex flex-col items-center text-center">
-                <div className="relative w-28 h-28 rounded-full overflow-hidden mb-4 border-4 border-[#F5A623]/30">
-                  <Image src={t.img} alt={`${t.name} — ${t.role} at Ease Quran UK`} fill className="object-cover object-top" sizes="112px" />
+              <div key={t.name} className="relative flex flex-col items-center text-center rounded-3xl border-2 border-[#122259]/15 px-8 pt-12 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-xl transition-all duration-300 group">
+                {/* Gold accent top bar */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-b-full bg-[#F5A623] group-hover:w-24 transition-all duration-300" />
+                {/* Avatar with gold ring */}
+                <div className="relative w-28 h-28 rounded-full mb-5 p-0.5 bg-gradient-to-br from-[#F5A623] to-[#122259]">
+                  <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                    <Image src={t.img} alt={`${t.name} — ${t.role} at Ease Quran UK`} fill className="object-cover object-top rounded-full" sizes="112px" />
+                  </div>
                 </div>
                 <span className="tag mb-2">{t.badge}</span>
-                <h3 className="text-xl font-bold text-[#122259]">{t.name}</h3>
-                <p className="text-[#F5A623] text-sm font-semibold mb-3">{t.role}</p>
-                <p className="text-gray-600 text-sm">{t.bio}</p>
+                <h3 className="text-xl font-bold text-[#122259] mt-1">{t.name}</h3>
+                <p className="text-[#F5A623] text-sm font-semibold mb-4">{t.role}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{t.bio}</p>
               </div>
             ))}
           </div>
