@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { ChevronUp } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 export default function ScrollToTop() {
   const [progress, setProgress] = useState(0);
@@ -58,7 +58,7 @@ export default function ScrollToTop() {
       </svg>
       {/* Arrow icon centred over SVG */}
       <span className="absolute inset-0 flex items-center justify-center text-white group-hover:text-[#F5A623] transition-colors">
-        <ChevronUp size={18} strokeWidth={2.5} />
+        <ArrowUp size={17} strokeWidth={2.5} />
       </span>
     </button>
   );
