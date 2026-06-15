@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #122259;
+  --gold: #FD9C02;
+  --gold-dark: #e08900;
+  --bg: #ffffff;
+  --bg-warm: #faf9f7;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-gold: var(--gold);
+  --color-bg-warm: var(--bg-warm);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), var(--font-body), system-ui, sans-serif;
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-gold:hover {
+  background-color: var(--gold-dark);
+}
+
+.btn-navy {
+  background-color: var(--navy);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-navy:hover {
+  background-color: #0d1a45;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--navy);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border: 2px solid var(--navy);
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-outline:hover {
+  background-color: var(--navy);
+  color: #fff;
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border: 2px solid #fff;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: var(--navy);
+}
+
+.section-pad {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px 0 rgba(18,34,89,0.07);
+  overflow: hidden;
+}
+
+.tag {
+  display: inline-block;
+  background-color: rgba(253,156,2,0.12);
+  color: var(--gold-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
