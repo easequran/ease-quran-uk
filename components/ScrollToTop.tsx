@@ -20,8 +20,8 @@ export default function ScrollToTop() {
 
   if (!visible) return null;
 
-  const size = 48;
-  const strokeWidth = 3;
+  const size = 40;
+  const strokeWidth = 2.5;
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (progress / 100) * circumference;
@@ -58,7 +58,7 @@ export default function ScrollToTop() {
       </svg>
       {/* Arrow icon centred over SVG */}
       <span className="absolute inset-0 flex items-center justify-center text-white group-hover:text-[#F5A623] transition-colors">
-        <ArrowUp size={17} strokeWidth={2.5} />
+        <ArrowUp size={14} strokeWidth={2.5} />
       </span>
     </button>
   );
