@@ -45,34 +45,33 @@ export default function CoursePageTemplate({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* Hero */}
-      <section className="relative bg-[#122259] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-white/10 to-transparent" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-14 md:py-20">
+      {/* Hero — full-width background image */}
+      <section className="relative min-h-[520px] flex items-center overflow-hidden">
+        {/* Background course image */}
+        <Image src={image} alt={imageAlt} fill className="object-cover object-center" priority sizes="100vw" />
+        {/* Navy gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#122259]/95 via-[#122259]/80 to-[#122259]/40" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 w-full">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Courses", href: "/courses" }, { label: title }]} />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-6">
-            <div>
-              <span className="inline-block bg-[#F5A623]/20 text-[#F5A623] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
-                {subtitle}
-              </span>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">{h1}</h1>
-              <p className="text-blue-100 text-lg mb-6 leading-relaxed">{description}</p>
+          <div className="max-w-2xl mt-6 text-white">
+            <span className="inline-block bg-[#F5A623]/20 text-[#F5A623] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">
+              {subtitle}
+            </span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">{h1}</h1>
+            <p className="text-blue-100 text-lg mb-6 leading-relaxed">{description}</p>
 
-              {/* Trust signals */}
-              <div className="flex flex-wrap gap-4 mb-8 text-sm text-blue-100">
-                <span className="flex items-center gap-1.5"><Star size={14} className="text-[#F5A623] fill-[#F5A623]" /> Free first class</span>
-                <span className="flex items-center gap-1.5"><Users size={14} className="text-[#F5A623]" /> One-to-one lessons</span>
-                <span className="flex items-center gap-1.5"><Clock size={14} className="text-[#F5A623]" /> Flexible UK timings</span>
-                <span className="flex items-center gap-1.5"><Shield size={14} className="text-[#F5A623]" /> Certified teacher</span>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/free-trial" className="btn-gold">Book Free Trial Class</Link>
-                <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-outline-white">WhatsApp Us</a>
-              </div>
+            {/* Trust signals */}
+            <div className="flex flex-wrap gap-4 mb-8 text-sm text-blue-100">
+              <span className="flex items-center gap-1.5"><Star size={14} className="text-[#F5A623] fill-[#F5A623]" /> Free first class</span>
+              <span className="flex items-center gap-1.5"><Users size={14} className="text-[#F5A623]" /> One-to-one lessons</span>
+              <span className="flex items-center gap-1.5"><Clock size={14} className="text-[#F5A623]" /> Flexible UK timings</span>
+              <span className="flex items-center gap-1.5"><Shield size={14} className="text-[#F5A623]" /> Certified teacher</span>
             </div>
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-              <Image src={image} alt={imageAlt} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 50vw" />
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/free-trial" className="btn-gold">Book Free Trial Class</Link>
+              <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-outline-white">WhatsApp Us</a>
             </div>
           </div>
         </div>
