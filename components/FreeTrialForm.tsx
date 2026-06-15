@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { CheckCircle, Loader2 } from "lucide-react";
+import { CheckCircle, Loader2, User, Mail, Phone, Calendar, BookOpen, MessageSquare } from "lucide-react";
 
 const courses = [
   "Noorani Qaida",
@@ -80,86 +80,143 @@ export default function FreeTrialForm() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {/* Full Name */}
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            autoComplete="name"
-            className={`w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] ${errors.name ? "border-red-400" : "border-gray-300"}`}
-          />
-          {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
+          <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-1.5">
+            Full Name <span className="text-[#FD9C02]">*</span>
+          </label>
+          <div className="relative">
+            <User size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autoComplete="name"
+              placeholder="e.g. Ahmed Khan"
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.name ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+            />
+          </div>
+          {errors.name && <p className="text-red-500 text-xs mt-1.5 flex items-center gap-1"><span>!</span>{errors.name}</p>}
         </div>
+
+        {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            className={`w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] ${errors.email ? "border-red-400" : "border-gray-300"}`}
-          />
-          {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+          <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1.5">
+            Email Address <span className="text-[#FD9C02]">*</span>
+          </label>
+          <div className="relative">
+            <Mail size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              placeholder="you@example.com"
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.email ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+            />
+          </div>
+          {errors.email && <p className="text-red-500 text-xs mt-1.5 flex items-center gap-1"><span>!</span>{errors.email}</p>}
         </div>
+
+        {/* Phone */}
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone / WhatsApp *</label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            autoComplete="tel"
-            className={`w-full border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] ${errors.phone ? "border-red-400" : "border-gray-300"}`}
-          />
-          {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
+          <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-1.5">
+            Phone / WhatsApp <span className="text-[#FD9C02]">*</span>
+          </label>
+          <div className="relative">
+            <Phone size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              autoComplete="tel"
+              placeholder="+44 7700 000000"
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.phone ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+            />
+          </div>
+          {errors.phone && <p className="text-red-500 text-xs mt-1.5 flex items-center gap-1"><span>!</span>{errors.phone}</p>}
         </div>
+
+        {/* Child's Age */}
         <div>
-          <label htmlFor="childAge" className="block text-sm font-medium text-gray-700 mb-1">Child&apos;s Age (optional)</label>
-          <input
-            id="childAge"
-            name="childAge"
-            type="text"
-            placeholder="e.g. 7"
-            className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259]"
-          />
+          <label htmlFor="childAge" className="block text-sm font-semibold text-gray-700 mb-1.5">
+            Child&apos;s Age <span className="text-gray-400 font-normal text-xs">(optional)</span>
+          </label>
+          <div className="relative">
+            <Calendar size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
+            <input
+              id="childAge"
+              name="childAge"
+              type="text"
+              placeholder="e.g. 8 years old"
+              className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 bg-white hover:border-gray-300"
+            />
+          </div>
         </div>
       </div>
 
+      {/* Course select */}
       <div>
-        <label htmlFor="course" className="block text-sm font-medium text-gray-700 mb-1">Preferred Course (optional)</label>
-        <select
-          id="course"
-          name="course"
-          className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] bg-white"
-        >
-          <option value="">Select a course…</option>
-          {courses.map((c) => <option key={c} value={c}>{c}</option>)}
-        </select>
+        <label htmlFor="course" className="block text-sm font-semibold text-gray-700 mb-1.5">
+          Preferred Course <span className="text-gray-400 font-normal text-xs">(optional)</span>
+        </label>
+        <div className="relative">
+          <BookOpen size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none z-10" />
+          <select
+            id="course"
+            name="course"
+            className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors bg-white hover:border-gray-300 appearance-none cursor-pointer text-gray-700"
+          >
+            <option value="">Select a course (we can help you choose)</option>
+            {courses.map((c) => <option key={c} value={c}>{c}</option>)}
+          </select>
+          <div className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </div>
+        </div>
       </div>
 
+      {/* Message */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Any questions or notes? (optional)</label>
-        <textarea
-          id="message"
-          name="message"
-          rows={4}
-          className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] resize-none"
-        />
+        <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-1.5">
+          Anything else we should know? <span className="text-gray-400 font-normal text-xs">(optional)</span>
+        </label>
+        <div className="relative">
+          <MessageSquare size={15} className="absolute left-3.5 top-3.5 text-gray-400 pointer-events-none" />
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            placeholder="e.g. Looking for a female teacher for my daughter, she is a complete beginner"
+            className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 bg-white hover:border-gray-300 resize-none"
+          />
+        </div>
       </div>
 
       {status === "error" && (
-        <p className="text-red-500 text-sm">Something went wrong — please try again or WhatsApp us directly on +44 7311 254423.</p>
+        <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-700">
+          Something went wrong. Please try again or WhatsApp us on{" "}
+          <a href="https://wa.me/447311254423" className="font-semibold underline">+44 7311 254423</a>.
+        </div>
       )}
 
       <button
         type="submit"
         disabled={status === "sending"}
-        className="btn-gold w-full justify-center text-base py-3"
+        className="btn-gold w-full justify-center text-base py-3.5 rounded-xl"
       >
-        {status === "sending" ? <><Loader2 size={18} className="animate-spin" /> Sending…</> : "Book My Free Trial"}
+        {status === "sending" ? (
+          <><Loader2 size={18} className="animate-spin" /> Sending your request...</>
+        ) : (
+          "Book My Free Trial Class"
+        )}
       </button>
 
-      <p className="text-center text-xs text-gray-500">No card required · No commitment · 100% free</p>
+      <div className="flex items-center justify-center gap-6 text-xs text-gray-400">
+        <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />No card required</span>
+        <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />No commitment</span>
+        <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />100% free</span>
+      </div>
     </form>
   );
 }
