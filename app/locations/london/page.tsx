@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes in London | Ease Quran UK",
+  title: "Online Quran Classes in London",
   description: "One-to-one online Quran classes for Muslim families in London. Qualified male and female teachers, flexible timings around school and work. Serving Tower Hamlets, Ilford, Newham, Hackney and all London boroughs. Free first class.",
-  alternates: { canonical: "https://easequran.co.uk/locations/london" },
+  openGraph: { url: "/locations/london" },
+  alternates: {
+    canonical: "/locations/london",
+  },
 };
 
 export default function London() {

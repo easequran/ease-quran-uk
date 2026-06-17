@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes in Leicester | Ease Quran UK",
+  title: "Online Quran Classes in Leicester",
   description: "One-to-one online Quran classes for Muslim families in Leicester. Certified teachers, flexible timings. Serving Highfields, Evington, Spinney Hills, Belgrave and more. Free first class.",
-  alternates: { canonical: "https://easequran.co.uk/locations/leicester" },
+  openGraph: { url: "/locations/leicester" },
+  alternates: {
+    canonical: "/locations/leicester",
+  },
 };
 
 export default function Leicester() {

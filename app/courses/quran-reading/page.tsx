@@ -4,7 +4,15 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 export const metadata: Metadata = {
   title: "Online Quran Reading Classes UK | Learn to Read Quran",
   description: "Learn to read the Quran online with a qualified UK teacher. One-to-one Quran reading classes for children and adults. Flexible timings, free first class, no commitment.",
-  alternates: { canonical: "https://easequran.co.uk/courses/quran-reading" },
+  openGraph: { url: "/courses/quran-reading" },
+  alternates: {
+    canonical: "/courses/quran-reading",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/courses/quran-reading",
+      "en-US": "https://easequran.com/courses/quran-reading",
+      "x-default": "https://easequran.com/courses/quran-reading",
+    },
+  },
 };
 
 export default function QuranReading() {

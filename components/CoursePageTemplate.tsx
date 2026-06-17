@@ -29,8 +29,8 @@ export default function CoursePageTemplate({
     "@type": "Course",
     name: h1,
     description: schemaDescription,
-    provider: { "@type": "Organization", name: "Ease Quran UK", url: "https://easequran.co.uk" },
-    url: `https://easequran.co.uk/courses/${slug}`,
+    provider: { "@type": "Organization", name: "Ease Quran UK", url: "https://www.easequran.co.uk" },
+    url: `https://www.easequran.co.uk/courses/${slug}`,
     offers: { "@type": "Offer", price: "30", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
   };
 

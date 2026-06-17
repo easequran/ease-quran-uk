@@ -5,7 +5,10 @@ import FreeTrialForm from "@/components/FreeTrialForm";
 export const metadata: Metadata = {
   title: "Book a Free Quran Trial Class",
   description: "Book your free online Quran trial class today. No card required, no commitment. A qualified UK teacher, confirmed within 2 hours.",
-  alternates: { canonical: "https://easequran.co.uk/free-trial" },
+  openGraph: { url: "/free-trial" },
+  alternates: {
+    canonical: "/free-trial",
+  },
 };
 
 const reassurances = [

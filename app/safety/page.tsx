@@ -4,9 +4,12 @@ import { Shield, Eye, MessageCircle, ClipboardCheck, Lock, AlertCircle } from "l
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Child Safety & Safeguarding Policy | Ease Quran UK",
+  title: "Child Safety & Safeguarding Policy",
   description: "How Ease Quran UK keeps children safe in online Quran classes. Read our honest safeguarding approach — parental supervision, teacher vetting, transparency, and how to raise a concern.",
-  alternates: { canonical: "https://easequran.co.uk/safety" },
+  openGraph: { url: "/safety" },
+  alternates: {
+    canonical: "/safety",
+  },
 };
 
 export default function Safety() {

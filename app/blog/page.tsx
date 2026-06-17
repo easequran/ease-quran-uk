@@ -7,7 +7,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Quran Education Blog — Tips & Advice for UK Families",
   description: "Helpful guides and articles for UK Muslim families on Quran education — choosing a teacher, starting ages, Tajweed vs reading, and more. Read the Ease Quran blog.",
-  alternates: { canonical: "https://easequran.co.uk/blog" },
+  openGraph: { url: "/blog" },
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 const posts = [

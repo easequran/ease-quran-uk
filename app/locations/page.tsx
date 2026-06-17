@@ -8,7 +8,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Online Quran Classes by UK Location",
   description: "Online Quran classes across the UK. London, Birmingham, Manchester, Bradford, Leicester and beyond. One-to-one, qualified teachers, free trial.",
-  alternates: { canonical: "https://easequran.co.uk/locations" },
+  openGraph: { url: "/locations" },
+  alternates: {
+    canonical: "/locations",
+  },
 };
 
 const cities = [

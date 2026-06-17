@@ -199,8 +199,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `https://easequran.co.uk/blog/${slug}` },
-    openGraph: { type: "article", publishedTime: post.date },
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: { url: `/blog/${slug}`, type: "article", publishedTime: post.date },
   };
 }
 

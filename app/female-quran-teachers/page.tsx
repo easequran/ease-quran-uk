@@ -8,7 +8,15 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Female Quran Teacher UK — Online Classes for Sisters",
   description: "Book a qualified female Quran teacher in the UK for your daughter or yourself. One-to-one online lessons for sisters of all ages. Free trial class, no commitment.",
-  alternates: { canonical: "https://easequran.co.uk/female-quran-teachers", languages: { "en-GB": "https://easequran.co.uk/female-quran-teachers" } },
+  openGraph: { url: "/female-quran-teachers" },
+  alternates: {
+    canonical: "/female-quran-teachers",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/female-quran-teachers",
+      "en-US": "https://easequran.com/female-quran-teachers",
+      "x-default": "https://easequran.com/female-quran-teachers",
+    },
+  },
 };
 
 const faqSchema = {

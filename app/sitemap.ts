@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://easequran.co.uk";
+const BASE = "https://www.easequran.co.uk";
 
 const blogSlugs = [
   "how-to-choose-online-quran-teacher-uk",

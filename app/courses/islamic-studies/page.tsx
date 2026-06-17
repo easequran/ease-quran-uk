@@ -4,7 +4,15 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 export const metadata: Metadata = {
   title: "Online Islamic Studies Classes UK | Kids and Adults",
   description: "Online Islamic Studies classes for children and adults in the UK. One-to-one lessons covering aqeedah, fiqh, seerah, and Islamic manners with a certified teacher.",
-  alternates: { canonical: "https://easequran.co.uk/courses/islamic-studies" },
+  openGraph: { url: "/courses/islamic-studies" },
+  alternates: {
+    canonical: "/courses/islamic-studies",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/courses/islamic-studies",
+      "en-US": "https://easequran.com/courses/islamic-studies",
+      "x-default": "https://easequran.com/courses/islamic-studies",
+    },
+  },
 };
 
 export default function IslamicStudies() {

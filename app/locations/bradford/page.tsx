@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes in Bradford | Ease Quran UK",
+  title: "Online Quran Classes in Bradford",
   description: "One-to-one online Quran classes for Muslim families in Bradford. Certified teachers, flexible timings. Serving Manningham, Heaton, Girlington, Great Horton and the Bradford district. Free first class.",
-  alternates: { canonical: "https://easequran.co.uk/locations/bradford" },
+  openGraph: { url: "/locations/bradford" },
+  alternates: {
+    canonical: "/locations/bradford",
+  },
 };
 
 export default function Bradford() {

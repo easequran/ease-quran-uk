@@ -8,7 +8,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact Ease Quran UK",
   description: "Get in touch with Ease Quran UK. Send us a message, WhatsApp us, or email info@easequran.co.uk. We reply within 2 hours.",
-  alternates: { canonical: "https://easequran.co.uk/contact" },
+  openGraph: { url: "/contact" },
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function Contact() {

@@ -4,7 +4,15 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 export const metadata: Metadata = {
   title: "Online Tajweed Classes UK | Learn Correct Quran Recitation",
   description: "Online Tajweed classes in the UK with a certified teacher. Learn to recite the Quran with proper pronunciation and Tajweed rules. One-to-one, free trial available.",
-  alternates: { canonical: "https://easequran.co.uk/courses/tajweed" },
+  openGraph: { url: "/courses/tajweed" },
+  alternates: {
+    canonical: "/courses/tajweed",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/courses/tajweed",
+      "en-US": "https://easequran.com/courses/tajweed",
+      "x-default": "https://easequran.com/courses/tajweed",
+    },
+  },
 };
 
 export default function Tajweed() {

@@ -20,10 +20,10 @@ const body = Inter({
   weight: ["400", "500", "600"],
 });
 
-const BASE_URL = "https://easequran.co.uk";
+const WWW = "https://www.easequran.co.uk";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(WWW),
   title: {
     default: "Online Quran Classes UK | Ease Quran Academy",
     template: "%s | Ease Quran UK",
@@ -33,20 +33,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: BASE_URL,
     siteName: "Ease Quran UK",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Ease Quran UK - Online Quran Academy" }],
+    images: [{ url: `${WWW}/og-image.png`, width: 1200, height: 630, alt: "Ease Quran UK - Online Quran Academy" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og-image.png"],
-  },
-  alternates: {
-    canonical: BASE_URL,
-    languages: {
-      "en-GB": BASE_URL,
-      "en-US": "https://easequran.com",
-    },
+    images: [`${WWW}/og-image.png`],
   },
   icons: {
     icon: "/favicon.png",
@@ -71,8 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": ["EducationalOrganization", "Organization"],
               name: "Ease Quran UK",
-              url: BASE_URL,
-              logo: `${BASE_URL}/logo.png`,
+              url: WWW,
+              logo: `${WWW}/logo.png`,
               email: "info@easequran.co.uk",
               telephone: "+447311254423",
               address: { "@type": "PostalAddress", addressCountry: "GB" },
@@ -99,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Ease Quran UK",
-              url: BASE_URL,
+              url: WWW,
             }),
           }}
         />

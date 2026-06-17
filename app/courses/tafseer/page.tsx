@@ -4,7 +4,15 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 export const metadata: Metadata = {
   title: "Online Tafseer Classes UK | Understand the Quran",
   description: "Online Tafseer classes for UK students. Learn the meanings, context, and lessons of the Quran with a qualified teacher. One-to-one, flexible timings. Free trial.",
-  alternates: { canonical: "https://easequran.co.uk/courses/tafseer" },
+  openGraph: { url: "/courses/tafseer" },
+  alternates: {
+    canonical: "/courses/tafseer",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/courses/tafseer",
+      "en-US": "https://easequran.com/courses/tafseer",
+      "x-default": "https://easequran.com/courses/tafseer",
+    },
+  },
 };
 
 export default function Tafseer() {

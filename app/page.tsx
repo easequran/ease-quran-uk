@@ -11,9 +11,14 @@ export const metadata: Metadata = {
   title: "Online Quran Classes for Kids & Adults in the UK",
   description:
     "Trusted online Quran classes in the UK. One-to-one lessons with qualified male & female teachers. Flexible UK timings, free first class, no commitment. Start today.",
+  openGraph: { url: "/" },
   alternates: {
-    canonical: "https://easequran.co.uk",
-    languages: { "en-GB": "https://easequran.co.uk", "en-US": "https://easequran.com" },
+    canonical: "/",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/",
+      "en-US": "https://easequran.com/",
+      "x-default": "https://easequran.com/",
+    },
   },
 };
 
@@ -65,6 +70,32 @@ const cities = [
   { label: "Leicester", href: "/locations/leicester" },
 ];
 
+
+const videoSchemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Ease Quran UK Review — Saman Imran',
+    description: 'Student review of Ease Quran UK online Quran classes for UK Muslim families.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/u_j-zh0jFL8/hqdefault.jpg',
+    uploadDate: '2024-06-01',
+    contentUrl: 'https://www.youtube.com/watch?v=u_j-zh0jFL8',
+    embedUrl: 'https://www.youtube.com/embed/u_j-zh0jFL8',
+    publisher: { '@type': 'Organization', name: 'Ease Quran UK', url: 'https://www.easequran.co.uk' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Ease Quran UK Review — Younas Rahman',
+    description: 'Student review of Ease Quran UK online Quran classes for UK Muslim families.',
+    thumbnailUrl: 'https://i.ytimg.com/vi/1eQ9zKKLWfQ/hqdefault.jpg',
+    uploadDate: '2024-06-01',
+    contentUrl: 'https://www.youtube.com/watch?v=1eQ9zKKLWfQ',
+    embedUrl: 'https://www.youtube.com/embed/1eQ9zKKLWfQ',
+    publisher: { '@type': 'Organization', name: 'Ease Quran UK', url: 'https://www.easequran.co.uk' },
+  },
+];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -88,6 +119,7 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {videoSchemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
       {/* HERO */}
       <section className="relative bg-[#122259] text-white overflow-hidden min-h-[560px] flex items-center">

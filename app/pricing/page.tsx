@@ -7,7 +7,15 @@ import CTABand from "@/components/CTABand";
 export const metadata: Metadata = {
   title: "Quran Class Pricing UK — Plans from £30/month",
   description: "Transparent online Quran class pricing for UK families. Plans from £30/month. One-to-one lessons, no hidden fees, cancel anytime. Free trial class included.",
-  alternates: { canonical: "https://easequran.co.uk/pricing" },
+  openGraph: { url: "/pricing" },
+  alternates: {
+    canonical: "/pricing",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/pricing",
+      "en-US": "https://easequran.com/pricing",
+      "x-default": "https://easequran.com/pricing",
+    },
+  },
 };
 
 const plans = [

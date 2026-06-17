@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Ease Quran UK",
+  title: "Terms & Conditions",
   description: "Terms and conditions for using Ease Quran UK services.",
-  alternates: { canonical: "https://easequran.co.uk/terms-conditions" },
+  alternates: { canonical: "/terms-conditions" },
   robots: { index: false, follow: false },
 };
 

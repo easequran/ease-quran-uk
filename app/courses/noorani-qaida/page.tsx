@@ -4,7 +4,15 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 export const metadata: Metadata = {
   title: "Noorani Qaida Course UK | Online Arabic for Beginners",
   description: "Start your Quran journey with our Noorani Qaida course in the UK. One-to-one online lessons for children and adult beginners with a qualified teacher. Free first class.",
-  alternates: { canonical: "https://easequran.co.uk/courses/noorani-qaida", languages: { "en-GB": "https://easequran.co.uk/courses/noorani-qaida" } },
+  openGraph: { url: "/courses/noorani-qaida" },
+  alternates: {
+    canonical: "/courses/noorani-qaida",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/courses/noorani-qaida",
+      "en-US": "https://easequran.com/courses/noorani-qaida",
+      "x-default": "https://easequran.com/courses/noorani-qaida",
+    },
+  },
 };
 
 export default function NooraniQaida() {

@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes in Birmingham | Ease Quran UK",
+  title: "Online Quran Classes in Birmingham",
   description: "One-to-one online Quran classes for Muslim families in Birmingham. Certified teachers, flexible timings. Serving Small Heath, Sparkhill, Handsworth, Alum Rock and more. Free first class.",
-  alternates: { canonical: "https://easequran.co.uk/locations/birmingham" },
+  openGraph: { url: "/locations/birmingham" },
+  alternates: {
+    canonical: "/locations/birmingham",
+  },
 };
 
 export default function Birmingham() {

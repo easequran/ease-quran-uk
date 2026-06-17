@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes in Manchester | Ease Quran UK",
+  title: "Online Quran Classes in Manchester",
   description: "One-to-one online Quran classes for Muslim families in Manchester. Certified teachers, flexible UK timings. Serving Rusholme, Longsight, Cheetham Hill, Levenshulme and more. Free first class.",
-  alternates: { canonical: "https://easequran.co.uk/locations/manchester" },
+  openGraph: { url: "/locations/manchester" },
+  alternates: {
+    canonical: "/locations/manchester",
+  },
 };
 
 export default function Manchester() {

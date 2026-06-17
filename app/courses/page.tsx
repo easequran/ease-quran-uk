@@ -8,7 +8,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Online Quran Courses UK — All Courses",
   description: "Browse all online Quran courses at Ease Quran UK. One-to-one classes for kids and adults — Noorani Qaida, Tajweed, Hifz, Islamic Studies, Tafseer. Free trial available.",
-  alternates: { canonical: "https://easequran.co.uk/courses" },
+  openGraph: { url: "/courses" },
+  alternates: {
+    canonical: "/courses",
+  },
 };
 
 const courses = [

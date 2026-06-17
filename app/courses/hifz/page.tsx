@@ -4,7 +4,15 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 export const metadata: Metadata = {
   title: "Online Hifz Course UK | Quran Memorisation Classes",
   description: "Online Hifz course in the UK with a certified Hafiz teacher. Memorise the Quran at your own pace with one-to-one lessons. Flexible UK timings. Free trial class.",
-  alternates: { canonical: "https://easequran.co.uk/courses/hifz" },
+  openGraph: { url: "/courses/hifz" },
+  alternates: {
+    canonical: "/courses/hifz",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/courses/hifz",
+      "en-US": "https://easequran.com/courses/hifz",
+      "x-default": "https://easequran.com/courses/hifz",
+    },
+  },
 };
 
 export default function Hifz() {

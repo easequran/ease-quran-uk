@@ -12,6 +12,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Non-www → www
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "easequran.co.uk" }],
+        destination: "https://www.easequran.co.uk/:path*",
+        permanent: true,
+      },
       { source: "/quran-classes-birmingham", destination: "/locations/birmingham", permanent: true },
       { source: "/online-quran-classes-in-london", destination: "/locations/london", permanent: true },
       { source: "/noorani-qaida-course", destination: "/courses/noorani-qaida", permanent: true },

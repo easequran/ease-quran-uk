@@ -8,7 +8,15 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "About Ease Quran UK — Our Story & Teachers",
   description: "Learn about Ease Quran UK — a trusted online Quran academy founded by certified teacher Shah Zaib to serve Muslim families across the UK with honest, quality education.",
-  alternates: { canonical: "https://easequran.co.uk/about" },
+  openGraph: { url: "/about" },
+  alternates: {
+    canonical: "/about",
+    languages: {
+      "en-GB": "https://www.easequran.co.uk/about",
+      "en-US": "https://easequran.com/about",
+      "x-default": "https://easequran.com/about",
+    },
+  },
 };
 
 const stats = [
