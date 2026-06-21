@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE = "https://www.easequran.co.uk";
 
 const blogSlugs = [
+  "is-it-safe-online-quran-classes-uk",
   "how-to-choose-online-quran-teacher-uk",
   "best-age-to-start-quran-classes",
   "noorani-qaida-vs-quran-reading",

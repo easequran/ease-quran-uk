@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight, Clock, BookOpen, ArrowRight } from "lucide-react";
 import CTABand from "@/components/CTABand";
@@ -14,6 +15,14 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+  {
+    slug: "is-it-safe-online-quran-classes-uk",
+    title: "Is It Safe for My Child to Learn Quran Online? A Parent's Honest Safety Checklist",
+    excerpt: "A clear, honest safety checklist for UK parents considering online Quran classes — what to ask, what to watch for, and how we keep every lesson safe.",
+    date: "2026-06-01",
+    readTime: "7 min read",
+    category: "Trust & Safety",
+  },
   {
     slug: "how-to-choose-online-quran-teacher-uk",
     title: "How to Choose an Online Quran Teacher in the UK: A Parent's Guide",
@@ -50,9 +59,16 @@ export default function Blog() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#122259] pt-12 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 70% 50%, #F5A623 0%, transparent 60%)" }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+      <section className="relative bg-[#122259] overflow-hidden min-h-[360px] flex items-center">
+        <Image
+          src="/blog-hero.webp"
+          alt="UK Muslim parent and child reading together — Ease Quran blog"
+          fill
+          className="object-cover object-center opacity-20"
+          priority
+          sizes="100vw"
+        />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 w-full">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]} dark />
           <div className="mt-6 max-w-2xl">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] border border-[#F5A623]/30 rounded-full px-3 py-1 mb-4">Quran Education Blog</span>
