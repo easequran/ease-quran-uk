@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, Clock, BookOpen, ArrowRight } from "lucide-react";
+import { ChevronRight, Clock, Shield, BookOpen, Users, Star } from "lucide-react";
 import CTABand from "@/components/CTABand";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Quran Education Blog — Tips & Advice for UK Families",
-  description: "Helpful guides and articles for UK Muslim families on Quran education — choosing a teacher, starting ages, Tajweed vs reading, and more. Read the Ease Quran blog.",
+  title: "Quran Education Blog: Tips and Advice for UK Families",
+  description: "Helpful guides for UK Muslim families on Quran education: choosing a teacher, online class safety, starting ages, and more. Read the Ease Quran blog.",
   openGraph: { url: "/blog" },
   alternates: {
     canonical: "/blog",
@@ -18,35 +18,19 @@ const posts = [
   {
     slug: "is-it-safe-online-quran-classes-uk",
     title: "Is It Safe for My Child to Learn Quran Online? A Parent's Honest Safety Checklist",
-    excerpt: "A clear, honest safety checklist for UK parents considering online Quran classes — what to ask, what to watch for, and how we keep every lesson safe.",
+    excerpt: "A clear, honest safety checklist for UK parents considering online Quran classes: what to ask, what to watch for, and how we keep every lesson safe.",
     date: "2026-06-01",
     readTime: "7 min read",
     category: "Trust & Safety",
+    heroImage: "/blog-safety-checklist.webp",
   },
-  {
-    slug: "how-to-choose-online-quran-teacher-uk",
-    title: "How to Choose an Online Quran Teacher in the UK: A Parent's Guide",
-    excerpt: "With so many options — from individual tutors to online academies — choosing the right Quran teacher for your child in the UK can feel overwhelming. Here is what to look for, what to avoid, and the questions to ask before you commit.",
-    date: "2024-12-01",
-    readTime: "7 min read",
-    category: "Choosing a Teacher",
-  },
-  {
-    slug: "best-age-to-start-quran-classes",
-    title: "What Is the Best Age to Start Quran Classes for Kids?",
-    excerpt: "Most parents want to start their children on the Quran as early as possible — but is there an ideal age? We explore the signs of readiness, how different ages learn differently, and how to make the most of early Quranic education.",
-    date: "2024-11-15",
-    readTime: "6 min read",
-    category: "Getting Started",
-  },
-  {
-    slug: "noorani-qaida-vs-quran-reading",
-    title: "Noorani Qaida vs Quran Reading: Where Should My Child Start?",
-    excerpt: "Many parents are unsure whether their child should begin with Noorani Qaida or go straight to reading the Quran. This guide explains the difference, who each approach suits, and how to make the right decision for your child.",
-    date: "2024-11-01",
-    readTime: "5 min read",
-    category: "Courses",
-  },
+];
+
+const topics = [
+  { icon: <Shield size={18} className="text-[#F5A623]" />, label: "Child Safety", desc: "Safeguarding, transparency, and what to look for" },
+  { icon: <BookOpen size={18} className="text-[#F5A623]" />, label: "Choosing a Teacher", desc: "Credentials, vetting, and red flags to watch for" },
+  { icon: <Star size={18} className="text-[#F5A623]" />, label: "Getting Started", desc: "Best age, first steps, and what to expect" },
+  { icon: <Users size={18} className="text-[#F5A623]" />, label: "Course Guides", desc: "Noorani Qaida, Tajweed, Hifz and more explained" },
 ];
 
 function formatDate(dateStr: string) {
@@ -54,15 +38,15 @@ function formatDate(dateStr: string) {
 }
 
 export default function Blog() {
-  const [featured, ...rest] = posts;
+  const [post] = posts;
 
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#122259] overflow-hidden min-h-[360px] flex items-center">
+      <section className="relative bg-[#122259] overflow-hidden min-h-[380px] flex items-center">
         <Image
           src="/blog-hero.webp"
-          alt="UK Muslim parent and child reading together — Ease Quran blog"
+          alt="UK Muslim parent and child reading together"
           fill
           className="object-cover object-center opacity-20"
           priority
@@ -78,73 +62,95 @@ export default function Blog() {
         </div>
       </section>
 
+      {/* Featured article */}
       <section className="section-pad">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
 
-          {/* Featured post */}
-          <div className="mb-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-4">Featured Article</p>
-            <Link href={`/blog/${featured.slug}`} className="group block bg-white rounded-3xl border-2 border-[#122259]/10 hover:border-[#F5A623]/50 hover:shadow-lg transition-all duration-300 overflow-hidden">
-              <div className="p-8 md:p-10">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-xs font-bold text-white bg-[#122259] px-3 py-1 rounded-full">{featured.category}</span>
-                  <span className="text-gray-400 text-xs flex items-center gap-1"><Clock size={11} /> {featured.readTime}</span>
-                  <time className="text-gray-400 text-xs" dateTime={featured.date}>{formatDate(featured.date)}</time>
+          <p className="text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-6">Latest Article</p>
+
+          <Link href={`/blog/${post.slug}`} className="group block rounded-3xl overflow-hidden border-2 border-[#122259]/10 hover:border-[#F5A623]/40 hover:shadow-2xl transition-all duration-300 bg-white">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              {/* Image side */}
+              <div className="relative min-h-[260px] md:min-h-[380px] bg-[#122259] overflow-hidden">
+                <Image
+                  src={post.heroImage}
+                  alt={post.title}
+                  fill
+                  className="object-cover object-center opacity-80 group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#122259]/60 to-transparent md:hidden" />
+                <div className="absolute top-4 left-4">
+                  <span className="text-xs font-bold text-white bg-[#122259]/80 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">{post.category}</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-3 group-hover:text-[#F5A623] transition-colors leading-snug">
-                  {featured.title}
+              </div>
+
+              {/* Content side */}
+              <div className="p-8 md:p-10 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-xs font-bold text-white bg-[#122259] px-3 py-1 rounded-full hidden md:block">{post.category}</span>
+                  <span className="text-gray-400 text-xs flex items-center gap-1"><Clock size={11} /> {post.readTime}</span>
+                  <time className="text-gray-400 text-xs" dateTime={post.date}>{formatDate(post.date)}</time>
+                </div>
+
+                <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-4 group-hover:text-[#F5A623] transition-colors leading-snug">
+                  {post.title}
                 </h2>
-                <p className="text-gray-600 leading-relaxed mb-5">{featured.excerpt}</p>
-                <span className="inline-flex items-center gap-2 text-[#F5A623] font-semibold text-sm">
-                  Read article <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+                <p className="text-gray-600 leading-relaxed mb-6 text-sm md:text-base">{post.excerpt}</p>
+
+                <span className="inline-flex items-center gap-2 text-[#F5A623] font-bold text-sm">
+                  Read the full article <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </span>
               </div>
-            </Link>
-          </div>
+            </div>
+          </Link>
+        </div>
+      </section>
 
-          {/* Rest of posts */}
-          {rest.length > 0 && (
-            <>
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-5">More Articles</p>
-              <div className="space-y-5">
-                {rest.map((post) => (
-                  <article key={post.slug}>
-                    <Link href={`/blog/${post.slug}`} className="group flex flex-col sm:flex-row gap-5 bg-white rounded-2xl border border-gray-100 p-6 hover:border-[#F5A623]/40 hover:shadow-md transition-all duration-300">
-                      <div className="sm:w-10 sm:pt-1 flex-shrink-0">
-                        <div className="w-10 h-10 rounded-xl bg-[#faf9f7] border border-gray-100 flex items-center justify-center">
-                          <BookOpen size={16} className="text-[#F5A623]" />
-                        </div>
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-3 mb-2">
-                          <span className="text-xs font-bold text-[#122259] bg-[#faf9f7] border border-gray-200 px-2.5 py-0.5 rounded-full">{post.category}</span>
-                          <span className="text-gray-400 text-xs flex items-center gap-1"><Clock size={11} /> {post.readTime}</span>
-                        </div>
-                        <h2 className="text-lg font-bold text-[#122259] mb-1.5 group-hover:text-[#F5A623] transition-colors leading-snug">
-                          {post.title}
-                        </h2>
-                        <p className="text-gray-500 text-sm leading-relaxed line-clamp-2">{post.excerpt}</p>
-                      </div>
-                      <div className="sm:flex sm:items-center flex-shrink-0">
-                        <ChevronRight size={18} className="text-gray-300 group-hover:text-[#F5A623] transition-colors" />
-                      </div>
-                    </Link>
-                  </article>
-                ))}
+      {/* Topics we cover */}
+      <section className="section-pad bg-[#faf9f7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">What We Write About</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#122259]">Topics for UK Muslim Families</h2>
+            <p className="text-gray-500 mt-3 text-sm max-w-lg mx-auto">More articles are being written. Below are the topics we cover, so you know what is coming.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {topics.map((t) => (
+              <div key={t.label} className="bg-white rounded-2xl border border-gray-100 p-5 flex items-start gap-4 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#faf9f7] border border-gray-100 flex items-center justify-center flex-shrink-0">
+                  {t.icon}
+                </div>
+                <div>
+                  <p className="font-bold text-[#122259] text-sm mb-0.5">{t.label}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{t.desc}</p>
+                </div>
               </div>
-            </>
-          )}
-
-          {/* Newsletter / no more posts nudge */}
-          <div className="mt-14 bg-[#faf9f7] rounded-3xl border border-gray-100 p-8 text-center">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">More Coming Soon</span>
-            <h3 className="text-xl font-bold text-[#122259] mb-2">We publish new guides regularly</h3>
-            <p className="text-gray-500 text-sm mb-5 max-w-sm mx-auto">Follow us on social media or WhatsApp us to be notified when new articles are published.</p>
-            <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-navy inline-flex text-sm">
-              WhatsApp Us
-            </a>
+            ))}
           </div>
+        </div>
+      </section>
 
+      {/* WhatsApp nudge */}
+      <section className="section-pad">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="bg-[#122259] rounded-3xl p-8 md:p-10 text-center relative overflow-hidden">
+            <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 60% 0%, #F5A623 0%, transparent 60%)" }} />
+            <div className="relative">
+              <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Get Notified</span>
+              <h3 className="text-2xl font-bold text-white mb-3">New articles every month</h3>
+              <p className="text-blue-200 text-sm mb-6 max-w-sm mx-auto">WhatsApp us and we will send you new guides as they are published. No spam, just useful advice for UK families.</p>
+              <a
+                href="https://wa.me/447311254423?text=Hi%2C%20please%20let%20me%20know%20when%20you%20publish%20new%20blog%20articles."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gold inline-flex text-sm"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="white" className="flex-shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.853L.057 23.59a.75.75 0 00.917.932l5.898-1.546A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm.029 22c-1.96 0-3.791-.527-5.363-1.443l-.385-.228-3.99 1.047 1.004-3.878-.249-.394A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                WhatsApp for Updates
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

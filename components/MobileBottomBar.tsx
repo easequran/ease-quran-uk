@@ -1,11 +1,17 @@
+"use client";
 import Link from "next/link";
 import { MessageCircle, CalendarCheck } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { waLink } from "@/lib/whatsapp";
 
 export default function MobileBottomBar() {
+  const pathname = usePathname();
+  const href = waLink(pathname);
+
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 flex">
       <a
-        href="https://wa.me/447311254423"
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-1 flex flex-col items-center justify-center py-3 text-[#25D366] hover:bg-gray-50 transition-colors"

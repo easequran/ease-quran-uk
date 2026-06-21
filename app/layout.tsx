@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileBottomBar from "@/components/MobileBottomBar";
 import ScrollToTop from "@/components/ScrollToTop";
+import WhatsAppSticky from "@/components/WhatsAppSticky";
 
 const heading = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <MobileBottomBar />
+        <WhatsAppSticky />
         <ScrollToTop />
         <script
           type="application/ld+json"
