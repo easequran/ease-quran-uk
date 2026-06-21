@@ -22,9 +22,9 @@ function row(label: string, value: string) {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, email, phone, childAge, course, message } = body as Record<string, string>;
+    const { name, email, phone, childAge, course, teacherGender, hearAbout, message } = body as Record<string, string>;
 
-    if (!name?.trim() || !email?.trim() || !phone?.trim()) {
+    if (!name?.trim() || !phone?.trim()) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
@@ -72,6 +72,8 @@ export async function POST(req: NextRequest) {
               ${row("Phone / WhatsApp", `<a href="https://wa.me/${phone.replace(/\D/g,"")}" style="color:#122259;text-decoration:none;font-weight:600">${phone}</a>`)}
               ${row("Child's Age", childAge || "Not provided")}
               ${row("Preferred Course", course || "Not specified")}
+              ${row("Teacher Preference", teacherGender || "Not specified")}
+              ${hearAbout ? row("Heard About Us", hearAbout) : ""}
               ${row("Message", message || "None")}
               ${row("Submitted", submitted)}
             </table>
