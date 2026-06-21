@@ -17,7 +17,7 @@ export default function Birmingham() {
       slug="birmingham"
       intro="Quality one-to-one online Quran classes for Muslim families across Birmingham. Certified male and female teachers, flexible UK timings, and a completely free first class with no commitment."
       areas={["Small Heath", "Sparkhill", "Handsworth", "Bordesley Green", "Balsall Heath", "Alum Rock", "Lozells", "Erdington", "Moseley", "Nechells", "Winson Green", "Aston", "Kingstanding", "Saltley", "Hodge Hill"]}
-      whyOnline="Birmingham has one of the largest Muslim communities in the UK, and families here have long relied on local madrassahs. But school-age children already face long days — adding a journey to a madrassa on top of homework and activities puts real pressure on family life. Parents in Small Heath, Sparkhill, Alum Rock, and Handsworth tell us the same thing: they want quality, consistency, and a teacher who actually shows up. That is what Ease Quran provides, online, without anyone leaving home."
+      whyOnline="Birmingham has one of the largest Muslim communities in the UK, and families here have long relied on local madrassahs. But school-age children already face long days, and adding a madrassa journey on top of homework puts real pressure on family time. Parents in Small Heath, Sparkhill, Alum Rock, and Handsworth tell us the same thing: they want quality, consistency, and a teacher who actually shows up. Ease Quran provides exactly that, online, without anyone leaving home."
       localPoints={[
         "No need to travel after school — lessons happen at home",
         "Ideal for families across Birmingham's Muslim communities",

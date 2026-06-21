@@ -366,7 +366,7 @@ export default function FreeTrialForm() {
       {step === 3 && (
         <div className="space-y-5">
           <div>
-            <p className="text-base font-bold text-[#122259] mb-1">Almost done — review your details</p>
+            <p className="text-base font-bold text-[#122259] mb-1">Almost done. Check your details below.</p>
             <p className="text-sm text-gray-500 mb-5">Everything look right? Add a note below if needed, then submit.</p>
           </div>
 

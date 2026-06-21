@@ -67,7 +67,7 @@ export default function Safety() {
                 {[
                   "A thorough interview conducted by the founder Shah Zaib",
                   "Verification of Islamic educational credentials",
-                  "A trial teaching assessment — assessed for teaching ability, communication, and conduct",
+                  "A trial teaching assessment covering teaching ability, communication, and professional conduct",
                   "An ongoing probationary period before full assignment to students",
                   "Regular oversight and communication between teachers and the academy",
                 ].map((item) => (

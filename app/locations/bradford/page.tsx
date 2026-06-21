@@ -17,7 +17,7 @@ export default function Bradford() {
       slug="bradford"
       intro="Qualified one-to-one online Quran classes for Muslim families across Bradford. A certified teacher, flexible UK timings, a female teacher option, and a free first class — no commitment needed."
       areas={["Manningham", "Heaton", "Toller", "Great Horton", "Girlington", "Lidget Green", "Wibsey", "Bradford Moor", "Undercliffe", "Keighley", "Thornbury", "Laisterdyke", "Little Horton", "Thornton"]}
-      whyOnline="Bradford has one of the highest proportions of British Muslims of any city in the UK, and families here are deeply committed to Quranic education. But the local provision is not always consistent — and busy working parents in Manningham, Girlington, and Great Horton often struggle to organise transport to a madrassa on top of everything else. Ease Quran brings the lesson directly to your home: a certified, English-speaking teacher, at a time that fits Bradford family life, with no commute required."
+      whyOnline="Bradford has one of the highest proportions of British Muslims of any city in the UK, and families here are deeply committed to Quranic education. But local options are not always consistent, and busy working parents in Manningham, Girlington, and Great Horton often struggle to arrange transport to a madrassa on top of everything else. Ease Quran brings the lesson directly to your home: a certified, English-speaking teacher, at a time that fits Bradford family life, with no commute required."
       localPoints={[
         "One-to-one classes — more effective than crowded local groups",
         "Certified teachers with formal Islamic qualifications",

@@ -17,7 +17,7 @@ export default function Manchester() {
       slug="manchester"
       intro="One-to-one online Quran classes for Muslim families across Manchester and Greater Manchester. Qualified male and female teachers, flexible UK timings, and a completely free first class."
       areas={["Rusholme", "Longsight", "Fallowfield", "Cheetham Hill", "Moss Side", "Levenshulme", "Gorton", "Didsbury", "Withington", "Hulme", "Stretford", "Salford", "Oldham", "Rochdale", "Bolton"]}
-      whyOnline="Manchester has a vibrant and growing Muslim community, from Rusholme's 'Curry Mile' corridor to the neighbourhoods of Longsight, Levenshulme, and Cheetham Hill. But finding a genuinely reliable Quran teacher in the area is harder than it should be. Many parents we speak to have tried local options only to deal with inconsistency and last-minute cancellations. With Ease Quran, a certified teacher joins your child's lesson online at the agreed time, every week, without anyone having to step outside."
+      whyOnline="Manchester has a vibrant and growing Muslim community, from Rusholme's Curry Mile to the neighbourhoods of Longsight, Levenshulme, and Cheetham Hill. But finding a reliable, consistent Quran teacher in the area is harder than it should be. Many parents we speak to have tried local options only to deal with inconsistency and last-minute cancellations. With Ease Quran, a certified teacher joins your child's lesson online at the agreed time, every week, without anyone having to step outside."
       localPoints={[
         "Serves families across Greater Manchester including Salford, Oldham, and Rochdale",
         "Flexible evening and weekend timings to fit around school",

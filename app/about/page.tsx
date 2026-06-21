@@ -27,7 +27,7 @@ const stats = [
 ];
 
 const values = [
-  { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Honesty First", desc: "We never overstate our credentials or make promises we cannot keep. What you see is what you get — always." },
+  { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Honesty First", desc: "We never overstate our credentials or make promises we cannot keep. What you see is what you get. Always." },
   { icon: <BookOpen size={22} className="text-[#F5A623]" />, title: "Genuine Quality", desc: "Certified teachers, one-to-one classes, and structured curricula — not freelancers piecing lessons together." },
   { icon: <Shield size={22} className="text-[#F5A623]" />, title: "Child Safety", desc: "Parents can attend any class at any time. Full transparency, always. No exceptions." },
   { icon: <Users size={22} className="text-[#F5A623]" />, title: "For Everyone", desc: "Male and female teachers. Classes for children, teenagers, adults, and reverts. Everyone is welcome." },

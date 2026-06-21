@@ -73,7 +73,7 @@ export default function Blog() {
           <div className="mt-6 max-w-2xl">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] border border-[#F5A623]/30 rounded-full px-3 py-1 mb-4">Quran Education Blog</span>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">Guides for UK Muslim Families</h1>
-            <p className="text-blue-200 text-lg">Practical, honest advice on Quran education — written by teachers, for parents.</p>
+            <p className="text-blue-200 text-lg">Practical, honest advice on Quran education, written by teachers for parents.</p>
           </div>
         </div>
       </section>

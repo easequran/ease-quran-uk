@@ -191,6 +191,26 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
         </div>
       </section>
 
+      {/* Useful links for this city */}
+      <section className="section-pad bg-[#faf9f7]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-lg font-bold text-[#122259] mb-5">Useful Pages for {city} Families</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { href: "/female-quran-teachers", title: "Female Quran Teacher", desc: "Available for sisters and daughters of all ages" },
+              { href: "/pricing", title: "Pricing and Plans", desc: "From £30/month, sibling discounts available" },
+              { href: "/safety", title: "Child Safety Policy", desc: "How we keep every online class safe and open" },
+              { href: "/about", title: "About Our Teachers", desc: "Meet Shah Zaib, Muhammad Umair, and Almas Fatima" },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-md hover:border-[#F5A623]/30 transition-all group">
+                <p className="font-bold text-[#122259] group-hover:text-[#F5A623] transition-colors text-sm mb-1">{link.title}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{link.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Other cities */}
       <section className="section-pad">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -206,7 +226,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
         </div>
       </section>
 
-      <CTABand heading={`Book Your Free Trial — Serving Families in ${city}`} />
+      <CTABand heading={`Start Learning Today in ${city}`} />
       <div className="lg:hidden h-14" aria-hidden="true" />
     </>
   );

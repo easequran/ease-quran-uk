@@ -15,7 +15,7 @@ export default function Leicester() {
     <CityPageTemplate
       city="Leicester"
       slug="leicester"
-      intro="Premium one-to-one online Quran classes for Muslim families across Leicester. Certified male and female teachers, flexible UK timings, and a completely free first class."
+      intro="Trusted one-to-one online Quran classes for Muslim families across Leicester. Certified male and female teachers, flexible UK timings, and a completely free first class."
       areas={["Highfields", "Evington", "Spinney Hills", "Belgrave", "Rushey Mead", "Beaumont Leys", "Braunstone", "Stoneygate", "West End", "Newfoundpool", "Humberstone", "Knighton", "Oadby", "Wigston"]}
       whyOnline="Leicester's Muslim community is one of the most established in the UK, with a strong tradition of Islamic education going back generations. Families in Highfields, Evington, and Spinney Hills value that tradition deeply — but as children's lives become busier with school, homework, and activities, the daily madrassa trip does not always work. Ease Quran gives Leicester families the quality and structure of traditional Quran education in a format that fits modern family life, delivered one-to-one by a certified teacher, at home."
       localPoints={[

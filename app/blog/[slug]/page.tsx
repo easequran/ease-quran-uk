@@ -23,26 +23,26 @@ const posts: Post[] = [
   {
     slug: "is-it-safe-online-quran-classes-uk",
     title: "Is It Safe for My Child to Learn Quran Online? A Parent's Honest Safety Checklist",
-    description: "A clear, honest safety checklist for UK parents considering online Quran classes — what to ask, what to watch for, and how we keep every lesson safe.",
+    description: "A clear, honest safety checklist for UK parents considering online Quran classes: what to ask, what to watch for, and how we keep every lesson safe.",
     date: "2026-06-01",
     readTime: "7 min read",
     heroImage: "/blog-safety-checklist.webp",
     heroAlt: "Parent sitting beside child during an online Quran class on a laptop",
     faqs: [
       { q: "Can I really watch my child's entire online Quran lesson?", a: "Yes. Every Ease Quran lesson is one-to-one, and parents are welcome to sit in for the full session, every time, with no notice required." },
-      { q: "What platform do you use for online Quran classes?", a: "We teach live over Zoom or Google Meet — both well-known, secure platforms you can verify and control on your own device." },
+      { q: "What platform do you use for online Quran classes?", a: "We teach live over Zoom or Google Meet, both well-known, secure platforms you can verify and control on your own device." },
       { q: "Is there a female Quran teacher available for my daughter?", a: "Yes. Our certified female teacher, Almas Fatima, is available for sisters and daughters of any age. Simply request a female teacher when you book your free trial." },
-      { q: "Can I get my child's Quran lesson recorded?", a: "Yes — sessions can be recorded on request. Just let us know when booking and we will arrange it." },
-      { q: "How do I know an online Quran teacher is actually qualified?", a: "Ask which body certified them — for example, Wifaq ul Madaris Al-Arabia — and ask to see proof. A genuinely qualified teacher will have a real, verifiable certification, not just a claim on a website." },
+      { q: "Can I get my child's Quran lesson recorded?", a: "Yes, sessions can be recorded on request. Just let us know when booking and we will arrange it." },
+      { q: "How do I know an online Quran teacher is actually qualified?", a: "Ask which body certified them (for example, Wifaq ul Madaris Al-Arabia) and ask to see proof. A properly qualified teacher will have a real, verifiable certification, not just a claim on a website." },
     ],
     content: (
       <div className="prose prose-gray max-w-none">
-        <p>If you&apos;re a parent reading this, there&apos;s a good chance you&apos;ve typed some version of &ldquo;is online Quran teaching safe&rdquo; into Google late at night, after your child has gone to bed, while you&apos;re still not quite sure. That hesitation is completely fair. You&apos;re handing your child&apos;s religious education — and a screen, in their bedroom or living room — over to someone you&apos;ve never met in person. You should ask hard questions before you do that.</p>
-        <p>We teach Quran online every day, and we still think that hesitation is healthy. So instead of just telling you &ldquo;don&apos;t worry, it&apos;s safe,&rdquo; here is the actual checklist we&apos;d want you to use — including the questions that, if an academy can&apos;t answer them clearly, should make you walk away.</p>
+        <p>If you&apos;re a parent reading this, there&apos;s a good chance you&apos;ve typed some version of &ldquo;is online Quran teaching safe&rdquo; into Google late at night, after your child has gone to bed, while you&apos;re still not quite sure. That hesitation is completely fair. You&apos;re handing your child&apos;s religious education, and access to a screen in their bedroom, over to someone you&apos;ve never met in person. You should ask hard questions before you do that.</p>
+        <p>We teach Quran online every day, and we still think that hesitation is healthy. So instead of just telling you &ldquo;don&apos;t worry, it&apos;s safe,&rdquo; here is the actual checklist we&apos;d want you to use, including the questions that, if an academy can&apos;t answer them clearly, should make you walk away.</p>
 
         <h2>Why This Question Matters More in 2026 Than Ever</h2>
         <p>Online Quran teaching has grown fast in the UK over the last few years, and growth without scrutiny is exactly how unsafe situations slip through. Some academies hire teachers with no verification at all. Some run group classes with a dozen children and one distracted tutor. Some have no policy on recording, no policy on who else might be in the room with the teacher, and no way for a parent to actually check in.</p>
-        <p>None of that is true of every academy — but it&apos;s true of enough of them that &ldquo;is this safe?&rdquo; deserves a proper answer, not a reassurance.</p>
+        <p>None of that is true of every academy, but it&apos;s true of enough of them that &ldquo;is this safe?&rdquo; deserves a proper answer, not a reassurance.</p>
 
         <h2>The Six Things You Should Actually Check</h2>
 
@@ -50,36 +50,36 @@ const posts: Post[] = [
         <p>Anyone can write &ldquo;qualified Quran teacher&rdquo; on a website. What you want to know is: verified by whom? A real Ijazah or a recognised certification (for example, from Wifaq ul Madaris Al-Arabia) means the teacher has been examined by a religious authority, not just self-declared. Ask the academy directly which body certified their teacher, and ask to see it. A teacher with nothing to hide will be glad you asked.</p>
 
         <h3>2. Can you actually watch the lesson?</h3>
-        <p>This is the single biggest difference between a safe setup and a risky one. If an academy tells you parents &ldquo;aren&apos;t allowed&rdquo; to sit in on lessons, or makes it awkward to ask, that&apos;s a red flag — not a privacy feature. In a genuinely safe one-to-one class, you should be able to sit next to your child, in view of the screen, for the entire lesson, every single time, with no notice required.</p>
+        <p>This is the single biggest difference between a safe setup and a risky one. If an academy tells you parents &ldquo;aren&apos;t allowed&rdquo; to sit in on lessons, or makes it awkward to ask, that&apos;s a red flag, not a privacy feature. In a properly run one-to-one class, you should be able to sit next to your child, in view of the screen, for the entire lesson, every single time, with no notice required.</p>
 
         <h3>3. Is it actually one-to-one, or &ldquo;one-to-one&rdquo; with extra people on the call?</h3>
-        <p>Some academies advertise private lessons but the teacher is also managing a group chat, other tabs, or other students waiting in a queue visible on screen. Ask what the call looks like: who is on it, what platform is used (Zoom and Google Meet are the standard, well-understood choices — be cautious of academies using unfamiliar, unbranded &ldquo;classroom&rdquo; software you can&apos;t verify independently), and whether anyone besides the teacher and your child will ever be present.</p>
+        <p>Some academies advertise private lessons but the teacher is also managing a group chat, other tabs, or other students waiting in a queue visible on screen. Ask what the call looks like: who is on it, what platform is used (Zoom and Google Meet are the standard choices most parents already recognise; be cautious of academies using unfamiliar, unbranded &ldquo;classroom&rdquo; software you can&apos;t verify independently), and whether anyone besides the teacher and your child will ever be present.</p>
 
         <h3>4. Can sessions be recorded, on your terms?</h3>
-        <p>You should be able to ask for a session to be recorded — not because you distrust the teacher, but because it&apos;s a simple, healthy safeguard that costs the academy nothing if everything is being done properly. If recording on request isn&apos;t offered, ask why not.</p>
+        <p>You should be able to ask for a session to be recorded. Not because you distrust the teacher, but because it&apos;s a simple, practical safeguard that costs the academy nothing if everything is being done properly. If recording on request is not offered, ask why not.</p>
 
         <h3>5. Is there a female-teacher option, and is it real?</h3>
-        <p>For many UK Muslim families, this isn&apos;t a preference — it&apos;s a requirement, especially for daughters as they get older. Ask specifically: is there a named female teacher available, with her own credentials, or is &ldquo;female teachers available&rdquo; just a line on the website with nobody actually behind it? You should get a name and a real answer, not a vague &ldquo;we can probably arrange that.&rdquo;</p>
+        <p>For many UK Muslim families, this isn&apos;t a preference. It&apos;s a requirement, especially for daughters as they get older. Ask specifically: is there a named female teacher available, with her own credentials, or is &ldquo;female teachers available&rdquo; just a line on the website with nobody actually behind it? You should get a name and a real answer, not a vague &ldquo;we can probably arrange that.&rdquo;</p>
 
         <h3>6. What happens when something goes wrong?</h3>
-        <p>Ask what their actual policy is if a teacher needs to be replaced, if a lesson needs to be rescheduled, or if you&apos;re not happy and want to raise a concern. An academy with a real answer here — a real process, not just &ldquo;contact us&rdquo; — has clearly thought about safeguarding before you asked. An academy that&apos;s never been asked this before, and doesn&apos;t really have an answer, hasn&apos;t.</p>
+        <p>Ask what their actual policy is if a teacher needs to be replaced, if a lesson needs to be rescheduled, or if you&apos;re not happy and want to raise a concern. An academy with a clear process (not just a &ldquo;contact us&rdquo; email) has clearly thought about this before you asked. An academy that is surprised by the question, and does not really have an answer, has not.</p>
 
         <h2>What This Looks Like at Ease Quran</h2>
         <p>We&apos;d rather show you our actual answers than just tell you we&apos;re &ldquo;safe,&rdquo; so here they are, plainly:</p>
         <ul>
-          <li>Every teacher is certified and interviewed before they teach a single student — our founder, Shah Zaib, holds Wifaq ul Madaris Al-Arabia certification and has taught English-speaking, Western students for over six years.</li>
-          <li>Classes are genuinely one-to-one. No groups, no other students on the call, ever.</li>
+          <li>Every teacher is certified and interviewed before they teach a single student. Our founder, Shah Zaib, holds Wifaq ul Madaris Al-Arabia certification and has taught English-speaking students for over six years.</li>
+          <li>Classes are strictly one-to-one. No groups, no other students on the call, ever.</li>
           <li>Parents are welcome to sit in on any class, at any time, with no notice needed.</li>
-          <li>Sessions can be recorded on request — just ask when you book.</li>
+          <li>Sessions can be recorded on request. Just ask when you book.</li>
           <li>We have a named, qualified female teacher, Almas Fatima, a Qaria e Quran with a degree in Islamic Studies, available for sisters and daughters of any age.</li>
-          <li>Lessons run on Zoom or Google Meet — platforms you already know and can verify yourself, not an unfamiliar third-party system.</li>
+          <li>Lessons run on Zoom or Google Meet, platforms you already know and can verify yourself, not some unfamiliar third-party system.</li>
           <li>We have a structured timetable and a team of teachers so lessons don&apos;t get cancelled last-minute or simply disappear, which is one of the most common complaints families have about other academies.</li>
         </ul>
-        <p>You can read our full policy on our <a href="/safety" className="text-[#F5A623] hover:underline">Child Safety page</a>, and we&apos;d genuinely rather you ask us every one of the six questions above before booking than take any of this on trust.</p>
+        <p>You can read our full policy on our <a href="/safety" className="text-[#F5A623] hover:underline">Child Safety page</a>, and we&apos;d rather you ask us every one of those six questions before booking than take any of this on trust.</p>
 
         <h2>So, Is It Safe?</h2>
-        <p>It can be — but &ldquo;online Quran teaching&rdquo; isn&apos;t one single thing with one single safety standard. It&apos;s only as safe as the specific academy and the specific teacher in front of your child. The checklist above isn&apos;t really about us; it&apos;s about giving you the right questions to ask any academy, including this one, before you commit.</p>
-        <p>If you&apos;d like to see how this works in practice, the easiest next step is a completely free first lesson — no card required, no commitment — where you and your child can sit together, watch how the teacher works, and decide for yourselves.</p>
+        <p>It can be. But &ldquo;online Quran teaching&rdquo; is not one single thing with one single safety standard. It is only as safe as the specific academy and the specific teacher in front of your child. The checklist above is not really about us; it is about giving you the right questions to ask any academy, including this one, before you commit.</p>
+        <p>If you&apos;d like to see how this works in practice, the easiest next step is a completely free first lesson (no card, no commitment) where you and your child can sit together, watch how the teacher works, and decide for yourselves.</p>
         <p><a href="/free-trial" className="text-[#F5A623] font-semibold hover:underline">Book Your Free Trial Class</a> &middot; <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="text-[#F5A623] font-semibold hover:underline">WhatsApp Us</a></p>
       </div>
     ),
