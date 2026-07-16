@@ -112,23 +112,31 @@ export default function Blog() {
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <p className="text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-6">More Articles</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {rest.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-[#F5A623]/40 hover:shadow-xl transition-all duration-300 flex flex-col">
-                <div className="relative h-44 bg-[#122259] overflow-hidden">
-                  <Image src={post.heroImage} alt={post.title} fill className="object-cover object-center opacity-75 group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 640px) 100vw, 50vw" />
+                {/* Image — fixed aspect ratio so all cards are equal height */}
+                <div className="relative w-full overflow-hidden bg-[#122259]" style={{ paddingTop: "56.25%" }}>
+                  <Image
+                    src={post.heroImage}
+                    alt={post.title}
+                    fill
+                    className="object-cover object-center opacity-80 group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#122259]/60 to-transparent" />
                   <div className="absolute top-3 left-3">
-                    <span className="text-xs font-bold text-white bg-[#122259]/80 backdrop-blur-sm px-2.5 py-1 rounded-full">{post.category}</span>
+                    <span className="text-xs font-bold text-white bg-[#F5A623] px-3 py-1 rounded-full shadow-sm">{post.category}</span>
                   </div>
                 </div>
-                <div className="p-5 flex flex-col flex-1">
+                <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-gray-400 text-xs flex items-center gap-1"><Clock size={10} /> {post.readTime}</span>
                     <time className="text-gray-400 text-xs" dateTime={post.date}>{formatDate(post.date)}</time>
                   </div>
-                  <h2 className="text-base font-bold text-[#122259] mb-2 group-hover:text-[#F5A623] transition-colors leading-snug flex-1">{post.title}</h2>
-                  <p className="text-gray-500 text-xs leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
-                  <span className="inline-flex items-center gap-1 text-[#F5A623] font-bold text-xs">
+                  <h2 className="text-[15px] font-bold text-[#122259] mb-2 group-hover:text-[#F5A623] transition-colors leading-snug flex-1">{post.title}</h2>
+                  <p className="text-gray-500 text-xs leading-relaxed mb-5 line-clamp-3">{post.excerpt}</p>
+                  <span className="inline-flex items-center gap-1.5 text-[#F5A623] font-bold text-xs border-t border-gray-100 pt-4">
                     Read article <ChevronRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
                   </span>
                 </div>
