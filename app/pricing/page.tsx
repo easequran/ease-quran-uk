@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import CTABand from "@/components/CTABand";
 
 export const metadata: Metadata = {
-  title: "Quran Class Pricing UK — Plans from £30/month",
+  title: "Quran Class Pricing UK, Plans from £30/month",
   description: "Transparent online Quran class pricing for UK families. Plans from £30/month. One-to-one lessons, no hidden fees, cancel anytime. Free trial class included.",
   openGraph: { url: "/pricing" },
   alternates: {
@@ -23,7 +23,7 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "How much do online Quran classes cost in the UK?", acceptedAnswer: { "@type": "Answer", text: "Ease Quran UK plans start from £30 per month for 2 classes per week (8 classes/month). The most popular plan is £45/month for 3 classes per week. All plans include one-to-one lessons with a qualified teacher." } },
-    { "@type": "Question", name: "Is there a free trial?", acceptedAnswer: { "@type": "Answer", text: "Yes — the first class is completely free. No card required, no commitment. You can book your free trial from our website." } },
+    { "@type": "Question", name: "Is there a free trial?", acceptedAnswer: { "@type": "Answer", text: "Yes, the first class is completely free. No card required, no commitment. You can book your free trial from our website." } },
     { "@type": "Question", name: "Can I cancel anytime?", acceptedAnswer: { "@type": "Answer", text: "Yes. There are no long-term contracts. You can cancel or change your plan at any time." } },
     { "@type": "Question", name: "Are there family or sibling discounts?", acceptedAnswer: { "@type": "Answer", text: "Yes. If you have more than one child you'd like to enrol, please WhatsApp us and we'll create a custom family plan." } },
   ],
@@ -132,7 +132,7 @@ const plans = [
 ];
 
 const faqs = [
-  { q: "Is the free trial really free?", a: "Yes — completely free. No card required, no payment, no commitment. You try the class, meet the teacher, and decide afterwards if you'd like to continue." },
+  { q: "Is the free trial really free?", a: "Yes, completely free. No card required, no payment, no commitment. You try the class, meet the teacher, and decide afterwards if you'd like to continue." },
   { q: "Can I cancel anytime?", a: "Yes. There are no long-term contracts. If you need to pause or cancel, simply let us know and we'll sort it without any fuss." },
   { q: "Are there family discounts?", a: "Yes. If you have more than one child, WhatsApp us on +44 7311 254423 and we'll create a custom family plan with a sibling discount." },
   { q: "How do I pay?", a: "We'll confirm payment details when you sign up after your free trial. We accept common payment methods." },
@@ -155,7 +155,7 @@ export default function Pricing() {
               Simple, Honest Pricing<br className="hidden sm:block" /> for UK Families
             </h1>
             <p className="text-blue-200 text-base sm:text-lg max-w-xl">
-              No hidden fees. No long contracts. Every plan includes a completely free first class — no card needed.
+              No hidden fees. No long contracts. Every plan includes a completely free first class, no card needed.
             </p>
           </div>
 
@@ -174,7 +174,7 @@ export default function Pricing() {
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-          {/* Top 3 — main plans */}
+          {/* Top 3, main plans */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
             {plans.slice(0, 3).map((plan) => (
               <div
@@ -225,7 +225,7 @@ export default function Pricing() {
             ))}
           </div>
 
-          {/* Bottom 2 — Family + Custom */}
+          {/* Bottom 2, Family + Custom */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {plans.slice(3).map((plan) => (
               <div

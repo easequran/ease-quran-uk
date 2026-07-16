@@ -6,8 +6,8 @@ import CTABand from "@/components/CTABand";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "About Ease Quran UK — Our Story & Teachers",
-  description: "Learn about Ease Quran UK — a trusted online Quran academy founded by certified teacher Shah Zaib to serve Muslim families across the UK with honest, quality education.",
+  title: "About Ease Quran UK, Our Story & Teachers",
+  description: "Learn about Ease Quran UK, a trusted online Quran academy founded by certified teacher Shah Zaib to serve Muslim families across the UK with honest, quality education.",
   openGraph: { url: "/about" },
   alternates: {
     canonical: "/about",
@@ -28,7 +28,7 @@ const stats = [
 
 const values = [
   { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Honesty First", desc: "We never overstate our credentials or make promises we cannot keep. What you see is what you get. Always." },
-  { icon: <BookOpen size={22} className="text-[#F5A623]" />, title: "Genuine Quality", desc: "Certified teachers, one-to-one classes, and structured curricula — not freelancers piecing lessons together." },
+  { icon: <BookOpen size={22} className="text-[#F5A623]" />, title: "Genuine Quality", desc: "Certified teachers, one-to-one classes, and structured curricula, not freelancers piecing lessons together." },
   { icon: <Shield size={22} className="text-[#F5A623]" />, title: "Child Safety", desc: "Parents can attend any class at any time. Full transparency, always. No exceptions." },
   { icon: <Users size={22} className="text-[#F5A623]" />, title: "For Everyone", desc: "Male and female teachers. Classes for children, teenagers, adults, and reverts. Everyone is welcome." },
 ];
@@ -44,7 +44,7 @@ export default function About() {
           <div className="mt-6 max-w-2xl">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] border border-[#F5A623]/30 rounded-full px-3 py-1 mb-4">Our Story</span>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">About Ease Quran UK</h1>
-            <p className="text-blue-200 text-lg leading-relaxed">A trusted online Quran academy built for Muslim families across the UK — qualified teachers, honest practices, and a genuine commitment to your child&apos;s learning.</p>
+            <p className="text-blue-200 text-lg leading-relaxed">A trusted online Quran academy built for Muslim families across the UK, qualified teachers, honest practices, and a genuine commitment to your child&apos;s learning.</p>
           </div>
           {/* Stats row */}
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl">
@@ -63,7 +63,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-xl">
-              <Image src="/about-easequran.webp" alt="Ease Quran UK — online Quran academy for UK families" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src="/about-easequran.webp" alt="Ease Quran UK, online Quran academy for UK families" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#122259]/40 to-transparent" />
             </div>
             <div>
@@ -71,7 +71,7 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-bold text-[#122259] mb-5 leading-snug">We built Ease Quran because trust was missing</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>Muslim families in the UK were struggling to find Quran teachers they could genuinely trust. The options were either overstretched mosque teachers, or anonymous online strangers with unverifiable credentials.</p>
-                <p>Shah Zaib — our founder — had spent years teaching English-speaking and Western Muslim families and saw what was missing: clear communication, consistent scheduling, verified credentials, and a real academy structure that parents could rely on.</p>
+                <p>Shah Zaib, our founder, had spent years teaching English-speaking and Western Muslim families and saw what was missing: clear communication, consistent scheduling, verified credentials, and a real academy structure that parents could rely on.</p>
                 <p>Ease Quran was built to fill that gap. Every decision we make is guided by one question: <strong className="text-[#122259]">would I trust this for my own child?</strong></p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div className="relative max-w-sm mx-auto w-full">
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-xl">
-                <Image src="/founder.webp" alt="Shah Zaib — founder and head teacher of Ease Quran UK" fill className="object-cover object-top" sizes="(max-width: 768px) 80vw, 40vw" />
+                <Image src="/founder.webp" alt="Shah Zaib, founder and head teacher of Ease Quran UK" fill className="object-cover object-top" sizes="(max-width: 768px) 80vw, 40vw" />
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-4 -right-4 bg-[#F5A623] text-white rounded-2xl px-4 py-3 shadow-lg text-center">
@@ -120,7 +120,7 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-bold text-[#122259] mb-1">Shah Zaib</h2>
               <p className="text-[#F5A623] font-semibold mb-5 flex items-center gap-2"><Award size={16} /> Founder &amp; Head Teacher</p>
               <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>Shah Zaib holds a certification from Wifaq ul Madaris Al-Arabia — one of the most respected Islamic education boards in the world — and has over six years of experience teaching Quran to English-speaking and Western Muslim families.</p>
+                <p>Shah Zaib holds a certification from Wifaq ul Madaris Al-Arabia, one of the most respected Islamic education boards in the world, and has over six years of experience teaching Quran to English-speaking and Western Muslim families.</p>
                 <p>He specialises in English-medium Quran teaching, bridging the gap between traditional Islamic learning and the needs of UK-born students who think and communicate primarily in English.</p>
                 <p>Shah Zaib personally oversees teacher recruitment, vetting, and quality at Ease Quran. Every teacher goes through a structured interview and trial period before working with any student.</p>
               </div>
@@ -162,7 +162,7 @@ export default function About() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-b-full bg-[#F5A623] group-hover:w-24 transition-all duration-300" />
                 <div className="relative w-24 h-24 rounded-full mb-4 p-0.5 bg-gradient-to-br from-[#F5A623] to-[#122259]">
                   <div className="w-full h-full rounded-full overflow-hidden">
-                    <Image src={t.img} alt={`${t.name} — ${t.role}`} width={96} height={96} className="object-cover object-top w-full h-full" />
+                    <Image src={t.img} alt={`${t.name}, ${t.role}`} width={96} height={96} className="object-cover object-top w-full h-full" />
                   </div>
                 </div>
                 <h3 className="font-bold text-[#122259] text-lg">{t.name}</h3>
@@ -188,7 +188,7 @@ export default function About() {
               </div>
               <h2 className="text-2xl md:text-3xl font-bold mb-3">Safety &amp; Transparency</h2>
               <p className="text-blue-200 mb-6 max-w-lg mx-auto">
-                All classes are one-to-one and online. Parents are welcome to observe any session at any time. We operate with complete transparency — no exceptions.
+                All classes are one-to-one and online. Parents are welcome to observe any session at any time. We operate with complete transparency, no exceptions.
               </p>
               <Link href="/safety" className="inline-flex items-center gap-2 bg-white text-[#122259] font-bold px-6 py-3 rounded-xl hover:bg-gray-50 transition-colors text-sm">
                 Child Safety Policy <ChevronRight size={16} />

@@ -45,20 +45,20 @@ const steps = [
 
 const whyUs = [
   { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Qualified, Certified Teachers", desc: "All our teachers hold recognised Islamic certifications and are experienced in teaching English-speaking, Western students." },
-  { icon: <User size={22} className="text-[#F5A623]" />, title: "Completely One-to-One", desc: "Every class is private — your child gets the teacher's full attention, at a pace that suits them. No group classes." },
+  { icon: <User size={22} className="text-[#F5A623]" />, title: "Completely One-to-One", desc: "Every class is private, your child gets the teacher's full attention, at a pace that suits them. No group classes." },
   { icon: <Users size={22} className="text-[#F5A623]" />, title: "Female Teachers Available", desc: "We offer dedicated female Quran teachers for sisters and daughters who prefer a female instructor." },
-  { icon: <Clock size={22} className="text-[#F5A623]" />, title: "Flexible UK Timings", desc: "Classes available across UK time slots including evenings and weekends — built around school and work schedules." },
+  { icon: <Clock size={22} className="text-[#F5A623]" />, title: "Flexible UK Timings", desc: "Classes available across UK time slots including evenings and weekends, built around school and work schedules." },
   { icon: <BookOpen size={22} className="text-[#F5A623]" />, title: "Taught in English", desc: "Our teachers communicate clearly in English so lessons are easy to follow for UK-born students." },
-  { icon: <Shield size={22} className="text-[#F5A623]" />, title: "Safe & Transparent", desc: "Parents can sit in on any class. Sessions can be recorded on request. Full transparency — always." },
+  { icon: <Shield size={22} className="text-[#F5A623]" />, title: "Safe & Transparent", desc: "Parents can sit in on any class. Sessions can be recorded on request. Full transparency, always." },
 ];
 
 const faqs = [
   { q: "How do online Quran classes work?", a: "Lessons take place live via Zoom or Google Meet. Your teacher connects with your child one-to-one at the agreed time. All you need is a phone, tablet, or laptop and a stable internet connection." },
-  { q: "Can I get a female Quran teacher?", a: "Yes. We have a qualified female teacher — Almas Fatima — available for sisters, daughters, and any student who prefers a female instructor. Simply mention this when booking." },
+  { q: "Can I get a female Quran teacher?", a: "Yes. We have a qualified female teacher, Almas Fatima, available for sisters, daughters, and any student who prefers a female instructor. Simply mention this when booking." },
   { q: "What ages do you teach?", a: "We teach children from age 4 upwards, as well as teenagers and adults. Our teachers adapt their approach to the student's age and learning style." },
   { q: "What timings are available for UK students?", a: "We offer classes across all UK time slots including early mornings, after school (3pm–8pm), and weekends. We'll agree a regular slot that fits your family's routine." },
-  { q: "How much do classes cost?", a: "Plans start from £30/month for 2 classes per week. All pricing is transparent — visit our pricing page for full details. Sibling discounts are also available." },
-  { q: "Is the free trial really free?", a: "Yes — completely free, no card required, and no commitment. You try the class and decide afterwards if you'd like to continue." },
+  { q: "How much do classes cost?", a: "Plans start from £30/month for 2 classes per week. All pricing is transparent, visit our pricing page for full details. Sibling discounts are also available." },
+  { q: "Is the free trial really free?", a: "Yes, completely free, no card required, and no commitment. You try the class and decide afterwards if you'd like to continue." },
   { q: "How do you keep classes safe for children?", a: "All classes are one-to-one and online. Parents are welcome to sit in at any time. Sessions can be recorded on request. Visit our Child Safety page for full details." },
 ];
 
@@ -75,7 +75,7 @@ const videoSchemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Ease Quran UK Review — Saman Imran',
+    name: 'Ease Quran UK Review, Saman Imran',
     description: 'Student review of Ease Quran UK online Quran classes for UK Muslim families.',
     thumbnailUrl: 'https://i.ytimg.com/vi/u_j-zh0jFL8/hqdefault.jpg',
     uploadDate: '2024-06-01',
@@ -86,7 +86,7 @@ const videoSchemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Ease Quran UK Review — Younas Rahman',
+    name: 'Ease Quran UK Review, Younas Rahman',
     description: 'Student review of Ease Quran UK online Quran classes for UK Muslim families.',
     thumbnailUrl: 'https://i.ytimg.com/vi/1eQ9zKKLWfQ/hqdefault.jpg',
     uploadDate: '2024-06-01',
@@ -141,7 +141,7 @@ export default function Home() {
               Trusted Online Quran Classes for Kids &amp; Adults in the UK
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
-              One-to-one lessons with qualified male and female teachers. Learn Tajweed, Hifz, Noorani Qaida, and more — at flexible UK timings, from home.
+              One-to-one lessons with qualified male and female teachers. Learn Tajweed, Hifz, Noorani Qaida, and more, at flexible UK timings, from home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <span className="relative inline-flex self-start sm:self-auto">
@@ -220,7 +220,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <span className="tag mb-3">What We Teach</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">Our Courses</h2>
-            <p className="text-gray-600 mt-3">From complete beginners to advanced students — a course for every level.</p>
+            <p className="text-gray-600 mt-3">From complete beginners to advanced students, a course for every level.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {courses.map((c) => (
@@ -268,19 +268,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square max-w-sm mx-auto w-full rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/founder.webp" alt="Shah Zaib — founder and head teacher of Ease Quran UK" fill className="object-cover object-top" sizes="(max-width: 768px) 80vw, 40vw" />
+              <Image src="/founder.webp" alt="Shah Zaib, founder and head teacher of Ease Quran UK" fill className="object-cover object-top" sizes="(max-width: 768px) 80vw, 40vw" />
             </div>
             <div>
               <span className="tag mb-4 inline-block">Meet the Founder</span>
-              <h2 className="text-3xl font-bold text-[#122259] mb-4">Shah Zaib — Founder &amp; Head Teacher</h2>
+              <h2 className="text-3xl font-bold text-[#122259] mb-4">Shah Zaib, Founder &amp; Head Teacher</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Shah Zaib founded Ease Quran with a clear purpose: to give Muslim families in the UK access to genuinely qualified, English-friendly Quran education — without the unreliability or opacity that has let so many families down.
+                Shah Zaib founded Ease Quran with a clear purpose: to give Muslim families in the UK access to genuinely qualified, English-friendly Quran education, without the unreliability or opacity that has let so many families down.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 A Wifaq ul Madaris Al-Arabia certified teacher with over six years of experience teaching English-speaking and Western students, Shah Zaib understands what UK families need: clear communication, consistent scheduling, and a teacher who genuinely cares about each student&apos;s progress.
               </p>
               <blockquote className="border-l-4 border-[#F5A623] pl-4 italic text-gray-600 my-5">
-                &ldquo;Every child deserves a teacher who shows up, who communicates in their language, and who makes the Quran feel accessible — not intimidating. That&apos;s what Ease Quran is built on.&rdquo;
+                &ldquo;Every child deserves a teacher who shows up, who communicates in their language, and who makes the Quran feel accessible, not intimidating. That&apos;s what Ease Quran is built on.&rdquo;
               </blockquote>
               <Link href="/about" className="btn-navy inline-flex">Read Our Story <ChevronRight size={16} /></Link>
             </div>
@@ -306,7 +306,7 @@ export default function Home() {
                 {/* Avatar with gold ring */}
                 <div className="relative w-28 h-28 rounded-full mb-5 p-0.5 bg-gradient-to-br from-[#F5A623] to-[#122259]">
                   <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                    <Image src={t.img} alt={`${t.name} — ${t.role} at Ease Quran UK`} fill className="object-cover object-top rounded-full" sizes="112px" />
+                    <Image src={t.img} alt={`${t.name}, ${t.role} at Ease Quran UK`} fill className="object-cover object-top rounded-full" sizes="112px" />
                   </div>
                 </div>
                 <span className="tag mb-2">{t.badge}</span>
@@ -327,14 +327,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">What UK Families Say</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-            <VideoEmbed videoId="u_j-zh0jFL8" title="Ease Quran UK Review — Saman Imran" reviewer="Saman Imran" />
-            <VideoEmbed videoId="1eQ9zKKLWfQ" title="Ease Quran UK Review — Younas Rahman" reviewer="Younas Rahman" />
+            <VideoEmbed videoId="u_j-zh0jFL8" title="Ease Quran UK Review, Saman Imran" reviewer="Saman Imran" />
+            <VideoEmbed videoId="1eQ9zKKLWfQ" title="Ease Quran UK Review, Younas Rahman" reviewer="Younas Rahman" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {["/review-1.webp", "/review-2.webp"].map((src, i) => (
               <div key={i} className="card p-4">
-                <Image src={src} alt={`Parent feedback for Ease Quran UK — WhatsApp review ${i + 1}`} width={600} height={400} className="w-full h-auto rounded-lg" />
-                <p className="text-xs text-gray-400 mt-3 text-center">Parent feedback — shared via WhatsApp (private info blurred)</p>
+                <Image src={src} alt={`Parent feedback for Ease Quran UK, WhatsApp review ${i + 1}`} width={600} height={400} className="w-full h-auto rounded-lg" />
+                <p className="text-xs text-gray-400 mt-3 text-center">Parent feedback, shared via WhatsApp (private info blurred)</p>
               </div>
             ))}
           </div>
@@ -349,7 +349,7 @@ export default function Home() {
             Looking for &quot;Quran Classes Near Me&quot; in the UK?
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            The best Quran teacher is not always the one who lives nearby — it is the one who is qualified, consistent, and communicates clearly. Our one-to-one online classes mean you can access a certified Ease Quran teacher wherever you are in the UK.
+            The best Quran teacher is not always the one who lives nearby, it is the one who is qualified, consistent, and communicates clearly. Our one-to-one online classes mean you can access a certified Ease Quran teacher wherever you are in the UK.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
             Families in London, Birmingham, Manchester, Bradford, Leicester, and beyond choose Ease Quran for the quality of teaching, not just the convenience. One-to-one online means your child gets a teacher&apos;s full attention at times that work around school and family life.

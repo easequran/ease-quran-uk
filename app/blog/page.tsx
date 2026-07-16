@@ -43,7 +43,7 @@ const posts = [
   {
     slug: "dua-for-success",
     title: "Powerful Dua for Success: Quranic Duas for Exams, Work and Life",
-    excerpt: "Authentic Quranic duas for exams, work, and everyday challenges — with Arabic text, transliteration, and meaning.",
+    excerpt: "Authentic Quranic duas for exams, work, and everyday challenges, with Arabic text, transliteration, and meaning.",
     date: "2026-07-15",
     readTime: "6 min read",
     category: "Dua & Dhikr",
@@ -66,12 +66,12 @@ export default function Blog() {
           <div className="mt-5 max-w-2xl">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] border border-[#F5A623]/30 rounded-full px-3 py-1 mb-4">Quran Education Blog</span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight">Guides for UK Muslim Families</h1>
-            <p className="text-blue-200 text-base sm:text-lg">Practical, honest advice on Quran education — written by teachers, for parents.</p>
+            <p className="text-blue-200 text-base sm:text-lg">Practical, honest advice on Quran education, written by teachers, for parents.</p>
           </div>
         </div>
       </section>
 
-      {/* All posts — uniform 2×2 grid */}
+      {/* All posts, uniform 2×2 grid */}
       <section className="section-pad">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-7">
@@ -81,7 +81,7 @@ export default function Blog() {
                 href={`/blog/${post.slug}`}
                 className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-[#F5A623]/50 hover:shadow-xl transition-all duration-300 flex flex-col"
               >
-                {/* Image — 16:9 aspect ratio, consistent across all cards */}
+                {/* Image, 16:9 aspect ratio, consistent across all cards */}
                 <div className="relative w-full overflow-hidden bg-[#122259]" style={{ paddingTop: "56.25%" }}>
                   <Image
                     src={post.heroImage}

@@ -33,7 +33,7 @@ export default function Terms() {
           <p>Payment terms, amounts, and methods are agreed directly between the family and Ease Quran UK following enrolment. Pricing is clearly stated on our pricing page. We do not charge hidden fees.</p>
 
           <h2>4. Cancellations and Rescheduling</h2>
-          <p>Students may cancel or reschedule classes by giving reasonable notice to the teacher or academy. We ask for as much notice as possible. There are no long-term contracts — you may cancel your enrolment at any time.</p>
+          <p>Students may cancel or reschedule classes by giving reasonable notice to the teacher or academy. We ask for as much notice as possible. There are no long-term contracts, you may cancel your enrolment at any time.</p>
 
           <h2>5. Code of Conduct</h2>
           <p>Students and parents are expected to engage respectfully with teachers. Ease Quran UK reserves the right to end enrolment if conduct is inappropriate or disruptive.</p>
@@ -42,7 +42,7 @@ export default function Terms() {
           <p>Our child safeguarding approach is described in full on our <a href="/safety" className="text-[#F5A623]">Child Safety page</a>. By enrolling a child in our classes, you agree to the safeguarding practices described there.</p>
 
           <h2>7. Intellectual Property</h2>
-          <p>All content on this website — including text, images, and design — is the property of Ease Quran UK. You may not reproduce, republish, or redistribute any content without written permission.</p>
+          <p>All content on this website, including text, images, and design, is the property of Ease Quran UK. You may not reproduce, republish, or redistribute any content without written permission.</p>
 
           <h2>8. Limitation of Liability</h2>
           <p>Ease Quran UK is not liable for any indirect or consequential loss arising from use of our services. Our liability in respect of any claim is limited to the amount paid for the relevant service.</p>

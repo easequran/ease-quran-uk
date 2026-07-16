@@ -105,7 +105,7 @@ export default function Contact() {
               <div className="bg-[#122259] rounded-3xl p-6 text-white">
                 <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Ready to start?</p>
                 <h3 className="font-bold text-lg mb-2">Book a Free Trial Class</h3>
-                <p className="text-blue-200 text-sm mb-5">Try a one-to-one class with a qualified teacher — completely free, no commitment.</p>
+                <p className="text-blue-200 text-sm mb-5">Try a one-to-one class with a qualified teacher, completely free, no commitment.</p>
                 <Link href="/free-trial" className="btn-gold w-full justify-center text-sm">Book Free Trial</Link>
               </div>
 

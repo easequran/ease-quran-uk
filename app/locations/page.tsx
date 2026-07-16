@@ -125,7 +125,7 @@ export default function Locations() {
             {[
               { label: "No commute", detail: "Classes happen at home, on a device you already own" },
               { label: "Any UK city", detail: "We teach students from Cornwall to Scotland" },
-              { label: "Flexible timings", detail: "Evenings, weekends, after school — your schedule" },
+              { label: "Flexible timings", detail: "Evenings, weekends, after school, your schedule" },
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-xl p-5 shadow-sm text-left">
                 <p className="font-bold text-[#122259] mb-1">{item.label}</p>

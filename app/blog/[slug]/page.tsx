@@ -70,7 +70,7 @@ const allPosts: PostMeta[] = [
     faqs: [
       { q: "How many verses should a beginner memorize per week?", a: "A common beginner pace is 3-5 short verses or one short surah per week, prioritizing accuracy and retention over speed." },
       { q: "Should I memorize in Arabic order or start with the easiest surahs?", a: "Most structured Hifz programmes start with the shortest surahs at the end of the Quran (Juz Amma) before moving toward longer chapters." },
-      { q: "Is it better to memorize with or without understanding the meaning?", a: "Understanding alongside memorization is strongly recommended — it deepens retention and creates a genuine connection to what's being recited." },
+      { q: "Is it better to memorize with or without understanding the meaning?", a: "Understanding alongside memorization is strongly recommended, it deepens retention and creates a genuine connection to what's being recited." },
     ],
   },
   {
@@ -180,30 +180,30 @@ async function SurahAlKahfContent() {
 
   return (
     <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#122259] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
-      <p>Every Friday, millions of Muslims around the world pause to read one particular chapter of the Quran: Surah Al-Kahf, &ldquo;The Cave.&rdquo; It&apos;s not a coincidence or a cultural habit passed down without reason — it&apos;s a practice rooted directly in the teachings of Prophet Muhammad ﷺ, and it carries real spiritual weight for anyone who makes it part of their weekly routine.</p>
-      <p>If you&apos;ve ever wondered what makes this surah so special, why it&apos;s specifically tied to Fridays, or how you can help your children build the habit of reading it, this guide walks through everything you need to know — including the full Arabic text and English translation.</p>
+      <p>Every Friday, millions of Muslims around the world pause to read one particular chapter of the Quran: Surah Al-Kahf, &ldquo;The Cave.&rdquo; It&apos;s not a coincidence or a cultural habit passed down without reason. It&apos;s a practice rooted directly in the teachings of Prophet Muhammad ﷺ, and it carries real spiritual weight for anyone who makes it part of their weekly routine.</p>
+      <p>If you&apos;ve ever wondered what makes this surah so special, why it&apos;s specifically tied to Fridays, or how you can help your children build the habit of reading it, this guide walks through everything you need to know, including the full Arabic text and English translation.</p>
 
       <h2>What Is Surah Al-Kahf?</h2>
       <p>Surah Al-Kahf is the 18th chapter of the Quran, made up of 110 verses. It tells four distinct stories woven together around a single theme: protection from the trials (fitnah) of this world.</p>
       <ol className="list-decimal pl-5 space-y-2 text-[15px] leading-relaxed">
-        <li><strong>The People of the Cave</strong> — young believers who fled persecution and were miraculously protected by Allah for centuries.</li>
-        <li><strong>The Owner of Two Gardens</strong> — a wealthy man whose arrogance and lack of gratitude led to the loss of everything he had.</li>
-        <li><strong>Musa (Moses) and Al-Khidr</strong> — a journey of humility and learning, where even a Prophet is taught there is always more to learn.</li>
-        <li><strong>Dhul-Qarnayn</strong> — a just and powerful ruler who used his strength to protect the weak, not to oppress them.</li>
+        <li><strong>The People of the Cave</strong>, young believers who fled persecution and were miraculously protected by Allah for centuries.</li>
+        <li><strong>The Owner of Two Gardens</strong>, a wealthy man whose arrogance and lack of gratitude led to the loss of everything he had.</li>
+        <li><strong>Musa (Moses) and Al-Khidr</strong>, a journey of humility and learning, where even a Prophet is taught there is always more to learn.</li>
+        <li><strong>Dhul-Qarnayn</strong>, a just and powerful ruler who used his strength to protect the weak, not to oppress them.</li>
       </ol>
 
       <h2>Why Do Muslims Read Surah Al-Kahf on Fridays?</h2>
       <p>The practice comes directly from the sunnah. The Prophet ﷺ said that whoever reads Surah Al-Kahf on the day of Jumu&apos;ah (Friday) will have light (noor) shine for them between one Friday and the next, according to a hadith reported in Al-Mustadrak by Al-Hakim.</p>
-      <p>Scholars also point to the surah&apos;s deep relevance to the trials of every age — the stories of deception, arrogance, and unchecked power remain as vivid today as they were when first revealed.</p>
+      <p>Scholars also point to the surah&apos;s deep relevance to the trials of every age, the stories of deception, arrogance, and unchecked power remain as vivid today as they were when first revealed.</p>
 
       <h2>The Virtues of Reading Surah Al-Kahf</h2>
       <ul className="list-disc pl-5 space-y-2">
         <li><strong>Protection from the Dajjal:</strong> Several hadith mention that memorising the first ten (or last ten) verses of Surah Al-Kahf offers protection from the trial of the Dajjal.</li>
         <li><strong>Light between two Fridays:</strong> Weekly recitation is described as a source of spiritual light lasting until the following Friday.</li>
-        <li><strong>A weekly reminder of what truly matters:</strong> Reading it regularly keeps the believer grounded — a natural check against greed, arrogance, and losing sight of what is real.</li>
+        <li><strong>A weekly reminder of what truly matters:</strong> Reading it regularly keeps the believer grounded, a natural check against greed, arrogance, and losing sight of what is real.</li>
       </ul>
 
-      <h2>Full Surah Al-Kahf — Arabic and English Translation</h2>
+      <h2>Full Surah Al-Kahf, Arabic and English Translation</h2>
 
       {/* Jump links */}
       <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-5 my-6">
@@ -212,7 +212,7 @@ async function SurahAlKahfContent() {
           {sections.map((s) => (
             <a key={s.id} href={`#${s.id}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-[#F5A623] transition-colors">
               <ChevronRight size={12} className="text-[#F5A623]" />
-              {s.label} — {s.story}
+              {s.label}, {s.story}
             </a>
           ))}
         </div>
@@ -220,7 +220,7 @@ async function SurahAlKahfContent() {
 
       {sections.map((section) => (
         <div key={section.id} id={section.id}>
-          <SectionDivider label={`${section.label} — ${section.story}`} />
+          <SectionDivider label={`${section.label}, ${section.story}`} />
           {ayahs.filter(a => a.numberInSurah >= section.start && a.numberInSurah <= section.end).map((a) => (
             <AyahBlock key={a.numberInSurah} num={a.numberInSurah} arabic={a.text} translation={a.translation} />
           ))}
@@ -232,7 +232,7 @@ async function SurahAlKahfContent() {
       <ul className="list-disc pl-5 space-y-2">
         <li><strong>Start small.</strong> If reading all 110 verses feels too much at first, begin with the first ten verses, which carry their own specific virtue.</li>
         <li><strong>Make it a Friday ritual</strong>, ideally after Fajr or before Jumu&apos;ah prayer, so it becomes tied to a fixed point in the week.</li>
-        <li><strong>Read together as a family</strong> rather than assigning it as solitary homework — children pick up habits faster when they see them modelled.</li>
+        <li><strong>Read together as a family</strong> rather than assigning it as solitary homework, children pick up habits faster when they see them modelled.</li>
         <li><strong>Focus on understanding, not just recitation.</strong> A simple summary of what each story teaches makes the habit meaningful rather than mechanical.</li>
       </ul>
       <p>A child who can recite Surah Al-Kahf with correct tajweed and understands its meaning will carry this habit for life. This is exactly where proper Quran education makes the biggest difference. <Link href="/blog/quran-verses-to-memorize-first" className="text-[#F5A623] hover:underline font-medium">Read our guide on which Quran verses to memorize first.</Link></p>
@@ -260,7 +260,7 @@ async function QuranVersesContent() {
 
   return (
     <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#122259] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
-      <p>Starting Quran memorization can feel overwhelming — 6,236 verses across 114 surahs is a lot to think about all at once. But every hafiz and hafiza started exactly where you are now: with a handful of short, manageable verses that gradually built into something much bigger.</p>
+      <p>Starting Quran memorization can feel overwhelming, 6,236 verses across 114 surahs is a lot to think about all at once. But every hafiz and hafiza started exactly where you are now: with a handful of short, manageable verses that gradually built into something much bigger.</p>
       <p>This guide breaks down the Quran verses most commonly recommended for beginners, why they&apos;re taught first, and how to structure a memorization habit that actually sticks.</p>
 
       <h2>Why Verse Selection Matters When You&apos;re Starting Out</h2>
@@ -312,7 +312,7 @@ async function QuranVersesContent() {
       <h3>4. Ayatul Kursi (Al-Baqarah 2:255)</h3>
       <p>Often introduced slightly later due to its length, Ayatul Kursi is considered one of the greatest verses in the Quran. Many hadith highlight its virtue, including protection when recited before sleep.</p>
       <div className="bg-[#122259] rounded-2xl p-6 my-4">
-        <p className="text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Ayatul Kursi — Al-Baqarah 2:255</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Ayatul Kursi, Al-Baqarah 2:255</p>
         <p className="text-right text-xl sm:text-2xl leading-loose font-arabic text-white" dir="rtl" lang="ar">{ayatulKursi}</p>
       </div>
 
@@ -328,13 +328,13 @@ async function QuranVersesContent() {
       </ul>
 
       <h2>Why One-on-One Guidance Makes All the Difference</h2>
-      <p>Self-teaching from an app or book can only go so far — mistakes in pronunciation often go unnoticed without a live teacher correcting them in real time. This is especially true for children, who benefit enormously from a structured, encouraging, one-on-one learning environment.</p>
+      <p>Self-teaching from an app or book can only go so far, mistakes in pronunciation often go unnoticed without a live teacher correcting them in real time. This is especially true for children, who benefit enormously from a structured, encouraging, one-on-one learning environment.</p>
       <p>At Ease Quran UK, our teachers guide students step by step, from their very first verses through to full Hifz, with proper tajweed built in from day one. You can also <Link href="/blog/dua-for-success" className="text-[#F5A623] hover:underline font-medium">read our guide on duas for success</Link> to pair your memorization journey with sincere supplication.</p>
 
       <div className="bg-[#122259] rounded-2xl p-6 my-6 text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Start Today</p>
         <h3 className="font-bold text-lg mb-2">Give Your Child the Right Foundation from Day One</h3>
-        <p className="text-blue-200 text-sm mb-4 leading-relaxed">Our qualified teachers build proper tajweed and memorization habits from the very first lesson — not corrected after the fact.</p>
+        <p className="text-blue-200 text-sm mb-4 leading-relaxed">Our qualified teachers build proper tajweed and memorization habits from the very first lesson, not corrected after the fact.</p>
         <Link href="/free-trial" className="inline-flex items-center gap-2 bg-[#F5A623] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#d4901e] transition-colors">Book a Free Trial Class <ChevronRight size={14} /></Link>
       </div>
     </div>
@@ -348,21 +348,21 @@ async function DuaForSuccessContent() {
     fetchAyahArabic(2, 201),
   ]);
 
-  // Hadith dua — sourced from Sunan Ibn Majah 3519, NOT from Quran API
+  // Hadith dua, sourced from Sunan Ibn Majah 3519, NOT from Quran API
   // VERIFY ARABIC: human check against sunnah.com before publishing
   const duaForEaseArabic = "اللَّهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهُ سَهْلًا، وَأَنْتَ تَجْعَلُ الْحَزَنَ إِذَا شِئْتَ سَهْلًا";
 
   return (
     <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#122259] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
-      <p>Whether it&apos;s an exam tomorrow morning, a big decision at work, or simply the everyday challenge of doing your best in a difficult situation, turning to dua (supplication) for success is one of the most grounding habits a Muslim can build. It&apos;s not about replacing effort — it&apos;s about pairing your hard work with sincere reliance on Allah.</p>
+      <p>Whether it&apos;s an exam tomorrow morning, a big decision at work, or simply the everyday challenge of doing your best in a difficult situation, turning to dua (supplication) for success is one of the most grounding habits a Muslim can build. It&apos;s not about replacing effort, it&apos;s about pairing your hard work with sincere reliance on Allah.</p>
       <p>This guide brings together some of the most well-known and authentic duas for success, with their Arabic text, transliteration, and meaning, along with guidance on when and how to use them.</p>
 
 
       <h2>Why Dua Matters Alongside Effort</h2>
-      <p>There&apos;s a common misunderstanding that relying on dua means relying less on your own effort — but Islamic teaching frames it the opposite way. The Prophet ﷺ himself combined action with supplication in everything he did. Dua is what grounds effort in humility, reminding us that ultimate outcomes are not fully in our own hands, even when we&apos;ve done everything within our control.</p>
+      <p>There&apos;s a common misunderstanding that relying on dua means relying less on your own effort, but Islamic teaching frames it the opposite way. The Prophet ﷺ himself combined action with supplication in everything he did. Dua is what grounds effort in humility, reminding us that ultimate outcomes are not fully in our own hands, even when we&apos;ve done everything within our control.</p>
 
       <h2>Dua for Ease and Success</h2>
-      <p>One of the most widely recited duas for approaching something difficult or new is this supplication from Sunan Ibn Majah — especially popular among students before exams:</p>
+      <p>One of the most widely recited duas for approaching something difficult or new is this supplication from Sunan Ibn Majah, especially popular among students before exams:</p>
 
       <ArabicCard
         arabic={duaForEaseArabic}
@@ -382,7 +382,7 @@ async function DuaForSuccessContent() {
       />
 
       <h2>Dua for Removing Difficulty and Worry</h2>
-      <p>This dua is often recited in moments of anxiety before a difficult task — an exam, a job interview, or an important decision — as a reminder that reliance on Allah brings genuine calm.</p>
+      <p>This dua is often recited in moments of anxiety before a difficult task, an exam, a job interview, or an important decision, as a reminder that reliance on Allah brings genuine calm.</p>
 
       <ArabicCard
         arabic={hasbuna}
@@ -392,7 +392,7 @@ async function DuaForSuccessContent() {
       />
 
       <h2>Dua for a Good Outcome in Affairs</h2>
-      <p>Though widely recited, this dua&apos;s meaning extends naturally to seeking success and good outcomes in both worldly matters and the akhirah together — a balance many people forget to ask for.</p>
+      <p>Though widely recited, this dua&apos;s meaning extends naturally to seeking success and good outcomes in both worldly matters and the akhirah together, a balance many people forget to ask for.</p>
 
       <ArabicCard
         arabic={rabbana}
@@ -403,15 +403,15 @@ async function DuaForSuccessContent() {
 
       <h2>When Should You Recite These Duas?</h2>
       <ul className="list-disc pl-5 space-y-2">
-        <li><strong>Before starting a task</strong> — studying, an interview, a project, or any effort where the outcome matters to you.</li>
+        <li><strong>Before starting a task</strong>, studying, an interview, a project, or any effort where the outcome matters to you.</li>
         <li><strong>During moments of anxiety or overwhelm</strong>, as a way to reground and refocus.</li>
         <li><strong>After salah</strong>, when supplications are especially encouraged.</li>
         <li><strong>In sujood (prostration)</strong>, considered one of the times a person is closest to Allah.</li>
       </ul>
 
       <h2>Learning to Recite Dua and Quran with Confidence</h2>
-      <p>Reciting dua from memory, with correct pronunciation and genuine understanding, is a skill built the same way Quran recitation is — through consistent, guided practice. Many children and adults memorize duas phonetically without ever learning the meaning or correct Arabic pronunciation behind them.</p>
-      <p>At Ease Quran UK, our teachers help students build a real connection to the Quran and daily duas. Building this weekly habit of reading Surah Al-Kahf is another great complement to your dua practice — <Link href="/blog/surah-al-kahf-friday-reading-guide" className="text-[#F5A623] hover:underline font-medium">read our full Surah Al-Kahf guide.</Link></p>
+      <p>Reciting dua from memory, with correct pronunciation and genuine understanding, is a skill built the same way Quran recitation is, through consistent, guided practice. Many children and adults memorize duas phonetically without ever learning the meaning or correct Arabic pronunciation behind them.</p>
+      <p>At Ease Quran UK, our teachers help students build a real connection to the Quran and daily duas. Building this weekly habit of reading Surah Al-Kahf is another great complement to your dua practice, <Link href="/blog/surah-al-kahf-friday-reading-guide" className="text-[#F5A623] hover:underline font-medium">read our full Surah Al-Kahf guide.</Link></p>
 
       <div className="bg-[#122259] rounded-2xl p-6 my-6 text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Start Your Journey</p>

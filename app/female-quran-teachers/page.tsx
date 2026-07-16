@@ -6,7 +6,7 @@ import CTABand from "@/components/CTABand";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Female Quran Teacher UK — Online Classes for Sisters",
+  title: "Female Quran Teacher UK, Online Classes for Sisters",
   description: "Book a qualified female Quran teacher in the UK for your daughter or yourself. One-to-one online lessons for sisters of all ages. Free trial class, no commitment.",
   openGraph: { url: "/female-quran-teachers" },
   alternates: {
@@ -42,7 +42,7 @@ export default function FemaleQuranTeachers() {
             <span className="tag mb-3 inline-block">For Sisters & Daughters</span>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Female Quran Teacher UK</h1>
             <p className="text-blue-100 text-lg leading-relaxed mb-6">
-              A qualified, certified female Quran teacher — available for sisters, daughters, and all female students who prefer to learn with a woman. One-to-one, private, and professional.
+              A qualified, certified female Quran teacher, available for sisters, daughters, and all female students who prefer to learn with a woman. One-to-one, private, and professional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/free-trial" className="btn-gold">Book Free Trial</Link>
@@ -62,15 +62,15 @@ export default function FemaleQuranTeachers() {
               <span className="tag mb-4 inline-block">Why It Matters</span>
               <h2 className="text-3xl font-bold text-[#122259] mb-4">Learning Quran with a Female Teacher</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                For many Muslim families in the UK, it is important — or essential — that daughters, sisters, and women learn from a female teacher. This is a matter of comfort, privacy, and in some cases, religious preference.
+                For many Muslim families in the UK, it is important, or essential, that daughters, sisters, and women learn from a female teacher. This is a matter of comfort, privacy, and in some cases, religious preference.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                We understand this need and provide it properly. Almas Fatima is a fully qualified, certified female teacher — not an afterthought or a workaround. She is a Qaria e Quran with a Bachelor&apos;s degree in Islamic Studies, experienced in teaching female students of all ages in a warm, professional, and encouraging environment.
+                We understand this need and provide it properly. Almas Fatima is a fully qualified, certified female teacher, not an afterthought or a workaround. She is a Qaria e Quran with a Bachelor&apos;s degree in Islamic Studies, experienced in teaching female students of all ages in a warm, professional, and encouraging environment.
               </p>
               <ul className="space-y-3 mt-5">
                 {[
-                  "Private, one-to-one class — no mixed-gender groups",
-                  "Completely online — learn from the privacy of your home",
+                  "Private, one-to-one class, no mixed-gender groups",
+                  "Completely online, learn from the privacy of your home",
                   "Parent can be present at any time during the class",
                   "Classes are available at flexible UK timings including evenings and weekends",
                 ].map((point) => (
@@ -81,7 +81,7 @@ export default function FemaleQuranTeachers() {
               </ul>
             </div>
             <div className="relative aspect-square max-w-sm mx-auto w-full rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/teacher-2.webp" alt="Almas Fatima — qualified female Quran teacher at Ease Quran UK" fill className="object-cover object-top" sizes="(max-width: 768px) 80vw, 40vw" />
+              <Image src="/teacher-2.webp" alt="Almas Fatima, qualified female Quran teacher at Ease Quran UK" fill className="object-cover object-top" sizes="(max-width: 768px) 80vw, 40vw" />
             </div>
           </div>
         </div>
@@ -94,10 +94,10 @@ export default function FemaleQuranTeachers() {
           <h2 className="text-3xl font-bold text-[#122259] mb-2">Almas Fatima</h2>
           <p className="text-[#F5A623] font-semibold mb-4">Qaria e Quran · Bachelor of Islamic Studies · Certified Teacher</p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Almas Fatima is available exclusively for sisters and female students. She holds a Bachelor&apos;s degree in Islamic Studies and is a certified Qaria e Quran — meaning she has received formal training in Quranic recitation to a high standard.
+            Almas Fatima is available exclusively for sisters and female students. She holds a Bachelor&apos;s degree in Islamic Studies and is a certified Qaria e Quran, meaning she has received formal training in Quranic recitation to a high standard.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            She teaches Noorani Qaida, Quran Reading, Tajweed, and Islamic Studies. Her approach is patient, structured, and encouraging — creating a space where female students feel comfortable to ask questions, make mistakes, and progress at their own pace.
+            She teaches Noorani Qaida, Quran Reading, Tajweed, and Islamic Studies. Her approach is patient, structured, and encouraging, creating a space where female students feel comfortable to ask questions, make mistakes, and progress at their own pace.
           </p>
           <div className="flex flex-wrap gap-2 mt-4">
             {["Qaria e Quran", "Bachelor of Islamic Studies", "Certified Teacher", "Noorani Qaida", "Quran Reading", "Tajweed", "Islamic Studies"].map((b) => (
@@ -146,10 +146,10 @@ export default function FemaleQuranTeachers() {
           <h2 className="text-2xl font-bold text-[#122259] mb-8 text-center">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              { q: "Is a female teacher guaranteed?", a: "Yes. If you request a female teacher, Almas Fatima will be your assigned teacher. We do not have a waiting list for female teachers — availability is confirmed at booking." },
+              { q: "Is a female teacher guaranteed?", a: "Yes. If you request a female teacher, Almas Fatima will be your assigned teacher. We do not have a waiting list for female teachers, availability is confirmed at booking." },
               { q: "What courses does the female teacher offer?", a: "Almas Fatima teaches Noorani Qaida, Quran Reading, Tajweed, and Islamic Studies. If you have a specific requirement, please mention it when booking." },
-              { q: "Can female adults book as well as children?", a: "Absolutely. Almas Fatima teaches sisters of all ages — children, teenagers, adults, and reverts." },
-              { q: "Are the classes private?", a: "Yes — all classes are one-to-one and completely private. No other students are present." },
+              { q: "Can female adults book as well as children?", a: "Absolutely. Almas Fatima teaches sisters of all ages, children, teenagers, adults, and reverts." },
+              { q: "Are the classes private?", a: "Yes, all classes are one-to-one and completely private. No other students are present." },
             ].map((f, i) => (
               <details key={i} className="bg-[#faf9f7] rounded-xl border border-gray-100 group">
                 <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none">

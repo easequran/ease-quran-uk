@@ -21,13 +21,13 @@ export default function Manchester() {
       localPoints={[
         "Serves families across Greater Manchester including Salford, Oldham, and Rochdale",
         "Flexible evening and weekend timings to fit around school",
-        "All lessons in English — ideal for Manchester-born Muslim children",
+        "All lessons in English, ideal for Manchester-born Muslim children",
         "Female teacher available for sisters and daughters",
-        "Cancel or reschedule with reasonable notice — no rigid contracts",
+        "Cancel or reschedule with reasonable notice, no rigid contracts",
         "Parents can observe any class, any time",
       ]}
       faqs={[
-        { q: "Do you offer Quran classes to families in Rusholme and Longsight?", a: "Yes — we serve families across Rusholme, Longsight, Cheetham Hill, and all Manchester areas. Being fully online means your location within Manchester makes no difference." },
+        { q: "Do you offer Quran classes to families in Rusholme and Longsight?", a: "Yes, we serve families across Rusholme, Longsight, Cheetham Hill, and all Manchester areas. Being fully online means your location within Manchester makes no difference." },
         { q: "Can you teach children in Greater Manchester including Salford and Oldham?", a: "Absolutely. We serve the entire Greater Manchester area including Salford, Oldham, Rochdale, Bolton, and beyond. Our online lessons have no geographical limits." },
         { q: "What age groups do you teach in Manchester?", a: "We teach children from age 4 upwards, as well as teenagers and adults. Our teachers adapt their approach to the student's age, level, and learning style." },
         { q: "Is there a female Quran teacher available for Manchester sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters of all ages across Manchester and Greater Manchester. Simply mention this when booking." },

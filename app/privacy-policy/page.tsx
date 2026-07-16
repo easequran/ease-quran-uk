@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Ease Quran UK privacy policy — how we collect, use, and protect your data in compliance with UK GDPR.",
+  description: "Ease Quran UK privacy policy, how we collect, use, and protect your data in compliance with UK GDPR.",
   alternates: { canonical: "/privacy-policy" },
   robots: { index: false, follow: false },
 };

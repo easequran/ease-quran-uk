@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Child Safety & Safeguarding Policy",
-  description: "How Ease Quran UK keeps children safe in online Quran classes. Read our honest safeguarding approach — parental supervision, teacher vetting, transparency, and how to raise a concern.",
+  description: "How Ease Quran UK keeps children safe in online Quran classes. Read our honest safeguarding approach, parental supervision, teacher vetting, transparency, and how to raise a concern.",
   openGraph: { url: "/safety" },
   alternates: {
     canonical: "/safety",
@@ -21,7 +21,7 @@ export default function Safety() {
           <div className="mt-4 max-w-2xl">
             <Shield size={40} className="text-[#F5A623] mb-4" />
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Child Safety &amp; Safeguarding</h1>
-            <p className="text-blue-100 text-lg">We believe every parent deserves to know exactly how their child is kept safe in our online classes. This page explains our approach — honestly and in plain English.</p>
+            <p className="text-blue-100 text-lg">We believe every parent deserves to know exactly how their child is kept safe in our online classes. This page explains our approach, honestly and in plain English.</p>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function Safety() {
                 <h2 className="text-2xl font-bold text-[#122259]">1. Parents Can Observe Any Class, Any Time</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                All classes are one-to-one and conducted online via video call (Zoom or Google Meet). There are no hidden groups, no secondary sessions, and no communication with students outside the scheduled class time. Parents and guardians are welcome — and encouraged — to sit in on any class at any time, without prior notice. You can observe the full lesson as often as you wish.
+                All classes are one-to-one and conducted online via video call (Zoom or Google Meet). There are no hidden groups, no secondary sessions, and no communication with students outside the scheduled class time. Parents and guardians are welcome, and encouraged, to sit in on any class at any time, without prior notice. You can observe the full lesson as often as you wish.
               </p>
             </div>
 
@@ -109,7 +109,7 @@ export default function Safety() {
                 <h2 className="text-2xl font-bold text-[#122259]">5. How to Raise a Concern</h2>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                If you ever feel uncomfortable about anything related to your child&apos;s classes — however small — please contact us immediately. No concern is too minor. We take all feedback seriously and will respond promptly.
+                If you ever feel uncomfortable about anything related to your child&apos;s classes, however small, please contact us immediately. No concern is too minor. We take all feedback seriously and will respond promptly.
               </p>
               <div className="bg-[#faf9f7] rounded-xl p-5 space-y-3">
                 <p className="text-sm font-semibold text-[#122259]">Contact us to raise a concern:</p>
@@ -127,7 +127,7 @@ export default function Safety() {
           <div className="mt-12 bg-[#122259] rounded-2xl p-6 text-white">
             <h3 className="font-bold text-lg mb-2">Our Commitment</h3>
             <p className="text-blue-100 text-sm leading-relaxed">
-              The safety and wellbeing of every student at Ease Quran UK is our highest priority. We are committed to continuous improvement of our safeguarding practices and welcome any feedback that helps us serve families better. If you have a concern, please never hesitate to contact us — your child&apos;s safety comes first.
+              The safety and wellbeing of every student at Ease Quran UK is our highest priority. We are committed to continuous improvement of our safeguarding practices and welcome any feedback that helps us serve families better. If you have a concern, please never hesitate to contact us, your child&apos;s safety comes first.
             </p>
           </div>
 
