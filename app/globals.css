@@ -112,6 +112,15 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+/* Arabic Quran text — uses system Arabic/Amiri fallback stack */
+.font-arabic {
+  font-family: "Amiri", "Traditional Arabic", "Arabic Typesetting", "Scheherazade New", "Noto Naskh Arabic", serif;
+  font-size: 1.4rem;
+  line-height: 2.2;
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
 .tag {
   display: inline-block;
   background-color: rgba(253,156,2,0.12);

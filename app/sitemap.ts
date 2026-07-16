@@ -4,6 +4,9 @@ const BASE = "https://www.easequran.co.uk";
 
 const blogSlugs = [
   "is-it-safe-online-quran-classes-uk",
+  "surah-al-kahf-friday-reading-guide",
+  "quran-verses-to-memorize-first",
+  "dua-for-success",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
