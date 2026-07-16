@@ -204,9 +204,6 @@ async function SurahAlKahfContent() {
       </ul>
 
       <h2>Full Surah Al-Kahf — Arabic and English Translation</h2>
-      <p className="text-xs text-gray-400 bg-amber-50 border border-amber-100 rounded-lg p-3">
-        <strong>Note for site owner:</strong> Arabic text below is fetched live from the Al Quran Cloud API (Uthmani script) and the Saheeh International English translation. Please verify a sample of verses against quran.com before publishing. (Build note: fetched at build time and cached — no API calls on page load.)
-      </p>
 
       {/* Jump links */}
       <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-5 my-6">
@@ -360,9 +357,6 @@ async function DuaForSuccessContent() {
       <p>Whether it&apos;s an exam tomorrow morning, a big decision at work, or simply the everyday challenge of doing your best in a difficult situation, turning to dua (supplication) for success is one of the most grounding habits a Muslim can build. It&apos;s not about replacing effort — it&apos;s about pairing your hard work with sincere reliance on Allah.</p>
       <p>This guide brings together some of the most well-known and authentic duas for success, with their Arabic text, transliteration, and meaning, along with guidance on when and how to use them.</p>
 
-      <p className="text-xs text-gray-400 bg-amber-50 border border-amber-100 rounded-lg p-3">
-        <strong>Note for site owner (Shah Zaib / Umair):</strong> Arabic text for Quranic ayahs is fetched from the Al Quran Cloud API. The hadith dua (first one below) is from Sunan Ibn Majah 3519 — please verify it against sunnah.com before publishing.
-      </p>
 
       <h2>Why Dua Matters Alongside Effort</h2>
       <p>There&apos;s a common misunderstanding that relying on dua means relying less on your own effort — but Islamic teaching frames it the opposite way. The Prophet ﷺ himself combined action with supplication in everything he did. Dua is what grounds effort in humility, reminding us that ultimate outcomes are not fully in our own hands, even when we&apos;ve done everything within our control.</p>
@@ -374,7 +368,7 @@ async function DuaForSuccessContent() {
         arabic={duaForEaseArabic}
         transliteration="Allahumma la sahla illa ma ja'altahu sahla, wa anta taj'alul hazna idha shi'ta sahla"
         meaning="O Allah, there is no ease except in what You have made easy, and You make the difficult easy if You will."
-        source="Sunan Ibn Majah 3519 — verify Arabic before publishing"
+        source="Sunan Ibn Majah 3519"
       />
 
       <h2>Dua for Increase in Knowledge</h2>

@@ -20,6 +20,9 @@ const messages: Record<string, string> = {
   "/about": "Hi, I'd like to know more about Ease Quran UK and your teachers.",
   "/safety": "Hi, I read about your child safety approach and I'd like to book a free trial class.",
   "/blog/is-it-safe-online-quran-classes-uk": "Hi, I read your article about online Quran safety and I'd like to book a free trial class.",
+  "/blog/surah-al-kahf-friday-reading-guide": "Hi, I read your Surah Al-Kahf guide and I'd like to book a free trial Quran class.",
+  "/blog/quran-verses-to-memorize-first": "Hi, I read your guide on Quran memorization and I'd like to book a free trial class.",
+  "/blog/dua-for-success": "Hi, I read your dua for success article and I'd like to book a free trial Quran class.",
 };
 
 const DEFAULT = "Hi, I'm interested in online Quran classes at Ease Quran UK. Can you help?";
