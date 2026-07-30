@@ -125,7 +125,7 @@ export default function Home() {
       {videoSchemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
       {/* HERO */}
-      <section className="relative bg-[#122259] text-white overflow-hidden min-h-[420px] flex items-center">
+      <section className="relative bg-[#122259] text-white overflow-hidden flex items-center">
         <picture className="absolute inset-0">
           <source media="(max-width: 767px)" srcSet="/hero-home-mobile.webp" />
           <Image
@@ -137,16 +137,16 @@ export default function Home() {
             sizes="100vw"
           />
         </picture>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-14 md:py-16 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-12 w-full">
           <div className="max-w-2xl">
-            <span className="tag mb-4 inline-block">UK&apos;s Trusted Online Quran Academy</span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
+            <span className="tag mb-3 inline-block">UK&apos;s Trusted Online Quran Academy</span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
               Best Online Quran Classes in the UK, For Kids, Adults &amp; Beginners
             </h1>
-            <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
+            <p className="text-base md:text-lg text-blue-100 mb-5 leading-relaxed">
               Families across the UK choose us because we make it simple to learn Quran online, one-to-one, with qualified male and female teachers. Tajweed, Hifz, Noorani Qaida and more, at flexible UK timings, from home.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <span className="relative inline-flex self-start sm:self-auto">
                 <span className="absolute inset-0 rounded-xl bg-[#F5A623] animate-ping opacity-40" />
                 <Link href="/free-trial" className="btn-gold text-base relative">Book Your Free Trial Class</Link>
