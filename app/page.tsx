@@ -8,7 +8,7 @@ import VideoEmbed from "@/components/VideoEmbed";
 import CTABand from "@/components/CTABand";
 
 export const metadata: Metadata = {
-  title: "Online Quran Classes for Kids & Adults in the UK",
+  title: "Best Online Quran Classes for Kids, Adults & Beginners in the UK",
   description:
     "Trusted online Quran classes in the UK. One-to-one lessons with qualified male & female teachers. Flexible UK timings, free first class, no commitment. Start today.",
   openGraph: { url: "/" },
@@ -140,7 +140,7 @@ export default function Home() {
           <div className="max-w-2xl">
             <span className="tag mb-4 inline-block">UK&apos;s Trusted Online Quran Academy</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              Trusted Online Quran Classes for Kids &amp; Adults in the UK
+              Best Online Quran Classes in the UK, For Kids, Adults &amp; Beginners
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
               Families across the UK choose us because we make it simple to learn Quran online, one-to-one, with qualified male and female teachers. Tajweed, Hifz, Noorani Qaida and more, at flexible UK timings, from home.
