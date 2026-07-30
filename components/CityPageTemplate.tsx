@@ -31,6 +31,7 @@ const coursesList = [
   { title: "Tajweed", href: "/courses/tajweed", desc: "Correct pronunciation" },
   { title: "Islamic Studies", href: "/courses/islamic-studies", desc: "Aqeedah, fiqh, seerah" },
   { title: "Tafseer", href: "/courses/tafseer", desc: "Understand the Quran" },
+  { title: "Adult Quran Classes", href: "/adult-quran-classes", desc: "For adults and beginners" },
 ];
 
 export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, localPoints, faqs }: CityPageProps) {

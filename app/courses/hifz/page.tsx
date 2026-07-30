@@ -25,7 +25,7 @@ export default function Hifz() {
       image="/course-hifz.webp"
       imageAlt="Student memorising the Quran online with a certified Hafiz teacher in the UK"
       schemaDescription="Online Hifz (Quran memorisation) course for children and adults in the UK. One-to-one lessons with a certified Hafiz teacher at flexible UK timings."
-      description="Becoming a Hafiz is one of the highest honours in Islam. Our online Hifz programme makes this goal achievable for children and adults across the UK, with a dedicated teacher, a structured methodology, and a pace tailored to each student's life and commitments."
+      description="Becoming a Hafiz is one of the highest honours in Islam. Our online Hifz programme, sometimes known as online Quran memorisation classes, makes this goal achievable for children and adults across the UK, with a dedicated teacher, a structured methodology, and a pace tailored to each student's life and commitments."
       learn={[
         "Memorisation of new verses (sabaq) each lesson",
         "Daily revision of recently memorised portions (sabaqi)",
@@ -53,7 +53,7 @@ export default function Hifz() {
       related={[
         { title: "Quran Reading", href: "/courses/quran-reading" },
         { title: "Tajweed", href: "/courses/tajweed" },
-        { title: "Islamic Studies", href: "/courses/islamic-studies" },
+        { title: "Female Quran Teachers", href: "/female-quran-teachers" },
       ]}
     />
   );

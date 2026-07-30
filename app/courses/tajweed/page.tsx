@@ -25,7 +25,7 @@ export default function Tajweed() {
       image="/course-tajweed.webp"
       imageAlt="Online Tajweed class with a certified UK Quran teacher teaching correct recitation rules"
       schemaDescription="Online Tajweed classes for UK students. Learn the rules of correct Quranic recitation with a certified Tajweed teacher in one-to-one lessons."
-      description="Tajweed is the science of reciting the Quran correctly, with proper pronunciation of each letter, accurate application of elongation rules, and the beautiful precision that the Quran deserves. Our online Tajweed classes help UK students move from simply reading to truly reciting the Quran as it was revealed."
+      description="Tajweed is the science of reciting the Quran correctly, with proper pronunciation of each letter, accurate application of elongation rules, and the beautiful precision that the Quran deserves. If you want to learn Quran online with Tajweed rather than just read it, our classes help UK students move from simply reading to truly reciting the Quran as it was revealed."
       learn={[
         "Makhaarij al-huroof, correct articulation points of Arabic letters",
         "Sifaat, the characteristics of letters and their pronunciation",

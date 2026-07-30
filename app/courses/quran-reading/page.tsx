@@ -52,7 +52,7 @@ export default function QuranReading() {
       ]}
       related={[
         { title: "Noorani Qaida", href: "/courses/noorani-qaida" },
-        { title: "Tajweed", href: "/courses/tajweed" },
+        { title: "Adult Quran Classes", href: "/adult-quran-classes" },
         { title: "Hifz", href: "/courses/hifz" },
       ]}
     />

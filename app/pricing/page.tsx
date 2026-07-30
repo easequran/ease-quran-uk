@@ -287,6 +287,29 @@ export default function Pricing() {
         </div>
       </section>
 
+      {/* Choose your course */}
+      <section className="section-pad">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 className="text-lg font-bold text-[#122259] mb-4 text-center">Choose Your Course</h2>
+          <div className="flex flex-wrap gap-3 justify-center">
+            {[
+              { title: "Noorani Qaida", href: "/courses/noorani-qaida" },
+              { title: "Quran Reading", href: "/courses/quran-reading" },
+              { title: "Hifz", href: "/courses/hifz" },
+              { title: "Tajweed", href: "/courses/tajweed" },
+              { title: "Islamic Studies", href: "/courses/islamic-studies" },
+              { title: "Tafseer", href: "/courses/tafseer" },
+              { title: "Adult Quran Classes", href: "/adult-quran-classes" },
+              { title: "Female Quran Teachers", href: "/female-quran-teachers" },
+            ].map((c) => (
+              <Link key={c.href} href={c.href} className="flex items-center gap-1.5 px-4 py-2.5 bg-[#faf9f7] rounded-xl text-sm font-semibold text-[#122259] border border-gray-200 hover:bg-[#122259] hover:text-white hover:border-[#122259] transition-colors">
+                {c.title} <ChevronRight size={12} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why choose us strip */}
       <section className="py-10 bg-[#122259]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">

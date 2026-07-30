@@ -52,8 +52,8 @@ export default function NooraniQaida() {
       ]}
       related={[
         { title: "Quran Reading", href: "/courses/quran-reading" },
+        { title: "Adult Quran Classes", href: "/adult-quran-classes" },
         { title: "Tajweed", href: "/courses/tajweed" },
-        { title: "Islamic Studies", href: "/courses/islamic-studies" },
       ]}
     />
   );

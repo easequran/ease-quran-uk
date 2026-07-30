@@ -29,6 +29,7 @@ const courses = [
   { title: "Tajweed", desc: "Master the rules of Tajweed for a beautiful, accurate recitation of the Holy Quran.", img: "/course-tajweed.webp", href: "/courses/tajweed" },
   { title: "Islamic Studies", desc: "Comprehensive Islamic education covering aqeedah, fiqh, seerah, and Islamic manners.", img: "/course-islamic-studies.webp", href: "/courses/islamic-studies" },
   { title: "Tafseer", desc: "Understand the deep meanings of Quranic verses with structured tafseer lessons.", img: "/course-tafseer.webp", href: "/courses/tafseer" },
+  { title: "Adult Quran Classes", desc: "Never too late to learn. Private, one-to-one Quran classes for adults and beginners at flexible evening and weekend times.", img: "/course-noorani-qaida.webp", href: "/adult-quran-classes" },
 ];
 
 const painSolutions = [

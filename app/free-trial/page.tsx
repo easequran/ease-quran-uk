@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { CheckCircle, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import { CheckCircle, MessageCircle, ChevronRight } from "lucide-react";
 import FreeTrialForm from "@/components/FreeTrialForm";
 
 export const metadata: Metadata = {
@@ -64,9 +65,20 @@ export default function FreeTrial() {
               <div className="card p-6">
                 <h3 className="font-bold text-[#122259] mb-3">Our courses</h3>
                 <ul className="space-y-2 text-sm">
-                  {["Noorani Qaida", "Quran Reading", "Hifz (Memorisation)", "Tajweed", "Islamic Studies", "Tafseer"].map((c) => (
-                    <li key={c} className="text-gray-600 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" /> {c}
+                  {[
+                    { title: "Noorani Qaida", href: "/courses/noorani-qaida" },
+                    { title: "Quran Reading", href: "/courses/quran-reading" },
+                    { title: "Hifz (Memorisation)", href: "/courses/hifz" },
+                    { title: "Tajweed", href: "/courses/tajweed" },
+                    { title: "Islamic Studies", href: "/courses/islamic-studies" },
+                    { title: "Tafseer", href: "/courses/tafseer" },
+                    { title: "Adult Quran Classes", href: "/adult-quran-classes" },
+                  ].map((c) => (
+                    <li key={c.href}>
+                      <Link href={c.href} className="text-gray-600 hover:text-[#F5A623] flex items-center gap-2 group">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" /> {c.title}
+                        <ChevronRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </Link>
                     </li>
                   ))}
                 </ul>

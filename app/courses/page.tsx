@@ -21,6 +21,7 @@ const courses = [
   { title: "Tajweed", desc: "Learn the rules of correct Quranic recitation, pronunciation, elongation, stopping rules, and beautification.", img: "/course-tajweed.webp", href: "/courses/tajweed", keyword: "Recitation" },
   { title: "Islamic Studies", desc: "A structured programme covering aqeedah, fiqh, seerah, Islamic manners, and core Islamic knowledge.", img: "/course-islamic-studies.webp", href: "/courses/islamic-studies", keyword: "Knowledge" },
   { title: "Tafseer", desc: "Go beyond reading and understand the meanings, context, and lessons of the Quran through guided tafseer.", img: "/course-tafseer.webp", href: "/courses/tafseer", keyword: "Understanding" },
+  { title: "Adult Quran Classes", desc: "Private, one-to-one Quran classes for adults and beginners. Flexible evening and weekend timings, no group classes, no judgement.", img: "/course-noorani-qaida.webp", href: "/adult-quran-classes", keyword: "For Adults" },
 ];
 
 export default function Courses() {
