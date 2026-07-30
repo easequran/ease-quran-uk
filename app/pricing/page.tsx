@@ -132,6 +132,7 @@ const plans = [
 ];
 
 const faqs = [
+  { q: "How much do online Quran classes cost in the UK?", a: "Our online Quran classes UK fees start from £30 per month for 2 classes per week, £45/month for 3 classes, and £60/month for an intensive 5-day schedule. Every plan is one-to-one, with no hidden fees and no long contract." },
   { q: "Is the free trial really free?", a: "Yes, completely free. No card required, no payment, no commitment. You try the class, meet the teacher, and decide afterwards if you'd like to continue." },
   { q: "Can I cancel anytime?", a: "Yes. There are no long-term contracts. If you need to pause or cancel, simply let us know and we'll sort it without any fuss." },
   { q: "Are there family discounts?", a: "Yes. If you have more than one child, WhatsApp us on +44 7311 254423 and we'll create a custom family plan with a sibling discount." },
@@ -155,7 +156,7 @@ export default function Pricing() {
               Simple, Honest Pricing<br className="hidden sm:block" /> for UK Families
             </h1>
             <p className="text-blue-200 text-base sm:text-lg max-w-xl">
-              No hidden fees. No long contracts. Every plan includes a completely free first class, no card needed.
+              Straightforward online Quran classes UK fees, no hidden charges, no long contracts. Every plan includes a completely free first class, no card needed.
             </p>
           </div>
 

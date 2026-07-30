@@ -61,6 +61,7 @@ const faqs = [
   { q: "How much do classes cost?", a: "Plans start from £30/month for 2 classes per week. All pricing is transparent, visit our pricing page for full details. Sibling discounts are also available." },
   { q: "Is the free trial really free?", a: "Yes, completely free, no card required, and no commitment. You try the class and decide afterwards if you'd like to continue." },
   { q: "How do you keep classes safe for children?", a: "All classes are one-to-one and online. Parents are welcome to sit in at any time. Sessions can be recorded on request. Visit our Child Safety page for full details." },
+  { q: "What makes Ease Quran one of the best online Quran classes in the UK?", a: "Certified teachers, completely one-to-one lessons, transparent pricing, and a founder who personally vets every teacher. Many UK families tell us we're the first academy that felt genuinely trustworthy, not just another online listing." },
 ];
 
 const cities = [
@@ -142,7 +143,7 @@ export default function Home() {
               Trusted Online Quran Classes for Kids &amp; Adults in the UK
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
-              One-to-one lessons with qualified male and female teachers. Learn Tajweed, Hifz, Noorani Qaida, and more, at flexible UK timings, from home.
+              Families across the UK choose us because we make it simple to learn Quran online, one-to-one, with qualified male and female teachers. Tajweed, Hifz, Noorani Qaida and more, at flexible UK timings, from home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <span className="relative inline-flex self-start sm:self-auto">

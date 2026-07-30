@@ -25,7 +25,7 @@ export default function QuranReading() {
       image="/course-quran-reading.webp"
       imageAlt="Student reading the Quran online with a certified teacher in the UK"
       schemaDescription="Online Quran reading classes for all levels in the UK. One-to-one lessons helping children and adults read the Quran fluently with correct pronunciation."
-      description="The ability to read the Quran is one of the most precious gifts a parent can give their child, and one of the most meaningful journeys an adult can take. Our one-to-one online Quran reading classes take students from their current level to confident, flowing recitation."
+      description="The ability to read the Quran is one of the most precious gifts a parent can give their child, and one of the most meaningful journeys an adult can take. As one of the most popular online Quran classes for kids in the UK, our one-to-one Quran reading lessons take students from their current level to confident, flowing recitation, with a dedicated teacher who never rushes them."
       learn={[
         "Fluent reading of Arabic script with correct pronunciation",
         "Word recognition and reading speed development",
@@ -36,6 +36,7 @@ export default function QuranReading() {
         "Building confidence for independent recitation",
       ]}
       whoFor={[
+        "Parents looking for online Quran classes for kids who are patient, structured, and one-to-one",
         "Students who have completed Noorani Qaida and are ready to read the Quran",
         "Children who can read basic Arabic but need to build fluency",
         "Adults who learnt as children but have become rusty",

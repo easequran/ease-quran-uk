@@ -94,7 +94,7 @@ export default function FemaleQuranTeachers() {
           <h2 className="text-3xl font-bold text-[#122259] mb-2">Almas Fatima</h2>
           <p className="text-[#F5A623] font-semibold mb-4">Qaria e Quran · Bachelor of Islamic Studies · Certified Teacher</p>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Almas Fatima is available exclusively for sisters and female students. She holds a Bachelor&apos;s degree in Islamic Studies and is a certified Qaria e Quran, meaning she has received formal training in Quranic recitation to a high standard.
+            Almas Fatima is available exclusively for sisters and female students. She holds a Bachelor&apos;s degree in Islamic Studies and is a certified Qaria e Quran, meaning she has received formal training in Quranic recitation to a high standard. As a dedicated female Quran tutor, she has built her entire teaching practice around what female students actually need: comfort, patience, and privacy.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed">
             She teaches Noorani Qaida, Quran Reading, Tajweed, and Islamic Studies. Her approach is patient, structured, and encouraging, creating a space where female students feel comfortable to ask questions, make mistakes, and progress at their own pace.

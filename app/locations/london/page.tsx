@@ -31,6 +31,7 @@ export default function London() {
         { q: "Are there Quran classes available in South London?", a: "Yes. We teach students in Croydon, Lewisham, Southwark, Greenwich, Catford, and throughout South London. Being online means there are no geographical restrictions for any family." },
         { q: "What timings are available for London students?", a: "We offer classes at flexible UK time slots including after school (3pm to 8pm) and weekends, ideal for London families with school-age children and working parents." },
         { q: "Is a female Quran teacher available for London sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters across London. Simply request a female teacher when booking your free trial." },
+        { q: "Can I find a Quran teacher in London who teaches online?", a: "Yes. Rather than searching for a Quran teacher in London to visit in person, our certified teachers reach your child online, wherever in London you live, at the same quality you'd expect from an in-person madrassa." },
         { q: "How much does a Quran class cost in London?", a: "Our online plans start from £30 per month for 2 classes per week. There are no hidden fees, and the first class is completely free with no obligation to continue." },
       ]}
     />

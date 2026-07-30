@@ -73,6 +73,7 @@ export default function About() {
                 <p>Muslim families in the UK were struggling to find Quran teachers they could genuinely trust. The options were either overstretched mosque teachers, or anonymous online strangers with unverifiable credentials.</p>
                 <p>Shah Zaib, our founder, had spent years teaching English-speaking and Western Muslim families and saw what was missing: clear communication, consistent scheduling, verified credentials, and a real academy structure that parents could rely on.</p>
                 <p>Ease Quran was built to fill that gap. Every decision we make is guided by one question: <strong className="text-[#122259]">would I trust this for my own child?</strong></p>
+                <p>That starts with who stands in front of your child. Every quran teacher on our team is certified, interviewed, and trial-tested before they ever teach a real class, so when you search for an online quran teacher you can actually verify, you land somewhere real.</p>
               </div>
             </div>
           </div>
@@ -146,7 +147,7 @@ export default function About() {
               {
                 name: "Muhammad Umair",
                 role: "Tajweed & Hifz Specialist",
-                bio: "Certified and experienced in Tajweed rules and Hifz methodology. Muhammad Umair has two years of experience and uses structured, engaging techniques proven to help students memorise and retain Quranic verses.",
+                bio: "Certified and experienced in Tajweed rules and Hifz methodology. As an online quran teacher based in the UK, Muhammad Umair has two years of experience and uses structured, engaging techniques proven to help students memorise and retain Quranic verses.",
                 img: "/teacher-1.webp",
                 creds: ["Certified Teacher", "Tajweed Specialist", "Hifz Methodology"],
               },
