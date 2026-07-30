@@ -26,6 +26,7 @@ const faqSchema = {
     { "@type": "Question", name: "Is there a free trial?", acceptedAnswer: { "@type": "Answer", text: "Yes, the first class is completely free. No card required, no commitment. You can book your free trial from our website." } },
     { "@type": "Question", name: "Can I cancel anytime?", acceptedAnswer: { "@type": "Answer", text: "Yes. There are no long-term contracts. You can cancel or change your plan at any time." } },
     { "@type": "Question", name: "Are there family or sibling discounts?", acceptedAnswer: { "@type": "Answer", text: "Yes. If you have more than one child you'd like to enrol, please WhatsApp us and we'll create a custom family plan." } },
+    { "@type": "Question", name: "What are the typical costs for online Quran tutoring sessions?", acceptedAnswer: { "@type": "Answer", text: "Online Quran tutoring in the UK typically costs between £30 and £60 per month, depending on class frequency. Our Starter plan is £30/month for 2 classes per week, rising to £60/month for an intensive 5-day schedule, all one-to-one with no hidden fees." } },
   ],
 };
 
@@ -138,6 +139,7 @@ const faqs = [
   { q: "Are there family discounts?", a: "Yes. If you have more than one child, WhatsApp us on +44 7311 254423 and we'll create a custom family plan with a sibling discount." },
   { q: "How do I pay?", a: "We'll confirm payment details when you sign up after your free trial. We accept common payment methods." },
   { q: "What if I need to reschedule a class?", a: "Just let your teacher or the academy know in advance and we'll rearrange. We're flexible." },
+  { q: "What are the typical costs for online Quran tutoring sessions?", a: "Online Quran tutoring in the UK typically costs between £30 and £60 per month, depending on class frequency. Our Starter plan is £30/month for 2 classes per week, rising to £60/month for an intensive 5-day schedule, all one-to-one with no hidden fees." },
 ];
 
 export default function Pricing() {

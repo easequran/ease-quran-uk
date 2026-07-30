@@ -3,6 +3,18 @@ import Link from "next/link";
 import { CheckCircle, MessageCircle, ChevronRight } from "lucide-react";
 import FreeTrialForm from "@/components/FreeTrialForm";
 
+const faqs = [
+  { q: "Are there any free trial options for online Quran education services?", a: "Yes. Ease Quran UK offers a completely free first class, no card required and no obligation to continue. You meet your teacher, try a real one-to-one lesson, and decide afterwards." },
+  { q: "Is the free trial really a full class, or just a call?", a: "It's a genuine one-to-one lesson with a certified teacher, not a sales call. You'll get real teaching so you can judge the quality for yourself before paying anything." },
+  { q: "Do I need to give payment details to book the free trial?", a: "No. No card, no payment information, no commitment. We only ask for basic contact details so we can confirm your class time." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+
 export const metadata: Metadata = {
   title: "Book a Free Quran Trial Class",
   description: "Book your free online Quran trial class today. No card required, no commitment. A qualified UK teacher, confirmed within 2 hours.",
@@ -24,6 +36,7 @@ const reassurances = [
 export default function FreeTrial() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="bg-[#122259] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center text-white">
           <span className="tag mb-3 inline-block">No Card Required</span>
@@ -87,6 +100,24 @@ export default function FreeTrial() {
           </div>
         </div>
       </section>
+
+      <section className="section-pad bg-[#faf9f7]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-[#122259] mb-8 text-center">Free Trial Questions</h2>
+          <div className="space-y-3">
+            {faqs.map((f, i) => (
+              <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none">
+                  {f.q}
+                  <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
+                </summary>
+                <p className="px-5 pb-5 text-gray-600 text-sm leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <div className="lg:hidden h-14" aria-hidden="true" />
     </>
   );

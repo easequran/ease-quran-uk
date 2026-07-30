@@ -50,6 +50,7 @@ export default function Tajweed() {
         { q: "How long does a Tajweed course take?", a: "A foundational Tajweed course covering all the main rules typically takes 6 to 12 months at 2 classes per week. Students can then continue to refine their recitation further." },
         { q: "Can children learn Tajweed?", a: "Yes, children who can read the Quran are ready to begin Tajweed. Many find the structured rules help them understand what they have been doing naturally." },
         { q: "Will I get corrections on my own recitation?", a: "Every session includes live recitation practice with immediate, specific corrections. This one-to-one feedback is what makes our Tajweed classes so effective." },
+        { q: "Do you offer one-on-one Tajweed classes online?", a: "Yes. Every Tajweed class at Ease Quran UK is completely one-to-one, never a group call, so your teacher can listen to your recitation directly and correct it in real time." },
       ]}
       related={[
         { title: "Quran Reading", href: "/courses/quran-reading" },

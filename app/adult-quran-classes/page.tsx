@@ -48,6 +48,7 @@ export default function AdultQuranClasses() {
         { q: "Can I have classes in the evening or at weekends?", a: "Yes, our teachers offer flexible UK timings including evenings after work and weekends, so classes fit around your schedule." },
         { q: "Can I request a female teacher?", a: "Yes. Our qualified female teacher, Almas Fatima, is available for female adult students who prefer to learn with a woman." },
         { q: "Do I have to attend with other students?", a: "No. Every class at Ease Quran UK is completely one-to-one. You will never be grouped with other students." },
+        { q: "How do I know these online Quran classes for adults are genuinely good?", a: "Look for real, verifiable credentials rather than promises, one-to-one lessons instead of group calls, and a free trial before you commit. Our teachers are certified and interviewed, our first class is always free, and adult students regularly tell us it's the first academy that felt properly organised, not just another online listing." },
       ]}
       related={[
         { title: "Noorani Qaida", href: "/courses/noorani-qaida" },
