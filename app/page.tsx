@@ -125,7 +125,7 @@ export default function Home() {
       {videoSchemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
       {/* HERO */}
-      <section className="relative bg-[#122259] text-white overflow-hidden min-h-[560px] flex items-center">
+      <section className="relative bg-[#122259] text-white overflow-hidden min-h-[420px] flex items-center">
         <picture className="absolute inset-0">
           <source media="(max-width: 767px)" srcSet="/hero-home-mobile.webp" />
           <Image
@@ -137,10 +137,10 @@ export default function Home() {
             sizes="100vw"
           />
         </picture>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-14 md:py-16 w-full">
           <div className="max-w-2xl">
             <span className="tag mb-4 inline-block">UK&apos;s Trusted Online Quran Academy</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
               Best Online Quran Classes in the UK, For Kids, Adults &amp; Beginners
             </h1>
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
