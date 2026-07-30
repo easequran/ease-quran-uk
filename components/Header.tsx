@@ -12,6 +12,7 @@ const courses = [
   { label: "Tajweed", href: "/courses/tajweed", desc: "Perfect your pronunciation" },
   { label: "Islamic Studies", href: "/courses/islamic-studies", desc: "Aqeedah, fiqh and seerah" },
   { label: "Tafseer", href: "/courses/tafseer", desc: "Understand the Quran" },
+  { label: "Adult Quran Classes", href: "/adult-quran-classes", desc: "For adults and beginners" },
 ];
 
 const locations = [

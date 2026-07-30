@@ -35,6 +35,7 @@ export default function Footer() {
                 ["Tajweed", "/courses/tajweed"],
                 ["Islamic Studies", "/courses/islamic-studies"],
                 ["Tafseer", "/courses/tafseer"],
+                ["Adult Quran Classes", "/adult-quran-classes"],
               ].map(([label, href]) => (
                 <li key={href}><Link href={href} className="hover:text-[#F5A623] transition-colors">{label}</Link></li>
               ))}
