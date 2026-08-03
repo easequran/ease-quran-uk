@@ -30,7 +30,7 @@ export default function ScrollToTop() {
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Scroll to top"
-      className="fixed bottom-20 right-4 z-40 lg:bottom-6 group"
+      className="fixed bottom-[140px] right-4 z-40 lg:bottom-[88px] lg:right-6 group"
     >
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="-rotate-90">
         {/* Track */}
