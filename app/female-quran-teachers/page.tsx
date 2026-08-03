@@ -11,11 +11,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/female-quran-teachers" },
   alternates: {
     canonical: "/female-quran-teachers",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/female-quran-teachers",
-      "en-US": "https://easequran.com/female-quran-teachers",
-      "x-default": "https://easequran.com/female-quran-teachers",
-    },
   },
 };
 

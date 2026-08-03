@@ -7,11 +7,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/courses/hifz" },
   alternates: {
     canonical: "/courses/hifz",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/courses/hifz",
-      "en-US": "https://easequran.com/courses/hifz",
-      "x-default": "https://easequran.com/courses/hifz",
-    },
   },
 };
 

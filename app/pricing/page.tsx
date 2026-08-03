@@ -10,11 +10,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/pricing" },
   alternates: {
     canonical: "/pricing",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/pricing",
-      "en-US": "https://easequran.com/pricing",
-      "x-default": "https://easequran.com/pricing",
-    },
   },
 };
 

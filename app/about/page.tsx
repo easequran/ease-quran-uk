@@ -11,11 +11,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/about" },
   alternates: {
     canonical: "/about",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/about",
-      "en-US": "https://easequran.com/about",
-      "x-default": "https://easequran.com/about",
-    },
   },
 };
 

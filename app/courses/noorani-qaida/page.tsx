@@ -7,11 +7,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/courses/noorani-qaida" },
   alternates: {
     canonical: "/courses/noorani-qaida",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/courses/noorani-qaida",
-      "en-US": "https://easequran.com/courses/noorani-qaida",
-      "x-default": "https://easequran.com/courses/noorani-qaida",
-    },
   },
 };
 

@@ -7,11 +7,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/courses/tajweed" },
   alternates: {
     canonical: "/courses/tajweed",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/courses/tajweed",
-      "en-US": "https://easequran.com/courses/tajweed",
-      "x-default": "https://easequran.com/courses/tajweed",
-    },
   },
 };
 

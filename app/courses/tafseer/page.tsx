@@ -7,11 +7,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/courses/tafseer" },
   alternates: {
     canonical: "/courses/tafseer",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/courses/tafseer",
-      "en-US": "https://easequran.com/courses/tafseer",
-      "x-default": "https://easequran.com/courses/tafseer",
-    },
   },
 };
 

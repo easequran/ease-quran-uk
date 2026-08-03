@@ -7,11 +7,6 @@ export const metadata: Metadata = {
   openGraph: { url: "/courses/quran-reading" },
   alternates: {
     canonical: "/courses/quran-reading",
-    languages: {
-      "en-GB": "https://www.easequran.co.uk/courses/quran-reading",
-      "en-US": "https://easequran.com/courses/quran-reading",
-      "x-default": "https://easequran.com/courses/quran-reading",
-    },
   },
 };
 
