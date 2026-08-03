@@ -1,10 +1,20 @@
 "use client";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { waLink } from "@/lib/whatsapp";
 
 export default function WhatsAppSticky() {
   const pathname = usePathname();
   const href = waLink(pathname);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  if (!visible) return null;
 
   return (
     <a
