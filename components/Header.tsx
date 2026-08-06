@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown, ChevronRight, Mail } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Mail, MapPin } from "lucide-react";
 import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from "@/components/SocialIcons";
 
 const courses = [
@@ -16,14 +16,14 @@ const courses = [
 ];
 
 const locations = [
-  { label: "London", href: "/locations/london", desc: "All London boroughs" },
-  { label: "Birmingham", href: "/locations/birmingham", desc: "Small Heath, Sparkhill & more" },
-  { label: "Manchester", href: "/locations/manchester", desc: "Rusholme, Longsight & more" },
-  { label: "Bradford", href: "/locations/bradford", desc: "Manningham, Heaton & more" },
-  { label: "Leicester", href: "/locations/leicester", desc: "Highfields, Evington & more" },
-  { label: "Leeds", href: "/locations/leeds", desc: "Beeston, Harehills & more" },
-  { label: "Luton", href: "/locations/luton", desc: "Bury Park, Marsh Farm & more" },
-  { label: "Glasgow", href: "/locations/glasgow", desc: "Pollokshields, Govanhill & more" },
+  { label: "London", href: "/locations/london" },
+  { label: "Birmingham", href: "/locations/birmingham" },
+  { label: "Manchester", href: "/locations/manchester" },
+  { label: "Bradford", href: "/locations/bradford" },
+  { label: "Leicester", href: "/locations/leicester" },
+  { label: "Leeds", href: "/locations/leeds" },
+  { label: "Luton", href: "/locations/luton" },
+  { label: "Glasgow", href: "/locations/glasgow" },
 ];
 
 function UKFlag() {
@@ -144,24 +144,22 @@ export default function Header() {
                 Locations <ChevronDown size={14} className={`transition-transform duration-200 ${locationsOpen ? "rotate-180" : ""}`} />
               </button>
               {locationsOpen && (
-                <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-2xl shadow-xl border border-gray-100 p-5 z-50">
-                  <div className="flex items-center justify-between mb-4">
+                <div className="absolute top-full left-0 mt-1 w-[340px] bg-white rounded-2xl shadow-xl border border-gray-100 p-4 z-50">
+                  <div className="flex items-center justify-between mb-3">
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">UK Cities</p>
-                    <Link href="/locations" className="text-xs text-[#F5A623] font-semibold hover:underline">View all</Link>
+                    <Link href="/locations" className="text-xs text-[#F5A623] font-semibold hover:underline">View all →</Link>
                   </div>
-                  <div className="grid grid-cols-2 gap-1">
+                  <div className="flex flex-wrap gap-2">
                     {locations.map((l) => (
-                      <Link key={l.href} href={l.href} className="flex flex-col px-3 py-3 rounded-xl hover:bg-[#faf9f7] group transition-colors">
-                        <span className="font-semibold text-[#122259] group-hover:text-[#F5A623] transition-colors text-sm">{l.label}</span>
-                        <span className="text-xs text-gray-400 mt-0.5">{l.desc}</span>
+                      <Link
+                        key={l.href}
+                        href={l.href}
+                        className="flex items-center gap-1.5 pl-2.5 pr-3 py-2 rounded-full border border-gray-200 hover:border-[#F5A623] hover:bg-[#F5A623]/5 text-sm font-medium text-[#122259] transition-colors"
+                      >
+                        <MapPin size={12} className="text-[#F5A623] flex-shrink-0" />
+                        {l.label}
                       </Link>
                     ))}
-                  </div>
-                  <div className="mt-4 pt-4 border-t border-gray-100">
-                    <Link href="/free-trial" className="flex items-center justify-between px-4 py-3 bg-[#122259] rounded-xl text-white text-sm font-semibold hover:bg-[#0d1a45] transition-colors">
-                      <span>Start with a free trial class</span>
-                      <span className="bg-[#F5A623] text-white text-xs font-bold px-2.5 py-1 rounded-full">Free</span>
-                    </Link>
                   </div>
                 </div>
               )}
