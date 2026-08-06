@@ -3,7 +3,7 @@ import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes in Birmingham",
-  description: "One-to-one online Quran classes for Muslim families in Birmingham. Certified teachers, flexible timings. Serving Small Heath, Sparkhill, Handsworth, Alum Rock and more. Free first class.",
+  description: "One-to-one online Quran classes for Muslim families in Birmingham. Certified teachers, flexible timings. Serving Small Heath, Sparkhill, Handsworth. Free first class.",
   openGraph: { url: "/locations/birmingham" },
   alternates: {
     canonical: "/locations/birmingham",
@@ -30,6 +30,7 @@ export default function Birmingham() {
         { q: "Do you provide online Quran classes in Small Heath and Sparkhill?", a: "Yes, we serve families across Small Heath, Sparkhill, Handsworth, Alum Rock, and all Birmingham areas. Our classes are fully online so your neighbourhood makes no difference." },
         { q: "Is a female Quran teacher available in Birmingham?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters from Birmingham families. Simply request a female teacher when booking your free trial." },
         { q: "How are your classes different from a local Birmingham madrassa?", a: "Our classes are one-to-one, online, and taught in English by a fully certified teacher. There are no groups, no commute, and parents can observe any class at any time. It is a genuinely personalised alternative." },
+        { q: "Is online Quran learning actually as effective as in-person classes?", a: "For most Birmingham families, yes, and often more so. One-to-one online attention means every mistake is caught and corrected in the moment, something a crowded in-person class cannot always offer. What matters most is consistency and a qualified teacher, both of which we guarantee." },
         { q: "What Quran courses are available for Birmingham students?", a: "We offer Noorani Qaida, Quran Reading, Hifz, Tajweed, Islamic Studies, and Tafseer, all one-to-one, online, at flexible times that suit your family." },
         { q: "How do I book a free trial class in Birmingham?", a: "Fill in the form on our free trial page or WhatsApp us on +44 7311 254423. We will confirm your free class within 2 hours." },
       ]}

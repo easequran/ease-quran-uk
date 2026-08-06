@@ -8,9 +8,9 @@ import VideoEmbed from "@/components/VideoEmbed";
 import CTABand from "@/components/CTABand";
 
 export const metadata: Metadata = {
-  title: "Best Online Quran Classes for Kids, Adults & Beginners in the UK",
+  title: "Online Quran Classes for Kids & Adults",
   description:
-    "Trusted online Quran classes in the UK. One-to-one lessons with qualified male & female teachers. Flexible UK timings, free first class, no commitment. Start today.",
+    "Trusted online Quran classes in the UK. One-to-one lessons with qualified male & female teachers. Flexible UK timings, free first class. Start today.",
   openGraph: { url: "/" },
   alternates: {
     canonical: "/",
@@ -66,6 +66,9 @@ const cities = [
   { label: "Manchester", href: "/locations/manchester" },
   { label: "Bradford", href: "/locations/bradford" },
   { label: "Leicester", href: "/locations/leicester" },
+  { label: "Leeds", href: "/locations/leeds" },
+  { label: "Luton", href: "/locations/luton" },
+  { label: "Glasgow", href: "/locations/glasgow" },
 ];
 
 
@@ -350,7 +353,7 @@ export default function Home() {
             The best Quran teacher is not always the one who lives nearby, it is the one who is qualified, consistent, and communicates clearly. Our one-to-one online classes mean you can access a certified Ease Quran teacher wherever you are in the UK.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Families in London, Birmingham, Manchester, Bradford, Leicester, and beyond choose Ease Quran for the quality of teaching, not just the convenience. One-to-one online means your child gets a teacher&apos;s full attention at times that work around school and family life.
+            Families in London, Birmingham, Manchester, Bradford, Leicester, Leeds, Luton, Glasgow, and beyond choose Ease Quran for the quality of teaching, not just the convenience. One-to-one online means your child gets a teacher&apos;s full attention at times that work around school and family life.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             {cities.map((c) => (

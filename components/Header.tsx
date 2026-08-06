@@ -21,6 +21,9 @@ const locations = [
   { label: "Manchester", href: "/locations/manchester" },
   { label: "Bradford", href: "/locations/bradford" },
   { label: "Leicester", href: "/locations/leicester" },
+  { label: "Leeds", href: "/locations/leeds" },
+  { label: "Luton", href: "/locations/luton" },
+  { label: "Glasgow", href: "/locations/glasgow" },
 ];
 
 function UKFlag() {

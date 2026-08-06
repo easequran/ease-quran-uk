@@ -3,7 +3,7 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Tajweed Classes UK | Learn Correct Quran Recitation",
-  description: "Online Tajweed classes in the UK with a certified teacher. Learn to recite the Quran with proper pronunciation and Tajweed rules. One-to-one, free trial available.",
+  description: "Online Tajweed classes in the UK with a certified teacher. Learn to recite the Quran with proper pronunciation and Tajweed rules. One-to-one, free trial.",
   openGraph: { url: "/courses/tajweed" },
   alternates: {
     canonical: "/courses/tajweed",

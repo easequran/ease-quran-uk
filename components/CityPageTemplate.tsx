@@ -22,6 +22,9 @@ const allCities = [
   ["Manchester", "/locations/manchester"],
   ["Bradford", "/locations/bradford"],
   ["Leicester", "/locations/leicester"],
+  ["Leeds", "/locations/leeds"],
+  ["Luton", "/locations/luton"],
+  ["Glasgow", "/locations/glasgow"],
 ];
 
 const coursesList = [
@@ -168,6 +171,31 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <VideoEmbed videoId="u_j-zh0jFL8" title="Ease Quran UK Review — Saman Imran" reviewer="Saman Imran" />
             <VideoEmbed videoId="1eQ9zKKLWfQ" title="Ease Quran UK Review — Younas Rahman" reviewer="Younas Rahman" />
+          </div>
+        </div>
+      </section>
+
+      {/* Why choose us over a search for a local teacher */}
+      <section className="section-pad">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 max-w-2xl mx-auto">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Why Families Choose Us</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#122259]">What to Look For in a {city} Quran Teacher</h2>
+            <p className="text-gray-600 mt-3 leading-relaxed">
+              When you search for a Quran teacher in {city}, you will find many academies making similar promises. Here is what actually sets Ease Quran UK apart, and what we would encourage any {city} parent to check before enrolling anywhere.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
+            {[
+              { label: "Verifiable credentials", detail: "Our teachers hold real, checkable qualifications, including certification from Wifaq ul Madaris Al-Arabia, not just a claim of being \"certified\"." },
+              { label: "Genuinely one-to-one", detail: "Many academies fill group classes of several students per teacher. Every Ease Quran lesson is one student, one teacher, every time." },
+              { label: "Full parental transparency", detail: `${city} parents can observe any class at any time. Nothing is hidden, and progress is shared regularly.` },
+            ].map((item) => (
+              <div key={item.label} className="bg-white rounded-2xl p-5 border border-gray-100">
+                <p className="text-[#122259] font-bold text-sm mb-1.5">{item.label}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

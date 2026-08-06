@@ -3,7 +3,7 @@ import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes in Leicester",
-  description: "One-to-one online Quran classes for Muslim families in Leicester. Certified teachers, flexible timings. Serving Highfields, Evington, Spinney Hills, Belgrave and more. Free first class.",
+  description: "One-to-one online Quran classes for Muslim families in Leicester. Certified teachers, flexible timings. Serving Highfields, Evington, Belgrave. Free first class.",
   openGraph: { url: "/locations/leicester" },
   alternates: {
     canonical: "/locations/leicester",
@@ -31,6 +31,7 @@ export default function Leicester() {
         { q: "Are there timings available to suit Leicester school schedules?", a: "Yes. We offer classes after school (from 3pm), evenings, and weekends, all of which fit around Leicester's school timetables and working parents' schedules." },
         { q: "Can a Leicester family request a female Quran teacher?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and female students in Leicester. Simply request this when booking your free trial." },
         { q: "My child already goes to a local mosque, can Ease Quran complement this?", a: "Absolutely. Many families use Ease Quran for the one-to-one personalised attention it provides, alongside local mosque attendance. The two approaches work very well together." },
+        { q: "Is online Quran learning actually as effective as in-person classes?", a: "For most Leicester families, yes, and often more so. One-to-one online attention means every mistake is caught and corrected in the moment, something a crowded in-person class cannot always offer. What matters most is consistency and a qualified teacher, both of which we guarantee." },
         { q: "How do I book in Leicester?", a: "Use the free trial form on our website or WhatsApp us on +44 7311 254423. We will confirm your free class within 2 hours." },
       ]}
     />

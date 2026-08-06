@@ -3,7 +3,7 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Quran Reading Classes UK | Learn to Read Quran",
-  description: "Learn to read the Quran online with a qualified UK teacher. One-to-one Quran reading classes for children and adults. Flexible timings, free first class, no commitment.",
+  description: "Learn to read the Quran online with a qualified UK teacher. One-to-one Quran reading classes for children and adults. Flexible timings, free first class.",
   openGraph: { url: "/courses/quran-reading" },
   alternates: {
     canonical: "/courses/quran-reading",

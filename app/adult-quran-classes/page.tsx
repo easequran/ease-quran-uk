@@ -3,7 +3,7 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes for Adults & Beginners in the UK",
-  description: "Online Quran classes for adults and beginners in the UK. One-to-one, private lessons at evening and weekend times, no judgement, no group classes. Free first class.",
+  description: "Online Quran classes for adults and beginners in the UK. One-to-one, private lessons at evening and weekend times, no group classes. Free first class.",
   openGraph: { url: "/adult-quran-classes" },
   alternates: {
     canonical: "/adult-quran-classes",

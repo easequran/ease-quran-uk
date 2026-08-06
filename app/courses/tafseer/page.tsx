@@ -3,7 +3,7 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Tafseer Classes UK | Understand the Quran",
-  description: "Online Tafseer classes for UK students. Learn the meanings, context, and lessons of the Quran with a qualified teacher. One-to-one, flexible timings. Free trial.",
+  description: "Online Tafseer classes for UK students. Learn the meanings, context, and lessons of the Quran with a qualified teacher. One-to-one, free trial.",
   openGraph: { url: "/courses/tafseer" },
   alternates: {
     canonical: "/courses/tafseer",

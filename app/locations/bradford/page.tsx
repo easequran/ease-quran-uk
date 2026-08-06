@@ -3,7 +3,7 @@ import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes in Bradford",
-  description: "One-to-one online Quran classes for Muslim families in Bradford. Certified teachers, flexible timings. Serving Manningham, Heaton, Girlington, Great Horton and the Bradford district. Free first class.",
+  description: "One-to-one online Quran classes for Muslim families in Bradford. Certified teachers, flexible timings. Serving Manningham, Heaton, Great Horton. Free first class.",
   openGraph: { url: "/locations/bradford" },
   alternates: {
     canonical: "/locations/bradford",
@@ -29,6 +29,7 @@ export default function Bradford() {
       faqs={[
         { q: "Do you serve families in Manningham and Heaton?", a: "Yes, we serve all Bradford areas including Manningham, Heaton, Girlington, Great Horton, and across the wider Bradford district. Our classes are fully online so no travel is needed from any area." },
         { q: "Is this better than a Bradford madrassa?", a: "It is a different model, and a complementary one for many families. Our classes are one-to-one, in English, with a certified teacher, and parents can observe any time. Many Bradford families use Ease Quran alongside local mosque education for the personalised attention it provides." },
+        { q: "Is online Quran learning actually as effective as in-person classes?", a: "For most Bradford families, yes, and often more so. One-to-one online attention means every mistake is caught and corrected in the moment, something a crowded in-person class cannot always offer. What matters most is consistency and a qualified teacher, both of which we guarantee." },
         { q: "Is a female teacher available for Bradford sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters across Bradford. Simply mention your preference when booking your free trial." },
         { q: "What courses are available for Bradford students?", a: "All our courses are available: Noorani Qaida, Quran Reading, Hifz, Tajweed, Islamic Studies, and Tafseer, all one-to-one and online." },
         { q: "How do I start with a free trial in Bradford?", a: "Book via our free trial form or WhatsApp us on +44 7311 254423. We will confirm your free class within 2 hours." },

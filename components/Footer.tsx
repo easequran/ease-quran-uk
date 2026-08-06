@@ -79,7 +79,7 @@ export default function Footer() {
             <div className="mt-6">
               <h4 className="text-white font-semibold mb-3 text-sm">Locations</h4>
               <ul className="space-y-1.5 text-sm">
-                {[["London", "/locations/london"], ["Birmingham", "/locations/birmingham"], ["Manchester", "/locations/manchester"], ["Bradford", "/locations/bradford"], ["Leicester", "/locations/leicester"]].map(([l, h]) => (
+                {[["London", "/locations/london"], ["Birmingham", "/locations/birmingham"], ["Manchester", "/locations/manchester"], ["Bradford", "/locations/bradford"], ["Leicester", "/locations/leicester"], ["Leeds", "/locations/leeds"], ["Luton", "/locations/luton"], ["Glasgow", "/locations/glasgow"]].map(([l, h]) => (
                   <li key={h}><Link href={h} className="hover:text-[#F5A623] transition-colors">{l}</Link></li>
                 ))}
               </ul>

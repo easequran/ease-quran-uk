@@ -3,7 +3,7 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Islamic Studies Classes UK | Kids and Adults",
-  description: "Online Islamic Studies classes for children and adults in the UK. One-to-one lessons covering aqeedah, fiqh, seerah, and Islamic manners with a certified teacher.",
+  description: "Online Islamic Studies classes for children and adults in the UK. One-to-one lessons covering aqeedah, fiqh, seerah, and Islamic manners. Free trial.",
   openGraph: { url: "/courses/islamic-studies" },
   alternates: {
     canonical: "/courses/islamic-studies",

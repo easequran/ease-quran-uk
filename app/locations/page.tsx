@@ -45,6 +45,24 @@ const cities = [
     areas: "Highfields, Evington, Spinney Hills, Belgrave",
     desc: "Online Quran education for Leicester families with a dedicated female teacher option.",
   },
+  {
+    name: "Leeds",
+    href: "/locations/leeds",
+    areas: "Beeston, Harehills, Chapeltown, Hyde Park",
+    desc: "One-to-one online classes for Leeds families, fitting around school and work schedules.",
+  },
+  {
+    name: "Luton",
+    href: "/locations/luton",
+    areas: "Bury Park, Marsh Farm, Biscot, High Town",
+    desc: "Certified online Quran teachers for Luton families, with a dedicated female teacher option.",
+  },
+  {
+    name: "Glasgow",
+    href: "/locations/glasgow",
+    areas: "Pollokshields, Govanhill, Shawlands, Gorbals",
+    desc: "Online Quran classes for Glasgow's Southside and beyond, taught in English at flexible times.",
+  },
 ];
 
 export default function Locations() {

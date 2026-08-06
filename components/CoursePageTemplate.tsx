@@ -4,6 +4,17 @@ import { CheckCircle, ChevronRight, Star, Users, Clock, Shield } from "lucide-re
 import CTABand from "@/components/CTABand";
 import Breadcrumb from "@/components/Breadcrumb";
 
+const ukCities = [
+  { label: "London", href: "/locations/london" },
+  { label: "Birmingham", href: "/locations/birmingham" },
+  { label: "Manchester", href: "/locations/manchester" },
+  { label: "Bradford", href: "/locations/bradford" },
+  { label: "Leicester", href: "/locations/leicester" },
+  { label: "Leeds", href: "/locations/leeds" },
+  { label: "Luton", href: "/locations/luton" },
+  { label: "Glasgow", href: "/locations/glasgow" },
+];
+
 interface FAQ { q: string; a: string }
 interface CoursePageProps {
   h1: string;
@@ -178,6 +189,23 @@ export default function CoursePageTemplate({
           </div>
         </section>
       )}
+
+      {/* Available across the UK */}
+      <section className="section-pad bg-[#faf9f7]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-lg font-bold text-[#122259] mb-4">Available to Families Across the UK</h2>
+          <div className="flex flex-wrap gap-3">
+            {ukCities.map((c) => (
+              <Link key={c.href} href={c.href} className="flex items-center gap-1.5 px-4 py-2.5 bg-white rounded-xl text-sm font-semibold text-[#122259] border border-gray-200 hover:bg-[#122259] hover:text-white hover:border-[#122259] transition-colors">
+                {c.label} <ChevronRight size={12} />
+              </Link>
+            ))}
+            <Link href="/locations" className="flex items-center gap-1.5 px-4 py-2.5 bg-white rounded-xl text-sm font-semibold text-[#F5A623] border border-gray-200 hover:bg-[#122259] hover:text-white hover:border-[#122259] transition-colors">
+              All Locations <ChevronRight size={12} />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <CTABand />
       <div className="lg:hidden h-14" aria-hidden="true" />

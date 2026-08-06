@@ -3,7 +3,7 @@ import CityPageTemplate from "@/components/CityPageTemplate";
 
 export const metadata: Metadata = {
   title: "Online Quran Classes in London",
-  description: "One-to-one online Quran classes for Muslim families in London. Qualified male and female teachers, flexible timings around school and work. Serving Tower Hamlets, Ilford, Newham, Hackney and all London boroughs. Free first class.",
+  description: "One-to-one online Quran classes for Muslim families in London. Qualified male and female teachers, flexible timings. Serving all London boroughs. Free first class.",
   openGraph: { url: "/locations/london" },
   alternates: {
     canonical: "/locations/london",
@@ -33,6 +33,7 @@ export default function London() {
         { q: "Is a female Quran teacher available for London sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters across London. Simply request a female teacher when booking your free trial." },
         { q: "Can I find a Quran teacher in London who teaches online?", a: "Yes. Rather than searching for a Quran teacher in London to visit in person, our certified teachers reach your child online, wherever in London you live, at the same quality you'd expect from an in-person madrassa." },
         { q: "How much does a Quran class cost in London?", a: "Our online plans start from £30 per month for 2 classes per week. There are no hidden fees, and the first class is completely free with no obligation to continue." },
+        { q: "Is online Quran learning actually as effective as in-person classes?", a: "For most London families, yes, and often more so. One-to-one online attention means every mistake is caught and corrected in the moment, something a crowded in-person class cannot always offer. What matters most is consistency and a qualified teacher, both of which we guarantee." },
       ]}
     />
   );

@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Child Safety & Safeguarding Policy",
-  description: "How Ease Quran UK keeps children safe in online Quran classes. Read our honest safeguarding approach, parental supervision, teacher vetting, transparency, and how to raise a concern.",
+  description: "How Ease Quran UK keeps children safe in online Quran classes. Our honest safeguarding approach: parental supervision, teacher vetting, and full transparency.",
   openGraph: { url: "/safety" },
   alternates: {
     canonical: "/safety",

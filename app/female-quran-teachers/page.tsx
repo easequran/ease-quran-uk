@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Female Quran Teacher UK, Online Classes for Sisters",
-  description: "Book a qualified female Quran teacher in the UK for your daughter or yourself. One-to-one online lessons for sisters of all ages. Free trial class, no commitment.",
+  description: "Book a qualified female Quran teacher in the UK for your daughter or yourself. One-to-one online lessons for sisters of all ages. Free trial class.",
   openGraph: { url: "/female-quran-teachers" },
   alternates: {
     canonical: "/female-quran-teachers",

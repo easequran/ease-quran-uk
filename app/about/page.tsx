@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "About Ease Quran UK, Our Story & Teachers",
-  description: "Learn about Ease Quran UK, a trusted online Quran academy founded by certified teacher Shah Zaib to serve Muslim families across the UK with honest, quality education.",
+  description: "Learn about Ease Quran UK, a trusted online Quran academy founded by certified teacher Shah Zaib to serve Muslim families across the UK.",
   openGraph: { url: "/about" },
   alternates: {
     canonical: "/about",

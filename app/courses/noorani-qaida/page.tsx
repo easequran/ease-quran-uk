@@ -3,7 +3,7 @@ import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata: Metadata = {
   title: "Noorani Qaida Course UK | Online Arabic for Beginners",
-  description: "Start your Quran journey with our Noorani Qaida course in the UK. One-to-one online lessons for children and adult beginners with a qualified teacher. Free first class.",
+  description: "Start your Quran journey with our Noorani Qaida course in the UK. One-to-one online lessons for children and adult beginners. Free first class.",
   openGraph: { url: "/courses/noorani-qaida" },
   alternates: {
     canonical: "/courses/noorani-qaida",
