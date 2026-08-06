@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Check, ChevronRight, MessageCircle, Gift, Settings2, BookOpenCheck } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -62,6 +63,15 @@ export default function Pricing() {
 
       {/* Hero */}
       <section className="bg-[#122259] pt-10 pb-16 relative overflow-hidden">
+        <Image
+          src="/pricing-hero.webp"
+          alt="Quran resting open on a wooden stand beside a lit lantern, warm sunlight through a latticed window"
+          fill
+          priority
+          className="object-cover opacity-40 -scale-x-100"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#122259] via-[#122259]/90 to-[#122259]/40" />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at 70% 0%, rgba(245,166,35,0.12) 0%, transparent 60%)" }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Pricing" }]} dark />
