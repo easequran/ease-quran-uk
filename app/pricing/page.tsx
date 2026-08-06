@@ -1,140 +1,57 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Check, ChevronRight, MessageCircle, Sparkles, Users, Settings } from "lucide-react";
+import { Check, ChevronRight, MessageCircle, Gift, Settings2, BookOpenCheck } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTABand from "@/components/CTABand";
+import PricingPlans from "@/components/PricingPlans";
+import {
+  MAIN_PLANS,
+  SIBLING_DISCOUNTS,
+  siblingWorkedExample,
+  PREPAY_TERMS,
+  prepayTotalAndSaving,
+  HIFZ_INTENSIVE,
+  CUSTOM_TIMETABLE,
+  REFERRAL,
+  REGISTRATION_FEE,
+} from "@/lib/pricing";
 
 export const metadata: Metadata = {
-  title: "Quran Class Pricing UK, Plans from £30/month",
-  description: "Transparent online Quran class pricing for UK families. Plans from £30/month, no hidden fees, cancel anytime. Free trial class included.",
+  title: "Quran Class Pricing UK, Plans from £32/month",
+  description: "Transparent online Quran class pricing for UK families. Plans from £32/month, no hidden fees, cancel anytime. Free trial class included.",
   openGraph: { url: "/pricing" },
   alternates: {
     canonical: "/pricing",
   },
 };
 
+const steadyPlan = MAIN_PLANS.find((p) => p.id === "steady")!;
+const worked = siblingWorkedExample();
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "How much do online Quran classes cost in the UK?", acceptedAnswer: { "@type": "Answer", text: "Ease Quran UK plans start from £30 per month for 2 classes per week (8 classes/month). The most popular plan is £45/month for 3 classes per week. All plans include one-to-one lessons with a qualified teacher." } },
-    { "@type": "Question", name: "Is there a free trial?", acceptedAnswer: { "@type": "Answer", text: "Yes, the first class is completely free. No card required, no commitment. You can book your free trial from our website." } },
+    { "@type": "Question", name: "How much do online Quran classes cost in the UK?", acceptedAnswer: { "@type": "Answer", text: "Ease Quran UK plans start from £32 per month for 2 classes per week (8 classes/month, 30 minutes each). The most popular plan is £45/month for 3 classes per week. All plans include one-to-one lessons with a qualified teacher." } },
+    { "@type": "Question", name: "Is there a free trial?", acceptedAnswer: { "@type": "Answer", text: "Yes, the first class is completely free. No card required, no commitment, and there is no registration fee. You can book your free trial from our website." } },
     { "@type": "Question", name: "Can I cancel anytime?", acceptedAnswer: { "@type": "Answer", text: "Yes. There are no long-term contracts. You can cancel or change your plan at any time." } },
-    { "@type": "Question", name: "Are there family or sibling discounts?", acceptedAnswer: { "@type": "Answer", text: "Yes. If you have more than one child you'd like to enrol, please WhatsApp us and we'll create a custom family plan." } },
-    { "@type": "Question", name: "What are the typical costs for online Quran tutoring sessions?", acceptedAnswer: { "@type": "Answer", text: "Online Quran tutoring in the UK typically costs between £30 and £60 per month, depending on class frequency. Our Starter plan is £30/month for 2 classes per week, rising to £60/month for an intensive 5-day schedule, all one-to-one with no hidden fees." } },
+    { "@type": "Question", name: "Are there family or sibling discounts?", acceptedAnswer: { "@type": "Answer", text: "Yes, applied automatically with no code needed. The 1st child pays full price, the 2nd child gets 15% off, the 3rd child gets 25% off, and the 4th child onwards gets 30% off." } },
+    { "@type": "Question", name: "What are the typical costs for online Quran tutoring sessions?", acceptedAnswer: { "@type": "Answer", text: "Online Quran tutoring in the UK typically costs between £32 and £122 per month, depending on class frequency and duration. Our Foundation plan is £32/month for 2 classes per week, rising to £122/month for an intensive 60-minute, 5-day schedule, all one-to-one with no hidden fees." } },
   ],
 };
 
-const plans = [
-  {
-    name: "Starter",
-    price: "£30",
-    period: "/month",
-    frequency: "2 classes per week",
-    detail: "8 classes · ~30 min · 1-to-1",
-    highlight: false,
-    badge: null,
-    icon: null,
-    color: "border-gray-100",
-    features: [
-      "One-to-one with a certified teacher",
-      "Male or female teacher",
-      "Flexible UK timings",
-      "All courses covered",
-      "Cancel anytime",
-    ],
-    cta: { label: "Start Free Trial", href: "/free-trial", style: "outline" },
-  },
-  {
-    name: "Standard",
-    price: "£45",
-    period: "/month",
-    frequency: "3 classes per week",
-    detail: "12 classes · ~30 min · 1-to-1",
-    highlight: true,
-    badge: "Most Popular",
-    icon: <Sparkles size={14} />,
-    color: "border-[#F5A623]",
-    features: [
-      "One-to-one with a certified teacher",
-      "Male or female teacher",
-      "Flexible UK timings",
-      "All courses covered",
-      "Cancel anytime",
-      "Best for steady, consistent progress",
-    ],
-    cta: { label: "Start Free Trial", href: "/free-trial", style: "gold" },
-  },
-  {
-    name: "Intensive",
-    price: "£60",
-    period: "/month",
-    frequency: "5 classes per week",
-    detail: "20 classes · ~30 min · 1-to-1",
-    highlight: false,
-    badge: null,
-    icon: null,
-    color: "border-gray-100",
-    features: [
-      "One-to-one with a certified teacher",
-      "Male or female teacher",
-      "Flexible UK timings",
-      "All courses covered",
-      "Cancel anytime",
-      "Ideal for Hifz and fast progress",
-    ],
-    cta: { label: "Start Free Trial", href: "/free-trial", style: "outline" },
-  },
-  {
-    name: "Family Plan",
-    price: "Custom",
-    period: "",
-    frequency: "2+ children",
-    detail: "Sibling discount applied",
-    highlight: false,
-    badge: "Save More",
-    icon: <Users size={14} />,
-    color: "border-[#122259]/20",
-    features: [
-      "Separate 1-to-1 for each child",
-      "Sibling discount on 2nd child+",
-      "Flexible scheduling per child",
-      "Male or female teacher per child",
-      "Single WhatsApp point of contact",
-      "All courses covered",
-    ],
-    cta: { label: "WhatsApp for Family Price", href: "https://wa.me/447311254423?text=Hi%2C%20I%27d%20like%20a%20family%20plan%20for%20my%20children.", style: "navy", external: true },
-  },
-  {
-    name: "Custom Plan",
-    price: "Bespoke",
-    period: "",
-    frequency: "Your schedule",
-    detail: "Built around your needs",
-    highlight: false,
-    badge: "Flexible",
-    icon: <Settings size={14} />,
-    color: "border-gray-100",
-    features: [
-      "Longer sessions (45 or 60 min)",
-      "Adult learners welcome",
-      "Specialist Hifz programme",
-      "Specific course combinations",
-      "Choose your preferred teacher",
-      "Pricing agreed before you start",
-    ],
-    cta: { label: "WhatsApp to Discuss", href: "https://wa.me/447311254423?text=Hi%2C%20I%27d%20like%20a%20custom%20Quran%20class%20plan.", style: "navy", external: true },
-  },
-];
-
 const faqs = [
-  { q: "How much do online Quran classes cost in the UK?", a: "Our online Quran classes UK fees start from £30 per month for 2 classes per week, £45/month for 3 classes, and £60/month for an intensive 5-day schedule. Every plan is one-to-one, with no hidden fees and no long contract." },
-  { q: "Is the free trial really free?", a: "Yes, completely free. No card required, no payment, no commitment. You try the class, meet the teacher, and decide afterwards if you'd like to continue." },
+  { q: "How much do online Quran classes cost in the UK?", a: "Our online Quran classes UK fees start from £32 per month for 2 classes per week, £45/month for 3 classes (our most popular plan), and £68/month for an intensive 5-day schedule, all at 30 minutes per class. Every plan is one-to-one, with no hidden fees, no registration fee, and no long contract." },
+  { q: "Is the free trial really free?", a: "Yes, completely free. No card required, no payment, no registration fee, no commitment. You try the class, meet the teacher, and decide afterwards if you'd like to continue." },
   { q: "Can I cancel anytime?", a: "Yes. There are no long-term contracts. If you need to pause or cancel, simply let us know and we'll sort it without any fuss." },
-  { q: "Are there family discounts?", a: "Yes. If you have more than one child, WhatsApp us on +44 7311 254423 and we'll create a custom family plan with a sibling discount." },
-  { q: "How do I pay?", a: "We'll confirm payment details when you sign up after your free trial. We accept common payment methods." },
-  { q: "What if I need to reschedule a class?", a: "Just let your teacher or the academy know in advance and we'll rearrange. We're flexible." },
-  { q: "What are the typical costs for online Quran tutoring sessions?", a: "Online Quran tutoring in the UK typically costs between £30 and £60 per month, depending on class frequency. Our Starter plan is £30/month for 2 classes per week, rising to £60/month for an intensive 5-day schedule, all one-to-one with no hidden fees." },
+  { q: "How does the 60-minute option work?", a: "Use the duration toggle at the top of the plans to switch any of the three plans from 30-minute to 60-minute classes. The monthly price updates automatically. You don't need separate plans for this." },
+  { q: "What is Weekend Priority and when does it cost extra?", a: "Weekend Priority guarantees your child a Saturday or Sunday slot and only applies an extra charge when every class in your week falls on the weekend. If your timetable mixes weekdays with one or two weekend classes, there is no extra charge at all." },
+  { q: "How does the sibling discount work?", a: `It's automatic and needs no code. The 1st child enrolled pays full price, the 2nd child gets 15% off, the 3rd child gets 25% off, and the 4th child onwards gets 30% off. For example, 3 children on the Steady plan comes to £${worked.prices[0]} + £${worked.prices[1]} + £${worked.prices[2]} = £${worked.total}/month.` },
+  { q: "Can I prepay for a discount?", a: "Yes. Pay every 3 months for 5% off, every 6 months for 10% off, or yearly and get 2 months free (you only pay for 10 months). The pound saving for each plan is shown on this page." },
+  { q: "Do you offer an intensive Hifz programme?", a: `Yes, our Hifz Intensive plan starts from £${HIFZ_INTENSIVE.fromPrice}/month for ${HIFZ_INTENSIVE.classesPerWeek} sessions a week at ${HIFZ_INTENSIVE.durationMinutes} minutes each, with a senior teacher and weekly memorisation tracking.` },
+  { q: "What if I need a completely custom timetable?", a: `We can build a bespoke timetable around your family's schedule. Typical custom plans range from £${CUSTOM_TIMETABLE.rangeLow} to £${CUSTOM_TIMETABLE.rangeHigh} per month, and we'll always confirm your exact price before you start.` },
+  { q: "Is there a registration or sign-up fee?", a: "No. The registration fee is £0. You only ever pay for your chosen plan." },
+  { q: "Do you have a referral programme?", a: "Yes. Refer a family and you get 50% off one month once they enrol, and they get 20% off their first month." },
 ];
 
 export default function Pricing() {
@@ -153,13 +70,13 @@ export default function Pricing() {
               Simple, Honest Pricing<br className="hidden sm:block" /> for UK Families
             </h1>
             <p className="text-blue-200 text-base sm:text-lg max-w-xl">
-              Straightforward online Quran classes UK fees, no hidden charges, no long contracts. Every plan includes a completely free first class, no card needed.
+              Straightforward online Quran classes UK fees, no hidden charges, no long contracts. Every plan includes a completely free first class, no card needed, and a £{REGISTRATION_FEE} registration fee.
             </p>
           </div>
 
           {/* Trust pills */}
           <div className="flex flex-wrap gap-3 mt-8">
-            {["Free first class", "No card required", "Cancel anytime", "Certified teachers"].map((t) => (
+            {["Free first class", "£0 registration fee", "No card required", "Cancel anytime", "Certified teachers"].map((t) => (
               <span key={t} className="flex items-center gap-1.5 text-xs font-semibold text-white bg-white/10 border border-white/15 rounded-full px-3 py-1.5">
                 <Check size={11} className="text-[#F5A623]" /> {t}
               </span>
@@ -171,117 +88,142 @@ export default function Pricing() {
       {/* Plans */}
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <PricingPlans />
+        </div>
+      </section>
 
-          {/* Top 3, main plans */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-5">
-            {plans.slice(0, 3).map((plan) => (
-              <div
-                key={plan.name}
-                className={`relative bg-white rounded-2xl border-2 ${plan.color} flex flex-col ${plan.highlight ? "shadow-2xl shadow-[#F5A623]/10 scale-[1.02]" : "shadow-sm"} transition-all`}
-              >
-                {plan.badge && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10">
-                    <span className={`inline-flex items-center gap-1.5 text-xs font-bold px-4 py-1.5 rounded-full ${plan.highlight ? "bg-[#F5A623] text-white" : "bg-[#122259] text-white"}`}>
-                      {plan.icon} {plan.badge}
-                    </span>
-                  </div>
-                )}
+      {/* Sibling discount */}
+      <section className="section-pad">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Automatic, No Code Needed</span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">Sibling Discount</h2>
+            <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Enrol more than one child and the discount is applied automatically to each additional child's plan.</p>
+          </div>
 
-                <div className={`p-6 sm:p-7 rounded-t-2xl ${plan.highlight ? "bg-gradient-to-br from-[#122259] to-[#1a3280]" : "bg-white"}`}>
-                  <p className={`text-xs font-bold uppercase tracking-widest mb-3 ${plan.highlight ? "text-[#F5A623]" : "text-gray-400"}`}>{plan.name}</p>
-                  <div className="flex items-end gap-1">
-                    <span className={`text-4xl sm:text-5xl font-extrabold ${plan.highlight ? "text-white" : "text-[#122259]"}`}>{plan.price}</span>
-                    {plan.period && <span className={`text-sm mb-2 ${plan.highlight ? "text-blue-200" : "text-gray-400"}`}>{plan.period}</span>}
-                  </div>
-                  <p className={`text-sm font-semibold mt-1 ${plan.highlight ? "text-[#F5A623]" : "text-[#F5A623]"}`}>{plan.frequency}</p>
-                  <p className={`text-xs mt-1 ${plan.highlight ? "text-blue-200" : "text-gray-400"}`}>{plan.detail}</p>
-                </div>
-
-                <div className="p-6 sm:p-7 flex-1 flex flex-col">
-                  <ul className="space-y-3 mb-7 flex-1">
-                    {plan.features.map((f) => (
-                      <li key={f} className="flex items-start gap-2.5 text-sm text-gray-700">
-                        <span className="w-4 h-4 rounded-full bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <Check size={9} className="text-[#F5A623]" strokeWidth={3} />
-                        </span>
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href={plan.cta.href}
-                    className={`w-full text-center py-3 rounded-xl font-bold text-sm transition-all ${
-                      plan.cta.style === "gold"
-                        ? "bg-[#F5A623] text-white hover:bg-[#d4901e] shadow-lg shadow-[#F5A623]/30"
-                        : "border-2 border-[#122259] text-[#122259] hover:bg-[#122259] hover:text-white"
-                    }`}
-                  >
-                    {plan.cta.label}
-                  </Link>
-                </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            {["1st child", "2nd child", "3rd child", "4th+ child"].map((label, i) => (
+              <div key={label} className="bg-white rounded-2xl border border-gray-100 p-5 text-center shadow-sm">
+                <p className="text-2xl font-extrabold text-[#122259]">{SIBLING_DISCOUNTS[i] === 0 ? "Full price" : `-${SIBLING_DISCOUNTS[i] * 100}%`}</p>
+                <p className="text-xs text-gray-500 mt-1">{label}</p>
               </div>
             ))}
           </div>
 
-          {/* Bottom 2, Family + Custom */}
+          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-6 sm:p-7">
+            <p className="text-sm font-bold text-[#122259] mb-2">Worked example</p>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              3 children on the {worked.planName} plan (£{steadyPlan.price30}/month each before discount): £{worked.prices[0]} + £{worked.prices[1]} + £{worked.prices[2]} ={" "}
+              <span className="font-bold text-[#122259]">£{worked.total}/month</span> for all three children.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Prepay discounts */}
+      <section className="section-pad bg-[#faf9f7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Pay Ahead, Save More</span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">Prepay Discounts</h2>
+            <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Pay every 3 months for 5% off, every 6 months for 10% off, or yearly for 2 months free. Prices below are for 30-minute plans.</p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-2xl border border-gray-100 shadow-sm text-sm">
+              <thead>
+                <tr className="border-b border-gray-100">
+                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Plan</th>
+                  {PREPAY_TERMS.map((t) => (
+                    <th key={t.id} className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">{t.label}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {MAIN_PLANS.map((plan) => (
+                  <tr key={plan.id} className="border-b border-gray-50 last:border-0">
+                    <td className="px-5 py-4 font-bold text-[#122259]">{plan.name}</td>
+                    {PREPAY_TERMS.map((t) => {
+                      const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
+                      return (
+                        <td key={t.id} className="px-5 py-4 text-gray-700">
+                          £{total}
+                          {saving > 0 && <span className="block text-xs text-[#F5A623] font-semibold mt-0.5">save £{saving}</span>}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Hifz Intensive + Custom Timetable */}
+      <section className="section-pad">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {plans.slice(3).map((plan) => (
-              <div
-                key={plan.name}
-                className={`relative bg-white rounded-2xl border-2 ${plan.color} flex flex-col sm:flex-row overflow-hidden shadow-sm`}
-              >
-                {/* Left color strip */}
-                <div className="sm:w-2 h-2 sm:h-auto bg-[#122259] flex-shrink-0" />
-
-                <div className="flex-1 p-6 sm:p-7">
-                  <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
-                    <div>
-                      {plan.badge && (
-                        <span className="inline-flex items-center gap-1 text-xs font-bold text-[#122259] bg-[#122259]/8 rounded-full px-3 py-1 mb-2">
-                          {plan.icon} {plan.badge}
-                        </span>
-                      )}
-                      <h2 className="text-xl font-extrabold text-[#122259]">{plan.name}</h2>
-                      <p className="text-xs text-gray-400 mt-0.5">{plan.detail}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-3xl font-extrabold text-[#122259]">{plan.price}</p>
-                      <p className="text-xs text-[#F5A623] font-semibold">{plan.frequency}</p>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 xs:grid-cols-2 gap-x-6 gap-y-2.5 mb-6">
-                    {plan.features.map((f) => (
-                      <div key={f} className="flex items-start gap-2 text-sm text-gray-700">
-                        <span className="w-4 h-4 rounded-full bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <Check size={9} className="text-[#F5A623]" strokeWidth={3} />
-                        </span>
-                        {f}
-                      </div>
-                    ))}
-                  </div>
-
-                  {"external" in plan.cta && plan.cta.external ? (
-                    <a
-                      href={plan.cta.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[#122259] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0e1b47] transition-colors"
-                    >
-                      <MessageCircle size={15} /> {plan.cta.label}
-                    </a>
-                  ) : (
-                    <Link href={plan.cta.href} className="inline-flex items-center gap-2 bg-[#122259] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0e1b47] transition-colors">
-                      {plan.cta.label} <ChevronRight size={14} />
-                    </Link>
-                  )}
-                </div>
+            <div className="relative bg-white rounded-2xl border-2 border-[#122259]/20 flex flex-col sm:flex-row overflow-hidden shadow-sm">
+              <div className="sm:w-2 h-2 sm:h-auto bg-[#122259] flex-shrink-0" />
+              <div className="flex-1 p-6 sm:p-7">
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#122259] bg-[#122259]/8 rounded-full px-3 py-1 mb-2">
+                  <BookOpenCheck size={13} /> Senior Teacher
+                </span>
+                <h2 className="text-xl font-extrabold text-[#122259]">{HIFZ_INTENSIVE.name}</h2>
+                <p className="text-3xl font-extrabold text-[#122259] mt-2">from £{HIFZ_INTENSIVE.fromPrice}<span className="text-sm font-medium text-gray-400">/month</span></p>
+                <p className="text-sm text-gray-600 mt-3 leading-relaxed">{HIFZ_INTENSIVE.description}</p>
+                <Link href="/courses/hifz" className="inline-flex items-center gap-1.5 mt-5 text-sm font-bold text-[#122259] hover:text-[#F5A623] transition-colors">
+                  Learn more about Hifz <ChevronRight size={14} />
+                </Link>
               </div>
-            ))}
-          </div>
+            </div>
 
-          {/* Comparison note */}
-          <p className="text-center text-xs text-gray-400 mt-8">All prices in GBP. One-to-one lessons only. No group classes. Prices confirmed before you start.</p>
+            <div className="relative bg-white rounded-2xl border-2 border-gray-100 flex flex-col sm:flex-row overflow-hidden shadow-sm">
+              <div className="sm:w-2 h-2 sm:h-auto bg-[#F5A623] flex-shrink-0" />
+              <div className="flex-1 p-6 sm:p-7">
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#122259] bg-[#122259]/8 rounded-full px-3 py-1 mb-2">
+                  <Settings2 size={13} /> Bespoke
+                </span>
+                <h2 className="text-xl font-extrabold text-[#122259]">{CUSTOM_TIMETABLE.name}</h2>
+                <p className="text-2xl font-extrabold text-[#122259] mt-2">£{CUSTOM_TIMETABLE.rangeLow}–£{CUSTOM_TIMETABLE.rangeHigh}<span className="text-sm font-medium text-gray-400">/month, typical</span></p>
+                <p className="text-sm text-gray-600 mt-3 leading-relaxed">{CUSTOM_TIMETABLE.description}</p>
+                <a
+                  href="https://wa.me/447311254423?text=Hi%2C%20I%27d%20like%20a%20custom%20Quran%20class%20timetable."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-5 bg-[#122259] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0e1b47] transition-colors"
+                >
+                  <MessageCircle size={15} /> WhatsApp to Discuss
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Referral */}
+      <section className="pb-2">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="bg-[#122259] rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="w-11 h-11 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
+                <Gift size={20} className="text-[#F5A623]" />
+              </div>
+              <div>
+                <p className="text-white font-bold">Refer a family</p>
+                <p className="text-blue-200 text-sm">You get {REFERRAL.referrerDiscount * 100}% off one month. They get {REFERRAL.refereeDiscount * 100}% off their first month.</p>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/447311254423?text=Hi%2C%20I%27d%20like%20to%20refer%20a%20family%20to%20Ease%20Quran%20UK."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold text-sm py-2.5 px-5 flex-shrink-0"
+            >
+              Refer via WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
@@ -314,7 +256,7 @@ export default function Pricing() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
               { stat: "Free", label: "First class, always" },
-              { stat: "£30", label: "Plans start from" },
+              { stat: `£${MAIN_PLANS[0].price30}`, label: "Plans start from" },
               { stat: "1-to-1", label: "Every lesson" },
               { stat: "Certified", label: "Qualified teachers only" },
             ].map((s) => (

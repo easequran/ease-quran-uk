@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CheckCircle, ChevronRight, Star, Users, Clock, Shield } from "lucide-react";
 import CTABand from "@/components/CTABand";
 import Breadcrumb from "@/components/Breadcrumb";
+import { MAIN_PLANS, CURRENCY } from "@/lib/pricing";
 
 const ukCities = [
   { label: "London", href: "/locations/london" },
@@ -42,7 +43,7 @@ export default function CoursePageTemplate({
     description: schemaDescription,
     provider: { "@type": "Organization", name: "Ease Quran UK", url: "https://www.easequran.co.uk" },
     url: `https://www.easequran.co.uk/courses/${slug}`,
-    offers: { "@type": "Offer", price: "30", priceCurrency: "GBP", availability: "https://schema.org/InStock" },
+    offers: { "@type": "Offer", price: String(MAIN_PLANS[0].price30), priceCurrency: CURRENCY, availability: "https://schema.org/InStock" },
   };
 
   const faqSchema = {
@@ -146,8 +147,8 @@ export default function CoursePageTemplate({
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="bg-[#122259] rounded-2xl p-8 text-white text-center">
             <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Transparent Pricing</p>
-            <h2 className="text-2xl font-bold mb-2">Plans from £30 per month</h2>
-            <p className="text-blue-100 text-sm mb-6 max-w-md mx-auto">Two classes per week. No hidden fees, no long contracts. Cancel any time. Your first class is always free.</p>
+            <h2 className="text-2xl font-bold mb-2">Plans from £{MAIN_PLANS[0].price30} per month</h2>
+            <p className="text-blue-100 text-sm mb-6 max-w-md mx-auto">Two classes per week. No hidden fees, no registration fee, no long contracts. Cancel any time. Your first class is always free.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/pricing" className="bg-white text-[#122259] font-semibold px-6 py-2.5 rounded-xl text-sm hover:bg-gray-100 transition-colors">View Full Pricing</Link>
               <Link href="/free-trial" className="btn-gold text-sm px-6 py-2.5">Start Free Trial</Link>

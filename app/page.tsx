@@ -53,11 +53,11 @@ const faqs = [
   { q: "Can I get a female Quran teacher?", a: "Yes. We have a qualified female teacher, Almas Fatima, available for sisters, daughters, and any student who prefers a female instructor. Simply mention this when booking." },
   { q: "What ages do you teach?", a: "We teach children from age 4 upwards, as well as teenagers and adults. Our teachers adapt their approach to the student's age and learning style." },
   { q: "What timings are available for UK students?", a: "We offer classes across all UK time slots including early mornings, after school (3pm–8pm), and weekends. We'll agree a regular slot that fits your family's routine." },
-  { q: "How much do classes cost?", a: "Plans start from £30/month for 2 classes per week. All pricing is transparent, visit our pricing page for full details. Sibling discounts are also available." },
-  { q: "Is the free trial really free?", a: "Yes, completely free, no card required, and no commitment. You try the class and decide afterwards if you'd like to continue." },
+  { q: "How much do classes cost?", a: "Plans start from £32/month for 2 classes per week. All pricing is transparent, visit our pricing page for full details. Sibling discounts are also available automatically." },
+  { q: "Is the free trial really free?", a: "Yes, completely free, no card required, no registration fee, and no commitment. You try the class and decide afterwards if you'd like to continue." },
   { q: "How do you keep classes safe for children?", a: "All classes are one-to-one and online. Parents are welcome to sit in at any time. Sessions can be recorded on request. Visit our Child Safety page for full details." },
   { q: "What makes Ease Quran one of the best online Quran classes in the UK?", a: "Certified teachers, completely one-to-one lessons, transparent pricing, and a founder who personally vets every teacher. Many UK families tell us we're the first academy that felt genuinely trustworthy, not just another online listing." },
-  { q: "What are the typical costs for online Quran tutoring sessions?", a: "Most online Quran tutoring in the UK ranges from £30 to £60 per month depending on how many classes per week you choose. At Ease Quran, plans start from £30/month for 2 classes per week, with no hidden fees and a free first class to try before you commit." },
+  { q: "What are the typical costs for online Quran tutoring sessions?", a: "Most online Quran tutoring in the UK ranges from £32 to £122 per month depending on class frequency and duration. At Ease Quran, plans start from £32/month for 2 classes per week, with no hidden fees and a free first class to try before you commit." },
 ];
 
 const cities = [

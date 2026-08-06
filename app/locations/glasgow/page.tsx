@@ -32,7 +32,7 @@ export default function Glasgow() {
         { q: "What timings are available for Glasgow students?", a: "We offer classes at flexible UK time slots including after school (3pm to 8pm) and weekends, ideal for Glasgow families with school-age children and working parents." },
         { q: "Is a female Quran teacher available for Glasgow sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters across Glasgow. Simply request a female teacher when booking your free trial." },
         { q: "Can Ease Quran complement a local Glasgow mosque or madrassa?", a: "Yes, many Glasgow families use Ease Quran alongside local mosque education for the one-to-one, personalised attention it adds. Parents can observe any class at any time." },
-        { q: "How much does a Quran class cost in Glasgow?", a: "Our online plans start from £30 per month for 2 classes per week. There are no hidden fees, and the first class is completely free with no obligation to continue." },
+        { q: "How much does a Quran class cost in Glasgow?", a: "Our online plans start from £32 per month for 2 classes per week. There are no hidden fees, and the first class is completely free with no obligation to continue." },
         { q: "Is online Quran learning actually as effective as in-person classes?", a: "For most Glasgow families, yes, and often more so. One-to-one online attention means every mistake is caught and corrected in the moment, something a crowded in-person class cannot always offer. What matters most is consistency and a qualified teacher, both of which we guarantee." },
       ]}
     />

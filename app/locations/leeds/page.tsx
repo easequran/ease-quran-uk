@@ -32,7 +32,7 @@ export default function Leeds() {
         { q: "What timings are available for Leeds students?", a: "We offer classes at flexible UK time slots including after school (3pm to 8pm) and weekends, ideal for Leeds families with school-age children and working parents." },
         { q: "Is a female Quran teacher available for Leeds sisters?", a: "Yes. Our certified female teacher Almas Fatima is available for sisters and daughters across Leeds. Simply request a female teacher when booking your free trial." },
         { q: "How does this compare to a local Leeds madrassa?", a: "It is a strong complement to local madrassa or mosque attendance. Our one-to-one format means your child gets individual correction and pace that a group class cannot always provide, and parents can observe any lesson." },
-        { q: "How much does a Quran class cost in Leeds?", a: "Our online plans start from £30 per month for 2 classes per week. There are no hidden fees, and the first class is completely free with no obligation to continue." },
+        { q: "How much does a Quran class cost in Leeds?", a: "Our online plans start from £32 per month for 2 classes per week. There are no hidden fees, and the first class is completely free with no obligation to continue." },
         { q: "Is online Quran learning actually as effective as in-person classes?", a: "For most Leeds families, yes, and often more so. One-to-one online attention means every mistake is caught and corrected in the moment, something a crowded in-person class cannot always offer. What matters most is consistency and a qualified teacher, both of which we guarantee." },
       ]}
     />

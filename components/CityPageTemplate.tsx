@@ -4,6 +4,7 @@ import { CheckCircle, ChevronRight, MapPin, Star, Users, Clock } from "lucide-re
 import CTABand from "@/components/CTABand";
 import Breadcrumb from "@/components/Breadcrumb";
 import VideoEmbed from "@/components/VideoEmbed";
+import { MAIN_PLANS } from "@/lib/pricing";
 
 interface FAQ { q: string; a: string }
 interface CityPageProps {
@@ -227,7 +228,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { href: "/female-quran-teachers", title: "Female Quran Teacher", desc: "Available for sisters and daughters of all ages" },
-              { href: "/pricing", title: "Pricing and Plans", desc: "From £30/month, sibling discounts available" },
+              { href: "/pricing", title: "Pricing and Plans", desc: `From £${MAIN_PLANS[0].price30}/month, sibling discounts available` },
               { href: "/safety", title: "Child Safety Policy", desc: "How we keep every online class safe and open" },
               { href: "/about", title: "About Our Teachers", desc: "Meet Shah Zaib, Muhammad Umair, and Almas Fatima" },
             ].map((link) => (
