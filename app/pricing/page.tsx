@@ -112,7 +112,30 @@ export default function Pricing() {
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Every plan is available at either length. Prices below are per month.</p>
           </div>
 
-          <div className="overflow-x-auto">
+          {/* Mobile: stacked cards */}
+          <div className="grid grid-cols-1 gap-3 sm:hidden">
+            {MAIN_PLANS.map((plan) => (
+              <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                <div className="flex items-center justify-between mb-3">
+                  <p className="font-bold text-[#122259]">{plan.name}</p>
+                  <p className="text-xs text-gray-400">{plan.classesPerWeek} classes/week</p>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-[#faf9f7] rounded-xl p-3 text-center">
+                    <p className="text-lg font-extrabold text-[#122259]">£{plan.price30}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">30 min</p>
+                  </div>
+                  <div className="bg-[#faf9f7] rounded-xl p-3 text-center">
+                    <p className="text-lg font-extrabold text-[#122259]">£{plan.price60}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">60 min</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Tablet and up: table */}
+          <div className="hidden sm:block overflow-x-auto">
             <table className="w-full bg-white rounded-2xl border border-gray-100 shadow-sm text-sm">
               <thead>
                 <tr className="border-b border-gray-100">
@@ -135,7 +158,7 @@ export default function Pricing() {
             </table>
           </div>
 
-          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-6 sm:p-7 mt-6">
+          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-5 sm:p-7 mt-6">
             <p className="text-sm font-bold text-[#122259] mb-2">Weekend Priority — guaranteed Sat/Sun slot (+15%)</p>
             <p className="text-sm text-gray-700 leading-relaxed">
               Foundation +£{MAIN_PLANS[0].weekendPriorityAddOn}/month · Steady +£{MAIN_PLANS[1].weekendPriorityAddOn}/month · Immersion +£{MAIN_PLANS[2].weekendPriorityAddOn}/month.
@@ -182,7 +205,29 @@ export default function Pricing() {
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Pay every 3 months for 5% off, every 6 months for 10% off, or yearly for 2 months free. Prices below are for 30-minute plans.</p>
           </div>
 
-          <div className="overflow-x-auto">
+          {/* Mobile: stacked cards */}
+          <div className="grid grid-cols-1 gap-3 sm:hidden">
+            {MAIN_PLANS.map((plan) => (
+              <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                <p className="font-bold text-[#122259] mb-3">{plan.name}</p>
+                <div className="grid grid-cols-2 gap-3">
+                  {PREPAY_TERMS.map((t) => {
+                    const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
+                    return (
+                      <div key={t.id} className="bg-[#faf9f7] rounded-xl p-3 text-center">
+                        <p className="text-lg font-extrabold text-[#122259]">£{total}</p>
+                        <p className="text-xs text-gray-500 mt-0.5">{t.label}</p>
+                        {saving > 0 && <p className="text-xs text-[#F5A623] font-semibold mt-0.5">save £{saving}</p>}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Tablet and up: table */}
+          <div className="hidden sm:block overflow-x-auto">
             <table className="w-full bg-white rounded-2xl border border-gray-100 shadow-sm text-sm">
               <thead>
                 <tr className="border-b border-gray-100">
