@@ -160,16 +160,32 @@ export default function Pricing() {
             </table>
           </div>
 
-          <div className="bg-[#122259] rounded-2xl p-5 sm:p-7 mt-6 flex flex-col sm:flex-row gap-4 sm:items-start">
-            <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
-              <CalendarCheck size={18} className="text-[#F5A623]" />
+          <div className="bg-[#122259] rounded-2xl p-5 sm:p-7 mt-6">
+            <div className="flex items-center justify-between gap-4 mb-5">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
+                  <CalendarCheck size={18} className="text-[#F5A623]" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-white">Weekend Priority</p>
+                  <p className="text-xs text-blue-200">Guaranteed Saturday or Sunday slot</p>
+                </div>
+              </div>
+              <span className="text-xs font-bold text-[#122259] bg-[#F5A623] rounded-full px-3 py-1 flex-shrink-0">+15%</span>
             </div>
-            <div>
-              <p className="text-sm font-bold text-white mb-2">Weekend Priority — guaranteed Sat/Sun slot (+15%)</p>
-              <p className="text-sm text-blue-100 leading-relaxed">
-                Foundation +£{MAIN_PLANS[0].weekendPriorityAddOn}/month · Steady +£{MAIN_PLANS[1].weekendPriorityAddOn}/month · Immersion +£{MAIN_PLANS[2].weekendPriorityAddOn}/month.
-              </p>
-              <p className="text-sm text-blue-200 leading-relaxed mt-2">{WEEKEND_POLICY_NOTE}</p>
+
+            <div className="grid grid-cols-3 gap-3 mb-5">
+              {MAIN_PLANS.map((plan) => (
+                <div key={plan.id} className="bg-white/10 rounded-xl p-3 text-center">
+                  <p className="text-base sm:text-lg font-extrabold text-[#F5A623]">+£{plan.weekendPriorityAddOn}</p>
+                  <p className="text-[11px] sm:text-xs text-blue-200 mt-0.5">{plan.name}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex items-start gap-3 bg-white/10 rounded-xl p-4">
+              <Check size={16} className="text-[#F5A623] flex-shrink-0 mt-0.5" strokeWidth={3} />
+              <p className="text-sm text-blue-100 leading-relaxed">{WEEKEND_POLICY_NOTE}</p>
             </div>
           </div>
         </div>
