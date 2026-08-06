@@ -14,6 +14,7 @@ import {
   CUSTOM_TIMETABLE,
   REFERRAL,
   REGISTRATION_FEE,
+  WEEKEND_POLICY_NOTE,
 } from "@/lib/pricing";
 
 export const metadata: Metadata = {
@@ -44,7 +45,7 @@ const faqs = [
   { q: "How much do online Quran classes cost in the UK?", a: "Our online Quran classes UK fees start from £32 per month for 2 classes per week, £45/month for 3 classes (our most popular plan), and £68/month for an intensive 5-day schedule, all at 30 minutes per class. Every plan is one-to-one, with no hidden fees, no registration fee, and no long contract." },
   { q: "Is the free trial really free?", a: "Yes, completely free. No card required, no payment, no registration fee, no commitment. You try the class, meet the teacher, and decide afterwards if you'd like to continue." },
   { q: "Can I cancel anytime?", a: "Yes. There are no long-term contracts. If you need to pause or cancel, simply let us know and we'll sort it without any fuss." },
-  { q: "How does the 60-minute option work?", a: "Use the duration toggle at the top of the plans to switch any of the three plans from 30-minute to 60-minute classes. The monthly price updates automatically. You don't need separate plans for this." },
+  { q: "How does the 60-minute option work?", a: "Every plan is available at 30 or 60 minutes per class. The 60-minute price for each plan is shown on its card and in the comparison table further down this page. You don't need separate plans for this, just choose your preferred length when you book." },
   { q: "What is Weekend Priority and when does it cost extra?", a: "Weekend Priority guarantees your child a Saturday or Sunday slot and only applies an extra charge when every class in your week falls on the weekend. If your timetable mixes weekdays with one or two weekend classes, there is no extra charge at all." },
   { q: "How does the sibling discount work?", a: `It's automatic and needs no code. The 1st child enrolled pays full price, the 2nd child gets 15% off, the 3rd child gets 25% off, and the 4th child onwards gets 30% off. For example, 3 children on the Steady plan comes to £${worked.prices[0]} + £${worked.prices[1]} + £${worked.prices[2]} = £${worked.total}/month.` },
   { q: "Can I prepay for a discount?", a: "Yes. Pay every 3 months for 5% off, every 6 months for 10% off, or yearly and get 2 months free (you only pay for 10 months). The pound saving for each plan is shown on this page." },
@@ -89,6 +90,48 @@ export default function Pricing() {
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <PricingPlans />
+        </div>
+      </section>
+
+      {/* 30 vs 60 minute comparison */}
+      <section className="section-pad">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Class Length</span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">30-Minute vs 60-Minute Classes</h2>
+            <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Every plan is available at either length. Prices below are per month.</p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-2xl border border-gray-100 shadow-sm text-sm">
+              <thead>
+                <tr className="border-b border-gray-100">
+                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Plan</th>
+                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Classes/week</th>
+                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">30 min</th>
+                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">60 min</th>
+                </tr>
+              </thead>
+              <tbody>
+                {MAIN_PLANS.map((plan) => (
+                  <tr key={plan.id} className="border-b border-gray-50 last:border-0">
+                    <td className="px-5 py-4 font-bold text-[#122259]">{plan.name}</td>
+                    <td className="px-5 py-4 text-gray-700">{plan.classesPerWeek}</td>
+                    <td className="px-5 py-4 text-gray-700">£{plan.price30}</td>
+                    <td className="px-5 py-4 text-gray-700">£{plan.price60}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-6 sm:p-7 mt-6">
+            <p className="text-sm font-bold text-[#122259] mb-2">Weekend Priority — guaranteed Sat/Sun slot (+15%)</p>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Foundation +£{MAIN_PLANS[0].weekendPriorityAddOn}/month · Steady +£{MAIN_PLANS[1].weekendPriorityAddOn}/month · Immersion +£{MAIN_PLANS[2].weekendPriorityAddOn}/month.
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed mt-2">{WEEKEND_POLICY_NOTE}</p>
+          </div>
         </div>
       </section>
 
