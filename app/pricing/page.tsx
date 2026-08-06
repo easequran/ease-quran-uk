@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ChevronRight, MessageCircle, Gift, Settings2, BookOpenCheck } from "lucide-react";
+import { Check, ChevronRight, MessageCircle, Gift, Settings2, BookOpenCheck, Clock, Users, CalendarCheck, Sparkles } from "lucide-react";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTABand from "@/components/CTABand";
 import PricingPlans from "@/components/PricingPlans";
@@ -107,7 +107,9 @@ export default function Pricing() {
       <section className="section-pad">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Class Length</span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
+              <Clock size={13} /> Class Length
+            </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">30-Minute vs 60-Minute Classes</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Every plan is available at either length. Prices below are per month.</p>
           </div>
@@ -115,19 +117,19 @@ export default function Pricing() {
           {/* Mobile: stacked cards */}
           <div className="grid grid-cols-1 gap-3 sm:hidden">
             {MAIN_PLANS.map((plan) => (
-              <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-                <div className="flex items-center justify-between mb-3">
-                  <p className="font-bold text-[#122259]">{plan.name}</p>
-                  <p className="text-xs text-gray-400">{plan.classesPerWeek} classes/week</p>
+              <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <div className="flex items-center justify-between px-5 py-3 bg-[#122259]">
+                  <p className="font-bold text-white">{plan.name}</p>
+                  <p className="text-xs text-blue-200">{plan.classesPerWeek} classes/week</p>
                 </div>
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-[#faf9f7] rounded-xl p-3 text-center">
+                <div className="grid grid-cols-2 gap-3 p-5">
+                  <div className="bg-[#faf9f7] rounded-xl p-3 text-center border border-gray-100">
                     <p className="text-lg font-extrabold text-[#122259]">£{plan.price30}</p>
                     <p className="text-xs text-gray-500 mt-0.5">30 min</p>
                   </div>
-                  <div className="bg-[#faf9f7] rounded-xl p-3 text-center">
+                  <div className="bg-[#F5A623]/10 rounded-xl p-3 text-center border border-[#F5A623]/30">
                     <p className="text-lg font-extrabold text-[#122259]">£{plan.price60}</p>
-                    <p className="text-xs text-gray-500 mt-0.5">60 min</p>
+                    <p className="text-xs text-[#d4890a] font-semibold mt-0.5">60 min</p>
                   </div>
                 </div>
               </div>
@@ -135,14 +137,14 @@ export default function Pricing() {
           </div>
 
           {/* Tablet and up: table */}
-          <div className="hidden sm:block overflow-x-auto">
-            <table className="w-full bg-white rounded-2xl border border-gray-100 shadow-sm text-sm">
+          <div className="hidden sm:block overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
+            <table className="w-full bg-white text-sm">
               <thead>
-                <tr className="border-b border-gray-100">
-                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Plan</th>
-                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Classes/week</th>
-                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">30 min</th>
-                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">60 min</th>
+                <tr className="bg-[#122259]">
+                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest rounded-tl-2xl">Plan</th>
+                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest">Classes/week</th>
+                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest">30 min</th>
+                  <th className="text-left px-5 py-4 text-xs font-bold text-[#F5A623] uppercase tracking-widest rounded-tr-2xl">60 min</th>
                 </tr>
               </thead>
               <tbody>
@@ -151,19 +153,24 @@ export default function Pricing() {
                     <td className="px-5 py-4 font-bold text-[#122259]">{plan.name}</td>
                     <td className="px-5 py-4 text-gray-700">{plan.classesPerWeek}</td>
                     <td className="px-5 py-4 text-gray-700">£{plan.price30}</td>
-                    <td className="px-5 py-4 text-gray-700">£{plan.price60}</td>
+                    <td className="px-5 py-4 font-bold text-[#122259] bg-[#F5A623]/8">£{plan.price60}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-5 sm:p-7 mt-6">
-            <p className="text-sm font-bold text-[#122259] mb-2">Weekend Priority — guaranteed Sat/Sun slot (+15%)</p>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              Foundation +£{MAIN_PLANS[0].weekendPriorityAddOn}/month · Steady +£{MAIN_PLANS[1].weekendPriorityAddOn}/month · Immersion +£{MAIN_PLANS[2].weekendPriorityAddOn}/month.
-            </p>
-            <p className="text-sm text-gray-600 leading-relaxed mt-2">{WEEKEND_POLICY_NOTE}</p>
+          <div className="bg-[#122259] rounded-2xl p-5 sm:p-7 mt-6 flex flex-col sm:flex-row gap-4 sm:items-start">
+            <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
+              <CalendarCheck size={18} className="text-[#F5A623]" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-white mb-2">Weekend Priority — guaranteed Sat/Sun slot (+15%)</p>
+              <p className="text-sm text-blue-100 leading-relaxed">
+                Foundation +£{MAIN_PLANS[0].weekendPriorityAddOn}/month · Steady +£{MAIN_PLANS[1].weekendPriorityAddOn}/month · Immersion +£{MAIN_PLANS[2].weekendPriorityAddOn}/month.
+              </p>
+              <p className="text-sm text-blue-200 leading-relaxed mt-2">{WEEKEND_POLICY_NOTE}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -172,26 +179,48 @@ export default function Pricing() {
       <section className="section-pad">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Automatic, No Code Needed</span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
+              <Users size={13} /> Automatic, No Code Needed
+            </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">Sibling Discount</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Enrol more than one child and the discount is applied automatically to each additional child's plan.</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-            {["1st child", "2nd child", "3rd child", "4th+ child"].map((label, i) => (
-              <div key={label} className="bg-white rounded-2xl border border-gray-100 p-5 text-center shadow-sm">
-                <p className="text-2xl font-extrabold text-[#122259]">{SIBLING_DISCOUNTS[i] === 0 ? "Full price" : `-${SIBLING_DISCOUNTS[i] * 100}%`}</p>
-                <p className="text-xs text-gray-500 mt-1">{label}</p>
-              </div>
-            ))}
+            {["1st child", "2nd child", "3rd child", "4th+ child"].map((label, i) => {
+              const isBest = i === 3;
+              return (
+                <div
+                  key={label}
+                  className={`relative rounded-2xl p-5 text-center ${
+                    isBest ? "bg-[#122259] shadow-lg shadow-[#122259]/20" : "bg-white border border-gray-100 shadow-sm"
+                  }`}
+                >
+                  <div className={`w-7 h-7 rounded-full flex items-center justify-center mx-auto mb-2 text-xs font-bold ${
+                    isBest ? "bg-[#F5A623] text-white" : "bg-[#122259]/8 text-[#122259]"
+                  }`}>
+                    {i + 1}
+                  </div>
+                  <p className={`text-2xl font-extrabold ${isBest ? "text-[#F5A623]" : "text-[#122259]"}`}>
+                    {SIBLING_DISCOUNTS[i] === 0 ? "Full price" : `-${SIBLING_DISCOUNTS[i] * 100}%`}
+                  </p>
+                  <p className={`text-xs mt-1 ${isBest ? "text-blue-200" : "text-gray-500"}`}>{label}</p>
+                </div>
+              );
+            })}
           </div>
 
-          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-6 sm:p-7">
-            <p className="text-sm font-bold text-[#122259] mb-2">Worked example</p>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              3 children on the {worked.planName} plan (£{steadyPlan.price30}/month each before discount): £{worked.prices[0]} + £{worked.prices[1]} + £{worked.prices[2]} ={" "}
-              <span className="font-bold text-[#122259]">£{worked.total}/month</span> for all three children.
-            </p>
+          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-6 sm:p-7 flex flex-col sm:flex-row gap-4 sm:items-start">
+            <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
+              <Sparkles size={18} className="text-[#F5A623]" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-[#122259] mb-2">Worked example</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                3 children on the {worked.planName} plan (£{steadyPlan.price30}/month each before discount): £{worked.prices[0]} + £{worked.prices[1]} + £{worked.prices[2]} ={" "}
+                <span className="font-bold text-[#122259]">£{worked.total}/month</span> for all three children.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -200,7 +229,9 @@ export default function Pricing() {
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Pay Ahead, Save More</span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
+              <CalendarCheck size={13} /> Pay Ahead, Save More
+            </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">Prepay Discounts</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Pay every 3 months for 5% off, every 6 months for 10% off, or yearly for 2 months free. Prices below are for 30-minute plans.</p>
           </div>
@@ -208,16 +239,27 @@ export default function Pricing() {
           {/* Mobile: stacked cards */}
           <div className="grid grid-cols-1 gap-3 sm:hidden">
             {MAIN_PLANS.map((plan) => (
-              <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-                <p className="font-bold text-[#122259] mb-3">{plan.name}</p>
-                <div className="grid grid-cols-2 gap-3">
+              <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <p className="font-bold text-white bg-[#122259] px-5 py-3">{plan.name}</p>
+                <div className="grid grid-cols-2 gap-3 p-5">
                   {PREPAY_TERMS.map((t) => {
                     const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
+                    const isYearly = t.id === "yearly";
                     return (
-                      <div key={t.id} className="bg-[#faf9f7] rounded-xl p-3 text-center">
-                        <p className="text-lg font-extrabold text-[#122259]">£{total}</p>
+                      <div
+                        key={t.id}
+                        className={`relative rounded-xl p-3 text-center border ${
+                          isYearly ? "bg-[#F5A623]/10 border-[#F5A623]/30" : "bg-[#faf9f7] border-gray-100"
+                        }`}
+                      >
+                        {isYearly && (
+                          <span className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#F5A623] text-white text-[9px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
+                            Best Value
+                          </span>
+                        )}
+                        <p className="text-lg font-extrabold text-[#122259] mt-1">£{total}</p>
                         <p className="text-xs text-gray-500 mt-0.5">{t.label}</p>
-                        {saving > 0 && <p className="text-xs text-[#F5A623] font-semibold mt-0.5">save £{saving}</p>}
+                        {saving > 0 && <p className="text-xs text-[#d4890a] font-semibold mt-0.5">save £{saving}</p>}
                       </div>
                     );
                   })}
@@ -227,13 +269,21 @@ export default function Pricing() {
           </div>
 
           {/* Tablet and up: table */}
-          <div className="hidden sm:block overflow-x-auto">
-            <table className="w-full bg-white rounded-2xl border border-gray-100 shadow-sm text-sm">
+          <div className="hidden sm:block overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
+            <table className="w-full bg-white text-sm">
               <thead>
-                <tr className="border-b border-gray-100">
-                  <th className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Plan</th>
-                  {PREPAY_TERMS.map((t) => (
-                    <th key={t.id} className="text-left px-5 py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">{t.label}</th>
+                <tr className="bg-[#122259]">
+                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest rounded-tl-2xl">Plan</th>
+                  {PREPAY_TERMS.map((t, i) => (
+                    <th
+                      key={t.id}
+                      className={`text-left px-5 py-4 text-xs font-bold uppercase tracking-widest ${
+                        t.id === "yearly" ? "text-[#F5A623]" : "text-blue-200"
+                      } ${i === PREPAY_TERMS.length - 1 ? "rounded-tr-2xl" : ""}`}
+                    >
+                      {t.label}
+                      {t.id === "yearly" && <span className="block normal-case font-semibold text-[9px] text-[#F5A623]/80 tracking-normal">Best Value</span>}
+                    </th>
                   ))}
                 </tr>
               </thead>
@@ -244,9 +294,9 @@ export default function Pricing() {
                     {PREPAY_TERMS.map((t) => {
                       const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
                       return (
-                        <td key={t.id} className="px-5 py-4 text-gray-700">
+                        <td key={t.id} className={`px-5 py-4 text-gray-700 ${t.id === "yearly" ? "bg-[#F5A623]/8 font-bold text-[#122259]" : ""}`}>
                           £{total}
-                          {saving > 0 && <span className="block text-xs text-[#F5A623] font-semibold mt-0.5">save £{saving}</span>}
+                          {saving > 0 && <span className="block text-xs text-[#d4890a] font-semibold mt-0.5">save £{saving}</span>}
                         </td>
                       );
                     })}
