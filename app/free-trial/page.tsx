@@ -7,6 +7,7 @@ const faqs = [
   { q: "Are there any free trial options for online Quran education services?", a: "Yes. Ease Quran UK offers a completely free first class, no card required and no obligation to continue. You meet your teacher, try a real one-to-one lesson, and decide afterwards." },
   { q: "Is the free trial really a full class, or just a call?", a: "It's a genuine one-to-one lesson with a certified teacher, not a sales call. You'll get real teaching so you can judge the quality for yourself before paying anything." },
   { q: "Do I need to give payment details to book the free trial?", a: "No. No card, no payment information, no commitment. We only ask for basic contact details so we can confirm your class time." },
+  { q: "Can I find completely free online Quran classes?", a: "Genuinely free online Quran classes are rare, a certified one-to-one teacher's time has a real cost, so most ongoing programmes are paid. What we offer instead is what many UK families call the best online Quran classes free trial available: one full, real lesson with your own teacher, completely free, no card, and no obligation to continue afterwards." },
 ];
 
 const faqSchema = {

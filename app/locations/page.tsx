@@ -137,7 +137,7 @@ export default function Locations() {
           <span className="tag mb-3 inline-block">Why Online Works</span>
           <h2 className="text-3xl font-bold text-[#122259] mb-4">The Teacher Comes to You</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            Finding a qualified, consistent Quran teacher near you in the UK is genuinely difficult. Our one-to-one online classes remove the geography entirely. A certified teacher meets your child on screen at the agreed time, every week, at hours that fit around school and work.
+            Whether you&apos;ve searched for a Quran teacher near me, Quran teachers near me, a Quran tutor near me, or Quran lessons near me, the honest answer is that qualified, consistent teaching rarely depends on your postcode. Our one-to-one online classes remove the geography entirely. A certified teacher meets your child on screen at the agreed time, every week, at hours that fit around school and work.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8">
             {[

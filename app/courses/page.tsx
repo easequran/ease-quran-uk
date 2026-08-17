@@ -31,7 +31,7 @@ export default function Courses() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Courses" }]} />
           <h1 className="text-4xl md:text-5xl font-bold text-[#122259] mt-4">Online Quran Courses</h1>
-          <p className="text-gray-600 mt-3 max-w-2xl">Every course is delivered one-to-one by a certified teacher, at flexible UK timings. Whether you&apos;re booking for a child, a teenager, or yourself, we have the right programme.</p>
+          <p className="text-gray-600 mt-3 max-w-2xl">Looking for Quran courses online you can trust? Every course here is delivered one-to-one by a certified teacher at our Quran academy, with flexible UK timings. Whether you&apos;re booking for a child, a teenager, or yourself, this is Quran tuition online built around one dedicated teacher, not a rotating group class.</p>
         </div>
       </div>
 
