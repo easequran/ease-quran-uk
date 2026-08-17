@@ -40,7 +40,7 @@ const steps = [
 ];
 
 const whyUs = [
-  { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Qualified, Certified Teachers", desc: "All our teachers hold recognised Islamic certifications and are experienced in teaching English-speaking, Western students." },
+  { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Qualified, Certified Teachers", desc: "Every Ease Quran teacher is a fully qualified Quran tutor, holding recognised Islamic certifications and experienced in teaching English-speaking, Western students." },
   { icon: <User size={22} className="text-[#F5A623]" />, title: "Completely One-to-One", desc: "Every class is private, your child gets the teacher's full attention, at a pace that suits them. No group classes." },
   { icon: <Users size={22} className="text-[#F5A623]" />, title: "Female Teachers Available", desc: "We offer dedicated female Quran teachers for sisters and daughters who prefer a female instructor." },
   { icon: <Clock size={22} className="text-[#F5A623]" />, title: "Flexible UK Timings", desc: "Classes available across UK time slots including evenings and weekends, built around school and work schedules." },
@@ -49,7 +49,7 @@ const whyUs = [
 ];
 
 const faqs = [
-  { q: "How do online Quran classes work?", a: "Lessons take place live via Zoom or Google Meet. Your teacher connects with your child one-to-one at the agreed time. All you need is a phone, tablet, or laptop and a stable internet connection." },
+  { q: "How do online Quran classes work?", a: "Lessons take place live via Zoom or Google Meet. Your child's online Quran teacher connects with them one-to-one at the agreed time. All you need is a phone, tablet, or laptop and a stable internet connection." },
   { q: "Can I get a female Quran teacher?", a: "Yes. We have a qualified female teacher, Almas Fatima, available for sisters, daughters, and any student who prefers a female instructor. Simply mention this when booking." },
   { q: "What ages do you teach?", a: "We teach children from age 4 upwards, as well as teenagers and adults. Our teachers adapt their approach to the student's age and learning style." },
   { q: "What timings are available for UK students?", a: "We offer classes across all UK time slots including early mornings, after school (3pm–8pm), and weekends. We'll agree a regular slot that fits your family's routine." },
@@ -142,7 +142,7 @@ export default function Home() {
               Best Online Quran Classes in the UK, For Kids, Adults &amp; Beginners
             </h1>
             <p className="text-base md:text-lg text-blue-100 mb-5 leading-relaxed">
-              Families across the UK choose us because we make it simple to learn Quran online, one-to-one, with qualified male and female teachers. Tajweed, Hifz, Noorani Qaida and more, at flexible UK timings, from home.
+              Families across the UK choose us for simple, one-to-one Quran tuition online, with qualified male and female Quran teachers. Tajweed, Hifz, Noorani Qaida and more, at flexible UK timings, from home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <span className="relative inline-flex self-start sm:self-auto">

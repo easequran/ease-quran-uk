@@ -20,7 +20,7 @@ export default function AdultQuranClasses() {
       image="/course-noorani-qaida.webp"
       imageAlt="Adult learning to read the Quran online with a certified teacher in the UK"
       schemaDescription="Online Quran classes for adults and beginners in the UK. One-to-one lessons with a certified teacher, private, patient, and at flexible evening or weekend times."
-      description="It is never too late to learn the Quran. Whether you never had the chance as a child, you're a revert taking your first steps, or you simply want to read with confidence again, our online Quran classes for adults are built around your life, not the other way around. Every lesson is private, one-to-one, and paced entirely to you, with no group classes and no pressure."
+      description="It is never too late to learn the Quran. Whether you never had the chance as a child, you're a revert taking your first steps, or you simply want to read with confidence again, this is where you learn Quran online for adults, at your own pace and on your own schedule. Our online Quran classes for beginners start from the Arabic alphabet with no assumptions, while adults with some prior reading can move straight into fluency or Tajweed. Every lesson is private, one-to-one, and paced entirely to you, with no group classes and no pressure."
       learn={[
         "Arabic letters and pronunciation from complete scratch, if needed",
         "Reading the Quran fluently at your own pace",

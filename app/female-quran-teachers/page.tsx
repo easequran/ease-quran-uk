@@ -22,6 +22,7 @@ const faqSchema = {
     { "@type": "Question", name: "Can my daughter have a female teacher?", acceptedAnswer: { "@type": "Answer", text: "Yes. Simply mention when booking that you would prefer a female teacher and your daughter will be matched with Almas Fatima." } },
     { "@type": "Question", name: "What courses can the female teacher cover?", acceptedAnswer: { "@type": "Answer", text: "Almas Fatima can teach Noorani Qaida, Quran Reading, Tajweed, and Islamic Studies. Please mention your course preference when booking." } },
     { "@type": "Question", name: "How do I request a female teacher?", acceptedAnswer: { "@type": "Answer", text: "Simply book your free trial via the form or WhatsApp and mention that you require a female teacher. We will ensure Almas Fatima is your assigned teacher." } },
+    { "@type": "Question", name: "Is there a female Quran teacher near me?", acceptedAnswer: { "@type": "Answer", text: "Yes. All our lessons are fully online, so a certified female Quran teacher is available wherever you are in the UK, no matter your town or city." } },
   ],
 };
 
@@ -57,7 +58,7 @@ export default function FemaleQuranTeachers() {
               <span className="tag mb-4 inline-block">Why It Matters</span>
               <h2 className="text-3xl font-bold text-[#122259] mb-4">Learning Quran with a Female Teacher</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                For many Muslim families in the UK, it is important, or essential, that daughters, sisters, and ladies learn from a female teacher. This is a matter of comfort, privacy, and in some cases, religious preference.
+                For many Muslim families in the UK, it is important, or essential, that daughters, sisters, and ladies learn from a female teacher. This is a matter of comfort, privacy, and in some cases, religious preference. If you&apos;ve been searching for a female Quran teacher near me, the right fit isn&apos;t about geography, it&apos;s about finding someone properly qualified who your daughter or you feel comfortable learning with, and that&apos;s available online wherever you are in the UK.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 We understand this need and provide it properly. Almas Fatima is a fully qualified, certified female teacher, not an afterthought or a workaround. She is a Qaria e Quran with a Bachelor&apos;s degree in Islamic Studies, experienced in teaching female students of all ages in a warm, professional, and encouraging environment.
@@ -145,7 +146,7 @@ export default function FemaleQuranTeachers() {
               { q: "What courses does the female teacher offer?", a: "Almas Fatima teaches Noorani Qaida, Quran Reading, Tajweed, and Islamic Studies. If you have a specific requirement, please mention it when booking." },
               { q: "Can female adults book as well as children?", a: "Absolutely. Almas Fatima teaches sisters of all ages, children, teenagers, adults, and reverts." },
               { q: "Are the classes private?", a: "Yes, all classes are one-to-one and completely private. No other students are present." },
-              { q: "Is a female Quran teacher available near me?", a: "Yes. All our lessons are fully online, so a certified female Quran teacher is available wherever you are in the UK, no matter your town or city." },
+              { q: "Is there a female Quran teacher near me?", a: "Yes. All our lessons are fully online, so a certified female Quran teacher is available wherever you are in the UK, no matter your town or city." },
             ].map((f, i) => (
               <details key={i} className="bg-[#faf9f7] rounded-xl border border-gray-100 group">
                 <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none">

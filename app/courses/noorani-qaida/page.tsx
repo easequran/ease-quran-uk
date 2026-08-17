@@ -20,7 +20,7 @@ export default function NooraniQaida() {
       image="/course-noorani-qaida.webp"
       imageAlt="Child learning Noorani Qaida online with a qualified Quran teacher in the UK"
       schemaDescription="Online Noorani Qaida course for beginners in the UK. One-to-one lessons with a certified teacher for children and adults learning to read Arabic."
-      description="Noorani Qaida is the proven starting point for anyone learning to read the Quran. Whether you are booking for a young child taking their very first Arabic lesson, or an adult who never had the opportunity to learn, this course gives you the right foundation."
+      description="Noorani Qaida is the proven starting point for anyone learning to read the Quran. Some families know this same style of foundational Arabic-reading course as Madani Qaida, the name changes depending on where you grew up, but the goal is identical: correct letter recognition and pronunciation before moving on to the Quran itself. Whether you are booking for a young child taking their very first Arabic lesson, or an adult who never had the opportunity to learn, this course gives you the right foundation."
       learn={[
         "Arabic letters, recognition, pronunciation, and written forms",
         "Joining letters to form syllables and words",
