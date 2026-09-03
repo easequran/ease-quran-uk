@@ -131,8 +131,8 @@ export const CUSTOM_TIMETABLE = {
 // ---------------------------------------------------------------------------
 
 export const REFERRAL = {
-  referrerDiscount: 0.5, // 50% off one month for the referring family
-  refereeDiscount: 0.2, // 20% off first month for the referred family
+  referrerDiscount: 0.2, // 20% off one month for the referring family
+  refereeDiscount: 0.15, // 15% off first month for the referred family
 };
 
 // ---------------------------------------------------------------------------
@@ -140,4 +140,4 @@ export const REFERRAL = {
 // ---------------------------------------------------------------------------
 
 export const WEEKEND_POLICY_NOTE =
-  "If your timetable mixes weekdays with one or two weekend classes, there is no extra charge. The Weekend Priority add-on only applies when every class in your week is booked on Saturday or Sunday.";
+  "The Weekend Priority add-on only applies when every class in your week is booked on Saturday or Sunday.";

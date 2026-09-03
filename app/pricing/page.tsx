@@ -47,13 +47,13 @@ const faqs = [
   { q: "Is the free trial really free?", a: "Yes, completely free. No card required, no payment, no registration fee, no commitment. You try the class, meet the teacher, and decide afterwards if you'd like to continue." },
   { q: "Can I cancel anytime?", a: "Yes. There are no long-term contracts. If you need to pause or cancel, simply let us know and we'll sort it without any fuss." },
   { q: "How does the 60-minute option work?", a: "Every plan is available at 30 or 60 minutes per class. The 60-minute price for each plan is shown on its card and in the comparison table further down this page. You don't need separate plans for this, just choose your preferred length when you book." },
-  { q: "What is Weekend Priority and when does it cost extra?", a: "Weekend Priority guarantees your child a Saturday or Sunday slot and only applies an extra charge when every class in your week falls on the weekend. If your timetable mixes weekdays with one or two weekend classes, there is no extra charge at all." },
+  { q: "What is Weekend Priority and when does it cost extra?", a: "Weekend Priority guarantees your child a Saturday or Sunday slot and only applies an extra charge when every class in your week falls on the weekend." },
   { q: "How does the sibling discount work?", a: `It's automatic and needs no code. The 1st child enrolled pays full price, the 2nd child gets 15% off, the 3rd child gets 25% off, and the 4th child onwards gets 30% off. For example, 3 children on the Steady plan comes to £${worked.prices[0]} + £${worked.prices[1]} + £${worked.prices[2]} = £${worked.total}/month.` },
   { q: "Can I prepay for a discount?", a: "Yes. Pay every 3 months for 5% off, every 6 months for 10% off, or yearly and get 2 months free (you only pay for 10 months). The pound saving for each plan is shown on this page." },
   { q: "Do you offer an intensive Hifz programme?", a: `Yes, our Hifz Intensive plan starts from £${HIFZ_INTENSIVE.fromPrice}/month for ${HIFZ_INTENSIVE.classesPerWeek} sessions a week at ${HIFZ_INTENSIVE.durationMinutes} minutes each, with a senior teacher and weekly memorisation tracking.` },
   { q: "What if I need a completely custom timetable?", a: `We can build a bespoke timetable around your family's schedule. Typical custom plans range from £${CUSTOM_TIMETABLE.rangeLow} to £${CUSTOM_TIMETABLE.rangeHigh} per month, and we'll always confirm your exact price before you start.` },
   { q: "Is there a registration or sign-up fee?", a: "No. The registration fee is £0. You only ever pay for your chosen plan." },
-  { q: "Do you have a referral programme?", a: "Yes. Refer a family and you get 50% off one month once they enrol, and they get 20% off their first month." },
+  { q: "Do you have a referral programme?", a: "Yes. Refer a family and you get 20% off one month once they enrol, and they get 15% off their first month." },
 ];
 
 export default function Pricing() {
