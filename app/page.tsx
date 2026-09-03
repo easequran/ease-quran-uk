@@ -332,10 +332,13 @@ export default function Home() {
             <VideoEmbed videoId="1eQ9zKKLWfQ" title="Ease Quran UK Review, Younas Rahman" reviewer="Younas Rahman" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {["/review-1.webp", "/review-2.webp"].map((src, i) => (
+            {[
+              { src: "/review-1.webp", who: "Parent" },
+              { src: "/review-2.webp", who: "Student" },
+            ].map(({ src, who }, i) => (
               <div key={i} className="card p-4">
-                <Image src={src} alt={`Parent feedback for Ease Quran UK, WhatsApp review ${i + 1}`} width={600} height={400} className="w-full h-auto rounded-lg" />
-                <p className="text-xs text-gray-400 mt-3 text-center">Parent feedback, shared via WhatsApp (private info blurred)</p>
+                <Image src={src} alt={`${who} feedback for Ease Quran UK, WhatsApp review ${i + 1}`} width={600} height={400} className="w-full h-auto rounded-lg" />
+                <p className="text-xs text-gray-400 mt-3 text-center">{who} feedback, shared via WhatsApp (private info blurred)</p>
               </div>
             ))}
           </div>
