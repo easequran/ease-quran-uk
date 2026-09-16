@@ -24,7 +24,7 @@ const posts = [
   },
   {
     slug: "surah-al-kahf-friday-reading-guide",
-    title: "Surah Al-Kahf: Why We Read It Every Friday and Its Virtues",
+    title: "Surah Al-Kahf: Friday Virtues & Full Text",
     excerpt: "The virtues of Surah Al-Kahf, why Muslims read it every Friday, and the full Arabic text with English translation.",
     date: "2026-07-01",
     readTime: "15 min read",

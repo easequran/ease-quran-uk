@@ -45,8 +45,8 @@ const allPosts: PostMeta[] = [
   },
   {
     slug: "surah-al-kahf-friday-reading-guide",
-    title: "Surah Al-Kahf: Why We Read It Every Friday and Its Virtues",
-    description: "Discover the virtues of Surah Al-Kahf, why Muslims read it every Friday, and how to help your child learn to recite it beautifully. Full Arabic text and English translation inside.",
+    title: "Surah Al-Kahf: Friday Virtues & Full Text",
+    description: "Read Surah Al-Kahf online: full Arabic text, English translation, its Friday virtues, and protection from Dajjal, explained simply for the whole family.",
     date: "2026-07-01",
     readTime: "15 min read",
     category: "Quran Knowledge",

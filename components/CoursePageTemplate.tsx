@@ -44,6 +44,12 @@ export default function CoursePageTemplate({
     provider: { "@type": "Organization", name: "Ease Quran UK", url: "https://www.easequran.co.uk" },
     url: `https://www.easequran.co.uk/courses/${slug}`,
     offers: { "@type": "Offer", price: String(MAIN_PLANS[0].price30), priceCurrency: CURRENCY, availability: "https://schema.org/InStock" },
+    hasCourseInstance: {
+      "@type": "CourseInstance",
+      courseMode: "online",
+      courseWorkload: "PT30M",
+      instructor: { "@type": "Organization", name: "Ease Quran UK" },
+    },
   };
 
   const faqSchema = {

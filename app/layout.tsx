@@ -69,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               name: "Ease Quran UK",
               url: WWW,
               logo: `${WWW}/logo.png`,
+              image: `${WWW}/logo.png`,
               email: "info@easequran.co.uk",
               telephone: "+447311254423",
               address: { "@type": "PostalAddress", addressCountry: "GB" },
