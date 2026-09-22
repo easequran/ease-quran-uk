@@ -36,7 +36,7 @@ export default function VideoEmbed({ videoId, title, reviewer }: VideoEmbedProps
         )}
       </div>
       <div className="p-4">
-        <p className="font-semibold text-[#122259] text-sm">{reviewer}</p>
+        <p className="font-semibold text-[#0B1E5B] text-sm">{reviewer}</p>
         <p className="text-xs text-gray-500 mt-0.5">UK Parent Video Review</p>
       </div>
     </div>

@@ -21,7 +21,7 @@ export default function PricingPlans() {
             <div
               key={plan.id}
               className={`relative bg-white rounded-2xl border-2 ${highlight ? "border-[#F5A623]" : "border-gray-100"} flex flex-col ${
-                highlight ? "shadow-2xl shadow-[#F5A623]/10 scale-[1.02]" : "shadow-sm"
+                highlight ? "shadow-eq-lg shadow-[#F5A623]/10 scale-[1.02]" : "shadow-eq-sm"
               } transition-all`}
             >
               {highlight && (
@@ -32,10 +32,10 @@ export default function PricingPlans() {
                 </div>
               )}
 
-              <div className={`p-6 sm:p-7 rounded-t-2xl ${highlight ? "bg-gradient-to-br from-[#122259] to-[#1a3280]" : "bg-white"}`}>
+              <div className={`p-6 sm:p-7 rounded-t-2xl ${highlight ? "bg-gradient-to-br from-[#0B1E5B] to-[#1a3280]" : "bg-white"}`}>
                 <p className={`text-xs font-bold uppercase tracking-widest mb-3 ${highlight ? "text-[#F5A623]" : "text-gray-400"}`}>{plan.name}</p>
                 <div className="flex items-end gap-1">
-                  <span className={`text-4xl sm:text-5xl font-extrabold ${highlight ? "text-white" : "text-[#122259]"}`}>£{plan.price30}</span>
+                  <span className={`text-4xl sm:text-5xl font-extrabold ${highlight ? "text-white" : "text-[#0B1E5B]"}`}>£{plan.price30}</span>
                   <span className={`text-sm mb-2 ${highlight ? "text-blue-200" : "text-gray-400"}`}>/month</span>
                 </div>
                 <p className="text-sm font-semibold mt-1 text-[#F5A623]">{plan.classesPerWeek} classes per week</p>
@@ -43,7 +43,7 @@ export default function PricingPlans() {
                   {plan.classesPerMonth} classes/month · 30 min · 1-to-1
                 </p>
                 <p className={`text-xs mt-2 pt-2 border-t ${highlight ? "border-white/15 text-blue-200" : "border-gray-100 text-gray-500"}`}>
-                  Prefer 60-minute classes? <span className={`font-bold ${highlight ? "text-white" : "text-[#122259]"}`}>£{plan.price60}/month</span>
+                  Prefer 60-minute classes? <span className={`font-bold ${highlight ? "text-white" : "text-[#0B1E5B]"}`}>£{plan.price60}/month</span>
                 </p>
               </div>
 
@@ -63,7 +63,7 @@ export default function PricingPlans() {
                   className={`w-full text-center py-3 rounded-xl font-bold text-sm transition-all ${
                     highlight
                       ? "bg-[#F5A623] text-white hover:bg-[#d4901e] shadow-lg shadow-[#F5A623]/30"
-                      : "border-2 border-[#122259] text-[#122259] hover:bg-[#122259] hover:text-white"
+                      : "border-2 border-[#0B1E5B] text-[#0B1E5B] hover:bg-[#0B1E5B] hover:text-white"
                   }`}
                 >
                   Start Free Trial

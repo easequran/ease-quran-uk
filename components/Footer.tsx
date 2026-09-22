@@ -5,7 +5,7 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from "@/compon
 
 export default function Footer() {
   return (
-    <footer className="bg-[#122259] text-gray-300">
+    <footer className="bg-[#0B1E5B] text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}

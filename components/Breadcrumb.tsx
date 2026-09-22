@@ -26,7 +26,7 @@ export default function Breadcrumb({ crumbs, dark }: { crumbs: Crumb[]; dark?: b
           <span key={i} className="flex items-center gap-1">
             {i > 0 && <ChevronRight size={12} />}
             {c.href ? (
-              <Link href={c.href} className={dark ? "hover:text-white" : "hover:text-[#122259]"}>{c.label}</Link>
+              <Link href={c.href} className={dark ? "hover:text-white" : "hover:text-[#0B1E5B]"}>{c.label}</Link>
             ) : (
               <span className={dark ? "text-white font-medium" : "text-gray-700 font-medium"}>{c.label}</span>
             )}

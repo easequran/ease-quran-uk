@@ -123,7 +123,7 @@ export default function Home() {
       {videoSchemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
       {/* HERO */}
-      <section className="relative bg-[#122259] text-white overflow-hidden flex items-center">
+      <section className="relative bg-[#0B1E5B] text-white overflow-hidden flex items-center">
         <picture className="absolute inset-0">
           <source media="(max-width: 767px)" srcSet="/hero-home-mobile.webp" />
           <Image
@@ -169,7 +169,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="tag mb-3">The Problem</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">Tired of unreliable online Quran academies?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">Tired of unreliable online Quran academies?</h2>
             <p className="text-gray-600 mt-4">Too many families have been let down. Ease Quran was built to fix that.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -189,22 +189,22 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Simple & Clear</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">How It Works</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s, i) => (
-              <div key={s.step} className="relative text-center rounded-3xl border-2 border-[#122259]/15 px-8 pt-10 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-lg transition-all duration-300 group">
+              <div key={s.step} className="relative text-center rounded-3xl border-2 border-[#0B1E5B]/15 px-8 pt-10 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-lg transition-all duration-300 group">
                 {/* Connecting line between cards (desktop only) */}
                 {i < steps.length - 1 && (
                   <div className="hidden md:block absolute top-[52px] left-full w-8 z-10">
-                    <div className="h-0.5 w-full bg-gradient-to-r from-[#122259]/20 to-[#F5A623]/40" />
+                    <div className="h-0.5 w-full bg-gradient-to-r from-[#0B1E5B]/20 to-[#F5A623]/40" />
                   </div>
                 )}
                 {/* Step number */}
-                <div className="w-14 h-14 rounded-full bg-[#122259] group-hover:bg-[#F5A623] text-white text-2xl font-extrabold flex items-center justify-center mx-auto mb-6 transition-colors duration-300 shadow-md">
+                <div className="w-14 h-14 rounded-full bg-[#0B1E5B] group-hover:bg-[#F5A623] text-white text-2xl font-extrabold flex items-center justify-center mx-auto mb-6 transition-colors duration-300 shadow-md">
                   {s.step}
                 </div>
-                <h3 className="text-xl font-bold text-[#122259] mb-3">{s.title}</h3>
+                <h3 className="text-xl font-bold text-[#0B1E5B] mb-3">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
@@ -220,7 +220,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">What We Teach</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">Our Courses</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">Our Courses</h2>
             <p className="text-gray-600 mt-3">From complete beginners to advanced students, a course for every level.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -230,7 +230,7 @@ export default function Home() {
                   <Image src={c.img} alt={`${c.title} online course for UK students`} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                 </div>
                 <div className="p-5">
-                  <h3 className="font-bold text-[#122259] text-lg mb-2">{c.title}</h3>
+                  <h3 className="font-bold text-[#0B1E5B] text-lg mb-2">{c.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{c.desc}</p>
                   <span className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">Learn more <ChevronRight size={14} /></span>
                 </div>
@@ -248,14 +248,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Why Ease Quran</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">What Makes Us Different</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">What Makes Us Different</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyUs.map((w) => (
               <div key={w.title} className="flex gap-4 p-5 rounded-xl bg-[#faf9f7]">
                 <div className="flex-shrink-0 mt-0.5">{w.icon}</div>
                 <div>
-                  <h3 className="font-bold text-[#122259] mb-1">{w.title}</h3>
+                  <h3 className="font-bold text-[#0B1E5B] mb-1">{w.title}</h3>
                   <p className="text-gray-600 text-sm">{w.desc}</p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function Home() {
             </div>
             <div>
               <span className="tag mb-4 inline-block">Meet the Founder</span>
-              <h2 className="text-3xl font-bold text-[#122259] mb-4">Shah Zaib, Founder &amp; Head Teacher</h2>
+              <h2 className="text-3xl font-bold text-[#0B1E5B] mb-4">Shah Zaib, Founder &amp; Head Teacher</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Shah Zaib founded Ease Quran with a clear purpose: to give Muslim families in the UK access to genuinely qualified, English-friendly Quran education, without the unreliability or opacity that has let so many families down.
               </p>
@@ -294,24 +294,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Our Team</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">Meet Your Teachers</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">Meet Your Teachers</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {[
               { name: "Muhammad Umair", role: "Tajweed & Hifz Specialist", bio: "A certified Quran teacher with two years of experience specialising in Tajweed and Hifz. Muhammad Umair uses proven memorisation techniques that help students of all ages retain and revise with confidence.", img: "/teacher-1.webp", badge: "Tajweed & Hifz" },
               { name: "Almas Fatima", role: "Female Quran Teacher", bio: "A Qaria e Quran with a Bachelor's degree in Islamic Studies, Almas Fatima is available for sisters and female students. She provides a comfortable, professional, and encouraging learning environment.", img: "/teacher-2.webp", badge: "Female Teacher" },
             ].map((t) => (
-              <div key={t.name} className="relative flex flex-col items-center text-center rounded-3xl border-2 border-[#122259]/15 px-8 pt-12 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-xl transition-all duration-300 group">
+              <div key={t.name} className="relative flex flex-col items-center text-center rounded-3xl border-2 border-[#0B1E5B]/15 px-8 pt-12 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-xl transition-all duration-300 group">
                 {/* Gold accent top bar */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-b-full bg-[#F5A623] group-hover:w-24 transition-all duration-300" />
                 {/* Avatar with gold ring */}
-                <div className="relative w-28 h-28 rounded-full mb-5 p-0.5 bg-gradient-to-br from-[#F5A623] to-[#122259]">
+                <div className="relative w-28 h-28 rounded-full mb-5 p-0.5 bg-gradient-to-br from-[#F5A623] to-[#0B1E5B]">
                   <div className="w-full h-full rounded-full overflow-hidden bg-white">
                     <Image src={t.img} alt={`${t.name}, ${t.role} at Ease Quran UK`} fill className="object-cover object-top rounded-full" sizes="112px" />
                   </div>
                 </div>
                 <span className="tag mb-2">{t.badge}</span>
-                <h3 className="text-xl font-bold text-[#122259] mt-1">{t.name}</h3>
+                <h3 className="text-xl font-bold text-[#0B1E5B] mt-1">{t.name}</h3>
                 <p className="text-[#F5A623] text-sm font-semibold mb-4">{t.role}</p>
                 <p className="text-gray-500 text-sm leading-relaxed">{t.bio}</p>
               </div>
@@ -325,7 +325,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Real Reviews</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#122259]">What UK Families Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">What UK Families Say</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
             <VideoEmbed videoId="u_j-zh0jFL8" title="Ease Quran UK Review, Saman Imran" reviewer="Saman Imran" />
@@ -349,7 +349,7 @@ export default function Home() {
       <section className="section-pad">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <span className="tag mb-3">Available Across the UK</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#122259] mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B] mb-6">
             Looking for &quot;Quran Classes Near Me&quot; in the UK?
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -360,7 +360,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             {cities.map((c) => (
-              <Link key={c.href} href={c.href} className="px-4 py-2 bg-[#faf9f7] rounded-full text-sm font-semibold text-[#122259] hover:bg-[#122259] hover:text-white transition-colors border border-gray-200">
+              <Link key={c.href} href={c.href} className="px-4 py-2 bg-[#faf9f7] rounded-full text-sm font-semibold text-[#0B1E5B] hover:bg-[#0B1E5B] hover:text-white transition-colors border border-gray-200">
                 Quran Classes in {c.label}
               </Link>
             ))}
@@ -373,12 +373,12 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <span className="tag mb-3">FAQ</span>
-            <h2 className="text-3xl font-bold text-[#122259]">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-[#0B1E5B]">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <details key={i} className="bg-white rounded-xl shadow-sm border border-gray-100 group">
-                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none">
                   {f.q}
                   <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3" />
                 </summary>
@@ -394,7 +394,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center gap-6">
             {trustBadges.map((b) => (
-              <div key={b.label} className="flex items-center gap-2 text-sm font-medium text-[#122259]">
+              <div key={b.label} className="flex items-center gap-2 text-sm font-medium text-[#0B1E5B]">
                 <span className="text-[#F5A623]">{b.icon}</span> {b.label}
               </div>
             ))}

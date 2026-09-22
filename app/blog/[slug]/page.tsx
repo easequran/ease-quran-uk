@@ -96,7 +96,7 @@ function AyahBlock({ num, arabic, translation }: { num: number; arabic: string; 
   return (
     <div className="border border-gray-100 rounded-xl bg-[#faf9f7] p-5 mb-3">
       <div className="flex items-start justify-between gap-3 mb-3">
-        <span className="w-7 h-7 rounded-full bg-[#122259] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{num}</span>
+        <span className="w-7 h-7 rounded-full bg-[#0B1E5B] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{num}</span>
         <p className="text-right text-2xl leading-loose font-arabic flex-1" dir="rtl" lang="ar">{arabic}</p>
       </div>
       {translation && <p className="text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3 mt-3 italic">{translation}</p>}
@@ -106,7 +106,7 @@ function AyahBlock({ num, arabic, translation }: { num: number; arabic: string; 
 
 function ArabicCard({ arabic, transliteration, meaning, source }: { arabic: string; transliteration: string; meaning: string; source?: string }) {
   return (
-    <div className="bg-[#122259] rounded-2xl p-6 my-6">
+    <div className="bg-[#0B1E5B] rounded-2xl p-6 my-6">
       <p className="text-right text-2xl sm:text-3xl leading-loose font-arabic text-white mb-4" dir="rtl" lang="ar">{arabic}</p>
       <p className="text-[#F5A623] text-sm font-semibold mb-1 italic">{transliteration}</p>
       <p className="text-blue-200 text-sm leading-relaxed">{meaning}</p>
@@ -129,7 +129,7 @@ function SectionDivider({ label }: { label: string }) {
 
 function SafetyChecklistContent() {
   return (
-    <div className="text-gray-700 leading-relaxed space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#122259] [&_h3]:mt-7 [&_h3]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-2 [&_li]:text-gray-700 [&_p]:text-[15px] [&_p]:leading-[1.8]">
+    <div className="text-gray-700 leading-relaxed space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#0B1E5B] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#0B1E5B] [&_h3]:mt-7 [&_h3]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-2 [&_li]:text-gray-700 [&_p]:text-[15px] [&_p]:leading-[1.8]">
       <p>If you&apos;re a parent reading this, there&apos;s a good chance you&apos;ve typed some version of &ldquo;is online Quran teaching safe&rdquo; into Google late at night, after your child has gone to bed, while you&apos;re still not quite sure. That hesitation is completely fair. You&apos;re handing your child&apos;s religious education, and access to a screen in their bedroom, over to someone you&apos;ve never met in person. You should ask hard questions before you do that.</p>
       <p>We teach Quran online every day, and we still think that hesitation is healthy. So instead of just telling you &ldquo;don&apos;t worry, it&apos;s safe,&rdquo; here is the actual checklist we&apos;d want you to use, including the questions that, if an academy can&apos;t answer them clearly, should make you walk away.</p>
       <h2>Why This Question Matters More in 2026 Than Ever</h2>
@@ -179,7 +179,7 @@ async function SurahAlKahfContent() {
   ];
 
   return (
-    <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#122259] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
+    <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#0B1E5B] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#0B1E5B] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
       <p>Every Friday, millions of Muslims around the world pause to read one particular chapter of the Quran: Surah Al-Kahf, &ldquo;The Cave.&rdquo; It&apos;s not a coincidence or a cultural habit passed down without reason. It&apos;s a practice rooted directly in the teachings of Prophet Muhammad ﷺ, and it carries real spiritual weight for anyone who makes it part of their weekly routine.</p>
       <p>If you&apos;ve ever wondered what makes this surah so special, why it&apos;s specifically tied to Fridays, or how you can help your children build the habit of reading it, this guide walks through everything you need to know, including the full Arabic text and English translation.</p>
 
@@ -207,7 +207,7 @@ async function SurahAlKahfContent() {
 
       {/* Jump links */}
       <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-5 my-6">
-        <p className="text-xs font-bold uppercase tracking-widest text-[#122259] mb-3">Jump to Section</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-[#0B1E5B] mb-3">Jump to Section</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {sections.map((s) => (
             <a key={s.id} href={`#${s.id}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-[#F5A623] transition-colors">
@@ -237,11 +237,11 @@ async function SurahAlKahfContent() {
       </ul>
       <p>A child who can recite Surah Al-Kahf with correct tajweed and understands its meaning will carry this habit for life. This is exactly where proper Quran education makes the biggest difference. <Link href="/blog/quran-verses-to-memorize-first" className="text-[#F5A623] hover:underline font-medium">Read our guide on which Quran verses to memorize first.</Link></p>
 
-      <div className="bg-[#122259] rounded-2xl p-6 my-6 text-white">
+      <div className="bg-[#0B1E5B] rounded-2xl p-6 my-6 text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Free Trial Class</p>
         <h3 className="font-bold text-lg mb-2">Give Your Child the Gift of Reading the Quran with Confidence</h3>
         <p className="text-blue-200 text-sm mb-4 leading-relaxed">Learning to recite Surah Al-Kahf fluently and with proper tajweed takes consistent, one-on-one guidance. Our qualified teachers work with children and adults alike to build real, lasting Quran recitation skills.</p>
-        <Link href="/free-trial" className="inline-flex items-center gap-2 bg-[#F5A623] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#d4901e] transition-colors">Book a Free Trial Class <ChevronRight size={14} /></Link>
+        <Link href="/free-trial" className="inline-flex items-center gap-2 bg-[#F5A623] text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-[#d4901e] transition-colors">Book a Free Trial Class <ChevronRight size={14} /></Link>
       </div>
     </div>
   );
@@ -259,7 +259,7 @@ async function QuranVersesContent() {
   ]);
 
   return (
-    <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#122259] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
+    <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#0B1E5B] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#0B1E5B] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
       <p>Starting Quran memorization can feel overwhelming, 6,236 verses across 114 surahs is a lot to think about all at once. But every hafiz and hafiza started exactly where you are now: with a handful of short, manageable verses that gradually built into something much bigger.</p>
       <p>This guide breaks down the Quran verses most commonly recommended for beginners, why they&apos;re taught first, and how to structure a memorization habit that actually sticks.</p>
 
@@ -276,7 +276,7 @@ async function QuranVersesContent() {
       <h3>1. Surah Al-Fatiha (The Opening)</h3>
       <p>Seven verses, recited in every unit of every prayer. This is the natural starting point for every student, since it&apos;s reinforced five times a day through salah.</p>
       <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-5 my-4">
-        <p className="text-xs font-bold uppercase tracking-widest text-[#122259] mb-3">Surah Al-Fatiha (1:1–7)</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-[#0B1E5B] mb-3">Surah Al-Fatiha (1:1–7)</p>
         {fatiha.map((a) => (
           <AyahBlock key={a.numberInSurah} num={a.numberInSurah} arabic={a.text} />
         ))}
@@ -285,7 +285,7 @@ async function QuranVersesContent() {
       <h3>2. The Last Two Verses of Surah Al-Baqarah</h3>
       <p>Known as &ldquo;Aamana Rasool,&rdquo; these two verses are widely recommended by teachers as an early memorization goal. The Prophet ﷺ mentioned specific virtue in reciting them at night for protection, based on a hadith found in Sahih Al-Bukhari.</p>
       <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-5 my-4">
-        <p className="text-xs font-bold uppercase tracking-widest text-[#122259] mb-3">Al-Baqarah 2:285–286</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-[#0B1E5B] mb-3">Al-Baqarah 2:285–286</p>
         <AyahBlock num={285} arabic={baqarah285} />
         <AyahBlock num={286} arabic={baqarah286} />
       </div>
@@ -299,7 +299,7 @@ async function QuranVersesContent() {
           { name: "An-Nas (114)", ayahs: naas },
         ].map((s) => (
           <div key={s.name} className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-4">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#122259] mb-3">{s.name}</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-[#0B1E5B] mb-3">{s.name}</p>
             {s.ayahs.map((a) => (
               <div key={a.numberInSurah} className="mb-2">
                 <p className="text-right text-lg leading-loose font-arabic" dir="rtl" lang="ar">{a.text}</p>
@@ -311,7 +311,7 @@ async function QuranVersesContent() {
 
       <h3>4. Ayatul Kursi (Al-Baqarah 2:255)</h3>
       <p>Often introduced slightly later due to its length, Ayatul Kursi is considered one of the greatest verses in the Quran. Many hadith highlight its virtue, including protection when recited before sleep.</p>
-      <div className="bg-[#122259] rounded-2xl p-6 my-4">
+      <div className="bg-[#0B1E5B] rounded-2xl p-6 my-4">
         <p className="text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Ayatul Kursi, Al-Baqarah 2:255</p>
         <p className="text-right text-xl sm:text-2xl leading-loose font-arabic text-white" dir="rtl" lang="ar">{ayatulKursi}</p>
       </div>
@@ -331,11 +331,11 @@ async function QuranVersesContent() {
       <p>Self-teaching from an app or book can only go so far, mistakes in pronunciation often go unnoticed without a live teacher correcting them in real time. This is especially true for children, who benefit enormously from a structured, encouraging, one-on-one learning environment.</p>
       <p>At Ease Quran UK, our teachers guide students step by step, from their very first verses through to full Hifz, with proper tajweed built in from day one. You can also <Link href="/blog/dua-for-success" className="text-[#F5A623] hover:underline font-medium">read our guide on duas for success</Link> to pair your memorization journey with sincere supplication.</p>
 
-      <div className="bg-[#122259] rounded-2xl p-6 my-6 text-white">
+      <div className="bg-[#0B1E5B] rounded-2xl p-6 my-6 text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Start Today</p>
         <h3 className="font-bold text-lg mb-2">Give Your Child the Right Foundation from Day One</h3>
         <p className="text-blue-200 text-sm mb-4 leading-relaxed">Our qualified teachers build proper tajweed and memorization habits from the very first lesson, not corrected after the fact.</p>
-        <Link href="/free-trial" className="inline-flex items-center gap-2 bg-[#F5A623] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#d4901e] transition-colors">Book a Free Trial Class <ChevronRight size={14} /></Link>
+        <Link href="/free-trial" className="inline-flex items-center gap-2 bg-[#F5A623] text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-[#d4901e] transition-colors">Book a Free Trial Class <ChevronRight size={14} /></Link>
       </div>
     </div>
   );
@@ -353,7 +353,7 @@ async function DuaForSuccessContent() {
   const duaForEaseArabic = "اللَّهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهُ سَهْلًا، وَأَنْتَ تَجْعَلُ الْحَزَنَ إِذَا شِئْتَ سَهْلًا";
 
   return (
-    <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#122259] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
+    <div className="text-gray-700 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#0B1E5B] [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-[#0B1E5B] [&_h3]:mt-7 [&_h3]:mb-2 [&_p]:text-[15px] [&_p]:leading-[1.8]">
       <p>Whether it&apos;s an exam tomorrow morning, a big decision at work, or simply the everyday challenge of doing your best in a difficult situation, turning to dua (supplication) for success is one of the most grounding habits a Muslim can build. It&apos;s not about replacing effort, it&apos;s about pairing your hard work with sincere reliance on Allah.</p>
       <p>This guide brings together some of the most well-known and authentic duas for success, with their Arabic text, transliteration, and meaning, along with guidance on when and how to use them.</p>
 
@@ -413,11 +413,11 @@ async function DuaForSuccessContent() {
       <p>Reciting dua from memory, with correct pronunciation and genuine understanding, is a skill built the same way Quran recitation is, through consistent, guided practice. Many children and adults memorize duas phonetically without ever learning the meaning or correct Arabic pronunciation behind them.</p>
       <p>At Ease Quran UK, our teachers help students build a real connection to the Quran and daily duas. Building this weekly habit of reading Surah Al-Kahf is another great complement to your dua practice, <Link href="/blog/surah-al-kahf-friday-reading-guide" className="text-[#F5A623] hover:underline font-medium">read our full Surah Al-Kahf guide.</Link></p>
 
-      <div className="bg-[#122259] rounded-2xl p-6 my-6 text-white">
+      <div className="bg-[#0B1E5B] rounded-2xl p-6 my-6 text-white">
         <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Start Your Journey</p>
         <h3 className="font-bold text-lg mb-2">Build a Confident, Meaningful Relationship with the Quran</h3>
         <p className="text-blue-200 text-sm mb-4 leading-relaxed">Our teachers combine proper tajweed with meaning-based learning so recitation becomes second nature, not just memorized sound.</p>
-        <Link href="/free-trial" className="inline-flex items-center gap-2 bg-[#F5A623] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#d4901e] transition-colors">Book a Free Trial Class <ChevronRight size={14} /></Link>
+        <Link href="/free-trial" className="inline-flex items-center gap-2 bg-[#F5A623] text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-[#d4901e] transition-colors">Book a Free Trial Class <ChevronRight size={14} /></Link>
       </div>
     </div>
   );
@@ -498,9 +498,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
       {/* Hero */}
-      <section className="relative bg-[#122259] overflow-hidden min-h-[320px] sm:min-h-[380px] flex items-end">
+      <section className="relative bg-[#0B1E5B] overflow-hidden min-h-[320px] sm:min-h-[380px] flex items-end">
         <Image src={post.heroImage} alt={post.heroAlt} fill className="object-cover object-center opacity-30" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#122259]/90 via-[#122259]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E5B]/90 via-[#0B1E5B]/40 to-transparent" />
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pb-10">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: post.category }]} dark />
           <div className="mt-4 max-w-3xl">
@@ -528,11 +528,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               {/* FAQs */}
               {post.faqs && (
                 <div className="mt-12 border-t border-gray-100 pt-8">
-                  <h2 className="text-2xl font-bold text-[#122259] mb-6">Frequently Asked Questions</h2>
+                  <h2 className="text-2xl font-bold text-[#0B1E5B] mb-6">Frequently Asked Questions</h2>
                   <div className="space-y-3">
                     {post.faqs.map((f, i) => (
                       <details key={i} className="bg-[#faf9f7] rounded-xl border border-gray-100 group">
-                        <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none text-sm">
+                        <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none text-sm">
                           {f.q}
                           <ChevronRight size={15} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
                         </summary>
@@ -550,7 +550,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     <Image src="/founder.webp" alt="Shah Zaib, founder of Ease Quran UK" fill className="object-cover object-top" sizes="64px" />
                   </div>
                   <div>
-                    <p className="font-bold text-[#122259]">Shah Zaib</p>
+                    <p className="font-bold text-[#0B1E5B]">Shah Zaib</p>
                     <p className="text-xs text-[#F5A623] font-semibold mb-2">Founder, Ease Quran UK &bull; Wifaq ul Madaris Al-Arabia Certified</p>
                     <p className="text-sm text-gray-600 leading-relaxed">Shah Zaib has over six years of experience teaching English-speaking Muslim families in the UK. He founded Ease Quran to give UK families access to qualified, reliable Quran education without the problems that have let so many families down.</p>
                     <Link href="/about" className="inline-flex items-center gap-1 text-[#F5A623] text-xs font-semibold mt-2 hover:underline">
@@ -562,10 +562,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
               {/* Explore more */}
               <div className="mt-10 border-t border-gray-100 pt-8">
-                <p className="text-sm font-bold text-[#122259] mb-4">Explore Related Pages</p>
+                <p className="text-sm font-bold text-[#0B1E5B] mb-4">Explore Related Pages</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {relatedPages.map((r) => (
-                    <Link key={r.href} href={r.href} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#faf9f7] border border-gray-100 text-sm font-semibold text-[#122259] hover:border-[#F5A623]/50 hover:shadow-sm transition-all group">
+                    <Link key={r.href} href={r.href} className="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#faf9f7] border border-gray-100 text-sm font-semibold text-[#0B1E5B] hover:border-[#F5A623]/50 hover:shadow-sm transition-all group">
                       <span className="text-[#F5A623]">{r.icon}</span>
                       {r.label}
                       <ChevronRight size={12} className="ml-auto text-gray-300 group-hover:text-[#F5A623] transition-colors" />
@@ -578,11 +578,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             {/* Sidebar */}
             <aside className="hidden lg:block">
               <div className="sticky top-24 space-y-5">
-                <div className="bg-[#122259] rounded-2xl p-6 text-white">
+                <div className="bg-[#0B1E5B] rounded-2xl p-6 text-white">
                   <p className="text-[#F5A623] text-xs font-bold uppercase tracking-widest mb-2">Free Trial Class</p>
                   <h3 className="font-bold text-lg mb-2 leading-snug">Try a Free Quran Lesson</h3>
                   <p className="text-blue-200 text-xs mb-4 leading-relaxed">No card needed. No commitment. One-to-one with a certified teacher, confirmed within 2 hours.</p>
-                  <Link href="/free-trial" className="btn-gold w-full justify-center text-sm py-2.5 rounded-xl">Book Free Trial</Link>
+                  <Link href="/free-trial" className="btn-gold w-full justify-center text-sm py-2.5">Book Free Trial</Link>
                 </div>
 
                 <a href={`https://wa.me/447311254423?text=${waMsg}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-[#25D366] text-white rounded-2xl p-4 hover:bg-[#1ebe5d] transition-colors">
@@ -594,7 +594,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </a>
 
                 <div className="bg-white rounded-2xl border border-gray-100 p-5">
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#122259] mb-4">More from the Blog</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0B1E5B] mb-4">More from the Blog</p>
                   <ul className="space-y-3">
                     {allPosts.filter(p => p.slug !== slug).map((p) => (
                       <li key={p.slug}>
@@ -608,7 +608,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </div>
 
                 <div className="bg-white rounded-2xl border border-gray-100 p-5">
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#122259] mb-4">Quick Links</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0B1E5B] mb-4">Quick Links</p>
                   <ul className="space-y-2">
                     {[
                       { href: "/female-quran-teachers", label: "Female Quran Teacher" },

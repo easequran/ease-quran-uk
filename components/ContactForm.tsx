@@ -57,7 +57,7 @@ export default function ContactForm() {
         <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-4">
           <CheckCircle size={36} className="text-green-500" />
         </div>
-        <h3 className="text-2xl font-bold text-[#122259] mb-2">Message Received!</h3>
+        <h3 className="text-2xl font-bold text-[#0B1E5B] mb-2">Message Received!</h3>
         <p className="text-gray-600 max-w-sm mx-auto">Thank you for getting in touch. We will reply within 2 hours. For a faster response, WhatsApp us on{" "}
           <a href="https://wa.me/447311254423" className="text-[#F5A623] font-semibold">+44 7311 254423</a>.
         </p>
@@ -85,7 +85,7 @@ export default function ContactForm() {
               type="text"
               autoComplete="name"
               placeholder="e.g. Ahmed Khan"
-              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.name ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.name ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
             />
           </div>
           {errors.name && <p className="text-red-500 text-xs mt-1.5">! {errors.name}</p>}
@@ -104,7 +104,7 @@ export default function ContactForm() {
               type="tel"
               autoComplete="tel"
               placeholder="+44 7700 000000"
-              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.phone ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.phone ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
             />
           </div>
           {errors.phone && <p className="text-red-500 text-xs mt-1.5">! {errors.phone}</p>}
@@ -124,7 +124,7 @@ export default function ContactForm() {
             type="email"
             autoComplete="email"
             placeholder="you@example.com"
-            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.email ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.email ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
           />
         </div>
         {errors.email && <p className="text-red-500 text-xs mt-1.5">! {errors.email}</p>}
@@ -142,7 +142,7 @@ export default function ContactForm() {
             name="message"
             rows={5}
             placeholder="e.g. I would like to know more about your Tajweed classes for adults..."
-            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 resize-none ${errors.message ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 resize-none ${errors.message ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
           />
         </div>
         {errors.message && <p className="text-red-500 text-xs mt-1.5">! {errors.message}</p>}
@@ -158,7 +158,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="btn-gold w-full justify-center text-base py-3.5 rounded-xl"
+        className="btn-gold w-full justify-center text-base py-3.5"
       >
         {status === "sending" ? (
           <><Loader2 size={18} className="animate-spin" /> Sending...</>

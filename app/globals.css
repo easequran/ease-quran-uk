@@ -1,13 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --navy: #122259;
+  /* Ease Quran Design System — navy corrected to match the shared brand token (was #122259). */
+  --navy: #0B1E5B;
   --gold: #F5A623;
   --gold-dark: #d4890a;
   --bg: #ffffff;
   --bg-warm: #faf9f7;
   --text: #1a1a1a;
   --text-muted: #6b7280;
+
+  --eq-gray-50: #F8F9FB;
+  --eq-gray-100: #F2F3F6;
+  --eq-gray-200: #E7E8ED;
+  --eq-gray-300: #D3D5DC;
+  --eq-gray-400: #AFB2BC;
+  --eq-gray-500: #8B8E99;
+  --eq-gray-600: #6B6F7B;
+  --eq-gray-700: #4A4E5A;
+  --eq-gray-800: #2B2E38;
+  --eq-gray-900: #171A21;
+
+  --eq-success-100: #E3F3EA;
+  --eq-success-600: #1E7B4F;
+  --eq-warning-100: #FDECD1;
+  --eq-warning-600: #B5750B;
+  --eq-danger-100: #FBE7E5;
+  --eq-danger-600: #C1352B;
+  --eq-info-100: #E6EEFB;
+  --eq-info-600: #1B5AA8;
 }
 
 @theme inline {
@@ -16,6 +37,14 @@
   --color-bg-warm: var(--bg-warm);
   --font-sans: var(--font-body);
   --font-heading: var(--font-heading);
+  --font-arabic-ui: var(--font-arabic-ui);
+  --font-arabic-display: var(--font-arabic-display);
+
+  /* Ease Quran Design System — navy-tinted shadows (never black/gray) */
+  --shadow-eq-sm: 0 1px 2px rgba(11, 30, 91, 0.06);
+  --shadow-eq-md: 0 4px 12px rgba(11, 30, 91, 0.08);
+  --shadow-eq-lg: 0 12px 32px rgba(11, 30, 91, 0.12);
+  --shadow-eq-focus: 0 0 0 3px rgba(245, 166, 35, 0.35);
 }
 
 body {
@@ -33,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--gold);
   color: #fff;
   font-weight: 600;
-  border-radius: 0.5rem;
+  border-radius: 999px;
   padding: 0.75rem 1.75rem;
   transition: background-color 0.2s;
   display: inline-flex;
@@ -48,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--navy);
   color: #fff;
   font-weight: 600;
-  border-radius: 0.5rem;
+  border-radius: 999px;
   padding: 0.75rem 1.75rem;
   transition: background-color 0.2s;
   display: inline-flex;
@@ -63,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   color: var(--navy);
   font-weight: 600;
-  border-radius: 0.5rem;
+  border-radius: 999px;
   padding: 0.75rem 1.75rem;
   border: 2px solid var(--navy);
   transition: all 0.2s;
@@ -80,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   color: #fff;
   font-weight: 600;
-  border-radius: 0.5rem;
+  border-radius: 999px;
   padding: 0.75rem 1.75rem;
   border: 2px solid #fff;
   transition: all 0.2s;
@@ -114,9 +143,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Arabic Quran text — uses system Arabic/Amiri fallback stack */
+/* Arabic Quran text — Amiri (design system's Arabic display font), loaded via next/font */
 .font-arabic {
-  font-family: "Amiri", "Traditional Arabic", "Arabic Typesetting", "Scheherazade New", "Noto Naskh Arabic", serif;
+  font-family: var(--font-arabic-display), "Amiri", "Traditional Arabic", "Scheherazade New", serif;
   font-size: 1.4rem;
   line-height: 2.2;
   direction: rtl;

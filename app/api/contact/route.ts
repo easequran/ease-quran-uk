@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
 
         <!-- Header -->
         <tr>
-          <td style="background:#122259;border-radius:12px 12px 0 0;padding:28px 32px">
+          <td style="background:#0B1E5B;border-radius:12px 12px 0 0;padding:28px 32px">
             <p style="margin:0;font-size:11px;font-weight:700;color:#F5A623;letter-spacing:0.1em;text-transform:uppercase">Ease Quran UK</p>
             <h1 style="margin:6px 0 0;font-size:22px;font-weight:700;color:#ffffff">New Free Trial Booking</h1>
           </td>
@@ -68,8 +68,8 @@ export async function POST(req: NextRequest) {
             <!-- Details table -->
             <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden">
               ${row("Full Name", name)}
-              ${row("Email", `<a href="mailto:${email}" style="color:#122259;text-decoration:none;font-weight:600">${email}</a>`)}
-              ${row("Phone / WhatsApp", `<a href="https://wa.me/${phone.replace(/\D/g,"")}" style="color:#122259;text-decoration:none;font-weight:600">${phone}</a>`)}
+              ${row("Email", `<a href="mailto:${email}" style="color:#0B1E5B;text-decoration:none;font-weight:600">${email}</a>`)}
+              ${row("Phone / WhatsApp", `<a href="https://wa.me/${phone.replace(/\D/g,"")}" style="color:#0B1E5B;text-decoration:none;font-weight:600">${phone}</a>`)}
               ${row("Child's Age", childAge || "Not provided")}
               ${row("Preferred Course", course || "Not specified")}
               ${row("Teacher Preference", teacherGender || "Not specified")}
@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
             <table cellpadding="0" cellspacing="0" style="margin-top:24px">
               <tr>
                 <td style="padding-right:12px">
-                  <a href="mailto:${email}" style="display:inline-block;background:#122259;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px">Reply by Email</a>
+                  <a href="mailto:${email}" style="display:inline-block;background:#0B1E5B;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px">Reply by Email</a>
                 </td>
                 <td>
                   <a href="https://wa.me/${phone.replace(/\D/g,"")}" style="display:inline-block;background:#25D366;color:#ffffff;text-decoration:none;font-size:13px;font-weight:600;padding:10px 20px;border-radius:8px">Open WhatsApp</a>

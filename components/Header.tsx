@@ -66,7 +66,7 @@ export default function Header() {
   return (
     <>
       {/* Top bar — NOT sticky, scrolls away */}
-      <div className="bg-[#122259] text-white text-xs">
+      <div className="bg-[#0B1E5B] text-white text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-9">
           <div className="flex items-center gap-5">
             <a
@@ -97,7 +97,7 @@ export default function Header() {
       </div>
 
       {/* White nav — STICKY */}
-      <div className={`sticky top-0 z-50 bg-white transition-shadow duration-200 ${scrolled ? "shadow-md" : "border-b border-gray-100"}`}>
+      <div className={`sticky top-0 z-50 bg-white transition-shadow duration-200 ${scrolled ? "shadow-eq-md" : "border-b border-gray-100"}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
 
           {/* Logo */}
@@ -107,15 +107,15 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-0.5 text-sm font-medium text-gray-700">
-            <Link href="/" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">Home</Link>
+            <Link href="/" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Home</Link>
 
             {/* Courses dropdown */}
             <div className="relative" onMouseEnter={() => setCoursesOpen(true)} onMouseLeave={() => setCoursesOpen(false)}>
-              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">
+              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">
                 Courses <ChevronDown size={14} className={`transition-transform duration-200 ${coursesOpen ? "rotate-180" : ""}`} />
               </button>
               {coursesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-2xl shadow-xl border border-gray-100 p-5 z-50">
+                <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-2xl shadow-eq-lg border border-gray-100 p-5 z-50">
                   <div className="flex items-center justify-between mb-4">
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Our Courses</p>
                     <Link href="/courses" className="text-xs text-[#F5A623] font-semibold hover:underline">View all</Link>
@@ -123,13 +123,13 @@ export default function Header() {
                   <div className="grid grid-cols-2 gap-1">
                     {courses.map((c) => (
                       <Link key={c.href} href={c.href} className="flex flex-col px-3 py-3 rounded-xl hover:bg-[#faf9f7] group transition-colors">
-                        <span className="font-semibold text-[#122259] group-hover:text-[#F5A623] transition-colors text-sm">{c.label}</span>
+                        <span className="font-semibold text-[#0B1E5B] group-hover:text-[#F5A623] transition-colors text-sm">{c.label}</span>
                         <span className="text-xs text-gray-400 mt-0.5">{c.desc}</span>
                       </Link>
                     ))}
                   </div>
                   <div className="mt-4 pt-4 border-t border-gray-100">
-                    <Link href="/free-trial" className="flex items-center justify-between px-4 py-3 bg-[#122259] rounded-xl text-white text-sm font-semibold hover:bg-[#0d1a45] transition-colors">
+                    <Link href="/free-trial" className="flex items-center justify-between px-4 py-3 bg-[#0B1E5B] rounded-full text-white text-sm font-semibold hover:bg-[#0d1a45] transition-colors">
                       <span>Start with a free trial class</span>
                       <span className="bg-[#F5A623] text-white text-xs font-bold px-2.5 py-1 rounded-full">Free</span>
                     </Link>
@@ -140,11 +140,11 @@ export default function Header() {
 
             {/* Locations dropdown */}
             <div className="relative" onMouseEnter={() => setLocationsOpen(true)} onMouseLeave={() => setLocationsOpen(false)}>
-              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">
+              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">
                 Locations <ChevronDown size={14} className={`transition-transform duration-200 ${locationsOpen ? "rotate-180" : ""}`} />
               </button>
               {locationsOpen && (
-                <div className="absolute top-full left-0 mt-1 w-[340px] bg-white rounded-2xl shadow-xl border border-gray-100 p-4 z-50">
+                <div className="absolute top-full left-0 mt-1 w-[340px] bg-white rounded-2xl shadow-eq-lg border border-gray-100 p-4 z-50">
                   <div className="flex items-center justify-between mb-3">
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">UK Cities</p>
                     <Link href="/locations" className="text-xs text-[#F5A623] font-semibold hover:underline">View all →</Link>
@@ -154,7 +154,7 @@ export default function Header() {
                       <Link
                         key={l.href}
                         href={l.href}
-                        className="flex items-center gap-1.5 pl-2.5 pr-3 py-2 rounded-full border border-gray-200 hover:border-[#F5A623] hover:bg-[#F5A623]/5 text-sm font-medium text-[#122259] transition-colors"
+                        className="flex items-center gap-1.5 pl-2.5 pr-3 py-2 rounded-full border border-gray-200 hover:border-[#F5A623] hover:bg-[#F5A623]/5 text-sm font-medium text-[#0B1E5B] transition-colors"
                       >
                         <MapPin size={12} className="text-[#F5A623] flex-shrink-0" />
                         {l.label}
@@ -165,11 +165,11 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/about" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">About</Link>
-            <Link href="/pricing" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">Pricing</Link>
-            <Link href="/female-quran-teachers" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">Female Teachers</Link>
-            <Link href="/blog" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">Blog</Link>
-            <Link href="/contact" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#122259] transition-colors">Contact</Link>
+            <Link href="/about" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">About</Link>
+            <Link href="/pricing" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Pricing</Link>
+            <Link href="/female-quran-teachers" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Female Teachers</Link>
+            <Link href="/blog" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Blog</Link>
+            <Link href="/contact" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Contact</Link>
           </nav>
 
           {/* Desktop CTAs */}
@@ -215,7 +215,7 @@ export default function Header() {
 
             {/* Navigation */}
             <nav className="flex-1 px-4 py-4 space-y-1">
-              <Link href="/" onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-[#122259] hover:bg-[#faf9f7] transition-colors text-sm">
+              <Link href="/" onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm">
                 Home
               </Link>
 
@@ -223,7 +223,7 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
-                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-[#122259] hover:bg-[#faf9f7] transition-colors text-sm"
+                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm"
                 >
                   <span>Courses</span>
                   <ChevronDown size={16} className={`text-[#F5A623] transition-transform duration-200 ${mobileCoursesOpen ? "rotate-180" : ""}`} />
@@ -231,7 +231,7 @@ export default function Header() {
                 {mobileCoursesOpen && (
                   <div className="ml-3 mt-1 pl-3 border-l-2 border-[#F5A623]/30 space-y-0.5">
                     {courses.map((c) => (
-                      <Link key={c.href} href={c.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-[#122259] hover:bg-[#faf9f7] transition-colors">
+                      <Link key={c.href} href={c.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors">
                         <ChevronRight size={12} className="text-[#F5A623] flex-shrink-0" />
                         {c.label}
                       </Link>
@@ -247,7 +247,7 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setMobileLocationsOpen(!mobileLocationsOpen)}
-                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-[#122259] hover:bg-[#faf9f7] transition-colors text-sm"
+                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm"
                 >
                   <span>Locations</span>
                   <ChevronDown size={16} className={`text-[#F5A623] transition-transform duration-200 ${mobileLocationsOpen ? "rotate-180" : ""}`} />
@@ -255,7 +255,7 @@ export default function Header() {
                 {mobileLocationsOpen && (
                   <div className="ml-3 mt-1 pl-3 border-l-2 border-[#F5A623]/30 space-y-0.5">
                     {locations.map((l) => (
-                      <Link key={l.href} href={l.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-[#122259] hover:bg-[#faf9f7] transition-colors">
+                      <Link key={l.href} href={l.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" />
                         {l.label}
                       </Link>
@@ -274,7 +274,7 @@ export default function Header() {
                 { label: "Blog", href: "/blog" },
                 { label: "Contact", href: "/contact" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-[#122259] hover:bg-[#faf9f7] transition-colors text-sm">
+                <Link key={item.href} href={item.href} onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm">
                   {item.label}
                 </Link>
               ))}

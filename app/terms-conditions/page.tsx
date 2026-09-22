@@ -14,13 +14,13 @@ export default function Terms() {
       <div className="bg-[#faf9f7] py-10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Terms & Conditions" }]} />
-          <h1 className="text-3xl font-bold text-[#122259] mt-4">Terms &amp; Conditions</h1>
+          <h1 className="text-3xl font-bold text-[#0B1E5B] mt-4">Terms &amp; Conditions</h1>
           <p className="text-gray-500 text-sm mt-1">Last updated: December 2024</p>
         </div>
       </div>
 
       <section className="section-pad">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-[#122259] [&_h2]:mt-8 [&_h2]:mb-3 text-gray-700 space-y-4">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-[#0B1E5B] [&_h2]:mt-8 [&_h2]:mb-3 text-gray-700 space-y-4">
           <p>These terms and conditions govern your use of the Ease Quran UK website (easequran.co.uk) and our online teaching services. By using this website or enrolling in classes, you agree to these terms.</p>
 
           <h2>1. Services</h2>

@@ -38,7 +38,7 @@ export default function ScrollToTop() {
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          fill="#122259"
+          fill="#0B1E5B"
           stroke="#ffffff22"
           strokeWidth={strokeWidth}
         />

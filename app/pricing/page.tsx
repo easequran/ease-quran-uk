@@ -62,7 +62,7 @@ export default function Pricing() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
-      <section className="bg-[#122259] pt-10 pb-16 relative overflow-hidden">
+      <section className="bg-[#0B1E5B] pt-10 pb-16 relative overflow-hidden">
         <Image
           src="/pricing-hero.webp"
           alt="Quran resting open on a wooden stand beside a lit lantern, warm sunlight through a latticed window"
@@ -71,7 +71,7 @@ export default function Pricing() {
           className="object-cover opacity-40 -scale-x-100"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#122259] via-[#122259]/90 to-[#122259]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E5B] via-[#0B1E5B]/90 to-[#0B1E5B]/40" />
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at 70% 0%, rgba(245,166,35,0.12) 0%, transparent 60%)" }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Pricing" }]} dark />
@@ -110,7 +110,7 @@ export default function Pricing() {
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
               <Clock size={13} /> Class Length
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">30-Minute vs 60-Minute Classes</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">30-Minute vs 60-Minute Classes</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Every plan is available at either length. Prices below are per month.</p>
           </div>
 
@@ -118,17 +118,17 @@ export default function Pricing() {
           <div className="grid grid-cols-1 gap-3 sm:hidden">
             {MAIN_PLANS.map((plan) => (
               <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                <div className="flex items-center justify-between px-5 py-3 bg-[#122259]">
+                <div className="flex items-center justify-between px-5 py-3 bg-[#0B1E5B]">
                   <p className="font-bold text-white">{plan.name}</p>
                   <p className="text-xs text-blue-200">{plan.classesPerWeek} classes/week</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3 p-5">
                   <div className="bg-[#faf9f7] rounded-xl p-3 text-center border border-gray-100">
-                    <p className="text-lg font-extrabold text-[#122259]">£{plan.price30}</p>
+                    <p className="text-lg font-extrabold text-[#0B1E5B]">£{plan.price30}</p>
                     <p className="text-xs text-gray-500 mt-0.5">30 min</p>
                   </div>
                   <div className="bg-[#F5A623]/10 rounded-xl p-3 text-center border border-[#F5A623]/30">
-                    <p className="text-lg font-extrabold text-[#122259]">£{plan.price60}</p>
+                    <p className="text-lg font-extrabold text-[#0B1E5B]">£{plan.price60}</p>
                     <p className="text-xs text-[#d4890a] font-semibold mt-0.5">60 min</p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function Pricing() {
           <div className="hidden sm:block overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
             <table className="w-full bg-white text-sm">
               <thead>
-                <tr className="bg-[#122259]">
+                <tr className="bg-[#0B1E5B]">
                   <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest rounded-tl-2xl">Plan</th>
                   <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest">Classes/week</th>
                   <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest">30 min</th>
@@ -150,17 +150,17 @@ export default function Pricing() {
               <tbody>
                 {MAIN_PLANS.map((plan) => (
                   <tr key={plan.id} className="border-b border-gray-50 last:border-0">
-                    <td className="px-5 py-4 font-bold text-[#122259]">{plan.name}</td>
+                    <td className="px-5 py-4 font-bold text-[#0B1E5B]">{plan.name}</td>
                     <td className="px-5 py-4 text-gray-700">{plan.classesPerWeek}</td>
                     <td className="px-5 py-4 text-gray-700">£{plan.price30}</td>
-                    <td className="px-5 py-4 font-bold text-[#122259] bg-[#F5A623]/8">£{plan.price60}</td>
+                    <td className="px-5 py-4 font-bold text-[#0B1E5B] bg-[#F5A623]/8">£{plan.price60}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="bg-[#122259] rounded-2xl p-5 sm:p-7 mt-6">
+          <div className="bg-[#0B1E5B] rounded-2xl p-5 sm:p-7 mt-6">
             <div className="flex items-center justify-between gap-4 mb-5">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
@@ -171,7 +171,7 @@ export default function Pricing() {
                   <p className="text-xs text-blue-200">Guaranteed Saturday or Sunday slot</p>
                 </div>
               </div>
-              <span className="text-xs font-bold text-[#122259] bg-[#F5A623] rounded-full px-3 py-1 flex-shrink-0">+15%</span>
+              <span className="text-xs font-bold text-[#0B1E5B] bg-[#F5A623] rounded-full px-3 py-1 flex-shrink-0">+15%</span>
             </div>
 
             <div className="grid grid-cols-3 gap-3 mb-5">
@@ -198,7 +198,7 @@ export default function Pricing() {
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
               <Users size={13} /> Automatic, No Code Needed
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">Sibling Discount</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">Sibling Discount</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Enrol more than one child and the discount is applied automatically to each additional child's plan.</p>
           </div>
 
@@ -209,15 +209,15 @@ export default function Pricing() {
                 <div
                   key={label}
                   className={`relative rounded-2xl p-5 text-center ${
-                    isBest ? "bg-[#122259] shadow-lg shadow-[#122259]/20" : "bg-white border border-gray-100 shadow-sm"
+                    isBest ? "bg-[#0B1E5B] shadow-lg shadow-[#0B1E5B]/20" : "bg-white border border-gray-100 shadow-sm"
                   }`}
                 >
                   <div className={`w-7 h-7 rounded-full flex items-center justify-center mx-auto mb-2 text-xs font-bold ${
-                    isBest ? "bg-[#F5A623] text-white" : "bg-[#122259]/8 text-[#122259]"
+                    isBest ? "bg-[#F5A623] text-white" : "bg-[#0B1E5B]/8 text-[#0B1E5B]"
                   }`}>
                     {i + 1}
                   </div>
-                  <p className={`text-2xl font-extrabold ${isBest ? "text-[#F5A623]" : "text-[#122259]"}`}>
+                  <p className={`text-2xl font-extrabold ${isBest ? "text-[#F5A623]" : "text-[#0B1E5B]"}`}>
                     {SIBLING_DISCOUNTS[i] === 0 ? "Full price" : `-${SIBLING_DISCOUNTS[i] * 100}%`}
                   </p>
                   <p className={`text-xs mt-1 ${isBest ? "text-blue-200" : "text-gray-500"}`}>{label}</p>
@@ -231,10 +231,10 @@ export default function Pricing() {
               <Sparkles size={18} className="text-[#F5A623]" />
             </div>
             <div>
-              <p className="text-sm font-bold text-[#122259] mb-2">Worked example</p>
+              <p className="text-sm font-bold text-[#0B1E5B] mb-2">Worked example</p>
               <p className="text-sm text-gray-700 leading-relaxed">
                 3 children on the {worked.planName} plan (£{steadyPlan.price30}/month each before discount): £{worked.prices[0]} + £{worked.prices[1]} + £{worked.prices[2]} ={" "}
-                <span className="font-bold text-[#122259]">£{worked.total}/month</span> for all three children.
+                <span className="font-bold text-[#0B1E5B]">£{worked.total}/month</span> for all three children.
               </p>
             </div>
           </div>
@@ -248,7 +248,7 @@ export default function Pricing() {
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
               <CalendarCheck size={13} /> Pay Ahead, Save More
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">Prepay Discounts</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">Prepay Discounts</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Pay every 3 months for 5% off, every 6 months for 10% off, or yearly for 2 months free. Prices below are for 30-minute plans.</p>
           </div>
 
@@ -256,7 +256,7 @@ export default function Pricing() {
           <div className="grid grid-cols-1 gap-3 sm:hidden">
             {MAIN_PLANS.map((plan) => (
               <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                <p className="font-bold text-white bg-[#122259] px-5 py-3">{plan.name}</p>
+                <p className="font-bold text-white bg-[#0B1E5B] px-5 py-3">{plan.name}</p>
                 <div className="grid grid-cols-2 gap-3 p-5">
                   {PREPAY_TERMS.map((t) => {
                     const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
@@ -273,7 +273,7 @@ export default function Pricing() {
                             Best Value
                           </span>
                         )}
-                        <p className="text-lg font-extrabold text-[#122259] mt-1">£{total}</p>
+                        <p className="text-lg font-extrabold text-[#0B1E5B] mt-1">£{total}</p>
                         <p className="text-xs text-gray-500 mt-0.5">{t.label}</p>
                         {saving > 0 && <p className="text-xs text-[#d4890a] font-semibold mt-0.5">save £{saving}</p>}
                       </div>
@@ -288,7 +288,7 @@ export default function Pricing() {
           <div className="hidden sm:block overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
             <table className="w-full bg-white text-sm">
               <thead>
-                <tr className="bg-[#122259]">
+                <tr className="bg-[#0B1E5B]">
                   <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest rounded-tl-2xl">Plan</th>
                   {PREPAY_TERMS.map((t, i) => (
                     <th
@@ -306,11 +306,11 @@ export default function Pricing() {
               <tbody>
                 {MAIN_PLANS.map((plan) => (
                   <tr key={plan.id} className="border-b border-gray-50 last:border-0">
-                    <td className="px-5 py-4 font-bold text-[#122259]">{plan.name}</td>
+                    <td className="px-5 py-4 font-bold text-[#0B1E5B]">{plan.name}</td>
                     {PREPAY_TERMS.map((t) => {
                       const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
                       return (
-                        <td key={t.id} className={`px-5 py-4 text-gray-700 ${t.id === "yearly" ? "bg-[#F5A623]/8 font-bold text-[#122259]" : ""}`}>
+                        <td key={t.id} className={`px-5 py-4 text-gray-700 ${t.id === "yearly" ? "bg-[#F5A623]/8 font-bold text-[#0B1E5B]" : ""}`}>
                           £{total}
                           {saving > 0 && <span className="block text-xs text-[#d4890a] font-semibold mt-0.5">save £{saving}</span>}
                         </td>
@@ -328,16 +328,16 @@ export default function Pricing() {
       <section className="section-pad">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div className="relative bg-white rounded-2xl border-2 border-[#122259]/20 flex flex-col sm:flex-row overflow-hidden shadow-sm">
-              <div className="sm:w-2 h-2 sm:h-auto bg-[#122259] flex-shrink-0" />
+            <div className="relative bg-white rounded-2xl border-2 border-[#0B1E5B]/20 flex flex-col sm:flex-row overflow-hidden shadow-sm">
+              <div className="sm:w-2 h-2 sm:h-auto bg-[#0B1E5B] flex-shrink-0" />
               <div className="flex-1 p-6 sm:p-7">
-                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#122259] bg-[#122259]/8 rounded-full px-3 py-1 mb-2">
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0B1E5B] bg-[#0B1E5B]/8 rounded-full px-3 py-1 mb-2">
                   <BookOpenCheck size={13} /> Senior Teacher
                 </span>
-                <h2 className="text-xl font-extrabold text-[#122259]">{HIFZ_INTENSIVE.name}</h2>
-                <p className="text-3xl font-extrabold text-[#122259] mt-2">from £{HIFZ_INTENSIVE.fromPrice}<span className="text-sm font-medium text-gray-400">/month</span></p>
+                <h2 className="text-xl font-extrabold text-[#0B1E5B]">{HIFZ_INTENSIVE.name}</h2>
+                <p className="text-3xl font-extrabold text-[#0B1E5B] mt-2">from £{HIFZ_INTENSIVE.fromPrice}<span className="text-sm font-medium text-gray-400">/month</span></p>
                 <p className="text-sm text-gray-600 mt-3 leading-relaxed">{HIFZ_INTENSIVE.description}</p>
-                <Link href="/courses/hifz" className="inline-flex items-center gap-1.5 mt-5 text-sm font-bold text-[#122259] hover:text-[#F5A623] transition-colors">
+                <Link href="/courses/hifz" className="inline-flex items-center gap-1.5 mt-5 text-sm font-bold text-[#0B1E5B] hover:text-[#F5A623] transition-colors">
                   Learn more about Hifz <ChevronRight size={14} />
                 </Link>
               </div>
@@ -346,17 +346,17 @@ export default function Pricing() {
             <div className="relative bg-white rounded-2xl border-2 border-gray-100 flex flex-col sm:flex-row overflow-hidden shadow-sm">
               <div className="sm:w-2 h-2 sm:h-auto bg-[#F5A623] flex-shrink-0" />
               <div className="flex-1 p-6 sm:p-7">
-                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#122259] bg-[#122259]/8 rounded-full px-3 py-1 mb-2">
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0B1E5B] bg-[#0B1E5B]/8 rounded-full px-3 py-1 mb-2">
                   <Settings2 size={13} /> Bespoke
                 </span>
-                <h2 className="text-xl font-extrabold text-[#122259]">{CUSTOM_TIMETABLE.name}</h2>
-                <p className="text-2xl font-extrabold text-[#122259] mt-2">£{CUSTOM_TIMETABLE.rangeLow}–£{CUSTOM_TIMETABLE.rangeHigh}<span className="text-sm font-medium text-gray-400">/month, typical</span></p>
+                <h2 className="text-xl font-extrabold text-[#0B1E5B]">{CUSTOM_TIMETABLE.name}</h2>
+                <p className="text-2xl font-extrabold text-[#0B1E5B] mt-2">£{CUSTOM_TIMETABLE.rangeLow}–£{CUSTOM_TIMETABLE.rangeHigh}<span className="text-sm font-medium text-gray-400">/month, typical</span></p>
                 <p className="text-sm text-gray-600 mt-3 leading-relaxed">{CUSTOM_TIMETABLE.description}</p>
                 <a
                   href="https://wa.me/447311254423?text=Hi%2C%20I%27d%20like%20a%20custom%20Quran%20class%20timetable."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-5 bg-[#122259] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-[#0e1b47] transition-colors"
+                  className="inline-flex items-center gap-2 mt-5 bg-[#0B1E5B] text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-[#0e1b47] transition-colors"
                 >
                   <MessageCircle size={15} /> WhatsApp to Discuss
                 </a>
@@ -369,7 +369,7 @@ export default function Pricing() {
       {/* Referral */}
       <section className="pb-2">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="bg-[#122259] rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="bg-[#0B1E5B] rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className="w-11 h-11 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
                 <Gift size={20} className="text-[#F5A623]" />
@@ -394,7 +394,7 @@ export default function Pricing() {
       {/* Choose your course */}
       <section className="section-pad">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <h2 className="text-lg font-bold text-[#122259] mb-4 text-center">Choose Your Course</h2>
+          <h2 className="text-lg font-bold text-[#0B1E5B] mb-4 text-center">Choose Your Course</h2>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
               { title: "Noorani Qaida", href: "/courses/noorani-qaida" },
@@ -406,7 +406,7 @@ export default function Pricing() {
               { title: "Adult Quran Classes", href: "/adult-quran-classes" },
               { title: "Female Quran Teachers", href: "/female-quran-teachers" },
             ].map((c) => (
-              <Link key={c.href} href={c.href} className="flex items-center gap-1.5 px-4 py-2.5 bg-[#faf9f7] rounded-xl text-sm font-semibold text-[#122259] border border-gray-200 hover:bg-[#122259] hover:text-white hover:border-[#122259] transition-colors">
+              <Link key={c.href} href={c.href} className="flex items-center gap-1.5 px-4 py-2.5 bg-[#faf9f7] rounded-xl text-sm font-semibold text-[#0B1E5B] border border-gray-200 hover:bg-[#0B1E5B] hover:text-white hover:border-[#0B1E5B] transition-colors">
                 {c.title} <ChevronRight size={12} />
               </Link>
             ))}
@@ -415,7 +415,7 @@ export default function Pricing() {
       </section>
 
       {/* Why choose us strip */}
-      <section className="py-10 bg-[#122259]">
+      <section className="py-10 bg-[#0B1E5B]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
@@ -438,12 +438,12 @@ export default function Pricing() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Questions</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#122259]">Pricing Questions</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">Pricing Questions</h2>
           </div>
           <div className="space-y-3">
             {faqs.map((f, i) => (
               <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
-                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none text-sm sm:text-base">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none text-sm sm:text-base">
                   {f.q}
                   <ChevronRight size={15} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
                 </summary>

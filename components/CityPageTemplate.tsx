@@ -75,7 +75,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
-      <section className="relative bg-[#122259] text-white overflow-hidden min-h-[440px] flex items-center">
+      <section className="relative bg-[#0B1E5B] text-white overflow-hidden min-h-[440px] flex items-center">
         <Image src="/city-hero.webp" alt={`Online Quran classes for families in ${city}`} fill className="object-cover opacity-15" sizes="100vw" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 w-full">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Locations", href: "/locations" }, { label: city }]} />
@@ -107,7 +107,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Areas We Serve</span>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0B1E5B] mb-4">
                 Quran Classes Across {city}
               </h2>
               <p className="text-gray-700 mb-5 leading-relaxed">
@@ -123,7 +123,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
             </div>
             <div>
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-3">Why Online Works</span>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#122259] mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0B1E5B] mb-4">
                 Why {city} Families Choose Online Quran Classes
               </h2>
               <p className="text-gray-700 leading-relaxed mb-5">{whyOnline}</p>
@@ -144,14 +144,14 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">What We Teach</span>
-            <h2 className="text-2xl font-bold text-[#122259]">Courses Available to {city} Students</h2>
+            <h2 className="text-2xl font-bold text-[#0B1E5B]">Courses Available to {city} Students</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {coursesList.map((c) => (
               <Link key={c.href} href={c.href} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-md hover:border-[#F5A623]/30 transition-all group">
                 <div className="flex items-start justify-between">
                   <div>
-                    <p className="font-bold text-[#122259] group-hover:text-[#F5A623] transition-colors">{c.title}</p>
+                    <p className="font-bold text-[#0B1E5B] group-hover:text-[#F5A623] transition-colors">{c.title}</p>
                     <p className="text-xs text-gray-500 mt-0.5">{c.desc}</p>
                   </div>
                   <ChevronRight size={14} className="text-[#F5A623] flex-shrink-0 mt-0.5" />
@@ -167,7 +167,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Real Reviews</span>
-            <h2 className="text-2xl font-bold text-[#122259]">What Families Across the UK Say</h2>
+            <h2 className="text-2xl font-bold text-[#0B1E5B]">What Families Across the UK Say</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <VideoEmbed videoId="u_j-zh0jFL8" title="Ease Quran UK Review — Saman Imran" reviewer="Saman Imran" />
@@ -181,7 +181,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 max-w-2xl mx-auto">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Why Families Choose Us</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#122259]">What to Look For in a {city} Quran Teacher</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0B1E5B]">What to Look For in a {city} Quran Teacher</h2>
             <p className="text-gray-600 mt-3 leading-relaxed">
               When you search for a Quran teacher in {city}, you will find many academies making similar promises. Here is what actually sets Ease Quran UK apart, and what we would encourage any {city} parent to check before enrolling anywhere.
             </p>
@@ -193,7 +193,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
               { label: "Full parental transparency", detail: `${city} parents can observe any class at any time. Nothing is hidden, and progress is shared regularly.` },
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-2xl p-5 border border-gray-100">
-                <p className="text-[#122259] font-bold text-sm mb-1.5">{item.label}</p>
+                <p className="text-[#0B1E5B] font-bold text-sm mb-1.5">{item.label}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
               </div>
             ))}
@@ -204,13 +204,13 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
       {/* FAQ */}
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-[#122259] mb-8 text-center">
+          <h2 className="text-2xl font-bold text-[#0B1E5B] mb-8 text-center">
             Questions from {city} Families
           </h2>
           <div className="space-y-3">
             {faqs.map((f, i) => (
-              <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
-                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#122259] list-none">
+              <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-eq-sm group">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none">
                   {f.q}
                   <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
                 </summary>
@@ -224,7 +224,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
       {/* Useful links for this city */}
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-lg font-bold text-[#122259] mb-5">Useful Pages for {city} Families</h2>
+          <h2 className="text-lg font-bold text-[#0B1E5B] mb-5">Useful Pages for {city} Families</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { href: "/female-quran-teachers", title: "Female Quran Teacher", desc: "Available for sisters and daughters of all ages" },
@@ -233,7 +233,7 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
               { href: "/about", title: "About Our Teachers", desc: "Meet Shah Zaib, Muhammad Umair, and Almas Fatima" },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-md hover:border-[#F5A623]/30 transition-all group">
-                <p className="font-bold text-[#122259] group-hover:text-[#F5A623] transition-colors text-sm mb-1">{link.title}</p>
+                <p className="font-bold text-[#0B1E5B] group-hover:text-[#F5A623] transition-colors text-sm mb-1">{link.title}</p>
                 <p className="text-xs text-gray-500 leading-relaxed">{link.desc}</p>
               </Link>
             ))}
@@ -244,10 +244,10 @@ export default function CityPageTemplate({ city, slug, intro, areas, whyOnline, 
       {/* Other cities */}
       <section className="section-pad">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-lg font-bold text-[#122259] mb-4">Also Serving These UK Cities</h2>
+          <h2 className="text-lg font-bold text-[#0B1E5B] mb-4">Also Serving These UK Cities</h2>
           <div className="flex flex-wrap gap-3">
             {allCities.filter(([l]) => l.toLowerCase() !== city.toLowerCase()).map(([l, h]) => (
-              <Link key={h} href={h} className="flex items-center gap-2 px-4 py-2.5 bg-[#faf9f7] rounded-xl text-sm font-semibold text-[#122259] border border-gray-200 hover:bg-[#122259] hover:text-white hover:border-[#122259] transition-colors">
+              <Link key={h} href={h} className="flex items-center gap-2 px-4 py-2.5 bg-[#faf9f7] rounded-xl text-sm font-semibold text-[#0B1E5B] border border-gray-200 hover:bg-[#0B1E5B] hover:text-white hover:border-[#0B1E5B] transition-colors">
                 <MapPin size={12} className="text-[#F5A623]" />
                 Quran Classes in {l}
               </Link>

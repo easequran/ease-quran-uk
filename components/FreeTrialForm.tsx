@@ -59,7 +59,7 @@ function InputWrap({ icon, error, children }: { icon: React.ReactNode; error?: s
 }
 
 const inputCls = (err?: string) =>
-  `w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 ${
+  `w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${
     err ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"
   }`;
 
@@ -73,7 +73,7 @@ function StepDots({ step }: { step: number }) {
               n < step
                 ? "bg-green-500 text-white"
                 : n === step
-                ? "bg-[#122259] text-white ring-4 ring-[#122259]/20"
+                ? "bg-[#0B1E5B] text-white ring-4 ring-[#0B1E5B]/20"
                 : "bg-gray-100 text-gray-400"
             }`}
           >
@@ -99,14 +99,14 @@ function TeacherCard({ value, label, sub, icon, selected, onClick }: {
       onClick={onClick}
       className={`flex-1 flex flex-col items-center gap-2 p-4 rounded-2xl border-2 text-center transition-all duration-200 cursor-pointer ${
         selected
-          ? "border-[#122259] bg-[#122259]/5 shadow-sm"
+          ? "border-[#0B1E5B] bg-[#0B1E5B]/5 shadow-eq-sm"
           : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50"
       }`}
     >
-      <span className={`w-10 h-10 rounded-full flex items-center justify-center ${selected ? "bg-[#122259] text-white" : "bg-gray-100 text-gray-500"}`}>
+      <span className={`w-10 h-10 rounded-full flex items-center justify-center ${selected ? "bg-[#0B1E5B] text-white" : "bg-gray-100 text-gray-500"}`}>
         {icon}
       </span>
-      <span className={`text-sm font-semibold ${selected ? "text-[#122259]" : "text-gray-700"}`}>{label}</span>
+      <span className={`text-sm font-semibold ${selected ? "text-[#0B1E5B]" : "text-gray-700"}`}>{label}</span>
       <span className="text-xs text-gray-400 leading-tight">{sub}</span>
     </button>
   );
@@ -169,7 +169,7 @@ export default function FreeTrialForm() {
         <div className="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-5">
           <CheckCircle size={40} className="text-green-500" />
         </div>
-        <h3 className="text-2xl font-bold text-[#122259] mb-3">Booking Received!</h3>
+        <h3 className="text-2xl font-bold text-[#0B1E5B] mb-3">Booking Received!</h3>
         <p className="text-gray-600 mb-5 leading-relaxed">
           Thank you, {fields.name.split(" ")[0]}. We will be in touch within 2 hours to confirm your free trial class.
         </p>
@@ -194,7 +194,7 @@ export default function FreeTrialForm() {
       {step === 1 && (
         <div className="space-y-5">
           <div>
-            <p className="text-base font-bold text-[#122259] mb-1">Your contact details</p>
+            <p className="text-base font-bold text-[#0B1E5B] mb-1">Your contact details</p>
             <p className="text-sm text-gray-500 mb-5">We will use these to confirm your free trial class.</p>
           </div>
 
@@ -240,7 +240,7 @@ export default function FreeTrialForm() {
           <button
             type="button"
             onClick={next}
-            className="btn-gold w-full justify-center text-base py-3.5 rounded-xl mt-2"
+            className="btn-gold w-full justify-center text-base py-3.5 mt-2"
           >
             Continue <ChevronRight size={17} />
           </button>
@@ -251,7 +251,7 @@ export default function FreeTrialForm() {
       {step === 2 && (
         <div className="space-y-6">
           <div>
-            <p className="text-base font-bold text-[#122259] mb-1">About the student</p>
+            <p className="text-base font-bold text-[#0B1E5B] mb-1">About the student</p>
             <p className="text-sm text-gray-500 mb-5">This helps us match the right teacher.</p>
           </div>
 
@@ -354,7 +354,7 @@ export default function FreeTrialForm() {
             <button
               type="button"
               onClick={next}
-              className="btn-gold flex-1 justify-center text-base py-3 rounded-xl"
+              className="btn-gold flex-1 justify-center text-base py-3"
             >
               Continue <ChevronRight size={17} />
             </button>
@@ -366,7 +366,7 @@ export default function FreeTrialForm() {
       {step === 3 && (
         <div className="space-y-5">
           <div>
-            <p className="text-base font-bold text-[#122259] mb-1">Almost done. Check your details below.</p>
+            <p className="text-base font-bold text-[#0B1E5B] mb-1">Almost done. Check your details below.</p>
             <p className="text-sm text-gray-500 mb-5">Everything look right? Add a note below if needed, then submit.</p>
           </div>
 
@@ -400,7 +400,7 @@ export default function FreeTrialForm() {
                 placeholder="e.g. Looking for a female teacher for my daughter, she is a complete beginner"
                 value={fields.message}
                 onChange={(e) => set("message", e.target.value)}
-                className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#122259] focus:border-transparent transition-colors placeholder:text-gray-400 resize-none bg-white hover:border-gray-300"
+                className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 resize-none bg-white hover:border-gray-300"
               />
             </div>
           </div>
@@ -423,7 +423,7 @@ export default function FreeTrialForm() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="btn-gold flex-1 justify-center text-base py-3 rounded-xl"
+              className="btn-gold flex-1 justify-center text-base py-3"
             >
               {status === "sending" ? (
                 <><Loader2 size={18} className="animate-spin" /> Sending…</>

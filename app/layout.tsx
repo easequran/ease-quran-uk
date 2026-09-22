@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Poppins, Cairo, Amiri } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Header from "@/components/Header";
@@ -8,18 +8,33 @@ import MobileBottomBar from "@/components/MobileBottomBar";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppSticky from "@/components/WhatsAppSticky";
 
-const heading = Plus_Jakarta_Sans({
+// Poppins for both headings and body per the Ease Quran Design System.
+const heading = Poppins({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["600", "700", "800"],
 });
 
-const body = Inter({
+const body = Poppins({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
   weight: ["400", "500", "600"],
+});
+
+const cairo = Cairo({
+  subsets: ["arabic"],
+  variable: "--font-arabic-ui",
+  display: "swap",
+  weight: ["400", "500", "700"],
+});
+
+const amiri = Amiri({
+  subsets: ["arabic"],
+  variable: "--font-arabic-display",
+  display: "swap",
+  weight: ["400", "700"],
 });
 
 const WWW = "https://www.easequran.co.uk";
@@ -51,7 +66,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={`${heading.variable} ${body.variable}`}>
+    <html lang="en-GB" className={`${heading.variable} ${body.variable} ${cairo.variable} ${amiri.variable}`}>
       <body>
         <GoogleAnalytics />
         <Header />

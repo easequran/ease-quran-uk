@@ -10,7 +10,7 @@ export default function CTABand({
   sub = "Book a completely free, no-commitment trial class with a qualified teacher.",
 }: CTABandProps) {
   return (
-    <section className="relative overflow-hidden py-20" style={{ backgroundColor: "#122259" }}>
+    <section className="relative overflow-hidden py-20" style={{ backgroundColor: "#0B1E5B" }}>
       {/* Mobile background (< 640px) */}
       <div
         aria-hidden="true"

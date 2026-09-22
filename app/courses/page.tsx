@@ -30,7 +30,7 @@ export default function Courses() {
       <div className="bg-[#faf9f7] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Courses" }]} />
-          <h1 className="text-4xl md:text-5xl font-bold text-[#122259] mt-4">Online Quran Courses</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#0B1E5B] mt-4">Online Quran Courses</h1>
           <p className="text-gray-600 mt-3 max-w-2xl">Looking for Quran courses online you can trust? Every course here is delivered one-to-one by a certified teacher at our Quran academy, with flexible UK timings. Whether you&apos;re booking for a child, a teenager, or yourself, this is Quran tuition online built around one dedicated teacher, not a rotating group class.</p>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Courses() {
                   <span className="absolute top-3 left-3 tag">{c.keyword}</span>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <h2 className="font-bold text-[#122259] text-xl mb-2">{c.title}</h2>
+                  <h2 className="font-bold text-[#0B1E5B] text-xl mb-2">{c.title}</h2>
                   <p className="text-gray-600 text-sm mb-5 flex-1">{c.desc}</p>
                   <span className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">
                     View course <ChevronRight size={14} />

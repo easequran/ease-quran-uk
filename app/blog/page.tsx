@@ -59,7 +59,7 @@ export default function Blog() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#122259] overflow-hidden min-h-[280px] sm:min-h-[340px] flex items-center">
+      <section className="relative bg-[#0B1E5B] overflow-hidden min-h-[280px] sm:min-h-[340px] flex items-center">
         <Image src="/blog-hero.webp" alt="UK Muslim parent and child reading together" fill className="object-cover object-center opacity-20" priority sizes="100vw" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-14 w-full">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]} dark />
@@ -82,7 +82,7 @@ export default function Blog() {
                 className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-[#F5A623]/50 hover:shadow-xl transition-all duration-300 flex flex-col"
               >
                 {/* Image, 16:9 aspect ratio, consistent across all cards */}
-                <div className="relative w-full overflow-hidden bg-[#122259]" style={{ paddingTop: "56.25%" }}>
+                <div className="relative w-full overflow-hidden bg-[#0B1E5B]" style={{ paddingTop: "56.25%" }}>
                   <Image
                     src={post.heroImage}
                     alt={post.title}
@@ -90,7 +90,7 @@ export default function Blog() {
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#122259]/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E5B]/50 to-transparent" />
                   <span className="absolute bottom-3 left-3 text-xs font-bold text-white bg-[#F5A623] px-3 py-1 rounded-full">
                     {post.category}
                   </span>
@@ -104,7 +104,7 @@ export default function Blog() {
                     </span>
                     <time className="text-gray-400 text-xs" dateTime={post.date}>{formatDate(post.date)}</time>
                   </div>
-                  <h2 className="text-[15px] sm:text-base font-bold text-[#122259] leading-snug mb-2 group-hover:text-[#F5A623] transition-colors flex-1">
+                  <h2 className="text-[15px] sm:text-base font-bold text-[#0B1E5B] leading-snug mb-2 group-hover:text-[#F5A623] transition-colors flex-1">
                     {post.title}
                   </h2>
                   <p className="text-gray-500 text-xs sm:text-sm leading-relaxed mb-5 line-clamp-2">
@@ -123,7 +123,7 @@ export default function Blog() {
       {/* WhatsApp nudge */}
       <section className="section-pad bg-[#faf9f7]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="bg-[#122259] rounded-3xl p-8 md:p-10 text-center relative overflow-hidden">
+          <div className="bg-[#0B1E5B] rounded-3xl p-8 md:p-10 text-center relative overflow-hidden">
             <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 60% 0%, #F5A623 0%, transparent 60%)" }} />
             <div className="relative">
               <BookMarked size={26} className="text-[#F5A623] mx-auto mb-3" />
