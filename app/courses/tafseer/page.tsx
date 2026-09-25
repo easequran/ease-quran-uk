@@ -17,7 +17,7 @@ export default function Tafseer() {
       title="Tafseer"
       subtitle="Go Beyond Reading, Truly Understand"
       slug="tafseer"
-      image="/course-tafseer.webp"
+      image="/courses/online-tafseer-classes.webp"
       imageAlt="Online Tafseer class helping UK students understand the meanings of the Quran"
       schemaDescription="Online Tafseer (Quran explanation) classes for UK students. Learn the meanings, context, and wisdom of the Quran in one-to-one English-medium lessons."
       description="There is a profound difference between reciting the Quran and understanding what it says. Tafseer, the explanation and interpretation of Quranic verses, opens up the depth, wisdom, and context behind the words of Allah. Our online Tafseer classes help UK students build a meaningful connection with the Quran beyond recitation."

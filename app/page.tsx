@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 };
 
 const courses = [
-  { title: "Noorani Qaida", desc: "The perfect starting point for beginners and young children learning to read Arabic letters.", img: "/course-noorani-qaida.webp", href: "/courses/noorani-qaida" },
-  { title: "Quran Reading", desc: "Learn to read the Quran fluently with correct pronunciation and flowing recitation.", img: "/course-quran-reading.webp", href: "/courses/quran-reading" },
-  { title: "Hifz", desc: "Memorise the Quran at your own pace with a dedicated hafiz teacher and proven methodology.", img: "/course-hifz.webp", href: "/courses/hifz" },
-  { title: "Tajweed", desc: "Master the rules of Tajweed for a beautiful, accurate recitation of the Holy Quran.", img: "/course-tajweed.webp", href: "/courses/tajweed" },
-  { title: "Islamic Studies", desc: "Comprehensive Islamic education covering aqeedah, fiqh, seerah, and Islamic manners.", img: "/course-islamic-studies.webp", href: "/courses/islamic-studies" },
-  { title: "Tafseer", desc: "Understand the deep meanings of Quranic verses with structured tafseer lessons.", img: "/course-tafseer.webp", href: "/courses/tafseer" },
-  { title: "Adult Quran Classes", desc: "Never too late to learn. Private, one-to-one Quran classes for adults and beginners at flexible evening and weekend times.", img: "/course-noorani-qaida.webp", href: "/adult-quran-classes" },
+  { title: "Noorani Qaida", desc: "The perfect starting point for beginners and young children learning to read Arabic letters.", img: "/courses/noorani-qaida-classes-online.webp", href: "/courses/noorani-qaida" },
+  { title: "Quran Reading", desc: "Learn to read the Quran fluently with correct pronunciation and flowing recitation.", img: "/courses/online-quran-classes-for-kids.webp", href: "/courses/quran-reading" },
+  { title: "Hifz", desc: "Memorise the Quran at your own pace with a dedicated hafiz teacher and proven methodology.", img: "/courses/online-hifz-quran-memorization.webp", href: "/courses/hifz" },
+  { title: "Tajweed", desc: "Master the rules of Tajweed for a beautiful, accurate recitation of the Holy Quran.", img: "/courses/online-tajweed-classes.webp", href: "/courses/tajweed" },
+  { title: "Islamic Studies", desc: "Comprehensive Islamic education covering aqeedah, fiqh, seerah, and Islamic manners.", img: "/courses/online-islamic-studies-classes.webp", href: "/courses/islamic-studies" },
+  { title: "Tafseer", desc: "Understand the deep meanings of Quranic verses with structured tafseer lessons.", img: "/courses/online-tafseer-classes.webp", href: "/courses/tafseer" },
+  { title: "Adult Quran Classes", desc: "Never too late to learn. Private, one-to-one Quran classes for adults and beginners at flexible evening and weekend times.", img: "/courses/online-quran-classes-for-adults.webp", href: "/adult-quran-classes" },
 ];
 
 const painSolutions = [
@@ -226,7 +226,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {courses.map((c) => (
               <Link key={c.href} href={c.href} className="card group hover:shadow-lg transition-shadow">
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image src={c.img} alt={`${c.title} online course for UK students`} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                 </div>
                 <div className="p-5">

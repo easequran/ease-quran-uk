@@ -17,7 +17,7 @@ export default function Tajweed() {
       title="Tajweed"
       subtitle="Perfect Your Quran Recitation"
       slug="tajweed"
-      image="/course-tajweed.webp"
+      image="/courses/online-tajweed-classes.webp"
       imageAlt="Online Tajweed class with a certified UK Quran teacher teaching correct recitation rules"
       schemaDescription="Online Tajweed classes for UK students. Learn the rules of correct Quranic recitation with a certified Tajweed teacher in one-to-one lessons."
       description="Tajweed is the science of reciting the Quran correctly, with proper pronunciation of each letter, accurate application of elongation rules, and the beautiful precision that the Quran deserves. Some students prefer to read first and refine later, others want to learn Quran with Tajweed from day one, weaving correct pronunciation into every lesson from the start. Either way, our classes help UK students move from simply reading to truly reciting the Quran as it was revealed."

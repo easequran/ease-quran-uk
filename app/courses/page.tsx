@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 };
 
 const courses = [
-  { title: "Noorani Qaida", desc: "Start from scratch with the foundational building blocks of Arabic reading. Ideal for children aged 4+ and adult beginners.", img: "/course-noorani-qaida.webp", href: "/courses/noorani-qaida", keyword: "Beginners" },
-  { title: "Quran Reading", desc: "Develop fluent, confident Quran recitation with accurate pronunciation and natural reading flow.", img: "/course-quran-reading.webp", href: "/courses/quran-reading", keyword: "All Levels" },
-  { title: "Hifz", desc: "Memorise the Quran with a dedicated hafiz teacher using a structured, proven memorisation methodology.", img: "/course-hifz.webp", href: "/courses/hifz", keyword: "Memorisation" },
-  { title: "Tajweed", desc: "Learn the rules of correct Quranic recitation, pronunciation, elongation, stopping rules, and beautification.", img: "/course-tajweed.webp", href: "/courses/tajweed", keyword: "Recitation" },
-  { title: "Islamic Studies", desc: "A structured programme covering aqeedah, fiqh, seerah, Islamic manners, and core Islamic knowledge.", img: "/course-islamic-studies.webp", href: "/courses/islamic-studies", keyword: "Knowledge" },
-  { title: "Tafseer", desc: "Go beyond reading and understand the meanings, context, and lessons of the Quran through guided tafseer.", img: "/course-tafseer.webp", href: "/courses/tafseer", keyword: "Understanding" },
-  { title: "Adult Quran Classes", desc: "Private, one-to-one Quran classes for adults and beginners. Flexible evening and weekend timings, no group classes, no judgement.", img: "/course-noorani-qaida.webp", href: "/adult-quran-classes", keyword: "For Adults" },
+  { title: "Noorani Qaida", desc: "Start from scratch with the foundational building blocks of Arabic reading. Ideal for children aged 4+ and adult beginners.", img: "/courses/noorani-qaida-classes-online.webp", href: "/courses/noorani-qaida", keyword: "Beginners" },
+  { title: "Quran Reading", desc: "Develop fluent, confident Quran recitation with accurate pronunciation and natural reading flow.", img: "/courses/online-quran-classes-for-kids.webp", href: "/courses/quran-reading", keyword: "All Levels" },
+  { title: "Hifz", desc: "Memorise the Quran with a dedicated hafiz teacher using a structured, proven memorisation methodology.", img: "/courses/online-hifz-quran-memorization.webp", href: "/courses/hifz", keyword: "Memorisation" },
+  { title: "Tajweed", desc: "Learn the rules of correct Quranic recitation, pronunciation, elongation, stopping rules, and beautification.", img: "/courses/online-tajweed-classes.webp", href: "/courses/tajweed", keyword: "Recitation" },
+  { title: "Islamic Studies", desc: "A structured programme covering aqeedah, fiqh, seerah, Islamic manners, and core Islamic knowledge.", img: "/courses/online-islamic-studies-classes.webp", href: "/courses/islamic-studies", keyword: "Knowledge" },
+  { title: "Tafseer", desc: "Go beyond reading and understand the meanings, context, and lessons of the Quran through guided tafseer.", img: "/courses/online-tafseer-classes.webp", href: "/courses/tafseer", keyword: "Understanding" },
+  { title: "Adult Quran Classes", desc: "Private, one-to-one Quran classes for adults and beginners. Flexible evening and weekend timings, no group classes, no judgement.", img: "/courses/online-quran-classes-for-adults.webp", href: "/adult-quran-classes", keyword: "For Adults" },
 ];
 
 export default function Courses() {
@@ -40,7 +40,7 @@ export default function Courses() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map((c) => (
               <Link key={c.href} href={c.href} className="card group hover:shadow-lg transition-shadow flex flex-col">
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image src={c.img} alt={`${c.title} online course for UK students`} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                   <span className="absolute top-3 left-3 tag">{c.keyword}</span>
                 </div>

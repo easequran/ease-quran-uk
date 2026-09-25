@@ -17,7 +17,7 @@ export default function QuranReading() {
       title="Quran Reading"
       subtitle="From Letters to Fluent Recitation"
       slug="quran-reading"
-      image="/course-quran-reading.webp"
+      image="/courses/online-quran-classes-for-kids.webp"
       imageAlt="Student reading the Quran online with a certified teacher in the UK"
       schemaDescription="Online Quran reading classes for all levels in the UK. One-to-one lessons helping children and adults read the Quran fluently with correct pronunciation."
       description="The ability to read the Quran is one of the most precious gifts a parent can give their child, and one of the most meaningful journeys an adult can take. As one of the most popular online Quran classes for kids in the UK, our one-to-one Quran reading lessons take students from their current level to confident, flowing recitation, with a dedicated teacher who never rushes them."

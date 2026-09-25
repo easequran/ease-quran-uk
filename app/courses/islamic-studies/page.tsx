@@ -17,7 +17,7 @@ export default function IslamicStudies() {
       title="Islamic Studies"
       subtitle="Comprehensive Islamic Education"
       slug="islamic-studies"
-      image="/course-islamic-studies.webp"
+      image="/courses/online-islamic-studies-classes.webp"
       imageAlt="Online Islamic Studies class for children in the UK with a qualified teacher"
       schemaDescription="Online Islamic Studies classes for children and adults in the UK. One-to-one lessons covering aqeedah, fiqh, seerah, and Islamic manners."
       description="Growing up in the UK, Muslim children need more than Quran recitation, they need a solid grounding in Islamic knowledge that connects their faith to their daily lives. Our Islamic Studies programme gives children and adults the core knowledge of Islam in a structured, engaging, and English-medium format."
