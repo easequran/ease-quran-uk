@@ -38,7 +38,7 @@ export default function ScrollToTop() {
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          fill="#0B1E5B"
+          className="fill-navy-900"
           stroke="#ffffff22"
           strokeWidth={strokeWidth}
         />
@@ -48,7 +48,7 @@ export default function ScrollToTop() {
           cy={size / 2}
           r={radius}
           fill="transparent"
-          stroke="#F5A623"
+          stroke="var(--orange-500)"
           strokeWidth={strokeWidth}
           strokeLinecap="round"
           strokeDasharray={circumference}
@@ -57,7 +57,7 @@ export default function ScrollToTop() {
         />
       </svg>
       {/* Arrow icon centred over SVG */}
-      <span className="absolute inset-0 flex items-center justify-center text-white group-hover:text-[#F5A623] transition-colors">
+      <span className="absolute inset-0 flex items-center justify-center text-white group-hover:text-orange-600 transition-colors">
         <ArrowUp size={14} strokeWidth={2.5} />
       </span>
     </button>

@@ -27,16 +27,16 @@ export default function VideoEmbed({ videoId, title, reviewer }: VideoEmbedProps
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={thumb} alt={`Video review by ${reviewer}`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-            <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
-              <div className="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center shadow-lg">
-                <Play size={24} className="text-white ml-1" fill="white" />
+            <div className="absolute inset-0 flex items-center justify-center bg-navy-900/30 group-hover:bg-navy-900/40 transition-colors">
+              <div className="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center shadow-lg">
+                <Play size={24} className="text-navy-900 ml-1" fill="currentColor" />
               </div>
             </div>
           </>
         )}
       </div>
       <div className="p-4">
-        <p className="font-semibold text-[#0B1E5B] text-sm">{reviewer}</p>
+        <p className="font-semibold text-navy-900 text-sm">{reviewer}</p>
         <p className="text-xs text-gray-500 mt-0.5">UK Parent Video Review</p>
       </div>
     </div>

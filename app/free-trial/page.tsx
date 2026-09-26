@@ -38,38 +38,38 @@ export default function FreeTrial() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <div className="bg-[#0B1E5B] py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center text-white">
+      <div className="bg-navy-900 py-12">
+        <div className="max-w-container mx-auto px-4 sm:px-6 text-center text-white">
           <span className="tag mb-3 inline-block">No Card Required</span>
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">Book Your Free Trial Class</h1>
-          <p className="text-blue-100 max-w-xl mx-auto">Try a one-to-one Quran class for free. No commitment, no payment. We will match you with the right teacher and confirm your time within 2 hours.</p>
+          <h1 className="text-3xl md:text-4xl font-semibold mb-3">Book your free trial class</h1>
+          <p className="text-navy-100 max-w-xl mx-auto">Try a one-to-one Quran class for free. No commitment, no payment. We will match you with the right teacher and confirm your time within 2 hours.</p>
         </div>
       </div>
 
       <section className="section-pad">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             <div className="lg:col-span-3">
               <div className="card p-6 md:p-8">
-                <h2 className="text-2xl font-bold text-[#0B1E5B] mb-6">Request Your Free Trial</h2>
+                <h2 className="text-2xl font-semibold text-navy-900 mb-6">Request your free trial</h2>
                 <FreeTrialForm />
               </div>
             </div>
 
             <div className="lg:col-span-2 space-y-6">
               <div className="card p-6">
-                <h3 className="font-bold text-[#0B1E5B] mb-4">What to expect</h3>
+                <h3 className="font-semibold text-navy-900 mb-4">What to expect</h3>
                 <ul className="space-y-3">
                   {reassurances.map((r) => (
                     <li key={r} className="flex items-start gap-3 text-sm text-gray-700">
-                      <CheckCircle size={16} className="text-[#F5A623] flex-shrink-0 mt-0.5" /> {r}
+                      <CheckCircle size={16} className="text-orange-500 flex-shrink-0 mt-0.5" /> {r}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="card p-6 bg-[#faf9f7]">
-                <h3 className="font-bold text-[#0B1E5B] mb-3">Prefer to message us?</h3>
+              <div className="card p-6 bg-gray-50">
+                <h3 className="font-semibold text-navy-900 mb-3">Prefer to message us?</h3>
                 <p className="text-sm text-gray-600 mb-4">WhatsApp us directly and we will arrange your free trial over chat.</p>
                 <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-gold w-full justify-center text-sm py-2.5">
                   <MessageCircle size={16} /> WhatsApp +44 7311 254423
@@ -77,7 +77,7 @@ export default function FreeTrial() {
               </div>
 
               <div className="card p-6">
-                <h3 className="font-bold text-[#0B1E5B] mb-3">Our courses</h3>
+                <h3 className="font-semibold text-navy-900 mb-3">Our courses</h3>
                 <ul className="space-y-2 text-sm">
                   {[
                     { title: "Noorani Qaida", href: "/courses/noorani-qaida" },
@@ -89,8 +89,8 @@ export default function FreeTrial() {
                     { title: "Adult Quran Classes", href: "/adult-quran-classes" },
                   ].map((c) => (
                     <li key={c.href}>
-                      <Link href={c.href} className="text-gray-600 hover:text-[#F5A623] flex items-center gap-2 group">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" /> {c.title}
+                      <Link href={c.href} className="text-gray-600 hover:text-orange-600 flex items-center gap-2 group">
+                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" /> {c.title}
                         <ChevronRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                       </Link>
                     </li>
@@ -102,15 +102,15 @@ export default function FreeTrial() {
         </div>
       </section>
 
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-[#0B1E5B] mb-8 text-center">Free Trial Questions</h2>
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-semibold text-navy-900 mb-8 text-center">Free trial questions</h2>
           <div className="space-y-3">
             {faqs.map((f, i) => (
               <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
-                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-navy-900 list-none">
                   {f.q}
-                  <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
+                  <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-orange-500" />
                 </summary>
                 <p className="px-5 pb-5 text-gray-600 text-sm leading-relaxed">{f.a}</p>
               </details>

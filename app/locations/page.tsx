@@ -69,14 +69,14 @@ export default function Locations() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#0B1E5B] text-white overflow-hidden">
+      <section className="relative bg-navy-900 text-white overflow-hidden">
         <Image src="/city-hero.webp" alt="Online Quran classes across UK cities" fill className="object-cover opacity-20" sizes="100vw" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16">
+        <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 py-16">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Locations" }]} />
           <div className="mt-4 max-w-2xl">
             <span className="tag mb-3 inline-block">Across the UK</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Online Quran Classes Across the UK</h1>
-            <p className="text-blue-100 text-lg">
+            <h1 className="text-4xl md:text-5xl font-semibold mb-4">Online Quran classes across the UK</h1>
+            <p className="text-navy-100 text-lg">
               Our certified teachers serve Muslim families in every UK city. Select your city below or book a free trial and we will match you with the right teacher wherever you are.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function Locations() {
 
       {/* City cards */}
       <section className="section-pad">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cities.map((city) => (
               <Link
@@ -94,18 +94,18 @@ export default function Locations() {
                 className="group card p-7 hover:shadow-xl transition-all hover:-translate-y-0.5 duration-200 flex flex-col"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#0B1E5B]/8 flex items-center justify-center">
-                    <MapPin size={18} className="text-[#F5A623]" />
+                  <div className="w-10 h-10 rounded-xl bg-navy-900/8 flex items-center justify-center">
+                    <MapPin size={18} className="text-orange-500" />
                   </div>
-                  <ChevronRight size={18} className="text-gray-300 group-hover:text-[#F5A623] transition-colors mt-1" />
+                  <ChevronRight size={18} className="text-gray-300 group-hover:text-orange-600 transition-colors mt-1" />
                 </div>
-                <h2 className="text-xl font-bold text-[#0B1E5B] mb-1 group-hover:text-[#F5A623] transition-colors">
+                <h2 className="text-xl font-semibold text-navy-900 mb-1 group-hover:text-orange-600 transition-colors">
                   {city.name}
                 </h2>
-                <p className="text-xs text-[#F5A623] font-medium mb-3">{city.areas}</p>
+                <p className="text-xs text-orange-500 font-medium mb-3">{city.areas}</p>
                 <p className="text-gray-600 text-sm flex-1 leading-relaxed">{city.desc}</p>
                 <div className="mt-5 pt-4 border-t border-gray-100">
-                  <span className="text-sm font-semibold text-[#0B1E5B] group-hover:text-[#F5A623] transition-colors">
+                  <span className="text-sm font-semibold text-navy-900 group-hover:text-orange-600 transition-colors">
                     View classes in {city.name}
                   </span>
                 </div>
@@ -113,18 +113,18 @@ export default function Locations() {
             ))}
 
             {/* Not listed card */}
-            <div className="card p-7 bg-[#0B1E5B] text-white flex flex-col justify-between">
+            <div className="card p-7 bg-navy-900 text-white flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center mb-4">
-                  <MapPin size={18} className="text-[#F5A623]" />
+                  <MapPin size={18} className="text-orange-500" />
                 </div>
-                <h2 className="text-xl font-bold mb-2">Anywhere in the UK</h2>
-                <p className="text-blue-100 text-sm leading-relaxed">
+                <h2 className="text-xl font-semibold mb-2">Anywhere in the UK</h2>
+                <p className="text-navy-100 text-sm leading-relaxed">
                   Your city not listed? We teach students across the entire UK. Our classes are fully online so location is never a barrier.
                 </p>
               </div>
               <Link href="/free-trial" className="btn-gold mt-6 text-sm py-2.5 text-center justify-center">
-                Book Free Trial
+                Book free trial
               </Link>
             </div>
           </div>
@@ -132,10 +132,10 @@ export default function Locations() {
       </section>
 
       {/* Why online */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6 text-center">
           <span className="tag mb-3 inline-block">Why Online Works</span>
-          <h2 className="text-3xl font-bold text-[#0B1E5B] mb-4">The Teacher Comes to You</h2>
+          <h2 className="text-3xl font-semibold text-navy-900 mb-4">The teacher comes to you</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
             Whether you&apos;ve searched for a Quran teacher near me, Quran teachers near me, a Quran tutor near me, or Quran lessons near me, the honest answer is that qualified, consistent teaching rarely depends on your postcode. Our one-to-one online classes remove the geography entirely. A certified teacher meets your child on screen at the agreed time, every week, at hours that fit around school and work.
           </p>
@@ -146,7 +146,7 @@ export default function Locations() {
               { label: "Flexible timings", detail: "Evenings, weekends, after school, your schedule" },
             ].map((item) => (
               <div key={item.label} className="bg-white rounded-xl p-5 shadow-sm text-left">
-                <p className="font-bold text-[#0B1E5B] mb-1">{item.label}</p>
+                <p className="font-semibold text-navy-900 mb-1">{item.label}</p>
                 <p className="text-gray-500 text-sm">{item.detail}</p>
               </div>
             ))}

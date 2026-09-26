@@ -62,7 +62,7 @@ export default function Pricing() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
-      <section className="bg-[#0B1E5B] pt-10 pb-16 relative overflow-hidden">
+      <section className="bg-navy-900 pt-10 pb-16 relative overflow-hidden">
         <Image
           src="/pricing-hero.webp"
           alt="Quran resting open on a wooden stand beside a lit lantern, warm sunlight through a latticed window"
@@ -71,16 +71,15 @@ export default function Pricing() {
           className="object-cover opacity-40 -scale-x-100"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E5B] via-[#0B1E5B]/90 to-[#0B1E5B]/40" />
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at 70% 0%, rgba(245,166,35,0.12) 0%, transparent 60%)" }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="absolute inset-0 bg-navy-900/80" />
+        <div className="max-w-container mx-auto px-4 sm:px-6 relative z-10">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Pricing" }]} dark />
           <div className="mt-6 max-w-2xl">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] border border-[#F5A623]/30 rounded-full px-3 py-1 mb-4">Plans and Pricing</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-              Simple, Honest Pricing<br className="hidden sm:block" /> for UK Families
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-orange-500 border border-orange-500/30 rounded-full px-3 py-1 mb-4">Plans and Pricing</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight mb-4">
+              Simple, honest pricing<br className="hidden sm:block" /> for UK families
             </h1>
-            <p className="text-blue-200 text-base sm:text-lg max-w-xl">
+            <p className="text-navy-100 text-base sm:text-lg max-w-xl">
               Straightforward online Quran classes UK fees, no hidden charges, no long contracts. Every plan includes a completely free first class, no card needed, and a £{REGISTRATION_FEE} registration fee.
             </p>
           </div>
@@ -89,7 +88,7 @@ export default function Pricing() {
           <div className="flex flex-wrap gap-3 mt-8">
             {["Free first class", "£0 registration fee", "No card required", "Cancel anytime", "Certified teachers"].map((t) => (
               <span key={t} className="flex items-center gap-1.5 text-xs font-semibold text-white bg-white/10 border border-white/15 rounded-full px-3 py-1.5">
-                <Check size={11} className="text-[#F5A623]" /> {t}
+                <Check size={11} className="text-orange-500" /> {t}
               </span>
             ))}
           </div>
@@ -97,20 +96,20 @@ export default function Pricing() {
       </section>
 
       {/* Plans */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <PricingPlans />
         </div>
       </section>
 
       {/* 30 vs 60 minute comparison */}
       <section className="section-pad">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 mb-2">
               <Clock size={13} /> Class Length
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">30-Minute vs 60-Minute Classes</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold text-navy-900">30-minute vs 60-minute classes</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Every plan is available at either length. Prices below are per month.</p>
           </div>
 
@@ -118,18 +117,18 @@ export default function Pricing() {
           <div className="grid grid-cols-1 gap-3 sm:hidden">
             {MAIN_PLANS.map((plan) => (
               <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                <div className="flex items-center justify-between px-5 py-3 bg-[#0B1E5B]">
-                  <p className="font-bold text-white">{plan.name}</p>
-                  <p className="text-xs text-blue-200">{plan.classesPerWeek} classes/week</p>
+                <div className="flex items-center justify-between px-5 py-3 bg-navy-900">
+                  <p className="font-semibold text-white">{plan.name}</p>
+                  <p className="text-xs text-navy-100">{plan.classesPerWeek} classes/week</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3 p-5">
-                  <div className="bg-[#faf9f7] rounded-xl p-3 text-center border border-gray-100">
-                    <p className="text-lg font-extrabold text-[#0B1E5B]">£{plan.price30}</p>
+                  <div className="bg-gray-50 rounded-xl p-3 text-center border border-gray-100">
+                    <p className="text-lg font-semibold text-navy-900">£{plan.price30}</p>
                     <p className="text-xs text-gray-500 mt-0.5">30 min</p>
                   </div>
-                  <div className="bg-[#F5A623]/10 rounded-xl p-3 text-center border border-[#F5A623]/30">
-                    <p className="text-lg font-extrabold text-[#0B1E5B]">£{plan.price60}</p>
-                    <p className="text-xs text-[#d4890a] font-semibold mt-0.5">60 min</p>
+                  <div className="bg-orange-500/10 rounded-xl p-3 text-center border border-orange-500/30">
+                    <p className="text-lg font-semibold text-navy-900">£{plan.price60}</p>
+                    <p className="text-xs text-orange-600 font-semibold mt-0.5">60 min</p>
                   </div>
                 </div>
               </div>
@@ -140,52 +139,52 @@ export default function Pricing() {
           <div className="hidden sm:block overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
             <table className="w-full bg-white text-sm">
               <thead>
-                <tr className="bg-[#0B1E5B]">
-                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest rounded-tl-2xl">Plan</th>
-                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest">Classes/week</th>
-                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest">30 min</th>
-                  <th className="text-left px-5 py-4 text-xs font-bold text-[#F5A623] uppercase tracking-widest rounded-tr-2xl">60 min</th>
+                <tr className="bg-navy-900">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-navy-100 uppercase tracking-wider rounded-tl-2xl">Plan</th>
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-navy-100 uppercase tracking-wider">Classes/week</th>
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-navy-100 uppercase tracking-wider">30 min</th>
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-orange-500 uppercase tracking-wider rounded-tr-2xl">60 min</th>
                 </tr>
               </thead>
               <tbody>
                 {MAIN_PLANS.map((plan) => (
                   <tr key={plan.id} className="border-b border-gray-50 last:border-0">
-                    <td className="px-5 py-4 font-bold text-[#0B1E5B]">{plan.name}</td>
+                    <td className="px-5 py-4 font-semibold text-navy-900">{plan.name}</td>
                     <td className="px-5 py-4 text-gray-700">{plan.classesPerWeek}</td>
                     <td className="px-5 py-4 text-gray-700">£{plan.price30}</td>
-                    <td className="px-5 py-4 font-bold text-[#0B1E5B] bg-[#F5A623]/8">£{plan.price60}</td>
+                    <td className="px-5 py-4 font-semibold text-navy-900 bg-orange-500/8">£{plan.price60}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="bg-[#0B1E5B] rounded-2xl p-5 sm:p-7 mt-6">
+          <div className="bg-navy-900 rounded-2xl p-5 sm:p-7 mt-6">
             <div className="flex items-center justify-between gap-4 mb-5">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
-                  <CalendarCheck size={18} className="text-[#F5A623]" />
+                <div className="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0">
+                  <CalendarCheck size={18} className="text-orange-500" />
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-white">Weekend Priority</p>
-                  <p className="text-xs text-blue-200">Guaranteed Saturday or Sunday slot</p>
+                  <p className="text-sm font-semibold text-white">Weekend Priority</p>
+                  <p className="text-xs text-navy-100">Guaranteed Saturday or Sunday slot</p>
                 </div>
               </div>
-              <span className="text-xs font-bold text-[#0B1E5B] bg-[#F5A623] rounded-full px-3 py-1 flex-shrink-0">+15%</span>
+              <span className="text-xs font-semibold text-navy-900 bg-orange-500 rounded-full px-3 py-1 flex-shrink-0">+15%</span>
             </div>
 
             <div className="grid grid-cols-3 gap-3 mb-5">
               {MAIN_PLANS.map((plan) => (
                 <div key={plan.id} className="bg-white/10 rounded-xl p-3 text-center">
-                  <p className="text-base sm:text-lg font-extrabold text-[#F5A623]">+£{plan.weekendPriorityAddOn}</p>
-                  <p className="text-[11px] sm:text-xs text-blue-200 mt-0.5">{plan.name}</p>
+                  <p className="text-base sm:text-lg font-semibold text-orange-500">+£{plan.weekendPriorityAddOn}</p>
+                  <p className="text-[11px] sm:text-xs text-navy-100 mt-0.5">{plan.name}</p>
                 </div>
               ))}
             </div>
 
             <div className="flex items-start gap-3 bg-white/10 rounded-xl p-4">
-              <Check size={16} className="text-[#F5A623] flex-shrink-0 mt-0.5" strokeWidth={3} />
-              <p className="text-sm text-blue-100 leading-relaxed">{WEEKEND_POLICY_NOTE}</p>
+              <Check size={16} className="text-orange-500 flex-shrink-0 mt-0.5" strokeWidth={3} />
+              <p className="text-sm text-navy-100 leading-relaxed">{WEEKEND_POLICY_NOTE}</p>
             </div>
           </div>
         </div>
@@ -193,12 +192,12 @@ export default function Pricing() {
 
       {/* Sibling discount */}
       <section className="section-pad">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 mb-2">
               <Users size={13} /> Automatic, No Code Needed
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">Sibling Discount</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold text-navy-900">Sibling discount</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Enrol more than one child and the discount is applied automatically to each additional child's plan.</p>
           </div>
 
@@ -209,32 +208,32 @@ export default function Pricing() {
                 <div
                   key={label}
                   className={`relative rounded-2xl p-5 text-center ${
-                    isBest ? "bg-[#0B1E5B] shadow-lg shadow-[#0B1E5B]/20" : "bg-white border border-gray-100 shadow-sm"
+                    isBest ? "bg-navy-900 shadow-lg shadow-navy-900/20" : "bg-white border border-gray-100 shadow-sm"
                   }`}
                 >
-                  <div className={`w-7 h-7 rounded-full flex items-center justify-center mx-auto mb-2 text-xs font-bold ${
-                    isBest ? "bg-[#F5A623] text-white" : "bg-[#0B1E5B]/8 text-[#0B1E5B]"
+                  <div className={`w-7 h-7 rounded-full flex items-center justify-center mx-auto mb-2 text-xs font-semibold ${
+                    isBest ? "bg-orange-500 text-navy-900" : "bg-navy-900/8 text-navy-900"
                   }`}>
                     {i + 1}
                   </div>
-                  <p className={`text-2xl font-extrabold ${isBest ? "text-[#F5A623]" : "text-[#0B1E5B]"}`}>
+                  <p className={`text-2xl font-bold ${isBest ? "text-orange-500" : "text-navy-900"}`}>
                     {SIBLING_DISCOUNTS[i] === 0 ? "Full price" : `-${SIBLING_DISCOUNTS[i] * 100}%`}
                   </p>
-                  <p className={`text-xs mt-1 ${isBest ? "text-blue-200" : "text-gray-500"}`}>{label}</p>
+                  <p className={`text-xs mt-1 ${isBest ? "text-navy-100" : "text-gray-500"}`}>{label}</p>
                 </div>
               );
             })}
           </div>
 
-          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-6 sm:p-7 flex flex-col sm:flex-row gap-4 sm:items-start">
-            <div className="w-10 h-10 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
-              <Sparkles size={18} className="text-[#F5A623]" />
+          <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 sm:p-7 flex flex-col sm:flex-row gap-4 sm:items-start">
+            <div className="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0">
+              <Sparkles size={18} className="text-orange-500" />
             </div>
             <div>
-              <p className="text-sm font-bold text-[#0B1E5B] mb-2">Worked example</p>
+              <p className="text-sm font-semibold text-navy-900 mb-2">Worked example</p>
               <p className="text-sm text-gray-700 leading-relaxed">
                 3 children on the {worked.planName} plan (£{steadyPlan.price30}/month each before discount): £{worked.prices[0]} + £{worked.prices[1]} + £{worked.prices[2]} ={" "}
-                <span className="font-bold text-[#0B1E5B]">£{worked.total}/month</span> for all three children.
+                <span className="font-semibold text-navy-900">£{worked.total}/month</span> for all three children.
               </p>
             </div>
           </div>
@@ -242,13 +241,13 @@ export default function Pricing() {
       </section>
 
       {/* Prepay discounts */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 mb-2">
               <CalendarCheck size={13} /> Pay Ahead, Save More
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">Prepay Discounts</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold text-navy-900">Prepay discounts</h2>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Pay every 3 months for 5% off, every 6 months for 10% off, or yearly for 2 months free. Prices below are for 30-minute plans.</p>
           </div>
 
@@ -256,7 +255,7 @@ export default function Pricing() {
           <div className="grid grid-cols-1 gap-3 sm:hidden">
             {MAIN_PLANS.map((plan) => (
               <div key={plan.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                <p className="font-bold text-white bg-[#0B1E5B] px-5 py-3">{plan.name}</p>
+                <p className="font-semibold text-white bg-navy-900 px-5 py-3">{plan.name}</p>
                 <div className="grid grid-cols-2 gap-3 p-5">
                   {PREPAY_TERMS.map((t) => {
                     const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
@@ -265,17 +264,17 @@ export default function Pricing() {
                       <div
                         key={t.id}
                         className={`relative rounded-xl p-3 text-center border ${
-                          isYearly ? "bg-[#F5A623]/10 border-[#F5A623]/30" : "bg-[#faf9f7] border-gray-100"
+                          isYearly ? "bg-orange-500/10 border-orange-500/30" : "bg-gray-50 border-gray-100"
                         }`}
                       >
                         {isYearly && (
-                          <span className="absolute -top-2 left-1/2 -translate-x-1/2 bg-[#F5A623] text-white text-[9px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
+                          <span className="absolute -top-2 left-1/2 -translate-x-1/2 bg-orange-500 text-navy-900 text-[9px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap">
                             Best Value
                           </span>
                         )}
-                        <p className="text-lg font-extrabold text-[#0B1E5B] mt-1">£{total}</p>
+                        <p className="text-lg font-semibold text-navy-900 mt-1">£{total}</p>
                         <p className="text-xs text-gray-500 mt-0.5">{t.label}</p>
-                        {saving > 0 && <p className="text-xs text-[#d4890a] font-semibold mt-0.5">save £{saving}</p>}
+                        {saving > 0 && <p className="text-xs text-orange-600 font-semibold mt-0.5">save £{saving}</p>}
                       </div>
                     );
                   })}
@@ -288,17 +287,17 @@ export default function Pricing() {
           <div className="hidden sm:block overflow-x-auto rounded-2xl shadow-sm border border-gray-100">
             <table className="w-full bg-white text-sm">
               <thead>
-                <tr className="bg-[#0B1E5B]">
-                  <th className="text-left px-5 py-4 text-xs font-bold text-blue-200 uppercase tracking-widest rounded-tl-2xl">Plan</th>
+                <tr className="bg-navy-900">
+                  <th className="text-left px-5 py-4 text-xs font-semibold text-navy-100 uppercase tracking-wider rounded-tl-2xl">Plan</th>
                   {PREPAY_TERMS.map((t, i) => (
                     <th
                       key={t.id}
-                      className={`text-left px-5 py-4 text-xs font-bold uppercase tracking-widest ${
-                        t.id === "yearly" ? "text-[#F5A623]" : "text-blue-200"
+                      className={`text-left px-5 py-4 text-xs font-semibold uppercase tracking-wider ${
+                        t.id === "yearly" ? "text-orange-500" : "text-navy-100"
                       } ${i === PREPAY_TERMS.length - 1 ? "rounded-tr-2xl" : ""}`}
                     >
                       {t.label}
-                      {t.id === "yearly" && <span className="block normal-case font-semibold text-[9px] text-[#F5A623]/80 tracking-normal">Best Value</span>}
+                      {t.id === "yearly" && <span className="block normal-case font-semibold text-[9px] text-orange-500/80 tracking-normal">Best Value</span>}
                     </th>
                   ))}
                 </tr>
@@ -306,13 +305,13 @@ export default function Pricing() {
               <tbody>
                 {MAIN_PLANS.map((plan) => (
                   <tr key={plan.id} className="border-b border-gray-50 last:border-0">
-                    <td className="px-5 py-4 font-bold text-[#0B1E5B]">{plan.name}</td>
+                    <td className="px-5 py-4 font-semibold text-navy-900">{plan.name}</td>
                     {PREPAY_TERMS.map((t) => {
                       const { total, saving } = prepayTotalAndSaving(plan.price30, t.id);
                       return (
-                        <td key={t.id} className={`px-5 py-4 text-gray-700 ${t.id === "yearly" ? "bg-[#F5A623]/8 font-bold text-[#0B1E5B]" : ""}`}>
+                        <td key={t.id} className={`px-5 py-4 text-gray-700 ${t.id === "yearly" ? "bg-orange-500/8 font-semibold text-navy-900" : ""}`}>
                           £{total}
-                          {saving > 0 && <span className="block text-xs text-[#d4890a] font-semibold mt-0.5">save £{saving}</span>}
+                          {saving > 0 && <span className="block text-xs text-orange-600 font-semibold mt-0.5">save £{saving}</span>}
                         </td>
                       );
                     })}
@@ -326,37 +325,37 @@ export default function Pricing() {
 
       {/* Hifz Intensive + Custom Timetable */}
       <section className="section-pad">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div className="relative bg-white rounded-2xl border-2 border-[#0B1E5B]/20 flex flex-col sm:flex-row overflow-hidden shadow-sm">
-              <div className="sm:w-2 h-2 sm:h-auto bg-[#0B1E5B] flex-shrink-0" />
+            <div className="relative bg-white rounded-2xl border border-gray-200 flex flex-col sm:flex-row overflow-hidden shadow-sm">
+              <div className="sm:w-2 h-2 sm:h-auto bg-navy-900 flex-shrink-0" />
               <div className="flex-1 p-6 sm:p-7">
-                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0B1E5B] bg-[#0B1E5B]/8 rounded-full px-3 py-1 mb-2">
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-navy-900 bg-navy-900/8 rounded-full px-3 py-1 mb-2">
                   <BookOpenCheck size={13} /> Senior Teacher
                 </span>
-                <h2 className="text-xl font-extrabold text-[#0B1E5B]">{HIFZ_INTENSIVE.name}</h2>
-                <p className="text-3xl font-extrabold text-[#0B1E5B] mt-2">from £{HIFZ_INTENSIVE.fromPrice}<span className="text-sm font-medium text-gray-400">/month</span></p>
+                <h2 className="text-xl font-semibold text-navy-900">{HIFZ_INTENSIVE.name}</h2>
+                <p className="text-3xl font-bold text-navy-900 mt-2">from £{HIFZ_INTENSIVE.fromPrice}<span className="text-sm font-medium text-gray-400">/month</span></p>
                 <p className="text-sm text-gray-600 mt-3 leading-relaxed">{HIFZ_INTENSIVE.description}</p>
-                <Link href="/courses/hifz" className="inline-flex items-center gap-1.5 mt-5 text-sm font-bold text-[#0B1E5B] hover:text-[#F5A623] transition-colors">
+                <Link href="/courses/hifz" className="inline-flex items-center gap-1.5 mt-5 text-sm font-semibold text-navy-900 hover:text-orange-600 transition-colors">
                   Learn more about Hifz <ChevronRight size={14} />
                 </Link>
               </div>
             </div>
 
-            <div className="relative bg-white rounded-2xl border-2 border-gray-100 flex flex-col sm:flex-row overflow-hidden shadow-sm">
-              <div className="sm:w-2 h-2 sm:h-auto bg-[#F5A623] flex-shrink-0" />
+            <div className="relative bg-white rounded-2xl border border-gray-200 flex flex-col sm:flex-row overflow-hidden shadow-sm">
+              <div className="sm:w-2 h-2 sm:h-auto bg-orange-500 flex-shrink-0" />
               <div className="flex-1 p-6 sm:p-7">
-                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0B1E5B] bg-[#0B1E5B]/8 rounded-full px-3 py-1 mb-2">
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-navy-900 bg-navy-900/8 rounded-full px-3 py-1 mb-2">
                   <Settings2 size={13} /> Bespoke
                 </span>
-                <h2 className="text-xl font-extrabold text-[#0B1E5B]">{CUSTOM_TIMETABLE.name}</h2>
-                <p className="text-2xl font-extrabold text-[#0B1E5B] mt-2">£{CUSTOM_TIMETABLE.rangeLow}–£{CUSTOM_TIMETABLE.rangeHigh}<span className="text-sm font-medium text-gray-400">/month, typical</span></p>
+                <h2 className="text-xl font-semibold text-navy-900">{CUSTOM_TIMETABLE.name}</h2>
+                <p className="text-2xl font-bold text-navy-900 mt-2">£{CUSTOM_TIMETABLE.rangeLow}–£{CUSTOM_TIMETABLE.rangeHigh}<span className="text-sm font-medium text-gray-400">/month, typical</span></p>
                 <p className="text-sm text-gray-600 mt-3 leading-relaxed">{CUSTOM_TIMETABLE.description}</p>
                 <a
                   href="https://wa.me/447311254423?text=Hi%2C%20I%27d%20like%20a%20custom%20Quran%20class%20timetable."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-5 bg-[#0B1E5B] text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-[#0e1b47] transition-colors"
+                  className="inline-flex items-center gap-2 mt-5 bg-navy-900 text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-navy-800 transition-colors"
                 >
                   <MessageCircle size={15} /> WhatsApp to Discuss
                 </a>
@@ -368,15 +367,15 @@ export default function Pricing() {
 
       {/* Referral */}
       <section className="pb-2">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="bg-[#0B1E5B] rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
+          <div className="bg-navy-900 rounded-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <div className="w-11 h-11 rounded-xl bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0">
-                <Gift size={20} className="text-[#F5A623]" />
+              <div className="w-11 h-11 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0">
+                <Gift size={20} className="text-orange-500" />
               </div>
               <div>
-                <p className="text-white font-bold">Refer a family</p>
-                <p className="text-blue-200 text-sm">You get {REFERRAL.referrerDiscount * 100}% off one month. They get {REFERRAL.refereeDiscount * 100}% off their first month.</p>
+                <p className="text-white font-semibold">Refer a family</p>
+                <p className="text-navy-100 text-sm">You get {REFERRAL.referrerDiscount * 100}% off one month. They get {REFERRAL.refereeDiscount * 100}% off their first month.</p>
               </div>
             </div>
             <a
@@ -393,8 +392,8 @@ export default function Pricing() {
 
       {/* Choose your course */}
       <section className="section-pad">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <h2 className="text-lg font-bold text-[#0B1E5B] mb-4 text-center">Choose Your Course</h2>
+        <div className="max-w-container mx-auto px-4 sm:px-6">
+          <h2 className="text-lg font-semibold text-navy-900 mb-4 text-center">Choose your course</h2>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
               { title: "Noorani Qaida", href: "/courses/noorani-qaida" },
@@ -406,7 +405,7 @@ export default function Pricing() {
               { title: "Adult Quran Classes", href: "/adult-quran-classes" },
               { title: "Female Quran Teachers", href: "/female-quran-teachers" },
             ].map((c) => (
-              <Link key={c.href} href={c.href} className="flex items-center gap-1.5 px-4 py-2.5 bg-[#faf9f7] rounded-xl text-sm font-semibold text-[#0B1E5B] border border-gray-200 hover:bg-[#0B1E5B] hover:text-white hover:border-[#0B1E5B] transition-colors">
+              <Link key={c.href} href={c.href} className="flex items-center gap-1.5 px-4 py-2.5 bg-gray-50 rounded-full text-sm font-semibold text-navy-900 border border-gray-200 hover:bg-navy-50 transition-colors">
                 {c.title} <ChevronRight size={12} />
               </Link>
             ))}
@@ -415,8 +414,8 @@ export default function Pricing() {
       </section>
 
       {/* Why choose us strip */}
-      <section className="py-10 bg-[#0B1E5B]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <section className="py-10 bg-navy-900">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
               { stat: "Free", label: "First class, always" },
@@ -425,8 +424,8 @@ export default function Pricing() {
               { stat: "Certified", label: "Qualified teachers only" },
             ].map((s) => (
               <div key={s.label}>
-                <p className="text-2xl sm:text-3xl font-extrabold text-[#F5A623] mb-1">{s.stat}</p>
-                <p className="text-blue-200 text-xs font-medium">{s.label}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-orange-500 mb-1">{s.stat}</p>
+                <p className="text-navy-100 text-xs font-medium">{s.label}</p>
               </div>
             ))}
           </div>
@@ -434,18 +433,18 @@ export default function Pricing() {
       </section>
 
       {/* FAQ */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] mb-2">Questions</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1E5B]">Pricing Questions</h2>
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-orange-500 mb-2">Questions</span>
+            <h2 className="text-2xl sm:text-3xl font-semibold text-navy-900">Pricing questions</h2>
           </div>
           <div className="space-y-3">
             {faqs.map((f, i) => (
               <details key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
-                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none text-sm sm:text-base">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-navy-900 list-none text-sm sm:text-base">
                   {f.q}
-                  <ChevronRight size={15} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-[#F5A623]" />
+                  <ChevronRight size={15} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3 text-orange-500" />
                 </summary>
                 <p className="px-5 pb-5 text-gray-600 text-sm leading-relaxed">{f.a}</p>
               </details>

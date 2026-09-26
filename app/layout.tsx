@@ -13,14 +13,14 @@ const heading = Poppins({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
-  weight: ["600", "700", "800"],
+  weight: ["600", "700"],
 });
 
 const body = Poppins({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const cairo = Cairo({

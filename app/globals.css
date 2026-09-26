@@ -1,125 +1,259 @@
 @import "tailwindcss";
 
+/*
+ * Ease Quran Design System — shared across every country site.
+ * Values mirror the design system's tokens/ folder. Change them there first,
+ * then copy here; never restyle per country.
+ */
 :root {
-  /* Ease Quran Design System — navy corrected to match the shared brand token (was #122259). */
-  --navy: #0B1E5B;
-  --gold: #F5A623;
-  --gold-dark: #d4890a;
-  --bg: #ffffff;
-  --bg-warm: #faf9f7;
-  --text: #1a1a1a;
-  --text-muted: #6b7280;
+  /* Navy scale (primary) */
+  --navy-900: #0B1E5B;
+  --navy-800: #122569;
+  --navy-700: #1B2F7A;
+  --navy-600: #2A3E93;
+  --navy-500: #3E52AC;
+  --navy-100: #E7E9F6;
+  --navy-50: #F3F4FB;
 
-  --eq-gray-50: #F8F9FB;
-  --eq-gray-100: #F2F3F6;
-  --eq-gray-200: #E7E8ED;
-  --eq-gray-300: #D3D5DC;
-  --eq-gray-400: #AFB2BC;
-  --eq-gray-500: #8B8E99;
-  --eq-gray-600: #6B6F7B;
-  --eq-gray-700: #4A4E5A;
-  --eq-gray-800: #2B2E38;
-  --eq-gray-900: #171A21;
+  /* Orange scale (accent / conversion only) */
+  --orange-600: #D98A0E;
+  --orange-500: #F5A623;
+  --orange-400: #F7B84D;
+  --orange-100: #FDECD1;
+  --orange-50: #FEF6E9;
 
-  --eq-success-100: #E3F3EA;
-  --eq-success-600: #1E7B4F;
-  --eq-warning-100: #FDECD1;
-  --eq-warning-600: #B5750B;
-  --eq-danger-100: #FBE7E5;
-  --eq-danger-600: #C1352B;
-  --eq-info-100: #E6EEFB;
-  --eq-info-600: #1B5AA8;
+  /* Neutrals (warm gray) */
+  --gray-900: #171A21;
+  --gray-800: #2B2E38;
+  --gray-700: #4A4E5A;
+  --gray-600: #6B6F7B;
+  --gray-500: #8B8E99;
+  --gray-400: #AFB2BC;
+  --gray-300: #D3D5DC;
+  --gray-200: #E7E8ED;
+  --gray-100: #F2F3F6;
+  --gray-50: #F8F9FB;
+  --white: #FFFFFF;
+
+  /* Semantic */
+  --success-600: #1E7B4F;
+  --success-100: #E3F3EA;
+  --warning-600: #B5750B;
+  --warning-100: #FDECD1;
+  --danger-600: #C1352B;
+  --danger-100: #FBE7E5;
+  --info-600: #1B5AA8;
+  --info-100: #E6EEFB;
+
+  /* Third-party brand colour — WhatsApp buttons only */
+  --whatsapp: #25D366;
+
+  /* Legacy aliases kept so older class names keep working */
+  --navy: var(--navy-900);
+  --gold: var(--orange-500);
+  --gold-dark: var(--orange-600);
+  --bg: var(--white);
+  --bg-warm: var(--gray-50);
+  --text: var(--gray-900);
+  --text-muted: var(--gray-600);
+
+  /* Radius / shadow / motion */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --shadow-sm-token: 0 1px 2px rgba(11, 30, 91, 0.06);
+  --shadow-md-token: 0 4px 12px rgba(11, 30, 91, 0.08);
+  --shadow-lg-token: 0 12px 32px rgba(11, 30, 91, 0.12);
+  --shadow-focus: 0 0 0 3px rgba(245, 166, 35, 0.35);
+  --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --duration-slow: 280ms;
 }
 
 @theme inline {
-  --color-navy: var(--navy);
-  --color-gold: var(--gold);
-  --color-bg-warm: var(--bg-warm);
+  /* Brand colours → bg-navy-900, text-orange-600, etc. */
+  --color-navy: var(--navy-900);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-navy-500: var(--navy-500);
+  --color-navy-100: var(--navy-100);
+  --color-navy-50: var(--navy-50);
+  --color-gold: var(--orange-500);
+  --color-orange-600: var(--orange-600);
+  --color-orange-500: var(--orange-500);
+  --color-orange-400: var(--orange-400);
+  --color-orange-100: var(--orange-100);
+  --color-orange-50: var(--orange-50);
+  --color-bg-warm: var(--gray-50);
+
+  /* Tailwind's gray scale is replaced by the design system's warm grays,
+     so every existing gray-* class now uses brand values. */
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-600: var(--gray-600);
+  --color-gray-700: var(--gray-700);
+  --color-gray-800: var(--gray-800);
+  --color-gray-900: var(--gray-900);
+
+  --color-success-600: var(--success-600);
+  --color-success-100: var(--success-100);
+  --color-warning-600: var(--warning-600);
+  --color-warning-100: var(--warning-100);
+  --color-danger-600: var(--danger-600);
+  --color-danger-100: var(--danger-100);
+  --color-info-600: var(--info-600);
+  --color-info-100: var(--info-100);
+  --color-whatsapp: var(--whatsapp);
+
   --font-sans: var(--font-body);
   --font-heading: var(--font-heading);
   --font-arabic-ui: var(--font-arabic-ui);
   --font-arabic-display: var(--font-arabic-display);
 
-  /* Ease Quran Design System — navy-tinted shadows (never black/gray) */
-  --shadow-eq-sm: 0 1px 2px rgba(11, 30, 91, 0.06);
-  --shadow-eq-md: 0 4px 12px rgba(11, 30, 91, 0.08);
-  --shadow-eq-lg: 0 12px 32px rgba(11, 30, 91, 0.12);
-  --shadow-eq-focus: 0 0 0 3px rgba(245, 166, 35, 0.35);
+  /* Containers → max-w-container (1200), max-w-narrow (760), max-w-wide (1440) */
+  --container-container: 1200px;
+  --container-narrow: 760px;
+  --container-wide: 1440px;
+
+  /* Navy-tinted shadows only (never black/gray). Tailwind's default
+     shadow-* sizes are remapped onto the three design-system levels. */
+  --shadow-sm: var(--shadow-sm-token);
+  --shadow: var(--shadow-sm-token);
+  --shadow-md: var(--shadow-md-token);
+  --shadow-lg: var(--shadow-lg-token);
+  --shadow-xl: var(--shadow-lg-token);
+  --shadow-2xl: var(--shadow-lg-token);
+  --shadow-eq-sm: var(--shadow-sm-token);
+  --shadow-eq-md: var(--shadow-md-token);
+  --shadow-eq-lg: var(--shadow-lg-token);
+  --shadow-eq-focus: var(--shadow-focus);
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Soft orange focus ring on every interactive element — never removed. */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), var(--font-body), system-ui, sans-serif;
+  letter-spacing: -0.01em;
 }
 
-.btn-gold {
-  background-color: var(--gold);
-  color: #fff;
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 0.75rem 1.75rem;
-  transition: background-color 0.2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.btn-gold:hover {
-  background-color: var(--gold-dark);
-}
+@layer components {
+  /* ── Buttons: full pill, 0.97 press, no colour inversion on hover ── */
+  .btn-gold,
+  .btn-navy,
+  .btn-outline,
+  .btn-outline-white {
+    font-weight: 600;
+    line-height: 1;
+    border-radius: var(--radius-pill);
+    padding: 0.875rem 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid transparent;
+    transition:
+      transform var(--duration-fast) var(--ease-standard),
+      opacity var(--duration-fast) var(--ease-standard),
+      background-color var(--duration-base) var(--ease-standard);
+  }
+  .btn-gold:active,
+  .btn-navy:active,
+  .btn-outline:active,
+  .btn-outline-white:active {
+    transform: scale(0.97);
+  }
 
-.btn-navy {
-  background-color: var(--navy);
-  color: #fff;
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 0.75rem 1.75rem;
-  transition: background-color 0.2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.btn-navy:hover {
-  background-color: #0d1a45;
-}
+  /* Primary (conversion) — orange with navy text */
+  .btn-gold {
+    background-color: var(--orange-500);
+    border-color: var(--orange-500);
+    color: var(--navy-900);
+  }
+  .btn-gold:hover {
+    background-color: var(--orange-600);
+    border-color: var(--orange-600);
+  }
 
-.btn-outline {
-  background-color: transparent;
-  color: var(--navy);
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 0.75rem 1.75rem;
-  border: 2px solid var(--navy);
-  transition: all 0.2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.btn-outline:hover {
-  background-color: var(--navy);
-  color: #fff;
-}
+  /* Secondary — navy */
+  .btn-navy {
+    background-color: var(--navy-900);
+    border-color: var(--navy-900);
+    color: var(--white);
+  }
+  .btn-navy:hover {
+    background-color: var(--navy-800);
+    border-color: var(--navy-800);
+  }
 
-.btn-outline-white {
-  background-color: transparent;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 0.75rem 1.75rem;
-  border: 2px solid #fff;
-  transition: all 0.2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.btn-outline-white:hover {
-  background-color: #fff;
-  color: var(--navy);
+  /* Outline — on light surfaces */
+  .btn-outline {
+    background-color: transparent;
+    border-color: var(--gray-300);
+    color: var(--navy-900);
+  }
+  .btn-outline:hover {
+    background-color: var(--navy-50);
+  }
+
+  /* Outline — on navy surfaces */
+  .btn-outline-white {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.6);
+    color: var(--white);
+  }
+  .btn-outline-white:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  /* White surface, hairline border, soft navy shadow, 16px radius */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm-token);
+    overflow: hidden;
+  }
+
+  /* Eyebrow / badge (orange tone) */
+  .tag {
+    display: inline-block;
+    background-color: var(--orange-100);
+    color: var(--orange-600);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: var(--radius-pill);
+    padding: 0.25rem 0.625rem;
+  }
 }
 
 .section-pad {
@@ -129,17 +263,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .section-pad {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-@layer components {
-  .card {
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 2px 16px 0 rgba(18,34,89,0.07);
-    overflow: hidden;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -152,14 +277,3 @@ h1, h2, h3, h4, h5, h6 {
   unicode-bidi: embed;
 }
 
-.tag {
-  display: inline-block;
-  background-color: rgba(253,156,2,0.12);
-  color: var(--gold-dark);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border-radius: 999px;
-  padding: 0.25rem 0.75rem;
-}

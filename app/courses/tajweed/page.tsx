@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Tajweed() {
   return (
     <CoursePageTemplate
-      h1="Online Tajweed Classes in the UK"
+      h1="Online Tajweed classes in the UK"
       title="Tajweed"
       subtitle="Perfect Your Quran Recitation"
       slug="tajweed"

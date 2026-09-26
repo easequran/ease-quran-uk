@@ -5,8 +5,8 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from "@/compon
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B1E5B] text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+    <footer className="bg-navy-900 text-gray-300">
+      <div className="max-w-container mx-auto px-4 sm:px-6 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -17,10 +17,10 @@ export default function Footer() {
               A trusted online Quran academy serving Muslim families across the UK with qualified, certified teachers and one-to-one personalised lessons.
             </p>
             <div className="flex gap-3 mt-5">
-              <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><FacebookIcon size={14} /></a>
-              <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><InstagramIcon size={14} /></a>
-              <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><LinkedinIcon size={14} /></a>
-              <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#F5A623] transition-colors"><YoutubeIcon size={14} /></a>
+              <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-colors"><FacebookIcon size={14} /></a>
+              <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-colors"><InstagramIcon size={14} /></a>
+              <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-colors"><LinkedinIcon size={14} /></a>
+              <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-colors"><YoutubeIcon size={14} /></a>
             </div>
           </div>
 
@@ -37,41 +37,41 @@ export default function Footer() {
                 ["Tafseer", "/courses/tafseer"],
                 ["Adult Quran Classes", "/adult-quran-classes"],
               ].map(([label, href]) => (
-                <li key={href}><Link href={href} className="hover:text-[#F5A623] transition-colors">{label}</Link></li>
+                <li key={href}><Link href={href} className="hover:text-orange-600 transition-colors">{label}</Link></li>
               ))}
             </ul>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">Quick links</h3>
             <ul className="space-y-2 text-sm">
               {[
                 ["About Us", "/about"],
                 ["Female Teachers", "/female-quran-teachers"],
                 ["Pricing", "/pricing"],
-                ["Book Free Trial", "/free-trial"],
+                ["Book free trial", "/free-trial"],
                 ["Locations", "/locations"],
                 ["Blog", "/blog"],
                 ["Child Safety", "/safety"],
                 ["Contact", "/contact"],
               ].map(([label, href]) => (
-                <li key={href}><Link href={href} className="hover:text-[#F5A623] transition-colors">{label}</Link></li>
+                <li key={href}><Link href={href} className="hover:text-orange-600 transition-colors">{label}</Link></li>
               ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Get in Touch</h3>
+            <h3 className="text-white font-semibold mb-4">Get in touch</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:info@easequran.co.uk" className="flex items-center gap-2 hover:text-[#F5A623] transition-colors">
+                <a href="mailto:info@easequran.co.uk" className="flex items-center gap-2 hover:text-orange-600 transition-colors">
                   <Mail size={14} className="flex-shrink-0" /> info@easequran.co.uk
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#F5A623] transition-colors">
+                <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-orange-600 transition-colors">
                   <Phone size={14} className="flex-shrink-0" /> +44 7311 254423
                 </a>
               </li>
@@ -80,7 +80,7 @@ export default function Footer() {
               <h4 className="text-white font-semibold mb-3 text-sm">Locations</h4>
               <ul className="space-y-1.5 text-sm">
                 {[["London", "/locations/london"], ["Birmingham", "/locations/birmingham"], ["Manchester", "/locations/manchester"], ["Bradford", "/locations/bradford"], ["Leicester", "/locations/leicester"], ["Leeds", "/locations/leeds"], ["Luton", "/locations/luton"], ["Glasgow", "/locations/glasgow"]].map(([l, h]) => (
-                  <li key={h}><Link href={h} className="hover:text-[#F5A623] transition-colors">{l}</Link></li>
+                  <li key={h}><Link href={h} className="hover:text-orange-600 transition-colors">{l}</Link></li>
                 ))}
               </ul>
             </div>

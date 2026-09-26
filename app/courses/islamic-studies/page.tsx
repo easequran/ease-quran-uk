@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function IslamicStudies() {
   return (
     <CoursePageTemplate
-      h1="Online Islamic Studies Classes in the UK"
+      h1="Online Islamic Studies classes in the UK"
       title="Islamic Studies"
       subtitle="Comprehensive Islamic Education"
       slug="islamic-studies"

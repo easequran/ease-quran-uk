@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const posts = [
   {
     slug: "is-it-safe-online-quran-classes-uk",
-    title: "Is It Safe for My Child to Learn Quran Online? A Parent's Honest Safety Checklist",
+    title: "Is it safe for my child to learn Quran online? A parent's honest safety checklist",
     excerpt: "A clear, honest safety checklist for UK parents: what to ask, what to watch for, and how we keep every lesson safe.",
     date: "2026-06-01",
     readTime: "7 min read",
@@ -24,7 +24,7 @@ const posts = [
   },
   {
     slug: "surah-al-kahf-friday-reading-guide",
-    title: "Surah Al-Kahf: Friday Virtues & Full Text",
+    title: "Surah Al-Kahf: Friday virtues & full text",
     excerpt: "The virtues of Surah Al-Kahf, why Muslims read it every Friday, and the full Arabic text with English translation.",
     date: "2026-07-01",
     readTime: "15 min read",
@@ -33,7 +33,7 @@ const posts = [
   },
   {
     slug: "quran-verses-to-memorize-first",
-    title: "Quran Verses Every Beginner Should Memorize First",
+    title: "Quran verses every beginner should memorize first",
     excerpt: "The most essential, beginner-friendly verses, why they matter, and how to build a lasting memorization habit.",
     date: "2026-07-08",
     readTime: "8 min read",
@@ -42,7 +42,7 @@ const posts = [
   },
   {
     slug: "dua-for-success",
-    title: "Powerful Dua for Success: Quranic Duas for Exams, Work and Life",
+    title: "Powerful dua for success: Quranic duas for exams, work and life",
     excerpt: "Authentic Quranic duas for exams, work, and everyday challenges, with Arabic text, transliteration, and meaning.",
     date: "2026-07-15",
     readTime: "6 min read",
@@ -59,39 +59,38 @@ export default function Blog() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#0B1E5B] overflow-hidden min-h-[280px] sm:min-h-[340px] flex items-center">
+      <section className="relative bg-navy-900 overflow-hidden min-h-[280px] sm:min-h-[340px] flex items-center">
         <Image src="/blog-hero.webp" alt="UK Muslim parent and child reading together" fill className="object-cover object-center opacity-20" priority sizes="100vw" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-14 w-full">
+        <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 py-14 w-full">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Blog" }]} dark />
           <div className="mt-5 max-w-2xl">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#F5A623] border border-[#F5A623]/30 rounded-full px-3 py-1 mb-4">Quran Education Blog</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight">Guides for UK Muslim Families</h1>
-            <p className="text-blue-200 text-base sm:text-lg">Practical, honest advice on Quran education, written by teachers, for parents.</p>
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-orange-500 border border-orange-500/30 rounded-full px-3 py-1 mb-4">Quran Education Blog</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-3 leading-tight">Guides for UK Muslim families</h1>
+            <p className="text-navy-100 text-base sm:text-lg">Practical, honest advice on Quran education, written by teachers, for parents.</p>
           </div>
         </div>
       </section>
 
       {/* All posts, uniform 2×2 grid */}
       <section className="section-pad">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-7">
             {posts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-[#F5A623]/50 hover:shadow-xl transition-all duration-300 flex flex-col"
+                className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-orange-500/50 hover:shadow-xl transition-all duration-200 flex flex-col"
               >
                 {/* Image, 16:9 aspect ratio, consistent across all cards */}
-                <div className="relative w-full overflow-hidden bg-[#0B1E5B]" style={{ paddingTop: "56.25%" }}>
+                <div className="relative w-full overflow-hidden bg-navy-900" style={{ paddingTop: "56.25%" }}>
                   <Image
                     src={post.heroImage}
                     alt={post.title}
                     fill
-                    className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover object-center"
                     sizes="(max-width: 640px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E5B]/50 to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-xs font-bold text-white bg-[#F5A623] px-3 py-1 rounded-full">
+                  <span className="absolute bottom-3 left-3 text-xs font-semibold text-navy-900 bg-orange-500 px-3 py-1 rounded-full">
                     {post.category}
                   </span>
                 </div>
@@ -104,13 +103,13 @@ export default function Blog() {
                     </span>
                     <time className="text-gray-400 text-xs" dateTime={post.date}>{formatDate(post.date)}</time>
                   </div>
-                  <h2 className="text-[15px] sm:text-base font-bold text-[#0B1E5B] leading-snug mb-2 group-hover:text-[#F5A623] transition-colors flex-1">
+                  <h2 className="text-[15px] sm:text-base font-semibold text-navy-900 leading-snug mb-2 group-hover:text-orange-600 transition-colors flex-1">
                     {post.title}
                   </h2>
                   <p className="text-gray-500 text-xs sm:text-sm leading-relaxed mb-5 line-clamp-2">
                     {post.excerpt}
                   </p>
-                  <span className="inline-flex items-center gap-1.5 text-[#F5A623] font-bold text-xs border-t border-gray-100 pt-4">
+                  <span className="inline-flex items-center gap-1.5 text-orange-500 font-semibold text-xs border-t border-gray-100 pt-4">
                     Read article <ChevronRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
                   </span>
                 </div>
@@ -121,14 +120,13 @@ export default function Blog() {
       </section>
 
       {/* WhatsApp nudge */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="bg-[#0B1E5B] rounded-3xl p-8 md:p-10 text-center relative overflow-hidden">
-            <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 60% 0%, #F5A623 0%, transparent 60%)" }} />
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6">
+          <div className="bg-navy-900 rounded-3xl p-8 md:p-10 text-center relative overflow-hidden">
             <div className="relative">
-              <BookMarked size={26} className="text-[#F5A623] mx-auto mb-3" />
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">New articles every month</h3>
-              <p className="text-blue-200 text-sm mb-6 max-w-sm mx-auto">WhatsApp us and we will send you new guides as they are published. No spam, just useful advice for UK families.</p>
+              <BookMarked size={26} className="text-orange-500 mx-auto mb-3" />
+              <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">New articles every month</h3>
+              <p className="text-navy-100 text-sm mb-6 max-w-sm mx-auto">WhatsApp us and we will send you new guides as they are published. No spam, just useful advice for UK families.</p>
               <a
                 href="https://wa.me/447311254423?text=Hi%2C%20please%20let%20me%20know%20when%20you%20publish%20new%20blog%20articles."
                 target="_blank"

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function NooraniQaida() {
   return (
     <CoursePageTemplate
-      h1="Noorani Qaida Course in the UK"
+      h1="Noorani Qaida course in the UK"
       title="Noorani Qaida"
       subtitle="For Beginners, Children and Adults"
       slug="noorani-qaida"

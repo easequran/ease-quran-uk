@@ -43,7 +43,7 @@ const empty: Fields = {
 
 function FieldError({ msg }: { msg?: string }) {
   if (!msg) return null;
-  return <p className="text-red-500 text-xs mt-1.5 flex items-center gap-1"><span aria-hidden>!</span>{msg}</p>;
+  return <p className="text-danger-600 text-xs mt-1.5 flex items-center gap-1"><span aria-hidden>!</span>{msg}</p>;
 }
 
 function InputWrap({ icon, error, children }: { icon: React.ReactNode; error?: string; children: React.ReactNode }) {
@@ -59,8 +59,8 @@ function InputWrap({ icon, error, children }: { icon: React.ReactNode; error?: s
 }
 
 const inputCls = (err?: string) =>
-  `w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${
-    err ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"
+  `w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-navy-600 focus:shadow-eq-focus transition-colors placeholder:text-gray-400 ${
+    err ? "border-danger-600 bg-danger-100" : "border-gray-300 bg-white hover:border-gray-400"
   }`;
 
 function StepDots({ step }: { step: number }) {
@@ -69,18 +69,18 @@ function StepDots({ step }: { step: number }) {
       {[1, 2, 3].map((n) => (
         <div key={n} className="flex items-center gap-2">
           <div
-            className={`w-8 h-8 rounded-full text-xs font-bold flex items-center justify-center transition-all duration-300 ${
+            className={`w-8 h-8 rounded-full text-xs font-semibold flex items-center justify-center transition-all duration-200 ${
               n < step
-                ? "bg-green-500 text-white"
+                ? "bg-success-600 text-white"
                 : n === step
-                ? "bg-[#0B1E5B] text-white ring-4 ring-[#0B1E5B]/20"
+                ? "bg-navy-900 text-white ring-4 ring-navy-900/20"
                 : "bg-gray-100 text-gray-400"
             }`}
           >
             {n < step ? <CheckCircle size={14} /> : n}
           </div>
           {n < 3 && (
-            <div className={`h-0.5 w-8 sm:w-14 rounded transition-all duration-300 ${n < step ? "bg-green-400" : "bg-gray-200"}`} />
+            <div className={`h-0.5 w-8 sm:w-14 rounded transition-all duration-200 ${n < step ? "bg-success-600" : "bg-gray-200"}`} />
           )}
         </div>
       ))}
@@ -99,14 +99,14 @@ function TeacherCard({ value, label, sub, icon, selected, onClick }: {
       onClick={onClick}
       className={`flex-1 flex flex-col items-center gap-2 p-4 rounded-2xl border-2 text-center transition-all duration-200 cursor-pointer ${
         selected
-          ? "border-[#0B1E5B] bg-[#0B1E5B]/5 shadow-eq-sm"
+          ? "border-navy-900 bg-navy-900/5 shadow-eq-sm"
           : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50"
       }`}
     >
-      <span className={`w-10 h-10 rounded-full flex items-center justify-center ${selected ? "bg-[#0B1E5B] text-white" : "bg-gray-100 text-gray-500"}`}>
+      <span className={`w-10 h-10 rounded-full flex items-center justify-center ${selected ? "bg-navy-900 text-white" : "bg-gray-100 text-gray-500"}`}>
         {icon}
       </span>
-      <span className={`text-sm font-semibold ${selected ? "text-[#0B1E5B]" : "text-gray-700"}`}>{label}</span>
+      <span className={`text-sm font-semibold ${selected ? "text-navy-900" : "text-gray-700"}`}>{label}</span>
       <span className="text-xs text-gray-400 leading-tight">{sub}</span>
     </button>
   );
@@ -166,16 +166,16 @@ export default function FreeTrialForm() {
   if (status === "success") {
     return (
       <div className="text-center py-12 px-4">
-        <div className="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-5">
-          <CheckCircle size={40} className="text-green-500" />
+        <div className="w-20 h-20 rounded-full bg-success-100 flex items-center justify-center mx-auto mb-5">
+          <CheckCircle size={40} className="text-success-600" />
         </div>
-        <h3 className="text-2xl font-bold text-[#0B1E5B] mb-3">Booking Received!</h3>
+        <h3 className="text-2xl font-semibold text-navy-900 mb-3">Booking received!</h3>
         <p className="text-gray-600 mb-5 leading-relaxed">
           Thank you, {fields.name.split(" ")[0]}. We will be in touch within 2 hours to confirm your free trial class.
         </p>
         <p className="text-sm text-gray-500">
           For a faster response, WhatsApp us on{" "}
-          <a href="https://wa.me/447311254423" className="text-[#F5A623] font-semibold">+44 7311 254423</a>.
+          <a href="https://wa.me/447311254423" className="text-orange-500 font-semibold">+44 7311 254423</a>.
         </p>
       </div>
     );
@@ -194,7 +194,7 @@ export default function FreeTrialForm() {
       {step === 1 && (
         <div className="space-y-5">
           <div>
-            <p className="text-base font-bold text-[#0B1E5B] mb-1">Your contact details</p>
+            <p className="text-base font-semibold text-navy-900 mb-1">Your contact details</p>
             <p className="text-sm text-gray-500 mb-5">We will use these to confirm your free trial class.</p>
           </div>
 
@@ -251,7 +251,7 @@ export default function FreeTrialForm() {
       {step === 2 && (
         <div className="space-y-6">
           <div>
-            <p className="text-base font-bold text-[#0B1E5B] mb-1">About the student</p>
+            <p className="text-base font-semibold text-navy-900 mb-1">About the student</p>
             <p className="text-sm text-gray-500 mb-5">This helps us match the right teacher.</p>
           </div>
 
@@ -269,7 +269,7 @@ export default function FreeTrialForm() {
 
           <div>
             <label htmlFor="course" className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Preferred course <span className="text-[#F5A623]">*</span>
+              Preferred course <span className="text-orange-500">*</span>
             </label>
             <div className="relative">
               <BookOpen size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none z-10" />
@@ -291,7 +291,7 @@ export default function FreeTrialForm() {
 
           <div>
             <p className="text-sm font-semibold text-gray-700 mb-3">
-              Teacher preference <span className="text-[#F5A623]">*</span>
+              Teacher preference <span className="text-orange-500">*</span>
             </p>
             <div className="flex gap-3">
               <TeacherCard
@@ -347,7 +347,7 @@ export default function FreeTrialForm() {
             <button
               type="button"
               onClick={() => setStep(1)}
-              className="flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-gray-200 text-sm font-semibold text-gray-600 hover:border-gray-300 transition-colors"
+              className="btn-outline text-sm py-3"
             >
               <ChevronLeft size={16} /> Back
             </button>
@@ -366,12 +366,12 @@ export default function FreeTrialForm() {
       {step === 3 && (
         <div className="space-y-5">
           <div>
-            <p className="text-base font-bold text-[#0B1E5B] mb-1">Almost done. Check your details below.</p>
+            <p className="text-base font-semibold text-navy-900 mb-1">Almost done. Check your details below.</p>
             <p className="text-sm text-gray-500 mb-5">Everything look right? Add a note below if needed, then submit.</p>
           </div>
 
           {/* Summary card */}
-          <div className="bg-[#faf9f7] rounded-2xl border border-gray-100 p-4 space-y-2.5 text-sm">
+          <div className="bg-gray-50 rounded-2xl border border-gray-100 p-4 space-y-2.5 text-sm">
             {[
               { label: "Name", val: fields.name },
               { label: "Phone", val: fields.phone },
@@ -400,13 +400,13 @@ export default function FreeTrialForm() {
                 placeholder="e.g. Looking for a female teacher for my daughter, she is a complete beginner"
                 value={fields.message}
                 onChange={(e) => set("message", e.target.value)}
-                className="w-full border border-gray-200 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 resize-none bg-white hover:border-gray-300"
+                className="w-full border border-gray-300 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-navy-600 focus:shadow-eq-focus transition-colors placeholder:text-gray-400 resize-none bg-white hover:border-gray-300"
               />
             </div>
           </div>
 
           {status === "error" && (
-            <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-700">
+            <div className="bg-danger-100 border border-danger-600/20 rounded-xl px-4 py-3 text-sm text-danger-600">
               Something went wrong. Please try again or{" "}
               <a href="https://wa.me/447311254423" className="font-semibold underline">WhatsApp us directly</a>.
             </div>
@@ -416,7 +416,7 @@ export default function FreeTrialForm() {
             <button
               type="button"
               onClick={() => setStep(2)}
-              className="flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-gray-200 text-sm font-semibold text-gray-600 hover:border-gray-300 transition-colors"
+              className="btn-outline text-sm py-3"
             >
               <ChevronLeft size={16} /> Back
             </button>
@@ -428,15 +428,15 @@ export default function FreeTrialForm() {
               {status === "sending" ? (
                 <><Loader2 size={18} className="animate-spin" /> Sending…</>
               ) : (
-                "Book My Free Trial Class"
+                "Book my free trial class"
               )}
             </button>
           </div>
 
           <div className="flex items-center justify-center gap-5 text-xs text-gray-400 pt-1">
-            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />No card required</span>
-            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />No commitment</span>
-            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />100% free</span>
+            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-success-600 inline-block" />No card required</span>
+            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-success-600 inline-block" />No commitment</span>
+            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-success-600 inline-block" />100% free</span>
           </div>
         </div>
       )}

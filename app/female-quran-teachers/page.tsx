@@ -31,17 +31,17 @@ export default function FemaleQuranTeachers() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="bg-[#0B1E5B] py-12 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="bg-navy-900 py-12 text-white">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Female Quran Teachers" }]} />
           <div className="mt-4 max-w-2xl">
             <span className="tag mb-3 inline-block">For Sisters & Daughters</span>
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Female Quran Teacher UK</h1>
-            <p className="text-blue-100 text-lg leading-relaxed mb-6">
+            <h1 className="text-4xl md:text-5xl font-semibold mb-4">Female Quran teacher UK</h1>
+            <p className="text-navy-100 text-lg leading-relaxed mb-6">
               A qualified, certified female Quran teacher, available for sisters, daughters, and all female students who prefer to learn with a woman. One-to-one, private, and professional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/free-trial" className="btn-gold">Book Free Trial</Link>
+              <Link href="/free-trial" className="btn-gold">Book free trial</Link>
               <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-outline-white">
                 <MessageCircle size={16} /> Request Female Teacher via WhatsApp
               </a>
@@ -52,11 +52,11 @@ export default function FemaleQuranTeachers() {
 
       {/* Why important */}
       <section className="section-pad">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="tag mb-4 inline-block">Why It Matters</span>
-              <h2 className="text-3xl font-bold text-[#0B1E5B] mb-4">Learning Quran with a Female Teacher</h2>
+              <h2 className="text-3xl font-semibold text-navy-900 mb-4">Learning Quran with a female teacher</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 For many Muslim families in the UK, it is important, or essential, that daughters, sisters, and ladies learn from a female teacher. This is a matter of comfort, privacy, and in some cases, religious preference. If you&apos;ve been searching for a female Quran teacher near me, the right fit isn&apos;t about geography, it&apos;s about finding someone properly qualified who your daughter or you feel comfortable learning with, and that&apos;s available online wherever you are in the UK.
               </p>
@@ -71,7 +71,7 @@ export default function FemaleQuranTeachers() {
                   "Classes are available at flexible UK timings including evenings and weekends",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 text-gray-700 text-sm">
-                    <CheckCircle size={16} className="text-[#F5A623] flex-shrink-0 mt-0.5" /> {point}
+                    <CheckCircle size={16} className="text-orange-500 flex-shrink-0 mt-0.5" /> {point}
                   </li>
                 ))}
               </ul>
@@ -84,11 +84,11 @@ export default function FemaleQuranTeachers() {
       </section>
 
       {/* Teacher profile */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6">
           <span className="tag mb-4 inline-block">Your Teacher</span>
-          <h2 className="text-3xl font-bold text-[#0B1E5B] mb-2">Almas Fatima</h2>
-          <p className="text-[#F5A623] font-semibold mb-4">Qaria e Quran · Bachelor of Islamic Studies · Certified Teacher</p>
+          <h2 className="text-3xl font-semibold text-navy-900 mb-2">Almas Fatima</h2>
+          <p className="text-orange-500 font-semibold mb-4">Qaria e Quran · Bachelor of Islamic Studies · Certified Teacher</p>
           <p className="text-gray-700 mb-4 leading-relaxed">
             Almas Fatima is available exclusively for sisters and female students. She holds a Bachelor&apos;s degree in Islamic Studies and is a certified Qaria e Quran, meaning she has received formal training in Quranic recitation to a high standard. As a dedicated female Quran tutor, she has built her entire teaching practice around what female students actually need: comfort, patience, and privacy.
           </p>
@@ -105,8 +105,8 @@ export default function FemaleQuranTeachers() {
 
       {/* Courses available */}
       <section className="section-pad">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-[#0B1E5B] mb-8 text-center">Courses Available with a Female Teacher</h2>
+        <div className="max-w-container mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-semibold text-navy-900 mb-8 text-center">Courses available with a female teacher</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               { title: "Noorani Qaida", desc: "The perfect starting point for young girls and female beginners learning Arabic letters.", href: "/courses/noorani-qaida" },
@@ -115,9 +115,9 @@ export default function FemaleQuranTeachers() {
               { title: "Islamic Studies", desc: "Structured Islamic education covering aqeedah, fiqh, seerah, and Islamic manners.", href: "/courses/islamic-studies" },
             ].map((c) => (
               <Link key={c.href} href={c.href} className="card p-5 hover:shadow-lg transition-shadow group">
-                <h3 className="font-bold text-[#0B1E5B] mb-2">{c.title}</h3>
+                <h3 className="font-semibold text-navy-900 mb-2">{c.title}</h3>
                 <p className="text-gray-600 text-sm mb-3">{c.desc}</p>
-                <span className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">View course <ChevronRight size={12} /></span>
+                <span className="text-orange-500 text-sm font-semibold flex items-center gap-1">View course <ChevronRight size={12} /></span>
               </Link>
             ))}
           </div>
@@ -125,21 +125,21 @@ export default function FemaleQuranTeachers() {
       </section>
 
       {/* How to request */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl font-bold text-[#0B1E5B] mb-4">How to Request a Female Teacher</h2>
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl font-semibold text-navy-900 mb-4">How to request a female teacher</h2>
           <p className="text-gray-600 mb-6">Requesting a female teacher is simple. When you book your free trial, simply mention in the &apos;notes&apos; field (or via WhatsApp) that you would like a female teacher. We will ensure Almas Fatima is assigned to your class.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/free-trial" className="btn-gold">Book Free Trial with Female Teacher</Link>
-            <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-outline">WhatsApp to Request</a>
+            <Link href="/free-trial" className="btn-gold">Book a free trial with a female teacher</Link>
+            <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-outline">Request on WhatsApp</a>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="section-pad">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-[#0B1E5B] mb-8 text-center">Frequently Asked Questions</h2>
+        <div className="max-w-narrow mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-semibold text-navy-900 mb-8 text-center">Frequently asked questions</h2>
           <div className="space-y-4">
             {[
               { q: "Is a female teacher guaranteed?", a: "Yes. If you request a female teacher, Almas Fatima will be your assigned teacher. We do not have a waiting list for female teachers, availability is confirmed at booking." },
@@ -148,8 +148,8 @@ export default function FemaleQuranTeachers() {
               { q: "Are the classes private?", a: "Yes, all classes are one-to-one and completely private. No other students are present." },
               { q: "Is there a female Quran teacher near me?", a: "Yes. All our lessons are fully online, so a certified female Quran teacher is available wherever you are in the UK, no matter your town or city." },
             ].map((f, i) => (
-              <details key={i} className="bg-[#faf9f7] rounded-xl border border-gray-100 group">
-                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none">
+              <details key={i} className="bg-gray-50 rounded-xl border border-gray-100 group">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-navy-900 list-none">
                   {f.q} <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3" />
                 </summary>
                 <p className="px-5 pb-5 text-gray-600 text-sm">{f.a}</p>
@@ -159,7 +159,7 @@ export default function FemaleQuranTeachers() {
         </div>
       </section>
 
-      <CTABand heading="Book Your Free Class with a Female Teacher" sub="Completely free, no card required. Mention 'female teacher' and we'll arrange it for you." />
+      <CTABand heading="Book your free class with a female teacher" sub="Completely free, no card required. Mention 'female teacher' and we'll arrange it for you." />
       <div className="lg:hidden h-14" aria-hidden="true" />
     </>
   );

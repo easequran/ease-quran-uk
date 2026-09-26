@@ -54,12 +54,12 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <div className="text-center py-12">
-        <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-4">
-          <CheckCircle size={36} className="text-green-500" />
+        <div className="w-16 h-16 rounded-full bg-success-100 flex items-center justify-center mx-auto mb-4">
+          <CheckCircle size={36} className="text-success-600" />
         </div>
-        <h3 className="text-2xl font-bold text-[#0B1E5B] mb-2">Message Received!</h3>
+        <h3 className="text-2xl font-semibold text-navy-900 mb-2">Message received!</h3>
         <p className="text-gray-600 max-w-sm mx-auto">Thank you for getting in touch. We will reply within 2 hours. For a faster response, WhatsApp us on{" "}
-          <a href="https://wa.me/447311254423" className="text-[#F5A623] font-semibold">+44 7311 254423</a>.
+          <a href="https://wa.me/447311254423" className="text-orange-500 font-semibold">+44 7311 254423</a>.
         </p>
       </div>
     );
@@ -75,7 +75,7 @@ export default function ContactForm() {
         {/* Name */}
         <div>
           <label htmlFor="c-name" className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Full Name <span className="text-[#F5A623]">*</span>
+            Full Name <span className="text-orange-500">*</span>
           </label>
           <div className="relative">
             <User size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -85,16 +85,16 @@ export default function ContactForm() {
               type="text"
               autoComplete="name"
               placeholder="e.g. Ahmed Khan"
-              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.name ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-navy-600 focus:shadow-eq-focus transition-colors placeholder:text-gray-400 ${errors.name ? "border-danger-600 bg-danger-100" : "border-gray-300 bg-white hover:border-gray-400"}`}
             />
           </div>
-          {errors.name && <p className="text-red-500 text-xs mt-1.5">! {errors.name}</p>}
+          {errors.name && <p className="text-danger-600 text-xs mt-1.5">! {errors.name}</p>}
         </div>
 
         {/* Phone */}
         <div>
           <label htmlFor="c-phone" className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Phone / WhatsApp <span className="text-[#F5A623]">*</span>
+            Phone / WhatsApp <span className="text-orange-500">*</span>
           </label>
           <div className="relative">
             <Phone size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -104,10 +104,10 @@ export default function ContactForm() {
               type="tel"
               autoComplete="tel"
               placeholder="+44 7700 000000"
-              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.phone ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+              className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-navy-600 focus:shadow-eq-focus transition-colors placeholder:text-gray-400 ${errors.phone ? "border-danger-600 bg-danger-100" : "border-gray-300 bg-white hover:border-gray-400"}`}
             />
           </div>
-          {errors.phone && <p className="text-red-500 text-xs mt-1.5">! {errors.phone}</p>}
+          {errors.phone && <p className="text-danger-600 text-xs mt-1.5">! {errors.phone}</p>}
         </div>
       </div>
 
@@ -124,16 +124,16 @@ export default function ContactForm() {
             type="email"
             autoComplete="email"
             placeholder="you@example.com"
-            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 ${errors.email ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-navy-600 focus:shadow-eq-focus transition-colors placeholder:text-gray-400 ${errors.email ? "border-danger-600 bg-danger-100" : "border-gray-300 bg-white hover:border-gray-400"}`}
           />
         </div>
-        {errors.email && <p className="text-red-500 text-xs mt-1.5">! {errors.email}</p>}
+        {errors.email && <p className="text-danger-600 text-xs mt-1.5">! {errors.email}</p>}
       </div>
 
       {/* Message */}
       <div>
         <label htmlFor="c-message" className="block text-sm font-semibold text-gray-700 mb-1.5">
-          How can we help you? <span className="text-[#F5A623]">*</span>
+          How can we help you? <span className="text-orange-500">*</span>
         </label>
         <div className="relative">
           <MessageSquare size={15} className="absolute left-3.5 top-3.5 text-gray-400 pointer-events-none" />
@@ -142,14 +142,14 @@ export default function ContactForm() {
             name="message"
             rows={5}
             placeholder="e.g. I would like to know more about your Tajweed classes for adults..."
-            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E5B] focus:border-transparent transition-colors placeholder:text-gray-400 resize-none ${errors.message ? "border-red-400 bg-red-50" : "border-gray-200 bg-white hover:border-gray-300"}`}
+            className={`w-full border rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none focus:border-navy-600 focus:shadow-eq-focus transition-colors placeholder:text-gray-400 resize-none ${errors.message ? "border-danger-600 bg-danger-100" : "border-gray-300 bg-white hover:border-gray-400"}`}
           />
         </div>
-        {errors.message && <p className="text-red-500 text-xs mt-1.5">! {errors.message}</p>}
+        {errors.message && <p className="text-danger-600 text-xs mt-1.5">! {errors.message}</p>}
       </div>
 
       {status === "error" && (
-        <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-700">
+        <div className="bg-danger-100 border border-danger-600/20 rounded-xl px-4 py-3 text-sm text-danger-600">
           Something went wrong. Please try again or WhatsApp us on{" "}
           <a href="https://wa.me/447311254423" className="font-semibold underline">+44 7311 254423</a>.
         </div>
@@ -163,7 +163,7 @@ export default function ContactForm() {
         {status === "sending" ? (
           <><Loader2 size={18} className="animate-spin" /> Sending...</>
         ) : (
-          "Send Message"
+          "Send message"
         )}
       </button>
 

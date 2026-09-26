@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function QuranReading() {
   return (
     <CoursePageTemplate
-      h1="Online Quran Reading Classes in the UK"
+      h1="Online Quran Reading classes in the UK"
       title="Quran Reading"
       subtitle="From Letters to Fluent Recitation"
       slug="quran-reading"

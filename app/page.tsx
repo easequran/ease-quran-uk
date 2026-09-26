@@ -34,18 +34,18 @@ const painSolutions = [
 ];
 
 const steps = [
-  { step: "1", title: "Book Your Free Trial", desc: "Fill in the short form. No card required, no commitment. We will contact you within 2 hours to confirm." },
-  { step: "2", title: "Meet Your Teacher", desc: "We match you with the right certified teacher (male or female) and agree on a regular UK time slot." },
-  { step: "3", title: "Start Learning", desc: "Your one-to-one lessons begin. Learn at your own pace, in English, from the comfort of your home." },
+  { step: "1", title: "Book your free trial", desc: "Fill in the short form. No card required, no commitment. We will contact you within 2 hours to confirm." },
+  { step: "2", title: "Meet your teacher", desc: "We match you with the right certified teacher (male or female) and agree on a regular UK time slot." },
+  { step: "3", title: "Start learning", desc: "Your one-to-one lessons begin. Learn at your own pace, in English, from the comfort of your home." },
 ];
 
 const whyUs = [
-  { icon: <CheckCircle size={22} className="text-[#F5A623]" />, title: "Qualified, Certified Teachers", desc: "Every Ease Quran teacher is a fully qualified Quran tutor, holding recognised Islamic certifications and experienced in teaching English-speaking, Western students." },
-  { icon: <User size={22} className="text-[#F5A623]" />, title: "Completely One-to-One", desc: "Every class is private, your child gets the teacher's full attention, at a pace that suits them. No group classes." },
-  { icon: <Users size={22} className="text-[#F5A623]" />, title: "Female Teachers Available", desc: "We offer dedicated female Quran teachers for sisters and daughters who prefer a female instructor." },
-  { icon: <Clock size={22} className="text-[#F5A623]" />, title: "Flexible UK Timings", desc: "Classes available across UK time slots including evenings and weekends, built around school and work schedules." },
-  { icon: <BookOpen size={22} className="text-[#F5A623]" />, title: "Taught in English", desc: "Our teachers communicate clearly in English so lessons are easy to follow for UK-born students." },
-  { icon: <Shield size={22} className="text-[#F5A623]" />, title: "Safe & Transparent", desc: "Parents can sit in on any class. Sessions can be recorded on request. Full transparency, always." },
+  { icon: <CheckCircle size={22} className="text-orange-500" />, title: "Qualified, certified teachers", desc: "Every Ease Quran teacher is a fully qualified Quran tutor, holding recognised Islamic certifications and experienced in teaching English-speaking, Western students." },
+  { icon: <User size={22} className="text-orange-500" />, title: "Completely one-to-one", desc: "Every class is private, your child gets the teacher's full attention, at a pace that suits them. No group classes." },
+  { icon: <Users size={22} className="text-orange-500" />, title: "Female teachers available", desc: "We offer dedicated female Quran teachers for sisters and daughters who prefer a female instructor." },
+  { icon: <Clock size={22} className="text-orange-500" />, title: "Flexible UK timings", desc: "Classes available across UK time slots including evenings and weekends, built around school and work schedules." },
+  { icon: <BookOpen size={22} className="text-orange-500" />, title: "Taught in English", desc: "Our teachers communicate clearly in English so lessons are easy to follow for UK-born students." },
+  { icon: <Shield size={22} className="text-orange-500" />, title: "Safe & transparent", desc: "Parents can sit in on any class. Sessions can be recorded on request. Full transparency, always." },
 ];
 
 const faqs = [
@@ -123,7 +123,7 @@ export default function Home() {
       {videoSchemas.map((s, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />)}
 
       {/* HERO */}
-      <section className="relative bg-[#0B1E5B] text-white overflow-hidden flex items-center">
+      <section className="relative bg-navy-900 text-white overflow-hidden flex items-center">
         <picture className="absolute inset-0">
           <source media="(max-width: 767px)" srcSet="/hero-home-mobile.webp" />
           <Image
@@ -135,28 +135,25 @@ export default function Home() {
             sizes="100vw"
           />
         </picture>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-12 w-full">
+        <div className="relative z-10 max-w-container mx-auto px-4 sm:px-6 py-10 md:py-12 w-full">
           <div className="max-w-2xl">
             <span className="tag mb-3 inline-block">UK&apos;s Trusted Online Quran Academy</span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
-              Best Online Quran Classes in the UK, For Kids, Adults &amp; Beginners
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4">
+              Best online Quran classes in the UK, for kids, adults &amp; beginners
             </h1>
-            <p className="text-base md:text-lg text-blue-100 mb-5 leading-relaxed">
+            <p className="text-base md:text-lg text-navy-100 mb-5 leading-relaxed">
               Families across the UK choose us for simple, one-to-one Quran tuition online, with qualified male and female Quran teachers. Tajweed, Hifz, Noorani Qaida and more, at flexible UK timings, from home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <span className="relative inline-flex self-start sm:self-auto">
-                <span className="absolute inset-0 rounded-xl bg-[#F5A623] animate-ping opacity-40" />
-                <Link href="/free-trial" className="btn-gold text-base relative">Book Your Free Trial Class</Link>
-              </span>
+              <Link href="/free-trial" className="btn-gold text-base self-start sm:self-auto">Book a free trial class</Link>
               <a href="https://wa.me/447311254423" target="_blank" rel="noopener noreferrer" className="btn-outline-white text-base">
-                <MessageCircle size={18} /> WhatsApp Us
+                <MessageCircle size={18} /> WhatsApp us
               </a>
             </div>
             <div className="flex flex-wrap gap-3">
               {["Qualified Teachers", "One-to-One", "Female Teachers Available", "Free First Class", "Certified"].map((t) => (
                 <span key={t} className="flex items-center gap-1.5 text-sm bg-white/10 rounded-full px-3 py-1">
-                  <CheckCircle size={13} className="text-[#F5A623]" /> {t}
+                  <CheckCircle size={13} className="text-orange-500" /> {t}
                 </span>
               ))}
             </div>
@@ -165,18 +162,18 @@ export default function Home() {
       </section>
 
       {/* PAIN → SOLUTION */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="tag mb-3">The Problem</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">Tired of unreliable online Quran academies?</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-navy-900">Tired of unreliable online Quran academies?</h2>
             <p className="text-gray-600 mt-4">Too many families have been let down. Ease Quran was built to fix that.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {painSolutions.map((item, i) => (
               <div key={i} className="card p-6">
                 <p className="text-gray-400 text-sm mb-4 line-through">{item.pain}</p>
-                <div className="w-6 h-0.5 bg-[#F5A623] mb-4" />
+                <div className="w-6 h-0.5 bg-orange-500 mb-4" />
                 <p className="text-gray-800 text-sm font-medium">{item.solution}</p>
               </div>
             ))}
@@ -186,76 +183,76 @@ export default function Home() {
 
       {/* HOW IT WORKS */}
       <section className="section-pad">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Simple & Clear</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-navy-900">How it works</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s, i) => (
-              <div key={s.step} className="relative text-center rounded-3xl border-2 border-[#0B1E5B]/15 px-8 pt-10 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-lg transition-all duration-300 group">
+              <div key={s.step} className="relative text-center rounded-2xl border border-gray-200 px-8 pt-10 pb-8 bg-white hover:border-orange-500/60 hover:shadow-lg transition-all duration-200 group">
                 {/* Connecting line between cards (desktop only) */}
                 {i < steps.length - 1 && (
                   <div className="hidden md:block absolute top-[52px] left-full w-8 z-10">
-                    <div className="h-0.5 w-full bg-gradient-to-r from-[#0B1E5B]/20 to-[#F5A623]/40" />
+                    <div className="h-0.5 w-full bg-gray-200" />
                   </div>
                 )}
                 {/* Step number */}
-                <div className="w-14 h-14 rounded-full bg-[#0B1E5B] group-hover:bg-[#F5A623] text-white text-2xl font-extrabold flex items-center justify-center mx-auto mb-6 transition-colors duration-300 shadow-md">
+                <div className="w-14 h-14 rounded-full bg-navy-900 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-6 shadow-md">
                   {s.step}
                 </div>
-                <h3 className="text-xl font-bold text-[#0B1E5B] mb-3">{s.title}</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-3">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/free-trial" className="btn-gold">Book Your Free Trial</Link>
+            <Link href="/free-trial" className="btn-gold">Book a free trial class</Link>
           </div>
         </div>
       </section>
 
       {/* COURSES */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">What We Teach</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">Our Courses</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-navy-900">Our courses</h2>
             <p className="text-gray-600 mt-3">From complete beginners to advanced students, a course for every level.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {courses.map((c) => (
               <Link key={c.href} href={c.href} className="card group hover:shadow-lg transition-shadow">
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image src={c.img} alt={`${c.title} online course for UK students`} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                  <Image src={c.img} alt={`${c.title} online course for UK students`} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                 </div>
                 <div className="p-5">
-                  <h3 className="font-bold text-[#0B1E5B] text-lg mb-2">{c.title}</h3>
+                  <h3 className="font-semibold text-navy-900 text-lg mb-2">{c.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{c.desc}</p>
-                  <span className="text-[#F5A623] text-sm font-semibold flex items-center gap-1">Learn more <ChevronRight size={14} /></span>
+                  <span className="text-orange-500 text-sm font-semibold flex items-center gap-1">Learn more <ChevronRight size={14} /></span>
                 </div>
               </Link>
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link href="/courses" className="btn-outline">View All Courses</Link>
+            <Link href="/courses" className="btn-outline">View all courses</Link>
           </div>
         </div>
       </section>
 
       {/* WHY CHOOSE US */}
       <section className="section-pad">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Why Ease Quran</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">What Makes Us Different</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-navy-900">What makes us different</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyUs.map((w) => (
-              <div key={w.title} className="flex gap-4 p-5 rounded-xl bg-[#faf9f7]">
+              <div key={w.title} className="flex gap-4 p-5 rounded-xl bg-gray-50">
                 <div className="flex-shrink-0 mt-0.5">{w.icon}</div>
                 <div>
-                  <h3 className="font-bold text-[#0B1E5B] mb-1">{w.title}</h3>
+                  <h3 className="font-semibold text-navy-900 mb-1">{w.title}</h3>
                   <p className="text-gray-600 text-sm">{w.desc}</p>
                 </div>
               </div>
@@ -265,25 +262,25 @@ export default function Home() {
       </section>
 
       {/* FOUNDER */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square max-w-sm mx-auto w-full rounded-2xl overflow-hidden shadow-lg">
               <Image src="/founder.webp" alt="Shah Zaib, founder and head teacher of Ease Quran UK" fill className="object-cover object-top" sizes="(max-width: 768px) 80vw, 40vw" />
             </div>
             <div>
               <span className="tag mb-4 inline-block">Meet the Founder</span>
-              <h2 className="text-3xl font-bold text-[#0B1E5B] mb-4">Shah Zaib, Founder &amp; Head Teacher</h2>
+              <h2 className="text-3xl font-semibold text-navy-900 mb-4">Shah Zaib, founder &amp; head teacher</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Shah Zaib founded Ease Quran with a clear purpose: to give Muslim families in the UK access to genuinely qualified, English-friendly Quran education, without the unreliability or opacity that has let so many families down.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 A Wifaq ul Madaris Al-Arabia certified teacher with over six years of experience teaching English-speaking and Western students, Shah Zaib understands what UK families need: clear communication, consistent scheduling, and a teacher who genuinely cares about each student&apos;s progress.
               </p>
-              <blockquote className="border-l-4 border-[#F5A623] pl-4 italic text-gray-600 my-5">
+              <blockquote className="bg-navy-50 rounded-2xl px-5 py-4 italic text-gray-700 my-5">
                 &ldquo;Every child deserves a teacher who shows up, who communicates in their language, and who makes the Quran feel accessible, not intimidating. That&apos;s what Ease Quran is built on.&rdquo;
               </blockquote>
-              <Link href="/about" className="btn-navy inline-flex">Read Our Story <ChevronRight size={16} /></Link>
+              <Link href="/about" className="btn-navy inline-flex">Read our story <ChevronRight size={16} /></Link>
             </div>
           </div>
         </div>
@@ -291,28 +288,28 @@ export default function Home() {
 
       {/* TEACHERS */}
       <section className="section-pad">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Our Team</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">Meet Your Teachers</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-navy-900">Meet your teachers</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {[
               { name: "Muhammad Umair", role: "Tajweed & Hifz Specialist", bio: "A certified Quran teacher with two years of experience specialising in Tajweed and Hifz. Muhammad Umair uses proven memorisation techniques that help students of all ages retain and revise with confidence.", img: "/teacher-1.webp", badge: "Tajweed & Hifz" },
               { name: "Almas Fatima", role: "Female Quran Teacher", bio: "A Qaria e Quran with a Bachelor's degree in Islamic Studies, Almas Fatima is available for sisters and female students. She provides a comfortable, professional, and encouraging learning environment.", img: "/teacher-2.webp", badge: "Female Teacher" },
             ].map((t) => (
-              <div key={t.name} className="relative flex flex-col items-center text-center rounded-3xl border-2 border-[#0B1E5B]/15 px-8 pt-12 pb-8 bg-white hover:border-[#F5A623]/60 hover:shadow-xl transition-all duration-300 group">
+              <div key={t.name} className="relative flex flex-col items-center text-center rounded-2xl border border-gray-200 px-8 pt-12 pb-8 bg-white hover:border-orange-500/60 hover:shadow-xl transition-all duration-200 group">
                 {/* Gold accent top bar */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-b-full bg-[#F5A623] group-hover:w-24 transition-all duration-300" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-b-full bg-orange-500 group-hover:w-24 transition-all duration-200" />
                 {/* Avatar with gold ring */}
-                <div className="relative w-28 h-28 rounded-full mb-5 p-0.5 bg-gradient-to-br from-[#F5A623] to-[#0B1E5B]">
+                <div className="relative w-28 h-28 rounded-full mb-5 p-0.5 bg-orange-500">
                   <div className="w-full h-full rounded-full overflow-hidden bg-white">
                     <Image src={t.img} alt={`${t.name}, ${t.role} at Ease Quran UK`} fill className="object-cover object-top rounded-full" sizes="112px" />
                   </div>
                 </div>
                 <span className="tag mb-2">{t.badge}</span>
-                <h3 className="text-xl font-bold text-[#0B1E5B] mt-1">{t.name}</h3>
-                <p className="text-[#F5A623] text-sm font-semibold mb-4">{t.role}</p>
+                <h3 className="text-xl font-semibold text-navy-900 mt-1">{t.name}</h3>
+                <p className="text-orange-500 text-sm font-semibold mb-4">{t.role}</p>
                 <p className="text-gray-500 text-sm leading-relaxed">{t.bio}</p>
               </div>
             ))}
@@ -321,11 +318,11 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag mb-3">Real Reviews</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B]">What UK Families Say</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold text-navy-900">What UK families say</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
             <VideoEmbed videoId="u_j-zh0jFL8" title="Ease Quran UK Review, Saman Imran" reviewer="Saman Imran" />
@@ -347,9 +344,9 @@ export default function Home() {
 
       {/* SEO: NEAR ME */}
       <section className="section-pad">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6 text-center">
           <span className="tag mb-3">Available Across the UK</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0B1E5B] mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-navy-900 mb-6">
             Looking for &quot;Quran Classes Near Me&quot; in the UK?
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -360,7 +357,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             {cities.map((c) => (
-              <Link key={c.href} href={c.href} className="px-4 py-2 bg-[#faf9f7] rounded-full text-sm font-semibold text-[#0B1E5B] hover:bg-[#0B1E5B] hover:text-white transition-colors border border-gray-200">
+              <Link key={c.href} href={c.href} className="px-4 py-2 bg-gray-50 rounded-full text-sm font-semibold text-navy-900 hover:bg-navy-50 transition-colors border border-gray-200">
                 Quran Classes in {c.label}
               </Link>
             ))}
@@ -369,16 +366,16 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="section-pad bg-[#faf9f7]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <section className="section-pad bg-gray-50">
+        <div className="max-w-narrow mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <span className="tag mb-3">FAQ</span>
-            <h2 className="text-3xl font-bold text-[#0B1E5B]">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-semibold text-navy-900">Frequently asked questions</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <details key={i} className="bg-white rounded-xl shadow-sm border border-gray-100 group">
-                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-[#0B1E5B] list-none">
+                <summary className="flex justify-between items-center p-5 cursor-pointer font-semibold text-navy-900 list-none">
                   {f.q}
                   <ChevronRight size={16} className="transform group-open:rotate-90 transition-transform flex-shrink-0 ml-3" />
                 </summary>
@@ -391,11 +388,11 @@ export default function Home() {
 
       {/* TRUST BADGES */}
       <section className="py-10 border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-container mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center gap-6">
             {trustBadges.map((b) => (
-              <div key={b.label} className="flex items-center gap-2 text-sm font-medium text-[#0B1E5B]">
-                <span className="text-[#F5A623]">{b.icon}</span> {b.label}
+              <div key={b.label} className="flex items-center gap-2 text-sm font-medium text-navy-900">
+                <span className="text-orange-500">{b.icon}</span> {b.label}
               </div>
             ))}
           </div>

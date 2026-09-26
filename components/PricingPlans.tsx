@@ -20,30 +20,30 @@ export default function PricingPlans() {
           return (
             <div
               key={plan.id}
-              className={`relative bg-white rounded-2xl border-2 ${highlight ? "border-[#F5A623]" : "border-gray-100"} flex flex-col ${
-                highlight ? "shadow-eq-lg shadow-[#F5A623]/10 scale-[1.02]" : "shadow-eq-sm"
-              } transition-all`}
+              className={`relative bg-white rounded-2xl border ${highlight ? "border-navy-900" : "border-gray-200"} flex flex-col ${
+                highlight ? "shadow-eq-lg" : "shadow-eq-sm"
+              }`}
             >
               {highlight && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-4 py-1.5 rounded-full bg-[#F5A623] text-white">
-                    <Sparkles size={14} /> Most Popular
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-1.5 rounded-full bg-orange-500 text-navy-900">
+                    <Sparkles size={14} /> Most popular
                   </span>
                 </div>
               )}
 
-              <div className={`p-6 sm:p-7 rounded-t-2xl ${highlight ? "bg-gradient-to-br from-[#0B1E5B] to-[#1a3280]" : "bg-white"}`}>
-                <p className={`text-xs font-bold uppercase tracking-widest mb-3 ${highlight ? "text-[#F5A623]" : "text-gray-400"}`}>{plan.name}</p>
+              <div className={`p-6 sm:p-7 rounded-t-2xl ${highlight ? "bg-navy-900" : "bg-white"}`}>
+                <p className={`text-xs font-semibold uppercase tracking-wider mb-3 ${highlight ? "text-orange-400" : "text-gray-500"}`}>{plan.name}</p>
                 <div className="flex items-end gap-1">
-                  <span className={`text-4xl sm:text-5xl font-extrabold ${highlight ? "text-white" : "text-[#0B1E5B]"}`}>£{plan.price30}</span>
-                  <span className={`text-sm mb-2 ${highlight ? "text-blue-200" : "text-gray-400"}`}>/month</span>
+                  <span className={`text-4xl sm:text-5xl font-bold ${highlight ? "text-white" : "text-navy-900"}`}>£{plan.price30}</span>
+                  <span className={`text-sm mb-2 ${highlight ? "text-navy-100" : "text-gray-400"}`}>/month</span>
                 </div>
-                <p className="text-sm font-semibold mt-1 text-[#F5A623]">{plan.classesPerWeek} classes per week</p>
-                <p className={`text-xs mt-1 ${highlight ? "text-blue-200" : "text-gray-400"}`}>
+                <p className={`text-sm font-semibold mt-1 ${highlight ? "text-orange-400" : "text-orange-600"}`}>{plan.classesPerWeek} classes per week</p>
+                <p className={`text-xs mt-1 ${highlight ? "text-navy-100" : "text-gray-400"}`}>
                   {plan.classesPerMonth} classes/month · 30 min · 1-to-1
                 </p>
-                <p className={`text-xs mt-2 pt-2 border-t ${highlight ? "border-white/15 text-blue-200" : "border-gray-100 text-gray-500"}`}>
-                  Prefer 60-minute classes? <span className={`font-bold ${highlight ? "text-white" : "text-[#0B1E5B]"}`}>£{plan.price60}/month</span>
+                <p className={`text-xs mt-2 pt-2 border-t ${highlight ? "border-white/15 text-navy-100" : "border-gray-100 text-gray-500"}`}>
+                  Prefer 60-minute classes? <span className={`font-semibold ${highlight ? "text-white" : "text-navy-900"}`}>£{plan.price60}/month</span>
                 </p>
               </div>
 
@@ -51,8 +51,8 @@ export default function PricingPlans() {
                 <ul className="space-y-3 mb-7 flex-1">
                   {BASE_FEATURES.map((f) => (
                     <li key={f} className="flex items-start gap-2.5 text-sm text-gray-700">
-                      <span className="w-4 h-4 rounded-full bg-[#F5A623]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check size={9} className="text-[#F5A623]" strokeWidth={3} />
+                      <span className="w-4 h-4 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Check size={9} className="text-orange-600" strokeWidth={3} />
                       </span>
                       {f}
                     </li>
@@ -60,13 +60,9 @@ export default function PricingPlans() {
                 </ul>
                 <Link
                   href="/free-trial"
-                  className={`w-full text-center py-3 rounded-xl font-bold text-sm transition-all ${
-                    highlight
-                      ? "bg-[#F5A623] text-white hover:bg-[#d4901e] shadow-lg shadow-[#F5A623]/30"
-                      : "border-2 border-[#0B1E5B] text-[#0B1E5B] hover:bg-[#0B1E5B] hover:text-white"
-                  }`}
+                  className={`w-full text-sm ${highlight ? "btn-gold" : "btn-outline"}`}
                 >
-                  Start Free Trial
+                  Book free trial
                 </Link>
               </div>
             </div>

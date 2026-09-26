@@ -14,17 +14,17 @@ export default function MobileBottomBar() {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 flex flex-col items-center justify-center py-3 text-[#25D366] hover:bg-gray-50 transition-colors"
+        className="flex-1 flex flex-col items-center justify-center py-3 text-whatsapp hover:bg-gray-50 transition-colors"
       >
         <MessageCircle size={20} />
         <span className="text-xs mt-0.5 font-medium">WhatsApp</span>
       </a>
       <Link
         href="/free-trial"
-        className="flex-[2] flex flex-col items-center justify-center py-3 bg-[#F5A623] text-white"
+        className="flex-[2] flex flex-col items-center justify-center py-3 bg-orange-500 text-navy-900"
       >
         <CalendarCheck size={20} />
-        <span className="text-xs mt-0.5 font-semibold">Book Free Trial</span>
+        <span className="text-xs mt-0.5 font-semibold">Book free trial</span>
       </Link>
     </div>
   );

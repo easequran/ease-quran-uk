@@ -66,21 +66,21 @@ export default function Header() {
   return (
     <>
       {/* Top bar — NOT sticky, scrolls away */}
-      <div className="bg-[#0B1E5B] text-white text-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-9">
+      <div className="bg-navy-900 text-white text-xs">
+        <div className="max-w-container mx-auto px-4 sm:px-6 flex items-center justify-between h-9">
           <div className="flex items-center gap-5">
             <a
               href="https://wa.me/447311254423"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 font-medium hover:text-[#F5A623] transition-colors"
+              className="flex items-center gap-2 font-medium hover:text-orange-600 transition-colors"
             >
               <UKFlag />
               <span>+44 7311 254423</span>
             </a>
             <a
               href="mailto:info@easequran.co.uk"
-              className="hidden sm:flex items-center gap-1.5 hover:text-[#F5A623] transition-colors"
+              className="hidden sm:flex items-center gap-1.5 hover:text-orange-600 transition-colors"
             >
               <Mail size={11} />
               <span>info@easequran.co.uk</span>
@@ -88,17 +88,17 @@ export default function Header() {
           </div>
           {/* Social icons in brand gold */}
           <div className="flex items-center gap-3.5">
-            <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-[#F5A623] hover:text-white transition-colors"><FacebookIcon size={14} /></a>
-            <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-[#F5A623] hover:text-white transition-colors"><InstagramIcon size={14} /></a>
-            <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-[#F5A623] hover:text-white transition-colors"><LinkedinIcon size={14} /></a>
-            <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-[#F5A623] hover:text-white transition-colors"><YoutubeIcon size={14} /></a>
+            <a href="https://www.facebook.com/easequran" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-orange-500 hover:text-white transition-colors"><FacebookIcon size={14} /></a>
+            <a href="https://www.instagram.com/contacteasequran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-orange-500 hover:text-white transition-colors"><InstagramIcon size={14} /></a>
+            <a href="https://www.linkedin.com/company/ease-quran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-orange-500 hover:text-white transition-colors"><LinkedinIcon size={14} /></a>
+            <a href="https://youtube.com/@contacteasequran" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-orange-500 hover:text-white transition-colors"><YoutubeIcon size={14} /></a>
           </div>
         </div>
       </div>
 
       {/* White nav — STICKY */}
       <div className={`sticky top-0 z-50 bg-white transition-shadow duration-200 ${scrolled ? "shadow-eq-md" : "border-b border-gray-100"}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+        <div className="max-w-container mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
@@ -107,31 +107,31 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-0.5 text-sm font-medium text-gray-700">
-            <Link href="/" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Home</Link>
+            <Link href="/" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">Home</Link>
 
             {/* Courses dropdown */}
             <div className="relative" onMouseEnter={() => setCoursesOpen(true)} onMouseLeave={() => setCoursesOpen(false)}>
-              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">
+              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">
                 Courses <ChevronDown size={14} className={`transition-transform duration-200 ${coursesOpen ? "rotate-180" : ""}`} />
               </button>
               {coursesOpen && (
                 <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-2xl shadow-eq-lg border border-gray-100 p-5 z-50">
                   <div className="flex items-center justify-between mb-4">
-                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Our Courses</p>
-                    <Link href="/courses" className="text-xs text-[#F5A623] font-semibold hover:underline">View all</Link>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Our Courses</p>
+                    <Link href="/courses" className="text-xs text-orange-500 font-semibold hover:underline">View all</Link>
                   </div>
                   <div className="grid grid-cols-2 gap-1">
                     {courses.map((c) => (
-                      <Link key={c.href} href={c.href} className="flex flex-col px-3 py-3 rounded-xl hover:bg-[#faf9f7] group transition-colors">
-                        <span className="font-semibold text-[#0B1E5B] group-hover:text-[#F5A623] transition-colors text-sm">{c.label}</span>
+                      <Link key={c.href} href={c.href} className="flex flex-col px-3 py-3 rounded-xl hover:bg-gray-50 group transition-colors">
+                        <span className="font-semibold text-navy-900 group-hover:text-orange-600 transition-colors text-sm">{c.label}</span>
                         <span className="text-xs text-gray-400 mt-0.5">{c.desc}</span>
                       </Link>
                     ))}
                   </div>
                   <div className="mt-4 pt-4 border-t border-gray-100">
-                    <Link href="/free-trial" className="flex items-center justify-between px-4 py-3 bg-[#0B1E5B] rounded-full text-white text-sm font-semibold hover:bg-[#0d1a45] transition-colors">
+                    <Link href="/free-trial" className="flex items-center justify-between px-4 py-3 bg-navy-900 rounded-full text-white text-sm font-semibold hover:bg-navy-800 transition-colors">
                       <span>Start with a free trial class</span>
-                      <span className="bg-[#F5A623] text-white text-xs font-bold px-2.5 py-1 rounded-full">Free</span>
+                      <span className="bg-orange-500 text-navy-900 text-xs font-semibold px-2.5 py-1 rounded-full">Free</span>
                     </Link>
                   </div>
                 </div>
@@ -140,23 +140,23 @@ export default function Header() {
 
             {/* Locations dropdown */}
             <div className="relative" onMouseEnter={() => setLocationsOpen(true)} onMouseLeave={() => setLocationsOpen(false)}>
-              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">
+              <button className="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">
                 Locations <ChevronDown size={14} className={`transition-transform duration-200 ${locationsOpen ? "rotate-180" : ""}`} />
               </button>
               {locationsOpen && (
                 <div className="absolute top-full left-0 mt-1 w-[340px] bg-white rounded-2xl shadow-eq-lg border border-gray-100 p-4 z-50">
                   <div className="flex items-center justify-between mb-3">
-                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">UK Cities</p>
-                    <Link href="/locations" className="text-xs text-[#F5A623] font-semibold hover:underline">View all →</Link>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">UK Cities</p>
+                    <Link href="/locations" className="text-xs text-orange-500 font-semibold hover:underline">View all →</Link>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {locations.map((l) => (
                       <Link
                         key={l.href}
                         href={l.href}
-                        className="flex items-center gap-1.5 pl-2.5 pr-3 py-2 rounded-full border border-gray-200 hover:border-[#F5A623] hover:bg-[#F5A623]/5 text-sm font-medium text-[#0B1E5B] transition-colors"
+                        className="flex items-center gap-1.5 pl-2.5 pr-3 py-2 rounded-full border border-gray-200 hover:border-orange-500 hover:bg-orange-500/5 text-sm font-medium text-navy-900 transition-colors"
                       >
-                        <MapPin size={12} className="text-[#F5A623] flex-shrink-0" />
+                        <MapPin size={12} className="text-orange-500 flex-shrink-0" />
                         {l.label}
                       </Link>
                     ))}
@@ -165,11 +165,11 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/about" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">About</Link>
-            <Link href="/pricing" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Pricing</Link>
-            <Link href="/female-quran-teachers" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Female Teachers</Link>
-            <Link href="/blog" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Blog</Link>
-            <Link href="/contact" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#0B1E5B] transition-colors">Contact</Link>
+            <Link href="/about" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">About</Link>
+            <Link href="/pricing" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">Pricing</Link>
+            <Link href="/female-quran-teachers" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">Female Teachers</Link>
+            <Link href="/blog" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">Blog</Link>
+            <Link href="/contact" className="px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-navy-900 transition-colors">Contact</Link>
           </nav>
 
           {/* Desktop CTAs */}
@@ -178,12 +178,12 @@ export default function Header() {
               href="https://wa.me/447311254423"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-semibold text-[#25D366] border border-[#25D366] rounded-lg px-4 py-2 hover:bg-[#25D366] hover:text-white transition-colors"
+              className="flex items-center gap-2 text-sm font-semibold text-whatsapp border border-whatsapp rounded-full px-4 py-2 hover:bg-whatsapp/10 transition-colors"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               WhatsApp
             </a>
-            <Link href="/free-trial" className="btn-gold text-sm py-2 px-5">Book Free Trial</Link>
+            <Link href="/free-trial" className="btn-gold text-sm py-2 px-5">Book free trial</Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -201,7 +201,7 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden fixed inset-0 z-[60] flex">
           {/* Backdrop */}
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={closeMobile} />
+          <div className="absolute inset-0 bg-navy-900/50" onClick={closeMobile} />
 
           {/* Panel */}
           <div className="relative ml-auto w-full max-w-xs bg-white h-full flex flex-col shadow-2xl overflow-y-auto">
@@ -215,7 +215,7 @@ export default function Header() {
 
             {/* Navigation */}
             <nav className="flex-1 px-4 py-4 space-y-1">
-              <Link href="/" onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm">
+              <Link href="/" onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-navy-900 hover:bg-gray-50 transition-colors text-sm">
                 Home
               </Link>
 
@@ -223,20 +223,20 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
-                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm"
+                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-navy-900 hover:bg-gray-50 transition-colors text-sm"
                 >
                   <span>Courses</span>
-                  <ChevronDown size={16} className={`text-[#F5A623] transition-transform duration-200 ${mobileCoursesOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown size={16} className={`text-orange-500 transition-transform duration-200 ${mobileCoursesOpen ? "rotate-180" : ""}`} />
                 </button>
                 {mobileCoursesOpen && (
-                  <div className="ml-3 mt-1 pl-3 border-l-2 border-[#F5A623]/30 space-y-0.5">
+                  <div className="ml-3 mt-1 pl-3 border-l border-gray-200 space-y-0.5">
                     {courses.map((c) => (
-                      <Link key={c.href} href={c.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors">
-                        <ChevronRight size={12} className="text-[#F5A623] flex-shrink-0" />
+                      <Link key={c.href} href={c.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-navy-900 hover:bg-gray-50 transition-colors">
+                        <ChevronRight size={12} className="text-orange-500 flex-shrink-0" />
                         {c.label}
                       </Link>
                     ))}
-                    <Link href="/courses" onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-[#F5A623] hover:bg-[#faf9f7] transition-colors">
+                    <Link href="/courses" onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-orange-600 hover:bg-gray-50 transition-colors">
                       View all courses
                     </Link>
                   </div>
@@ -247,20 +247,20 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setMobileLocationsOpen(!mobileLocationsOpen)}
-                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm"
+                  className="w-full flex items-center justify-between px-3 py-3 rounded-xl font-semibold text-navy-900 hover:bg-gray-50 transition-colors text-sm"
                 >
                   <span>Locations</span>
-                  <ChevronDown size={16} className={`text-[#F5A623] transition-transform duration-200 ${mobileLocationsOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown size={16} className={`text-orange-500 transition-transform duration-200 ${mobileLocationsOpen ? "rotate-180" : ""}`} />
                 </button>
                 {mobileLocationsOpen && (
-                  <div className="ml-3 mt-1 pl-3 border-l-2 border-[#F5A623]/30 space-y-0.5">
+                  <div className="ml-3 mt-1 pl-3 border-l border-gray-200 space-y-0.5">
                     {locations.map((l) => (
-                      <Link key={l.href} href={l.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" />
+                      <Link key={l.href} href={l.href} onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-navy-900 hover:bg-gray-50 transition-colors">
+                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
                         {l.label}
                       </Link>
                     ))}
-                    <Link href="/locations" onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-[#F5A623] hover:bg-[#faf9f7] transition-colors">
+                    <Link href="/locations" onClick={closeMobile} className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-orange-600 hover:bg-gray-50 transition-colors">
                       All locations
                     </Link>
                   </div>
@@ -274,7 +274,7 @@ export default function Header() {
                 { label: "Blog", href: "/blog" },
                 { label: "Contact", href: "/contact" },
               ].map((item) => (
-                <Link key={item.href} href={item.href} onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-[#0B1E5B] hover:bg-[#faf9f7] transition-colors text-sm">
+                <Link key={item.href} href={item.href} onClick={closeMobile} className="flex items-center gap-3 px-3 py-3 rounded-xl font-semibold text-navy-900 hover:bg-gray-50 transition-colors text-sm">
                   {item.label}
                 </Link>
               ))}
@@ -287,17 +287,17 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMobile}
-                className="flex items-center justify-center gap-2.5 w-full py-3 rounded-xl border-2 border-[#25D366] text-[#25D366] font-semibold text-sm hover:bg-[#25D366] hover:text-white transition-colors"
+                className="flex items-center justify-center gap-2.5 w-full py-3 rounded-full border border-whatsapp text-whatsapp font-semibold text-sm hover:bg-whatsapp/10 active:scale-[0.97] transition"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                WhatsApp Us
+                WhatsApp us
               </a>
               <Link
                 href="/free-trial"
                 onClick={closeMobile}
-                className="flex items-center justify-center w-full py-3 rounded-xl bg-[#F5A623] text-white font-bold text-sm hover:bg-[#d4890a] transition-colors"
+                className="btn-gold w-full text-sm py-3"
               >
-                Book Free Trial Class
+                Book a free trial class
               </Link>
             </div>
           </div>

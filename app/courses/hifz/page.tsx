@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Hifz() {
   return (
     <CoursePageTemplate
-      h1="Online Hifz Course in the UK"
+      h1="Online Hifz course in the UK"
       title="Hifz"
       subtitle="One-to-One Quran Memorisation"
       slug="hifz"
